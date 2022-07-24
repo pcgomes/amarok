@@ -15,8 +15,7 @@ for version in ${!VERSION_CODENAME[@]}; do
   cat << EOF > ${version}/new_cl_entry;
 amarok (2:2.9.71+1SNAPSHOT$(date -d "@${DATENOW}" +"%Y%m%d%H%M%S%z")-0ubuntu1ppa1~ubuntu${version}.1) ${code}; urgency=medium
 
-  * Add support for 21.10 impish
-  * Add support for 22.04 jammy
+  * Initial release for 22.04 jammy
 
  -- Pedro de Carvalho Gomes <pedrogomes81@gmail.com>  $(date -R -d "@${DATENOW}")
 
