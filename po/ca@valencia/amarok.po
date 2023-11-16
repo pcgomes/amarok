@@ -477,8 +477,8 @@ msgid ""
 "If set, dynamic mode will be on, and tracks will be added according to the "
 "dynamic playlist specified."
 msgstr ""
-"Si s'activa, el mode dinàmic s'iniciarà, i les peces s'afegiran segons les "
-"especificacions de la llista de reproducció dinàmica."
+"Si se selecciona, s'iniciarà el mode dinàmic i les peces s'afegiran segons "
+"les especificacions de la llista de reproducció dinàmica."
 
 #. i18n: ectx: label, entry, group (General Options)
 #: amarokconfig.kcfg:53
@@ -3099,7 +3099,7 @@ msgid ""
 "Check to enable the use of an external database. By default there is already "
 "an embedded MySQL database running."
 msgstr ""
-"Marqueu-la per a activar l'ús d'una base de dades externa. De manera "
+"Seleccioneu-la per a activar l'ús d'una base de dades externa. De manera "
 "predeterminada, ja hi ha una base de dades MySQL incrustada en execució."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseServer)
@@ -3251,7 +3251,8 @@ msgstr "Opcions generals"
 #: configdialog/dialogs/GeneralConfig.ui:32
 #, kde-format
 msgid "Check to enable the Amarok system tray icon."
-msgstr "Marqueu-la per a activar la icona d'Amarok a la safata del sistema."
+msgstr ""
+"Seleccioneu-la per a activar la icona d'Amarok a la safata del sistema."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowTrayIcon)
 #: configdialog/dialogs/GeneralConfig.ui:35
@@ -3266,7 +3267,7 @@ msgstr "Mostra la &icona en la safata del sistema"
 #, kde-format
 msgid "Check to enable the automatic retrieval of cover art from the Internet."
 msgstr ""
-"Marqueu-la per a activar la recuperació automàtica de les caràtules des "
+"Seleccioneu-la per a activar la recuperació automàtica de les caràtules des "
 "d'Internet."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoGetCoverArt)
@@ -3282,7 +3283,7 @@ msgstr "Recupera la caràtula automàticament"
 #, kde-format
 msgid "Check to enable animations when context applets collapse."
 msgstr ""
-"Marqueu-la per a activar les animacions en reduir les miniaplicacions "
+"Seleccioneu-la per a activar les animacions en reduir les miniaplicacions "
 "contextuals."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowBrowserBackgroundImage)
@@ -3303,8 +3304,8 @@ msgstr "Opcions de la llista de reproducció"
 msgid ""
 "Check to make the playlist scroll so the current track is always visible."
 msgstr ""
-"Marqueu-la per a desplaçar la llista de reproducció de manera que la peça "
-"actual siga sempre visible."
+"Seleccioneu-la per a desplaçar la llista de reproducció de manera que la "
+"peça actual siga sempre visible."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoScrollPlaylist)
 #: configdialog/dialogs/GeneralConfig.ui:87
@@ -3603,8 +3604,8 @@ msgid ""
 "Check to enable the On-Screen-Display. The OSD briefly displays track data "
 "when a new track is played."
 msgstr ""
-"Marqueu-la per a activar el visor en pantalla. Es visualitzarà breument la "
-"informació de la peça nova quan comence a reproduir-se."
+"Seleccioneu-la per a activar el visor en pantalla. Es visualitzarà breument "
+"la informació de la peça nova quan comence a reproduir-se."
 
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_OsdEnabled)
 #: configdialog/dialogs/NotificationsConfig.ui:29
@@ -3666,7 +3667,7 @@ msgstr "La pantalla que hauria de mostrar OSD."
 #: configdialog/dialogs/NotificationsConfig.ui:136
 #, kde-format
 msgid "Check to enable custom colors for the On-Screen-Display."
-msgstr "Marqueu-la per a activar els colors a mida del visor en pantalla."
+msgstr "Seleccioneu-la per a activar els colors a mida del visor en pantalla."
 
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_OsdUseCustomColors)
 #: configdialog/dialogs/NotificationsConfig.ui:139
@@ -3724,7 +3725,7 @@ msgstr "%"
 #: configdialog/dialogs/NotificationsConfig.ui:274
 #, kde-format
 msgid "Check to use the system notification."
-msgstr "Marqueu-la per a utilitzar les notificacions del sistema."
+msgstr "Seleccioneu-la per a utilitzar les notificacions del sistema."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_KNotifyEnabled)
 #: configdialog/dialogs/NotificationsConfig.ui:277
@@ -3765,10 +3766,10 @@ msgid ""
 "to the playlist using mouse, pressing Enter or when the playlist is "
 "replaced. Does nothing if something is already playing.</html>"
 msgstr ""
-"<html>Marqueu esta opció per a iniciar la reproducció quan s'afigen una o "
-"més peces a la llista de reproducció utilitzant el ratolí, prement «Retorn» "
-"o quan la llista de reproducció se substituïsca. No farà res si ja hi ha "
-"alguna cosa en reproducció.</html>"
+"<html>Seleccioneu esta opció per a iniciar la reproducció quan s'afigen una "
+"o més peces a la llista de reproducció utilitzant el ratolí, prement "
+"«Retorn» o quan la llista de reproducció se substituïsca. No farà res si ja "
+"hi ha alguna cosa en reproducció.</html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_StartPlayingOnAdd)
 #: configdialog/dialogs/PlaybackConfig.ui:42
@@ -14785,8 +14786,8 @@ msgid ""
 "<html>Check if you want certain tracks neither to be scrobbled nor to be "
 "updated to Last.fm now playing</html>"
 msgstr ""
-"<html>Activeu-la si voleu que algunes peces no s'analitzen musicalment ni "
-"que s'actualitzen en «ara s'està reproduint» de Last.fm</html>"
+"<html>Seleccioneu-la si voleu que algunes peces no s'analitzen musicalment "
+"ni que s'actualitzen en «ara s'està reproduint» de Last.fm</html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FilterByLabel)
 #: services/lastfm/LastFmConfigWidget.ui:183
