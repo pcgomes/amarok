@@ -7997,6 +7997,8 @@ msgid ""
 "%1\n"
 "dB"
 msgstr ""
+"%0\n"
+"dB"
 
 #. i18n: ectx: property (text), widget (QCheckBox, activeCheckBox)
 #: dialogs/EqualizerDialog.ui:22
