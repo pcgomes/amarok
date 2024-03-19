@@ -9270,13 +9270,13 @@ msgstr ""
 "La ponderació «EchoNest» busca peces amb «EchoNest» i només afig peces "
 "similars."
 
-#: dynamic/biases/EchoNestBias.cpp:126
+#: dynamic/biases/EchoNestBias.cpp:125
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to the previous artist (as reported by EchoNest)"
 msgstr "Similar a l'artista anterior (segons «EchoNest»)"
 
-#: dynamic/biases/EchoNestBias.cpp:129
+#: dynamic/biases/EchoNestBias.cpp:128
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to any artist in the current playlist (as reported by EchoNest)"
@@ -9284,7 +9284,7 @@ msgstr ""
 "Similar a qualsevol artista de la llista de reproducció actual (segons "
 "«EchoNest»)"
 
-#: dynamic/biases/EchoNestBias.cpp:142
+#: dynamic/biases/EchoNestBias.cpp:141
 #, kde-format
 msgid ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> thinks the artist is "
@@ -9299,7 +9299,7 @@ msgstr ""
 msgid "the previous track's artist"
 msgstr "l'artista de la peça anterior"
 
-#: dynamic/biases/EchoNestBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:144
 #, kde-format
 msgid "one of the artist in the current playlist"
 msgstr "una de l'artista de la llista de reproducció actual"

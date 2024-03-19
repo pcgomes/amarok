@@ -9283,13 +9283,13 @@ msgstr ""
 "A tendencia «EchoNest» consulta pistas de Echo Nest e só engade pistas "
 "similares."
 
-#: dynamic/biases/EchoNestBias.cpp:126
+#: dynamic/biases/EchoNestBias.cpp:125
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to the previous artist (as reported by EchoNest)"
 msgstr "Similar ao intérprete anterior (tal e como o considera EchoNest)"
 
-#: dynamic/biases/EchoNestBias.cpp:129
+#: dynamic/biases/EchoNestBias.cpp:128
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to any artist in the current playlist (as reported by EchoNest)"
@@ -9297,7 +9297,7 @@ msgstr ""
 "Similar a calquera intérprete da lista de reprodución actual (tal e como o "
 "considera EchoNest)"
 
-#: dynamic/biases/EchoNestBias.cpp:142
+#: dynamic/biases/EchoNestBias.cpp:141
 #, kde-format
 msgid ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> thinks the artist is "
@@ -9312,7 +9312,7 @@ msgstr ""
 msgid "the previous track's artist"
 msgstr "o intérprete da pista anterior"
 
-#: dynamic/biases/EchoNestBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:144
 #, kde-format
 msgid "one of the artist in the current playlist"
 msgstr "unha das intérpretes da lista de reprodución actual"

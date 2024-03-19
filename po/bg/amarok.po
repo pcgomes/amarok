@@ -9227,13 +9227,13 @@ msgstr ""
 "Условието \"EchoNest\" търси песни в едноименната платформа и добавя само "
 "подобни песни."
 
-#: dynamic/biases/EchoNestBias.cpp:126
+#: dynamic/biases/EchoNestBias.cpp:125
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to the previous artist (as reported by EchoNest)"
 msgstr "Подобно на предишния изпълнител (както е докладвано от EchoNest)"
 
-#: dynamic/biases/EchoNestBias.cpp:129
+#: dynamic/biases/EchoNestBias.cpp:128
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to any artist in the current playlist (as reported by EchoNest)"
@@ -9241,7 +9241,7 @@ msgstr ""
 "Подобно на всеки изпълнител в текущия списък за възпроизвеждане (както е "
 "докладвано от EchoNest)"
 
-#: dynamic/biases/EchoNestBias.cpp:142
+#: dynamic/biases/EchoNestBias.cpp:141
 #, kde-format
 msgid ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> thinks the artist is "
@@ -9256,7 +9256,7 @@ msgstr ""
 msgid "the previous track's artist"
 msgstr "изпълнителя на предишната песен"
 
-#: dynamic/biases/EchoNestBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:144
 #, kde-format
 msgid "one of the artist in the current playlist"
 msgstr "един от изпълнителите в текущия списък за възпроизвеждане"

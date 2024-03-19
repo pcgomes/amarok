@@ -9479,7 +9479,7 @@ msgid ""
 "tracks."
 msgstr ""
 
-#: dynamic/biases/EchoNestBias.cpp:126
+#: dynamic/biases/EchoNestBias.cpp:125
 #, fuzzy, kde-format
 #| msgctxt "EchoNest bias representation"
 #| msgid "Similar to the previous track (as reported by EchoNest)"
@@ -9487,7 +9487,7 @@ msgctxt "EchoNest bias representation"
 msgid "Similar to the previous artist (as reported by EchoNest)"
 msgstr "Panaši į ankstesnę dainą (pagal EchoNest informaciją)"
 
-#: dynamic/biases/EchoNestBias.cpp:129
+#: dynamic/biases/EchoNestBias.cpp:128
 #, fuzzy, kde-format
 #| msgctxt "EchoNest bias representation"
 #| msgid ""
@@ -9497,7 +9497,7 @@ msgid "Similar to any artist in the current playlist (as reported by EchoNest)"
 msgstr ""
 "Panaši į bet kurią kitą dainą grojaraštyje (pagal EchoNest informaciją)"
 
-#: dynamic/biases/EchoNestBias.cpp:142
+#: dynamic/biases/EchoNestBias.cpp:141
 #, kde-format
 msgid ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> thinks the artist is "
@@ -9511,7 +9511,7 @@ msgstr ""
 msgid "the previous track's artist"
 msgstr "ankstesnis atlikėjas"
 
-#: dynamic/biases/EchoNestBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:144
 #, fuzzy, kde-format
 #| msgid "one of the tracks in the current playlist"
 msgid "one of the artist in the current playlist"
