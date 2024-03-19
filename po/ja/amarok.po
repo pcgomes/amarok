@@ -9326,7 +9326,7 @@ msgstr ""
 "EchoNest バイアスは、echo nest 上でトラックを検索し、似通ったトラックのみを追"
 "加します。"
 
-#: dynamic/biases/EchoNestBias.cpp:126
+#: dynamic/biases/EchoNestBias.cpp:125
 #, fuzzy, kde-format
 #| msgctxt "EchoNest bias representation"
 #| msgid "Similar to the previous track (as reported by EchoNest)"
@@ -9334,7 +9334,7 @@ msgctxt "EchoNest bias representation"
 msgid "Similar to the previous artist (as reported by EchoNest)"
 msgstr "前のトラックに類似しているもの (EchoNest によって報告されたもの)"
 
-#: dynamic/biases/EchoNestBias.cpp:129
+#: dynamic/biases/EchoNestBias.cpp:128
 #, fuzzy, kde-format
 #| msgctxt "EchoNest bias representation"
 #| msgid ""
@@ -9344,7 +9344,7 @@ msgid "Similar to any artist in the current playlist (as reported by EchoNest)"
 msgstr ""
 "現在のプレイリスト内の似通ったトラック (EchoNest によって報告されたもの)"
 
-#: dynamic/biases/EchoNestBias.cpp:142
+#: dynamic/biases/EchoNestBias.cpp:141
 #, kde-format
 msgid ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> thinks the artist is "
@@ -9358,7 +9358,7 @@ msgstr ""
 msgid "the previous track's artist"
 msgstr "前のアーティスト"
 
-#: dynamic/biases/EchoNestBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:144
 #, fuzzy, kde-format
 #| msgid "one of the tracks in the current playlist"
 msgid "one of the artist in the current playlist"

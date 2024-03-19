@@ -9332,20 +9332,20 @@ msgstr ""
 "La condition « EchoNest » recherche les pistes sur le site « EchoNest » et "
 "n'ajoute que les pistes similaires."
 
-#: dynamic/biases/EchoNestBias.cpp:126
+#: dynamic/biases/EchoNestBias.cpp:125
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to the previous artist (as reported by EchoNest)"
 msgstr "Similaire à l'artiste précédent (selon EchoNest)"
 
-#: dynamic/biases/EchoNestBias.cpp:129
+#: dynamic/biases/EchoNestBias.cpp:128
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to any artist in the current playlist (as reported by EchoNest)"
 msgstr ""
 "Similaire à n'importe quel artiste de la liste de lecture (selon EchoNest)"
 
-#: dynamic/biases/EchoNestBias.cpp:142
+#: dynamic/biases/EchoNestBias.cpp:141
 #, kde-format
 msgid ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> thinks the artist is "
@@ -9360,7 +9360,7 @@ msgstr ""
 msgid "the previous track's artist"
 msgstr "la précédente piste de l'artiste"
 
-#: dynamic/biases/EchoNestBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:144
 #, kde-format
 msgid "one of the artist in the current playlist"
 msgstr "un des artistes de la liste de lecture actuelle"

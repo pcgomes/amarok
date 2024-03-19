@@ -8867,19 +8867,19 @@ msgid ""
 "tracks."
 msgstr "\"EchoNest\" bias 會尋找 echo nest 上的曲目，並加入類似的曲目。"
 
-#: dynamic/biases/EchoNestBias.cpp:126
+#: dynamic/biases/EchoNestBias.cpp:125
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to the previous artist (as reported by EchoNest)"
 msgstr "類似前一個演出者（由 EchoNest 回報）"
 
-#: dynamic/biases/EchoNestBias.cpp:129
+#: dynamic/biases/EchoNestBias.cpp:128
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to any artist in the current playlist (as reported by EchoNest)"
 msgstr "類似目前播放清單中的任何演出者（由 EchoNest 回報）"
 
-#: dynamic/biases/EchoNestBias.cpp:142
+#: dynamic/biases/EchoNestBias.cpp:141
 #, kde-format
 msgid ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> thinks the artist is "
@@ -8892,7 +8892,7 @@ msgstr "<a href=\"http://the.echonest.com/\">Echonest</a> 認為演出者類似�
 msgid "the previous track's artist"
 msgstr "前一個曲目的演出者"
 
-#: dynamic/biases/EchoNestBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:144
 #, kde-format
 msgid "one of the artist in the current playlist"
 msgstr "目前播放清單中的某個演出者"

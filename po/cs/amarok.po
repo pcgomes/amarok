@@ -9245,19 +9245,19 @@ msgstr ""
 "Zkreslení \"EchoNest\" vyhledá skladby v echo nest a přidá pouze podobné "
 "skladby."
 
-#: dynamic/biases/EchoNestBias.cpp:126
+#: dynamic/biases/EchoNestBias.cpp:125
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to the previous artist (as reported by EchoNest)"
 msgstr "Podobné předchozímu umělci skladbě (dle EchoNestu)"
 
-#: dynamic/biases/EchoNestBias.cpp:129
+#: dynamic/biases/EchoNestBias.cpp:128
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to any artist in the current playlist (as reported by EchoNest)"
 msgstr "Podobné nějakému umělci ze současného seznamu skladeb (dle EchoNestu)"
 
-#: dynamic/biases/EchoNestBias.cpp:142
+#: dynamic/biases/EchoNestBias.cpp:141
 #, kde-format
 msgid ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> thinks the artist is "
@@ -9272,7 +9272,7 @@ msgstr ""
 msgid "the previous track's artist"
 msgstr "umělec předchozí skladby"
 
-#: dynamic/biases/EchoNestBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:144
 #, kde-format
 msgid "one of the artist in the current playlist"
 msgstr "jeden z umělců v současném seznamu skladeb"
