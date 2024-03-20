@@ -54,6 +54,8 @@
         "Id": "org.kde.amarok.context",
         "License": "GPL",
         "Name": "Amarok-Context-QML-Package",
+        "Name[uk]": "Пакунок QML контексту для Amarok",
+        "Name[x-test]": "xxAmarok-Context-QML-Packagexx",
         "ServiceTypes": [
             "KPackage/Generic"
         ],
