@@ -47,6 +47,14 @@
         "Id": "org.kde.amarok.lyrics",
         "License": "GPL",
         "Name": "Lyrics",
+        "Name[nb]": "Sangtekst",
+        "Name[nn]": "Songtekst",
+        "Name[sr@ijekavian]": "Стихови",
+        "Name[sr@ijekavianlatin]": "Stihovi",
+        "Name[sr@latin]": "Stihovi",
+        "Name[sr]": "Стихови",
+        "Name[uk]": "Текст пісні",
+        "Name[x-test]": "xxLyricsxx",
         "ServiceTypes": [
             "KPackage/Generic",
             "Amarok/ContextApplet"

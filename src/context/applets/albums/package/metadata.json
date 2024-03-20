@@ -47,6 +47,14 @@
         "Id": "org.kde.amarok.albums",
         "License": "GPL",
         "Name": "Albums",
+        "Name[nb]": "Album",
+        "Name[nn]": "Album",
+        "Name[sr@ijekavian]": "Албуми",
+        "Name[sr@ijekavianlatin]": "Albumi",
+        "Name[sr@latin]": "Albumi",
+        "Name[sr]": "Албуми",
+        "Name[uk]": "Альбоми",
+        "Name[x-test]": "xxAlbumsxx",
         "ServiceTypes": [
             "KPackage/Generic",
             "Amarok/ContextApplet"
