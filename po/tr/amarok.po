@@ -1902,22 +1902,22 @@ msgstr "Açılacak dosyalar/URL’ler"
 msgid "Immediately start playing an audio cd"
 msgstr "Hemen bir ses CD’sini çalmaya başla"
 
-#: App.cpp:362
+#: App.cpp:361
 #, kde-format
 msgid "Skip backwards in playlist"
 msgstr "Çalma listesinde geri atla"
 
-#: App.cpp:363
+#: App.cpp:362
 #, kde-format
 msgid "Start playing current playlist"
 msgstr "Geçerli çalma listesini çalmaya başla"
 
-#: App.cpp:364
+#: App.cpp:363
 #, kde-format
 msgid "Play if stopped, pause if playing"
 msgstr "Durdurulmuşsa çal, çalıyorsa duraklat"
 
-#: App.cpp:365
+#: App.cpp:364
 #, kde-format
 msgid "Pause playback"
 msgstr "Çalmayı duraklat"
@@ -1947,7 +1947,7 @@ msgstr "Çalma listesine dosyalar/URL’ler ekle"
 msgid "Queue URLs after the currently playing track"
 msgstr "URL’leri şu anda çalan parçadan sonra kuyruğa ekle"
 
-#: App.cpp:372
+#: App.cpp:371
 #, kde-format
 msgid "Load URLs, replacing current playlist"
 msgstr "Geçerli çalma listesini değiştirerek URL’ler yükle"
@@ -1957,17 +1957,17 @@ msgstr "Geçerli çalma listesini değiştirerek URL’ler yükle"
 msgid "Print verbose debugging information"
 msgstr "Ayrıntılı hata ayıklama bilgisi yazdır"
 
-#: App.cpp:376
+#: App.cpp:375
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Ses sisteminden ayrıntılı hata ayıklama bilgisini yazdır"
 
-#: App.cpp:377
+#: App.cpp:376
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Hata ayıklama çıktısı için renklendirmeyi devre dışı bırakın."
 
-#: App.cpp:378
+#: App.cpp:377
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Birden çok Amarok örneğinin çalışmasına izin ver"
