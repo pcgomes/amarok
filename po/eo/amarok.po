@@ -10748,7 +10748,7 @@ msgstr "Aktualigi la kolekton"
 msgid "Synchronize Statistics..."
 msgstr "Sinkronigi Statistikon..."
 
-#: MainWindow.cpp:871
+#: MainWindow.cpp:872
 #, kde-format
 msgid "Previous Track"
 msgstr "Antaŭa Trako"
