@@ -260,7 +260,7 @@ TokenDropTarget::removeToken( Token *token )
     {
         if ( QHBoxLayout *rowBox = qobject_cast<QHBoxLayout*>( layout()->itemAt( r )->layout() ) )
         {
-            for( int col = 0; col < rowBox->count() - m_horizontalStretch; ++col )
+            for( int col = 0; col < rowBox->count(); ++col )
             {
                 if ( ( token == qobject_cast<Token*>( rowBox->itemAt( col )->widget() ) ) )
                 {
