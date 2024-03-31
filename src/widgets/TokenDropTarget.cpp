@@ -253,6 +253,26 @@ TokenDropTarget::removeToken( Token *token )
     }
 }
 
+void
+TokenDropTarget::removeToken( Token *token )
+{
+    for( uint r = 0; r < rows(); r++ )
+    {
+        if ( QHBoxLayout *rowBox = qobject_cast<QHBoxLayout*>( layout()->itemAt( r )->layout() ) )
+        {
+            for( int col = 0; col < rowBox->count() - m_horizontalStretch; ++col )
+            {
+                if ( ( token == qobject_cast<Token*>( rowBox->itemAt( col )->widget() ) ) )
+                {
+                    rowBox->removeWidget( token );
+                    Q_EMIT changed();
+                    break;
+                }
+            }
+        }
+    }
+}
+
 
 Token*
 TokenDropTarget::tokenAt( const QPoint &pos ) const
