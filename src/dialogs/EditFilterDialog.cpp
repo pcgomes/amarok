@@ -335,6 +335,11 @@ EditFilterDialog::updateDropTarget( const QString &text )
                     filter.filter.numValue = QDate( QDate::currentDate().year(), rmatch.captured(2).toInt(), rmatch.captured(1).toInt() ).startOfDay().toSecsSinceEpoch();
                     isDateAbsolute = true;
                 }
+                else if( strTime.contains(shortDateReg) )
+                {
+                    filter.filter.numValue = QDate( QDate::currentDate().year(), shortDateReg.cap(2).toInt(), shortDateReg.cap(1).toInt() ).startOfDay().toSecsSinceEpoch();
+                    isDateAbsolute = true;
+                }
                 else
                 {
                     // parse a "#m#d" (discoverability == 0, but without a GUI, how to do it?)

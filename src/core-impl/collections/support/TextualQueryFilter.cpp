@@ -304,6 +304,12 @@ Collections::semanticDateTimeParser( const QString &text, bool *absolute )
         if( absolute )
             *absolute = true;
     }
+    else if( text.contains(shortDateReg) )
+    {
+        result = QDate( QDate::currentDate().year(), shortDateReg.cap(2).toInt(), shortDateReg.cap(1).toInt() ).startOfDay();
+        if( absolute )
+            *absolute = true;
+    }
     else // first character is a number
     {
         // parse a "#m#d" (discoverability == 0, but without a GUI, how to do it?)
