@@ -5091,13 +5091,13 @@ msgstr ""
 "Kurmak veya kaldırmak için tüm kullanıcılar için kurulan uygulamacıklar "
 "üzerinde çalışır."
 
-#: context/tools/amarokpkg.cpp:112
+#: context/tools/amarokpkg.cpp:114
 #, kde-format
 msgctxt "Do not translate <path>"
 msgid "Install the applet at <path>"
 msgstr "Uygulamacığı <path> konumuna kur"
 
-#: context/tools/amarokpkg.cpp:114
+#: context/tools/amarokpkg.cpp:116
 #, kde-format
 msgctxt "Do not translate <path>"
 msgid "Upgrade the applet at <path>"

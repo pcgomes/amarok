@@ -72,7 +72,7 @@ msgctxt "Do not translate <path>"
 msgid "Install the applet at <path>"
 msgstr "Uygulamacığı <yol> konumuna kur"
 
-#: amarokpkg.cpp:114
+#: amarokpkg.cpp:116
 #, kde-format
 msgctxt "Do not translate <path>"
 msgid "Upgrade the applet at <path>"
