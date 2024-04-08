@@ -16997,6 +16997,21 @@ msgstr "Kunstenaar \"%1\""
 msgid "empty"
 msgstr "<empty>"
 
+#~ msgid ""
+#~ "Automatically download and install updates for the built-in scripts from "
+#~ "the Amarok website if available"
+#~ msgstr ""
+#~ "Onttrek en installeer bywerkings tot ingeboude skripte outomaties vanaf "
+#~ "die Amarok webwerf indien beskikbaar"
+
+#~ msgid "Automatically update built-in scripts"
+#~ msgstr "Opdateer ingeboude skripte outomaties"
+
+#, fuzzy
+#~| msgid "Manage presets"
+#~ msgid "Manage Scripts"
+#~ msgstr "Bestuur voorafinstellings"
+
 #, fuzzy
 #~| msgid "0 dB"
 #~ msgid ""
