@@ -16922,3 +16922,19 @@ msgstr "Artisto: %1"
 #, kde-format
 msgid "empty"
 msgstr "malplena"
+
+#~ msgid ""
+#~ "Automatically download and install updates for the built-in scripts from "
+#~ "the Amarok website if available"
+#~ msgstr ""
+#~ "Aŭtomate elŝuti kaj instali ĝisdatigojn por la enkonstruitaj skriptoj de "
+#~ "la retejo de Amarok, se disponebla"
+
+#~ msgid "Automatically update built-in scripts"
+#~ msgstr "Aŭtomate ĝisdatigi enkonstruitajn skriptojn"
+
+#~ msgid "Browse, install, and uninstall scripts"
+#~ msgstr "Foliumi, instali kaj malinstali skriptojn"
+
+#~ msgid "Manage Scripts"
+#~ msgstr "Administri Skriptojn"

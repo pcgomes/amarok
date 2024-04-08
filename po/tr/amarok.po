@@ -17023,3 +17023,19 @@ msgstr "Sanatçı: %1"
 #, kde-format
 msgid "empty"
 msgstr "boş"
+
+#~ msgid ""
+#~ "Automatically download and install updates for the built-in scripts from "
+#~ "the Amarok website if available"
+#~ msgstr ""
+#~ "Var olan betiklerin güncellemelerini, varsa Amarok web sitesinden "
+#~ "otomatik olarak indirin ve kurun"
+
+#~ msgid "Automatically update built-in scripts"
+#~ msgstr "Bütünleşik betikleri otomatik olarak güncelle"
+
+#~ msgid "Browse, install, and uninstall scripts"
+#~ msgstr "Betiklere göz at, kur ve kaldır"
+
+#~ msgid "Manage Scripts"
+#~ msgstr "Betikleri Yönet"

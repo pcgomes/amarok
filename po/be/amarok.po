@@ -17228,6 +17228,11 @@ msgstr "Паўтарыць"
 #~ msgstr "Галоўны файл сцэнару"
 
 #, fuzzy
+#~| msgid "Main Script File"
+#~ msgid "Manage Scripts"
+#~ msgstr "Галоўны файл сцэнару"
+
+#, fuzzy
 #~| msgid "Playing: %1"
 #~ msgid "Scanning %1"
 #~ msgstr "Грае: %1"

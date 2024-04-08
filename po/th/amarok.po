@@ -17247,6 +17247,16 @@ msgstr "<empty>"
 #~ msgstr "จัดการชุดสำเร็จ"
 
 #, fuzzy
+#~| msgid "&Automatically delete podcasts"
+#~ msgid "Automatically update built-in scripts"
+#~ msgstr "&ลบพ็อดแคสท์อัตโนมัติ"
+
+#, fuzzy
+#~| msgid "Manage presets"
+#~ msgid "Manage Scripts"
+#~ msgstr "จัดการชุดสำเร็จ"
+
+#, fuzzy
 #~| msgid "Scanning music"
 #~ msgid "Scanning %1"
 #~ msgstr "กำลังตรวจค้นเพลง"

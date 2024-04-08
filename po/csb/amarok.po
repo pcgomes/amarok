@@ -17642,6 +17642,11 @@ msgstr ""
 #~ msgstr "Przédny lopk skriptów"
 
 #, fuzzy
+#~| msgid "Main Script File"
+#~ msgid "Manage Scripts"
+#~ msgstr "Przédny lopk skriptów"
+
+#, fuzzy
 #~| msgid "Scanning music"
 #~ msgid "Scanning %1"
 #~ msgstr "Przeszukiwanié mùzyczi"
