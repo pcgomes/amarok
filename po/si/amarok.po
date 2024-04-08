@@ -16773,6 +16773,11 @@ msgstr ""
 #~ msgstr "ජාත්‍යන්තර"
 
 #, fuzzy
+#~| msgid "International"
+#~ msgid "Manage Scripts"
+#~ msgstr "ජාත්‍යන්තර"
+
+#, fuzzy
 #~| msgid "Playing: %1"
 #~ msgid "Scanning %1"
 #~ msgstr "වාදනය වෙමින්: %1"

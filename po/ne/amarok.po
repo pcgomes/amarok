@@ -17605,6 +17605,16 @@ msgstr "पुन: प्रयास गर्नुहोस्"
 #~ msgstr "ट्याबहरू प्रबन्ध गर्नुहोस्"
 
 #, fuzzy
+#~| msgid "&Automatically delete podcasts"
+#~ msgid "Automatically update built-in scripts"
+#~ msgstr "स्वचालित रूपमा पोडकास्ट मेट्नुहोस्"
+
+#, fuzzy
+#~| msgid "Manage tabs"
+#~ msgid "Manage Scripts"
+#~ msgstr "ट्याबहरू प्रबन्ध गर्नुहोस्"
+
+#, fuzzy
 #~| msgid "Playing: %1"
 #~ msgid "Scanning %1"
 #~ msgstr "प्ले गर्दै: %1"

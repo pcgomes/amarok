@@ -17556,6 +17556,16 @@ msgstr ""
 #~ msgstr "Pêş-avakirinan bi rê ve bibe"
 
 #, fuzzy
+#~| msgid "Automatically scan for updates"
+#~ msgid "Automatically update built-in scripts"
+#~ msgstr "Bixweber rojane-kirinan venihêre "
+
+#, fuzzy
+#~| msgid "Manage presets"
+#~ msgid "Manage Scripts"
+#~ msgstr "Pêş-avakirinan bi rê ve bibe"
+
+#, fuzzy
 #~| msgid "Scanning music"
 #~ msgid "Scanning %1"
 #~ msgstr "Muzîkê dinihêre"

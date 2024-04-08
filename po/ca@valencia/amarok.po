@@ -17155,3 +17155,19 @@ msgstr "Artista: %1"
 #, kde-format
 msgid "empty"
 msgstr "buit"
+
+#~ msgid ""
+#~ "Automatically download and install updates for the built-in scripts from "
+#~ "the Amarok website if available"
+#~ msgstr ""
+#~ "Descarrega i instal·la automàticament les actualitzacions dels scripts "
+#~ "integrats des del lloc web d'Amarok, si estan disponibles"
+
+#~ msgid "Automatically update built-in scripts"
+#~ msgstr "Actualitza automàticament els scripts integrats"
+
+#~ msgid "Browse, install, and uninstall scripts"
+#~ msgstr "Explora, instal·la, i desinstal·la scripts"
+
+#~ msgid "Manage Scripts"
+#~ msgstr "Gestiona scripts"

@@ -17543,6 +17543,16 @@ msgstr ""
 #~ msgstr "&השג תסריטים נוספים"
 
 #, fuzzy
+#~| msgid "Automatically scan for updates"
+#~ msgid "Automatically update built-in scripts"
+#~ msgstr "סרוק עדכונים אוטומטית"
+
+#, fuzzy
+#~| msgid "&Get More Scripts"
+#~ msgid "Manage Scripts"
+#~ msgstr "&השג תסריטים נוספים"
+
+#, fuzzy
 #~| msgid "Scanning music"
 #~ msgid "Scanning %1"
 #~ msgstr "סורק מוזיקה"
