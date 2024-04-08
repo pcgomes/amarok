@@ -16131,6 +16131,11 @@ msgstr ""
 #~ msgstr "Kërko Skripte"
 
 #, fuzzy
+#~| msgid "Search Scripts"
+#~ msgid "Manage Scripts"
+#~ msgstr "Kërko Skripte"
+
+#, fuzzy
 #~| msgid "Configuration"
 #~ msgid "Sound System Configuration"
 #~ msgstr "Konfigurimi"

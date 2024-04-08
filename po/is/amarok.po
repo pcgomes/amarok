@@ -17285,6 +17285,16 @@ msgstr "Tómt"
 #~ msgstr "&Ná í fleiri skriftur"
 
 #, fuzzy
+#~| msgid "Automatically scan for updates"
+#~ msgid "Automatically update built-in scripts"
+#~ msgstr "Athuga sjálfkrafa með uppfærslur"
+
+#, fuzzy
+#~| msgid "&Get More Scripts"
+#~ msgid "Manage Scripts"
+#~ msgstr "&Ná í fleiri skriftur"
+
+#, fuzzy
 #~| msgid "Scanning music"
 #~ msgid "Scanning %1"
 #~ msgstr "Skanna tónlist"
