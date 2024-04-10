@@ -17105,19 +17105,3 @@ msgstr "Umělec: %1"
 #, kde-format
 msgid "empty"
 msgstr "prázdné"
-
-#~ msgid ""
-#~ "Automatically download and install updates for the built-in scripts from "
-#~ "the Amarok website if available"
-#~ msgstr ""
-#~ "Automaticky z webové stránky Amaroku stáhnout a nainstalovat aktualizace "
-#~ "zabudovaných skriptů, pokud jsou k dispozici"
-
-#~ msgid "Automatically update built-in scripts"
-#~ msgstr "Automaticky aktualizovat zabudované skripty"
-
-#~ msgid "Browse, install, and uninstall scripts"
-#~ msgstr "Prohlížejte, instalujte a odinstalujte skripty"
-
-#~ msgid "Manage Scripts"
-#~ msgstr "Spravovat skripty"
