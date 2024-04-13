@@ -1820,22 +1820,22 @@ msgstr "Завантажити адреси URL, замінюючи поточн
 msgid "Print verbose debugging information"
 msgstr "Показати докладні діагностичні дані"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Показати докладні діагностичні дані щодо звукової підсистеми"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Вимкнути розфарбовування повідомлень для налагоджування."
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Увімкнути можливість запуску декількох копій Amarok"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "База для відносних назв файлів / адрес URL"
@@ -1845,7 +1845,7 @@ msgstr "База для відносних назв файлів / адрес UR
 msgid "Database Error"
 msgstr "Помилка бази даних"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1857,7 +1857,7 @@ msgstr ""
 "%1\n"
 "Вам варто виправити ці помилки до запуску Amarok."
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Пересування файлів у смітник"

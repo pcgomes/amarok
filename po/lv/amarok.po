@@ -1797,22 +1797,22 @@ msgstr "Ielādējot URL, aizstāt esošo repertuāru"
 msgid "Print verbose debugging information"
 msgstr "Drukāt vairāk atkļūdošanas infomrācijas"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Drukāt vairāk atkļūdošanas informācijas no audio sistēmas"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Atslēgt atkļūdošanas izvades iekrāsošanu."
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Ļaut darbināt vairākas Amarok instances"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Bāze relatīviem failu nosaukumiem/URL"
@@ -1822,7 +1822,7 @@ msgstr "Bāze relatīviem failu nosaukumiem/URL"
 msgid "Database Error"
 msgstr "Datubāzes kļūda"
 
-#: App.cpp:514
+#: App.cpp:516
 #, fuzzy, kde-format
 #| msgid ""
 #| "The amarok database reported the following errors:\n"
@@ -1840,7 +1840,7 @@ msgstr ""
 "Vairākumā gadījumu jums būs jānovērš šīs kļūdas, pirms Amarok būs iespējams "
 "palaist."
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Pārvieto failus uz miskasti"

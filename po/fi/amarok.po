@@ -1812,22 +1812,22 @@ msgstr "Lataa virtaustoistot ja korvaa nykyinen soittolista"
 msgid "Print verbose debugging information"
 msgstr "Tulosta perinpohjaiset virheenpaikannustiedot"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Tulosta perinpohjaiset virheenpaikannustiedot äänijärjestelmästä"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Älä väritä virheenpaikannustulostetta."
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Salli useampi käynnissä oleva Amarok-ilmentymä"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Suhteellisten tiedostonimien ja verkko-osoitteiden kanta"
@@ -1837,7 +1837,7 @@ msgstr "Suhteellisten tiedostonimien ja verkko-osoitteiden kanta"
 msgid "Database Error"
 msgstr "Tietokantavirhe"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1849,7 +1849,7 @@ msgstr ""
 "%1\n"
 "Useimmiten virheet on ratkaistava, ennen kuin Amarok voi toimia oikein."
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Tiedostoja siirretään roskakoriin"

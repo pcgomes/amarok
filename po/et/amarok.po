@@ -1777,22 +1777,22 @@ msgstr "URL-ide laadimine, aktiivse esitusnimekirja asendamine"
 msgid "Print verbose debugging information"
 msgstr "Üksikasjaliku silumisinfo näitamine"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Üksikasjaliku silumisinfo näitamine helisüsteemi kohta"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Silumisväljundi värviliseks muutmise keelamine."
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Mitme Amaroki protsessi töötamise lubamine"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Suhteliste failinimede/URL-ide baas"
@@ -1802,7 +1802,7 @@ msgstr "Suhteliste failinimede/URL-ide baas"
 msgid "Database Error"
 msgstr "Andmebaasi viga"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1815,7 +1815,7 @@ msgstr ""
 "Enamasti on need vaja lahendada, enne kui saab Amaroki korralikult tööle "
 "panna."
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Failide viskamine prügikasti"
