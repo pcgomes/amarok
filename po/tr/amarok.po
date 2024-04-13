@@ -1957,17 +1957,17 @@ msgstr "Geçerli çalma listesini değiştirerek URL’ler yükle"
 msgid "Print verbose debugging information"
 msgstr "Ayrıntılı hata ayıklama bilgisi yazdır"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Ses sisteminden ayrıntılı hata ayıklama bilgisini yazdır"
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Hata ayıklama çıktısı için renklendirmeyi devre dışı bırakın."
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Birden çok Amarok örneğinin çalışmasına izin ver"
