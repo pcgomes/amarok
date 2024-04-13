@@ -1699,22 +1699,22 @@ msgstr "加载 URL 并将内容替换至此播放列表"
 msgid "Print verbose debugging information"
 msgstr "显示详细调试信息"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "显示来自音频系统的详细调试信息"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "禁用彩色调试输出。"
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "允许同时运行多个 Amarok"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "相对文件名或 URL 的起始点"
@@ -1724,7 +1724,7 @@ msgstr "相对文件名或 URL 的起始点"
 msgid "Database Error"
 msgstr "数据库出错"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1736,7 +1736,7 @@ msgstr ""
 "%1\n"
 "在绝大多数情况下，您需要解决这些问题才能继续运行 Amarok。"
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "将文件移到回收站"

@@ -1772,22 +1772,22 @@ msgstr "Ŝargi URL-ojn, anstataŭigante nunan ludliston"
 msgid "Print verbose debugging information"
 msgstr "Presi multvortajn sencimigajn informojn"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Presi multvortajn sencimigajn informojn de la sonsistemo"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Malebligi kolorigon por sencimiga eligo."
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Permesi lanĉon de pluraj Amarok-instancoj"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Bazo por relativaj dosiernomoj/URLoj"
@@ -1797,7 +1797,7 @@ msgstr "Bazo por relativaj dosiernomoj/URLoj"
 msgid "Database Error"
 msgstr "Datumbaza Eraro"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1810,7 +1810,7 @@ msgstr ""
 "En la plej multaj kazoj vi devos solvi ĉi tiujn erarojn antaŭ ol Amarok "
 "funkcios ĝuste."
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Metante dosierojn en la rubujo"

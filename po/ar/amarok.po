@@ -1704,22 +1704,22 @@ msgstr "حمّل عناوين URL، يستبدل قائمة التّشغيل ا�
 msgid "Print verbose debugging information"
 msgstr "اطبع معلومات تنقيح مطنبة"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "اطبع معلومات تنقيح مطنبة من نظام الصّوت"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "عطّل تلوين خرج التّنقيح."
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "اسمح بتشغيل عدّة سيرورات من أماروك"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr ""
@@ -1729,7 +1729,7 @@ msgstr ""
 msgid "Database Error"
 msgstr "خطأ قاعدة بيانات"
 
-#: App.cpp:514
+#: App.cpp:516
 #, fuzzy, kde-format
 #| msgid ""
 #| "The amarok database reported the following errors:\n"
@@ -1746,7 +1746,7 @@ msgstr ""
 "%1\n"
 "في أغلب الحالات عليك حلّ هذه الأخطاء قبل أن يعمل أماروك عملًا صحيحًا."
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "ينقل الملفّات إلى المهملات"

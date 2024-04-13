@@ -1760,23 +1760,23 @@ msgstr "Ladëjë URL-ë, pòdmieniającë biéżną lëstã graniô"
 msgid "Print verbose debugging information"
 msgstr "Wëdrëkùjë wëdowiédzã ò przebiégù procesu"
 
-#: App.cpp:374
+#: App.cpp:376
 #, fuzzy, kde-format
 #| msgid "Print verbose debugging information"
 msgid "Print verbose debugging information from the audio system"
 msgstr "Wëdrëkùjë wëdowiédzã ò przebiégù procesu"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr ""
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr ""
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Baza dlô wzglãdnëch mionów lopków/adresów URL"
@@ -1787,7 +1787,7 @@ msgstr "Baza dlô wzglãdnëch mionów lopków/adresów URL"
 msgid "Database Error"
 msgstr "Baza pòdôwków:"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1796,7 +1796,7 @@ msgid ""
 "properly."
 msgstr ""
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr ""

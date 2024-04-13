@@ -1795,22 +1795,22 @@ msgstr "Naloži naslove URL in zamenjaj trenutni seznam predvajanja"
 msgid "Print verbose debugging information"
 msgstr "Pokaži podrobni izpis razhroščevanja"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Pokaži podrobni izpis razhroščevanja za zvočni sistem"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Onemogoči barvanje v razhroščevalnem izhodu."
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Omogoči zaganjanje večih primerkov Amarok-a"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Osnova za relativna imena datotek/naslove URL"
@@ -1820,7 +1820,7 @@ msgstr "Osnova za relativna imena datotek/naslove URL"
 msgid "Database Error"
 msgstr "Napaka podatkovne zbirke"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1833,7 +1833,7 @@ msgstr ""
 "V večini primerov boste morali te napake razrešiti, preden bo Amarok začel "
 "pravilno delovati."
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Premikanje datotek v Smeti"

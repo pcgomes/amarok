@@ -1784,23 +1784,23 @@ msgstr "Încarcă URL-uri, înlocuind lista actuală"
 msgid "Print verbose debugging information"
 msgstr "Tipărește informații de depanare detaliate"
 
-#: App.cpp:374
+#: App.cpp:376
 #, fuzzy, kde-format
 #| msgid "Print verbose debugging information"
 msgid "Print verbose debugging information from the audio system"
 msgstr "Tipărește informații de depanare detaliate"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr ""
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Permite rularea mai multor instanțe Amarok"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Baza pentru URL/fișiere relative"
@@ -1810,7 +1810,7 @@ msgstr "Baza pentru URL/fișiere relative"
 msgid "Database Error"
 msgstr "Eroare bază de date"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1819,7 +1819,7 @@ msgid ""
 "properly."
 msgstr ""
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Se mută fișierele la gunoi"

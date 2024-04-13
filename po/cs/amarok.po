@@ -1797,22 +1797,22 @@ msgstr "Nahradit aktuální seznam skladeb načtenými URL"
 msgid "Print verbose debugging information"
 msgstr "Zobrazit podrobné ladicí informace"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Zobrazit podrobné ladicí informace z audio systému"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Vypnout vybarvování ladicího výstupu."
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Povolit spuštění více instancí Amaroku"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Základ pro relativní názvy souborů/URL"
@@ -1822,7 +1822,7 @@ msgstr "Základ pro relativní názvy souborů/URL"
 msgid "Database Error"
 msgstr "Chyba databáze"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1835,7 +1835,7 @@ msgstr ""
 "Ve většině případů budete tyto problémy muset vyřešit než Amarok poběží "
 "korektně."
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Soubory se přesunují do koše"

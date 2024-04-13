@@ -1801,23 +1801,23 @@ msgstr "URLs laden, aktuelle Afspeellist utwesseln"
 msgid "Print verbose debugging information"
 msgstr "Utföhrlich Fehlersöök-Informatschonen utgeven"
 
-#: App.cpp:374
+#: App.cpp:376
 #, fuzzy, kde-format
 #| msgid "Print verbose debugging information"
 msgid "Print verbose debugging information from the audio system"
 msgstr "Utföhrlich Fehlersöök-Informatschonen utgeven"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr ""
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Mehr as een Amarok-Utgaav tolaten"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Basis för relative Dateinaams/URLs"
@@ -1827,7 +1827,7 @@ msgstr "Basis för relative Dateinaams/URLs"
 msgid "Database Error"
 msgstr "Datenbankfehler"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1836,7 +1836,7 @@ msgid ""
 "properly."
 msgstr ""
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Dateien warrt na de Affalltünn verschaven"

@@ -1793,22 +1793,22 @@ msgstr "Muat URL, menggantikan playlist saat ini"
 msgid "Print verbose debugging information"
 msgstr "Cetak informasi lengkap pendebugan"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Cetak informasi lengkap pendebugan dari sistem audio"
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Nonfungsikan pewarnaan output debug."
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Mengizinkan menjalankan beberapa contoh Amarok"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Dasar untuk nama-file/URL relatif"
@@ -1818,7 +1818,7 @@ msgstr "Dasar untuk nama-file/URL relatif"
 msgid "Database Error"
 msgstr "Error Database"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1831,7 +1831,7 @@ msgstr ""
 "Dalam sebagian besar kasus kamu harus menanggulangi error tersebut sebelum "
 "Amarok berjalan dengan baik."
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Memindah file ke tong sampah"

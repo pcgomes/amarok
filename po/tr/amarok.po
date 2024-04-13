@@ -1825,7 +1825,7 @@ msgstr "Geçerli çalma listesini değiştirerek URL’ler yükle"
 msgid "Print verbose debugging information"
 msgstr "Ayrıntılı hata ayıklama bilgisi yazdır"
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Ses sisteminden ayrıntılı hata ayıklama bilgisini yazdır"
@@ -1840,7 +1840,7 @@ msgstr "Hata ayıklama çıktısı için renklendirmeyi devre dışı bırakın.
 msgid "Allow running multiple Amarok instances"
 msgstr "Birden çok Amarok örneğinin çalışmasına izin ver"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Göreceli dosya adları/URL’ler için temel"
@@ -1850,7 +1850,7 @@ msgstr "Göreceli dosya adları/URL’ler için temel"
 msgid "Database Error"
 msgstr "Veritabanı Hatası"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1863,7 +1863,7 @@ msgstr ""
 "Çoğu durumda Amarok’un düzgün çalışması için bu hataları çözmeniz "
 "gerekecektir."
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Dosyalar çöp kutusuna taşınıyor"
