@@ -213,6 +213,36 @@ AmarokQml.Applet {
                 // TODO: Possibly add Copy Image to Clipboard post-3.0
             }
 
+            Menu {
+                id: wikipediaContextMenu
+                MenuItem {
+                    text: i18n("Previous")
+                    icon.name: "go-previous"
+                    enabled: content.canGoBack
+                    onTriggered: content.triggerWebAction(WebEngineView.Backward)
+                }
+                MenuItem {
+                    text: i18n("Next")
+                    icon.name: "go-next"
+                    enabled: content.canGoForward
+                    onTriggered: content.triggerWebAction(WebEngineView.Forward)
+                }
+                MenuItem {
+                    text: i18n("Refresh")
+                    icon.name: "view-refresh"
+                    enabled: !content.loading
+                    onTriggered: content.triggerWebAction(WebEngineView.Reload)
+                }
+                MenuItem {
+                    id: copyLink
+                    text: i18n("Copy to Clipboard") // TODO: make "Copy Link to Clipboard" when not string freeze
+                    icon.name: "edit-copy"
+                    visible: false
+                    onTriggered: content.triggerWebAction(WebEngineView.CopyLinkToClipboard)
+                }
+                // TODO: Possibly add Copy Image to Clipboard post-3.0
+            }
+
             backgroundColor: "transparent"
             settings.showScrollBars: false
 
