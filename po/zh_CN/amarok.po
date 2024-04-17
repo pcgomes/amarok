@@ -10170,7 +10170,10 @@ msgid "The audio player by KDE"
 msgstr "由 KDE 打造的音频播放器"
 
 #: main.cpp:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "(C) 2002-2003, Mark Kretschmann\n"
+#| "(C) 2003-2013, The Amarok Development Squad"
 msgid ""
 "(C) 2002-2003, Mark Kretschmann\n"
 "(C) 2003-2024, The Amarok Development Squad"
