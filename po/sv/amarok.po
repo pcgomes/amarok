@@ -16293,6 +16293,24 @@ msgstr "Artist: %1"
 msgid "empty"
 msgstr "tom"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Uppdatera språk som stöds"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Hämta språk som stöds"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Allmänna Wikipedia-inställningar"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Wikipedia språkinställningar"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

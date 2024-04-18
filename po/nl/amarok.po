@@ -16413,6 +16413,24 @@ msgstr "Artiest: %1"
 msgid "empty"
 msgstr "leeg"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Ondersteunde talen bijwerken"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Ondersteunde talen verkrijgen"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Algemene instellingen van Wikipedia"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Taalinstellingen van Wikipedia"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

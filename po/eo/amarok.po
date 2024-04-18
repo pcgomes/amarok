@@ -16255,6 +16255,24 @@ msgstr "Artisto: %1"
 msgid "empty"
 msgstr "malplena"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Ĝisdatigi Subtenatajn Lingvojn"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Ekpreni Subtenatajn Lingvojn"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Vikipedio"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Vikipedio: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Vikipedio Ĝeneralaj Agordoj"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Vikipediaj Lingvaj Agordoj"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

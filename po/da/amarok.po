@@ -16321,6 +16321,24 @@ msgstr "Kunstner: %1"
 msgid "empty"
 msgstr "tom"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Opdatér understøttede sprog"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Hent understøttede sprog"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Generelle indstillinger for Wikipedia"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Sprogindstillinger for Wikipedia"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

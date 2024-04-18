@@ -16323,6 +16323,24 @@ msgstr "Esitaja: %1"
 msgid "empty"
 msgstr "tühi"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Värskenda toetatud keeli"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Hangi toetatud keeled"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Wikipedia üldised seadistused"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Wikipedia keeleseadistused"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

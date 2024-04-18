@@ -16805,6 +16805,24 @@ msgstr "Atlikėjas: %1"
 msgid "empty"
 msgstr "tuščia"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Atnaujinti palaikomas kalbas"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Gauti palaikomas kalbas"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Vikipedija"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Vikipedija: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Bendri Vikipedijos nuostatos"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Vikipedijos kalbos nuostatos"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

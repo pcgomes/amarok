@@ -16512,6 +16512,24 @@ msgstr "Выканаўца"
 msgid "empty"
 msgstr "Паўтарыць"
 
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#, fuzzy
+#~| msgid "Wikipedia"
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia"
+
+#, fuzzy
+#~| msgid "Wikipedia"
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Wikipedia"
+
+#, fuzzy
+#~| msgid "Wikipedia"
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Wikipedia"
+
 #, fuzzy
 #~| msgid "Smart Playlist"
 #~ msgid "&Retrieve similar artists"

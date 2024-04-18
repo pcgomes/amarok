@@ -16009,6 +16009,24 @@ msgstr "الفنّان: %1"
 msgid "empty"
 msgstr "فارغ"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "حدّث اللغات المدعومة"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "احصل على اللغات المدعومة"
+
+#~ msgid "Wikipedia"
+#~ msgstr "ويكيبيديا"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "ويكيبيديا: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "إعدادات ويكيبيديا العامّة"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "إعدادات لغة ويكيبيديا"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "Hz"

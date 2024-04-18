@@ -16459,6 +16459,24 @@ msgstr "Előadó: %1"
 msgid "empty"
 msgstr "üres"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Támogatott nyelvek frissítése"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Támogatott nyelvek letöltése"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Wikipedia - Általános Beállítások"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Wikipedia - Nyelvi Beállítások"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

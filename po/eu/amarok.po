@@ -16530,6 +16530,24 @@ msgstr "Artista: %1"
 msgid "empty"
 msgstr "hutsik"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Eguneratu onartutako hizkuntzak"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Eskuratu onartutako hizkuntzak"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Wikipedia-ren ezarpen orokorrak"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Wikipedia-ko hizkuntzen ezarpenak"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

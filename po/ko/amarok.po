@@ -16060,6 +16060,24 @@ msgstr "아티스트: %1"
 msgid "empty"
 msgstr "비어 있음"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "지원하는 언어 업데이트"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "지원하는 언어 가져오기"
+
+#~ msgid "Wikipedia"
+#~ msgstr "위키백과"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "위키백과: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "위키백과 일반 설정"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "위키백과 언어 설정"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"
