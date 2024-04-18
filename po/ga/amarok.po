@@ -16768,6 +16768,24 @@ msgstr "Ealaíontóir: %1"
 msgid "empty"
 msgstr "folamh"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Nuashonraigh Teangacha a dTacaítear Leo"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Faigh Teangacha a dTacaítear Leo"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Vicipéid"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Vicipéid: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Socruithe Ginearálta Vicipéide"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Socruithe Teanga Vicipéide"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

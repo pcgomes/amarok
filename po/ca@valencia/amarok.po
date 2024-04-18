@@ -16470,6 +16470,24 @@ msgstr "Artista: %1"
 msgid "empty"
 msgstr "buit"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Actualitza els idiomes acceptats"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Aconseguix idiomes acceptats"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Viquipèdia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Viquipèdia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Configuració general de la Viquipèdia"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Configureu l'idioma de la Viquipèdia"
+
 #~ msgid ""
 #~ "Automatically download and install updates for the built-in scripts from "
 #~ "the Amarok website if available"

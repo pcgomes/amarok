@@ -16554,6 +16554,24 @@ msgstr "Izvođač: %1"
 msgid "empty"
 msgstr "prazno"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Ažuriraj podržane jezike"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Preuzmi podržane jezike"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Vikipedija"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Opšte postavke Wikipedia"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Jezičke postavke Wikipedia"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

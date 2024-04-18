@@ -16494,6 +16494,24 @@ msgstr "Wykonawca: %1"
 msgid "empty"
 msgstr "pusty"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Uaktualnij obsługiwane języki"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Uzyskaj obsługiwane języki"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Ustawienia ogólne Wikipedii"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Ustawienia językowe Wikipedii"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

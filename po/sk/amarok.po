@@ -16528,6 +16528,24 @@ msgstr "Umelec: %1"
 msgid "empty"
 msgstr "prázdne"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Aktualizovať podporované jazyky"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Získať podporované jazyky"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipédia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipédia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Všeobecné nastavenia Wikipédie"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Nastavenie jazyka Wikipédie"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

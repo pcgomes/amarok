@@ -16284,6 +16284,24 @@ msgstr "សិល្បករ \"%1\""
 msgid "empty"
 msgstr "សម្អាត"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ភាសា​ដែល​គាំទ្រ"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "យក​ភាសា​ដែល​គាំទ្រ"
+
+#~ msgid "Wikipedia"
+#~ msgstr "វិគីផេឌៀ"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "វីគីភីឌៀ ៖ %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "ការ​កំណត់​វីគីភីឌៀ​ទូទៅ"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "ការ​កំណត់​ភាសា​វីគីភីឌៀ"
+
 #, fuzzy
 #~| msgid "0 dB"
 #~ msgid ""

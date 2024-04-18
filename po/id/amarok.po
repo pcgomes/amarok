@@ -16401,6 +16401,24 @@ msgstr "Artis: %1"
 msgid "empty"
 msgstr "kosong"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Perbarui Bahasa Yang Didukung"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Dapatkan Bahasa yang Didukung"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Pengaturan Umum Wikipedia"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Pengaturan Bahasa Wikipedia"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

@@ -16997,6 +16997,24 @@ msgstr "Kunstenaar \"%1\""
 msgid "empty"
 msgstr "<empty>"
 
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#, fuzzy
+#~| msgid "Wikipedia"
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia"
+
+#, fuzzy
+#~| msgid "Wikipedia Settings"
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Wikipedia Instellings"
+
+#, fuzzy
+#~| msgid "Wikipedia Settings"
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Wikipedia Instellings"
+
 #~ msgid ""
 #~ "Automatically download and install updates for the built-in scripts from "
 #~ "the Amarok website if available"

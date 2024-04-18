@@ -16628,6 +16628,24 @@ msgstr "Interpret: %1"
 msgid "empty"
 msgstr "leer"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Unterstützte Sprachen aktualisieren"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Unterstützte Sprachen abrufen"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Allgemeine Wikipedia-Einstellungen"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Wikipedia-Spracheinstellungen"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

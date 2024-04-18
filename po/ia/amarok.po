@@ -15619,6 +15619,12 @@ msgstr "Artista: %1"
 msgid "empty"
 msgstr "vacue"
 
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

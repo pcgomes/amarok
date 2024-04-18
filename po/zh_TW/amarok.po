@@ -15834,6 +15834,24 @@ msgstr "演出者：%1"
 msgid "empty"
 msgstr "空白"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "更新支援的語言"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "取得支援的語言"
+
+#~ msgid "Wikipedia"
+#~ msgstr "維基百科"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "維基百科：%1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "維基百科一般設定"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "維基百科語言設定"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

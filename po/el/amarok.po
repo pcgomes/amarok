@@ -16573,6 +16573,24 @@ msgstr "Καλλιτέχνης: %1"
 msgid "empty"
 msgstr "κενό"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Ενημέρωση γλωσσικής υποστήριξης"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Ανάκτηση υποστηριζόμενων γλωσσών"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipedia"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Wikipedia: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Γενικές ρυθμίσεις Wikipedia"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Γλωσσικές ρυθμίσεις Wikipedia"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

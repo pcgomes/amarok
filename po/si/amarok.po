@@ -16074,6 +16074,24 @@ msgstr "සියලු කලාකරුවන්"
 msgid "empty"
 msgstr ""
 
+#~ msgid "Wikipedia"
+#~ msgstr "විකිපිඩීයාව"
+
+#, fuzzy
+#~| msgid "Wikipedia"
+#~ msgid "Wikipedia: %1"
+#~ msgstr "විකිපිඩීයාව"
+
+#, fuzzy
+#~| msgid "Wikipedia"
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "විකිපිඩීයාව"
+
+#, fuzzy
+#~| msgid "Wikipedia"
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "විකිපිඩීයාව"
+
 #, fuzzy
 #~| msgid "Album Artist"
 #~ msgid "&Retrieve similar artists"

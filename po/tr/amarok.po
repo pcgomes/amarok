@@ -16446,6 +16446,24 @@ msgstr "Sanatçı: %1"
 msgid "empty"
 msgstr "boş"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Desteklenen Dilleri Güncelle"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Desteklenen Dilleri Al"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Vikipedi"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Vikipedi: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Vikipedi Genel Ayarları"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Vikipedi Dil Ayarları"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"

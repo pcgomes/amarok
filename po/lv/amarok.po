@@ -16642,6 +16642,24 @@ msgstr "Izpildītājs: %1"
 msgid "empty"
 msgstr "tukšs"
 
+#~ msgid "Update Supported Languages"
+#~ msgstr "Atjaunināt atbalstītās valodas"
+
+#~ msgid "Get Supported Languages"
+#~ msgstr "Iegūt atbalstītās valodas"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Vikipēdija"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "Vikipēdija: %1"
+
+#~ msgid "Wikipedia General Settings"
+#~ msgstr "Vikipēdijas pamata iestatījumi"
+
+#~ msgid "Wikipedia Language Settings"
+#~ msgstr "Vikipēdijas valodas iestatījumi"
+
 #~ msgid ""
 #~ "%0\n"
 #~ "dB"
