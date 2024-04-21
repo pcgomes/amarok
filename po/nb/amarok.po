@@ -1781,22 +1781,22 @@ msgstr "Last inn nettadresser, erstatt gjeldende spilleliste"
 msgid "Print verbose debugging information"
 msgstr "Skriv ut detaljert feilsøkingsinformasjon"
 
-#: App.cpp:374
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Skriv ut detaljert feilsøkingsinformasjon fra lydsystemet."
 
-#: App.cpp:375
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Slå av fargesetting for utdata fra feilsøking."
 
-#: App.cpp:376
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Tillat kjøring av flere Amarok-instanser"
 
-#: App.cpp:377
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Grunnlag for relative filnavn/URL-er"
@@ -1806,7 +1806,7 @@ msgstr "Grunnlag for relative filnavn/URL-er"
 msgid "Database Error"
 msgstr "Databasefeil"
 
-#: App.cpp:514
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1815,7 +1815,7 @@ msgid ""
 "properly."
 msgstr ""
 
-#: App.cpp:581
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Flytter filer til søppelkurven"
