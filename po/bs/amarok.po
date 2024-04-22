@@ -4537,16 +4537,16 @@ msgctxt "Right-click menu option for images in Wikipedia applet"
 msgid "Copy Image to Clipboard"
 msgstr "Kopiraj u clipboard"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:77
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:141
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:269
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:78
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:142
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:270
 #, kde-format
 msgid "Unable to retrieve Wikipedia information: %1"
 msgstr "Ne mogu da dobavim podatke sa Vikipedije: %1"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:92
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:248
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:306
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:93
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:249
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:307
 #, kde-format
 msgid "No information found..."
 msgstr "Podaci nisu nađeni..."
@@ -4567,13 +4567,13 @@ msgctxt "Search pattern for a composer"
 msgid ".*\\(.*(composer|musician).*\\)"
 msgstr ".*\\(.*(kompozitor|muzičar).*\\))"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:322
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:323
 #, kde-format
 msgctxt "Search pattern for an album"
 msgid ".*\\(.*(album|score|soundtrack).*\\)"
 msgstr ".*\\(.*(album|ocjena|muzička ploča).*\\)"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:326
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:327
 #, kde-format
 msgctxt "Search pattern for a song"
 msgid ".*\\(.*(song|track).*\\)"

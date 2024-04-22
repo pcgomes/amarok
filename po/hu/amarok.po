@@ -4506,16 +4506,16 @@ msgctxt "Right-click menu option for images in Wikipedia applet"
 msgid "Copy Image to Clipboard"
 msgstr "Másolás a vágólapra"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:77
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:141
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:269
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:78
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:142
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:270
 #, kde-format
 msgid "Unable to retrieve Wikipedia information: %1"
 msgstr "Wikipedia-információt nem sikerült letölteni: %1"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:92
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:248
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:306
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:93
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:249
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:307
 #, kde-format
 msgid "No information found..."
 msgstr "Információ nem található…"
@@ -4536,13 +4536,13 @@ msgctxt "Search pattern for a composer"
 msgid ".*\\(.*(composer|musician).*\\)"
 msgstr ".*\\(.*(zeneszerző|zenész).*\\))"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:322
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:323
 #, kde-format
 msgctxt "Search pattern for an album"
 msgid ".*\\(.*(album|score|soundtrack).*\\)"
 msgstr ".*\\(.*(album|pont|zeneszám).*\\)"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:326
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:327
 #, kde-format
 msgctxt "Search pattern for a song"
 msgid ".*\\(.*(song|track).*\\)"
