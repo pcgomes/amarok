@@ -10482,10 +10482,7 @@ msgid "The audio player by KDE"
 msgstr "La sonludanto de KDE"
 
 #: main.cpp:100
-#, fuzzy, kde-format
-#| msgid ""
-#| "(C) 2002-2003, Mark Kretschmann\n"
-#| "(C) 2003-2013, The Amarok Development Squad"
+#, kde-format
 msgid ""
 "(C) 2002-2003, Mark Kretschmann\n"
 "(C) 2003-2024, The Amarok Development Squad"
@@ -16925,37 +16922,3 @@ msgstr "Artisto: %1"
 #, kde-format
 msgid "empty"
 msgstr "malplena"
-
-#~ msgid "Update Supported Languages"
-#~ msgstr "Ĝisdatigi Subtenatajn Lingvojn"
-
-#~ msgid "Get Supported Languages"
-#~ msgstr "Ekpreni Subtenatajn Lingvojn"
-
-#~ msgid "Wikipedia"
-#~ msgstr "Vikipedio"
-
-#~ msgid "Wikipedia: %1"
-#~ msgstr "Vikipedio: %1"
-
-#~ msgid "Wikipedia General Settings"
-#~ msgstr "Vikipedio Ĝeneralaj Agordoj"
-
-#~ msgid "Wikipedia Language Settings"
-#~ msgstr "Vikipediaj Lingvaj Agordoj"
-
-#~ msgid ""
-#~ "Automatically download and install updates for the built-in scripts from "
-#~ "the Amarok website if available"
-#~ msgstr ""
-#~ "Aŭtomate elŝuti kaj instali ĝisdatigojn por la enkonstruitaj skriptoj de "
-#~ "la retejo de Amarok, se disponebla"
-
-#~ msgid "Automatically update built-in scripts"
-#~ msgstr "Aŭtomate ĝisdatigi enkonstruitajn skriptojn"
-
-#~ msgid "Browse, install, and uninstall scripts"
-#~ msgstr "Foliumi, instali kaj malinstali skriptojn"
-
-#~ msgid "Manage Scripts"
-#~ msgstr "Administri Skriptojn"
