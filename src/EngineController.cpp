@@ -84,7 +84,6 @@ EngineController::EngineController()
     , m_tickInterval( 0 )
     , m_lastTickPosition( -1 )
     , m_lastTickCount( 0 )
-    , m_mutex( QMutex::Recursive )
 {
     DEBUG_BLOCK
     // ensure this object is created in a main thread
@@ -772,6 +771,7 @@ EngineController::isStream()
         // type is determined purely from the MediaSource constructor used in
         // setCurrentSource(). For streams we use the QUrl one, see playUrl()
         type = m_media->currentSource().type();
+    // NOTE Broken; local files can be Urls, too. This is used only by WikipediaEngine at the moment
     return type == Phonon::MediaSource::Url || type == Phonon::MediaSource::Stream;
 }
 

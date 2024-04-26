@@ -25,6 +25,7 @@
 
 #include "RandomTrackNavigator.h"
 
+#include "core/meta/Meta.h"
 #include "core/support/Debug.h"
 
 #include <QDateTime>
@@ -56,9 +57,17 @@ Playlist::RandomTrackNavigator::planOne()
             avoidRecentlyPlayedSize = qMin( avoidRecentlyPlayedSize, allItemsList().size() / 2 );
 
             QSet<quint64> avoidSet = getRecentHistory( avoidRecentlyPlayedSize );
-            chosenItem = chooseRandomItem( avoidSet );
-
-            m_plannedItems.append( chosenItem );
+            QSet<quint64> brokenSet;
+            do
+            {
+                chosenItem = chooseRandomItem( avoidSet );
+                brokenSet.insert( chosenItem );
+                if( avoidSet.size() > 0 )
+                    avoidSet.erase( avoidSet.begin() ); // One by one, accept recently played tracks
+            } while ( !m_model->trackForId( chosenItem )->isPlayable() &&
+                    ( avoidSet.size() + brokenSet.size() ) < allItemsList().size() );
+            if( m_model->trackForId( chosenItem )->isPlayable() ) // Don't feed broken tracks
+                m_plannedItems.append( chosenItem );
         }
     }
 }
@@ -87,8 +96,7 @@ Playlist::RandomTrackNavigator::chooseRandomItem( const QSet<quint64> &avoidSet 
 
     do
     {
-        int maxPosition = allItemsList().size() - 1;
-        int randomPosition = round( ( QRandomGenerator::global()->generate() / (float)RAND_MAX ) * maxPosition );
+        int randomPosition = QRandomGenerator::global()->generate() % allItemsList().size();
         chosenItem = allItemsList().at( randomPosition );
     } while ( avoidSet.contains( chosenItem ) );
 

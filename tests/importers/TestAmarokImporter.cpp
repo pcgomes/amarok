@@ -21,6 +21,8 @@
 #include "importers/amarok/AmarokManager.h"
 #include "importers/amarok/AmarokProvider.h"
 
+#include <KLocalizedString>
+
 #include <QProcess>
 #include <QTest>
 
@@ -37,7 +39,7 @@ TestAmarokImporter::getProvider()
     cfg.insert( "name", "Amarok2Test" );
     cfg.insert( "embedded", true );
     cfg.insert( "dbPath", QCoreApplication::applicationDirPath() +
-                          "/importers_files/amarok2_mysqle" );
+                          "/../tests/importers_files/amarok2_mysqle" );
 
     return ProviderPtr( new AmarokProvider( cfg, nullptr ) );
 }
@@ -46,7 +48,7 @@ ProviderPtr
 TestAmarokImporter::getWritableProvider()
 {
     QDir base( QCoreApplication::applicationDirPath() );
-    QDir files( base.filePath( "importers_files" ) );
+    QDir files( base.filePath( "../tests/importers_files" ) );
     QDir tmp( base.filePath( "importers_tmp" ) );
 
     foreach( const QString &subdir,
@@ -88,6 +90,7 @@ TestAmarokImporter::initTestCase()
 void
 TestAmarokImporter::init()
 {
+    KLocalizedString::setApplicationDomain("amarok-test");
     m_cfg = AmarokConfigWidget( QVariantMap() ).config();
     m_cfg.insert( "embedded", true );
 }

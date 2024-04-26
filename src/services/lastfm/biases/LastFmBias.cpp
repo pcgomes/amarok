@@ -64,7 +64,6 @@ Dynamic::LastFmBiasFactory::createBias()
 Dynamic::LastFmBias::LastFmBias()
     : SimpleMatchBias()
     , m_match( SimilarArtist )
-    , m_mutex( QMutex::Recursive )
 {
     loadDataFromFile();
 }
@@ -162,7 +161,7 @@ Dynamic::LastFmBias::widget( QWidget* parent )
 Dynamic::TrackSet
 Dynamic::LastFmBias::matchingTracks( const Meta::TrackList& playlist,
                                      int contextCount, int finalCount,
-                                     Dynamic::TrackCollectionPtr universe ) const
+                                     const Dynamic::TrackCollectionPtr& universe ) const
 {
     Q_UNUSED( contextCount );
     Q_UNUSED( finalCount );

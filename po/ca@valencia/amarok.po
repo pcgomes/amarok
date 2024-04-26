@@ -1,18 +1,18 @@
 # Translation of amarok.po to Catalan (Valencian)
-# Copyright (C) 2005-2023 This_file_is_part_of_KDE
+# Copyright (C) 2005-2024 This_file_is_part_of_KDE
 #
+# SPDX-FileCopyrightText: 2014, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023 Antoni Bella Pérez <antonibella5@yahoo.com>
 # Pau Capdevila Pujol <pau.capdevila@estudiant.upc.edu>, 2005.
 # Pau Rul·lan Ferragut <paurullan@bulma.net>, 2005.
 # Pau Tallada Crespí <pau_tallada@telefonica.net>, 2006, 2007.
-# Josep M. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Josep M. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 # Joan Maspons <joanmaspons@gmail.com>, 2009, 2010, 2011.
-# Antoni Bella Pérez <antonibella5@yahoo.com>, 2014, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-13 00:47+0000\n"
-"PO-Revision-Date: 2023-06-21 19:01+0200\n"
+"POT-Creation-Date: 2024-04-26 01:37+0000\n"
+"PO-Revision-Date: 2024-04-17 09:44+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -322,7 +322,7 @@ msgstr "Menú d'Amarok"
 #: ActionClasses.cpp:179
 #, kde-format
 msgid "Play/Pause"
-msgstr "Reproducció/Pausa"
+msgstr "Reproduïu o pausa"
 
 #: ActionClasses.cpp:316
 #, kde-format
@@ -386,8 +386,9 @@ msgstr "Para després de la peça actual: inactiu"
 msgid "Stop after current track: On"
 msgstr "Para després de la peça actual: actiu"
 
-#: ActionClasses.cpp:498 EngineController.cpp:1331 mac/GrowlInterface.cpp:43
-#: widgets/Osd.cpp:669
+#: ActionClasses.cpp:498
+#: context/applets/currenttrack/package/contents/ui/main.qml:102
+#: EngineController.cpp:1331 mac/GrowlInterface.cpp:43 widgets/Osd.cpp:663
 #, kde-format
 msgid "No track playing"
 msgstr "No s'està reproduint cap peça"
@@ -395,7 +396,7 @@ msgstr "No s'està reproduint cap peça"
 #. i18n: ectx: property (windowTitle), widget (QDialog, FormatSelectionDialog)
 #: ActionClasses.cpp:502
 #: core-impl/collections/audiocd/FormatSelectionDialog.ui:14 main.cpp:55
-#: main.cpp:96 MainWindow.cpp:112
+#: main.cpp:96 MainWindow.cpp:113
 #, kde-format
 msgid "Amarok"
 msgstr "Amarok"
@@ -491,7 +492,7 @@ msgstr "Duplica les peces en mode dinàmic."
 msgid ""
 "If set, tracks added in the dynamic mode are allowed to have duplicates."
 msgstr ""
-"Si està activada, les peces afegides en el mode dinàmic poden estar "
+"Si està marcada, les peces afegides en el mode dinàmic podran estar "
 "duplicades."
 
 #. i18n: ectx: label, entry, group (General Options)
@@ -532,7 +533,7 @@ msgstr "Si s'ha de mostrar la icona en la safata del sistema"
 #: amarokconfig.kcfg:69
 #, kde-format
 msgid "Enable/Disable tray icon for Amarok."
-msgstr "Activa/Desactiva la icona de la safata per a Amarok."
+msgstr "Activa o desactiva la icona de la safata per a Amarok."
 
 #. i18n: ectx: label, entry, group (General Options)
 #: amarokconfig.kcfg:73
@@ -544,7 +545,7 @@ msgstr "Si cal ocultar la vista contextual."
 #: amarokconfig.kcfg:74
 #, kde-format
 msgid "Enable/Disable context view in Amarok."
-msgstr "Activa/Desactiva la vista contextual en Amarok."
+msgstr "Activa o desactiva la vista contextual en Amarok."
 
 #. i18n: ectx: label, entry, group (General Options)
 #: amarokconfig.kcfg:78
@@ -571,8 +572,8 @@ msgid ""
 "If set, Amarok's manually saved playlists will contain a relative path to "
 "each track, not an absolute path."
 msgstr ""
-"Si està seleccionada, les llistes de reproducció guardades manualment amb "
-"Amarok contindran el camí relatiu de la peça, no l'absoluta."
+"Si està marcada, les llistes de reproducció guardades manualment amb Amarok "
+"contindran el camí relatiu de la peça, no l'absolut."
 
 #. i18n: ectx: label, entry, group (General Options)
 #: amarokconfig.kcfg:88
@@ -633,7 +634,7 @@ msgstr "Activa les animacions en reduir les miniaplicacions contextuals"
 #, kde-format
 msgid "If set, context applets will collapse using animations."
 msgstr ""
-"Si està activada, les miniaplicacions contextuals es reduiran utilitzant "
+"Si està marcada, les miniaplicacions contextuals es reduiran utilitzant "
 "animacions."
 
 #. i18n: ectx: label, entry, group (OrganizeCollectionDialog)
@@ -647,8 +648,8 @@ msgstr "Si en organitzar els fitxers se sobreescriuran els fitxers existents."
 #, kde-format
 msgid "If set, Organize files will overwrite any existing destination."
 msgstr ""
-"Si està seleccionada, en organitzar els fitxers se sobreescriuran els "
-"fitxers de destinació que ja existisquen."
+"Si està marcada, en organitzar els fitxers se sobreescriuran els fitxers de "
+"destinació que ja existisquen."
 
 #. i18n: ectx: label, entry, group (OrganizeCollectionDialog)
 #: amarokconfig.kcfg:129
@@ -665,7 +666,7 @@ msgid ""
 "If set, Organize files will move The in artist names to the end as in "
 "\"Beatles, The\"."
 msgstr ""
-"Si està seleccionada, en organitzar els fitxers es mourà «The» del nom dels "
+"Si està marcada, en organitzar els fitxers es mourà «The» del nom dels "
 "artistes al final com en «Beatles, The»."
 
 #. i18n: ectx: label, entry, group (OrganizeCollectionDialog)
@@ -683,8 +684,8 @@ msgstr ""
 msgid ""
 "If set, Organize files will replace spaces in filenames with underscores."
 msgstr ""
-"Si està seleccionada, en organitzar els fitxers se substituiran els espais "
-"en els noms de fitxer per caràcters de subratllat."
+"Si està marcada, en organitzar els fitxers se substituiran els espais en els "
+"noms de fitxer per caràcters de subratllat."
 
 #. i18n: ectx: label, entry, group (OrganizeCollectionDialog)
 #: amarokconfig.kcfg:139
@@ -699,8 +700,8 @@ msgstr ""
 #, kde-format
 msgid "If set, Organize files will use cover art as folder icons."
 msgstr ""
-"Si està seleccionada, en organitzar els fitxers s'utilitzarà la caràtula com "
-"a icona de la carpeta."
+"Si està marcada, en organitzar els fitxers s'utilitzarà la caràtula com a "
+"icona de la carpeta."
 
 #. i18n: ectx: label, entry, group (OrganizeCollectionDialog)
 #: amarokconfig.kcfg:144
@@ -735,8 +736,8 @@ msgid ""
 "If set, Organize files will replace characters that are not compatible with "
 "vfat filesystems (such as ':', '*' and '?')."
 msgstr ""
-"Si està seleccionada, en organitzar els fitxers se substituiran tots aquells "
-"caràcters no compatibles amb els sistemes de fitxers vfat (tals com «:», «*» "
+"Si està marcada, en organitzar els fitxers se substituiran tots aquells "
+"caràcters no compatibles amb els sistemes de fitxers vfat (com ara «:», «*» "
 "i «?»)."
 
 #. i18n: ectx: label, entry, group (OrganizeCollectionDialog)
@@ -756,7 +757,7 @@ msgid ""
 "If set, Organize files will replace characters that are not compatible with "
 "the 7-bit ASCII character set."
 msgstr ""
-"Si està seleccionada, en organitzar els fitxers se substituiran tots aquells "
+"Si està marcada, en organitzar els fitxers se substituiran tots aquells "
 "caràcters no compatibles amb el joc de caràcters ASCII de 7 bits."
 
 #. i18n: ectx: label, entry, group (OrganizeCollectionDialog)
@@ -772,8 +773,8 @@ msgstr ""
 msgid ""
 "If set, Organize files will rename files according to a custom format string."
 msgstr ""
-"Si està seleccionada, en organitzar els fitxers es canviaran de nom d'acord "
-"amb una cadena de format personalitzada."
+"Si està marcada, en organitzar els fitxers es canviaran de nom d'acord amb "
+"una cadena de format personalitzada."
 
 #. i18n: ectx: label, entry, group (OrganizeCollectionDialog)
 #: amarokconfig.kcfg:164
@@ -790,8 +791,8 @@ msgid ""
 "If the custom filename scheme is enabled, then Organize files will rename "
 "files according to this format string."
 msgstr ""
-"Si està activada el patró d'anomenat de fitxers a mida, aleshores en "
-"organitzar els fitxers es canviaran de nom d'acord amb esta cadena de format."
+"Si es marca el patró d'anomenat de fitxers a mida, aleshores en organitzar "
+"els fitxers es canviaran de nom d'acord amb esta cadena de format."
 
 #. i18n: ectx: label, entry, group (OrganizeCollectionDialog)
 #: amarokconfig.kcfg:169
@@ -873,7 +874,7 @@ msgstr "Estat de silenci"
 #: amarokconfig.kcfg:200
 #, kde-format
 msgid "Mute/Unmute sound."
-msgstr "Silenci/Activa el so."
+msgstr "Silenci o activa el so."
 
 #. i18n: ectx: label, entry, group (Playback)
 #: amarokconfig.kcfg:204
@@ -885,7 +886,7 @@ msgstr "Si s'ha de fer l'esvaïment de les peces en prémer Para."
 #: amarokconfig.kcfg:205 amarokconfig.kcfg:210
 #, kde-format
 msgid "Enable/Disable fadeout."
-msgstr "Activa/Desactiva l'esvaïment."
+msgstr "Activa o desactiva l'esvaïment."
 
 #. i18n: ectx: label, entry, group (Playback)
 #: amarokconfig.kcfg:209
@@ -915,7 +916,7 @@ msgstr "Mode equalitzador - 0 = inactiu, 1 a n = núm. d'ambient"
 #: amarokconfig.kcfg:221
 #, kde-format
 msgid "When enabled, an equalizer plugin filters the audio stream."
-msgstr "Si està activada, un equalitzador filtrarà el flux d'àudio."
+msgstr "Si està marcada, un equalitzador filtrarà el flux d'àudio."
 
 #. i18n: ectx: label, entry, group (Playback)
 #: amarokconfig.kcfg:225
@@ -1059,7 +1060,7 @@ msgstr "Utilitza el visor en pantalla"
 #: amarokconfig.kcfg:306
 #, kde-format
 msgid "Enable/Disable the On-Screen Display."
-msgstr "Activa/desactiva el visor en pantalla."
+msgstr "Activa o desactiva el visor en pantalla."
 
 #. i18n: ectx: label, entry, group (OSD)
 #: amarokconfig.kcfg:310 configdialog/dialogs/NotificationsConfig.cpp:46
@@ -1071,7 +1072,7 @@ msgstr "Utilitza Growl per a les notificacions"
 #: amarokconfig.kcfg:311
 #, kde-format
 msgid "Enable/Disable use of Growl for notifications."
-msgstr "Activa/Desactiva l'ús de Growl per a les notificacions."
+msgstr "Activa o desactiva l'ús de Growl per a les notificacions."
 
 #. i18n: ectx: label, entry, group (OSD)
 #: amarokconfig.kcfg:315
@@ -1227,8 +1228,8 @@ msgstr "Reprén la reproducció de l'última peça escoltada a l'inici"
 #, kde-format
 msgid "If set, Amarok resumes playback of the last played track on startup."
 msgstr ""
-"Si està seleccionada, Amarok reprén la reproducció de l'última peça "
-"escoltada a l'inici."
+"Si està marcada, Amarok reprén la reproducció de l'última peça escoltada a "
+"l'inici."
 
 #. i18n: ectx: label, entry, group (Session)
 #: amarokconfig.kcfg:380
@@ -1287,13 +1288,13 @@ msgstr "Número (des de dalt) de l'últim navegador actiu."
 #: amarokconfig.kcfg:405
 #, kde-format
 msgid "Whether Collections folders are scanned recursively"
-msgstr "Si s'han d'escanejar recursivament les carpetes de la col·lecció"
+msgstr "Si s'han d'explorar recursivament les carpetes de la col·lecció"
 
 #. i18n: ectx: label, entry, group (Collection)
 #: amarokconfig.kcfg:409
 #, kde-format
 msgid "Whether Collection folders are rescanned on change"
-msgstr "Si s'ha de reescanejar les carpetes quan hi haja canvis"
+msgstr "Si s'ha de tornar a explorar les carpetes quan hi haja canvis"
 
 #. i18n: ectx: label, entry, group (Collection)
 #: amarokconfig.kcfg:413
@@ -1471,7 +1472,7 @@ msgstr ""
 #: amarokconfig.kcfg:491
 #, kde-format
 msgid "Auto delete podcasts"
-msgstr "Suprimix automàticament els podcast"
+msgstr "Suprimix automàticament els pòdcast"
 
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
 #: amarokconfig.kcfg:492
@@ -1480,7 +1481,7 @@ msgid ""
 "Whether podcast shows already played are automatically deleted when media "
 "device is connected."
 msgstr ""
-"Si els episodis de podcast que ja han sigut reproduïts s'han de suprimir "
+"Si els episodis de pòdcast que ja han sigut reproduïts s'han de suprimir "
 "quan es connecte el dispositiu de suports."
 
 #. i18n: ectx: label, entry, group (MediaDevice)
@@ -1522,7 +1523,7 @@ msgstr "Contrasenyes del servidor"
 #: amarokconfig.kcfg:507
 #, kde-format
 msgid "Passwords stored by hostname."
-msgstr "Les contrasenyes es guarden pel nom de la màquina."
+msgstr "Les contrasenyes es guarden pel nom de l'amfitrió."
 
 #. i18n: ectx: label, entry, group (Playlist Search)
 #: amarokconfig.kcfg:513
@@ -1628,7 +1629,7 @@ msgstr "Si s'ha d'activar el mòdul de scripts creats d'Amarok."
 #: amarokconfig.kcfg:583
 #, kde-format
 msgid "Enable/Disable Amarok's scripting module."
-msgstr "Activa/Inactiva el mòdul de scripts creats d'Amarok."
+msgstr "Activa o desactiva el mòdul de scripts creats d'Amarok."
 
 #. i18n: ectx: label, entry, group (ScriptManager)
 #: amarokconfig.kcfg:587
@@ -1641,7 +1642,7 @@ msgstr "Si s'han d'actualitzar automàticament els scripts integrats"
 #, kde-format
 msgid "Enable/Disable automatic update for built-in scripts."
 msgstr ""
-"Activa/Desactiva les actualitzacions automàtiques dels scripts integrats."
+"Activa o desactiva les actualitzacions automàtiques dels scripts integrats."
 
 #. i18n: ectx: label, entry, group (ScriptManager)
 #. i18n: ectx: whatsthis, entry, group (ScriptManager)
@@ -1716,7 +1717,7 @@ msgstr "Desconegut"
 msgid "New Bookmark"
 msgstr "Adreça d'interés nova"
 
-#: amarokurls/BookmarkManager.cpp:35 MainWindow.cpp:782
+#: amarokurls/BookmarkManager.cpp:35 MainWindow.cpp:783
 #, kde-format
 msgid "Bookmark Manager"
 msgstr "Gestor d'adreces d'interés"
@@ -1759,7 +1760,7 @@ msgid "Group"
 msgstr "Grup"
 
 #: amarokurls/BookmarkModel.cpp:259
-#: browsers/playlistbrowser/PodcastModel.cpp:300 playlist/PlaylistModel.cpp:939
+#: browsers/playlistbrowser/PodcastModel.cpp:320 playlist/PlaylistModel.cpp:939
 #, kde-format
 msgid "Type"
 msgstr "Tipus"
@@ -1818,10 +1819,10 @@ msgstr "Peça nova de codi de temps"
 #: amarokurls/BookmarkTreeView.cpp:370 amarokurls/BookmarkTreeView.cpp:371
 #: amarokurls/BookmarkTreeView.cpp:372
 #: context/applets/albums/plugin/AlbumItem.cpp:99
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:484
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:485
 #: core-impl/collections/audiocd/AudioCdCollection.cpp:486
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:487
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:488
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:489 MainWindow.cpp:1226
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:487 MainWindow.cpp:1227
 #, kde-format
 msgid "Unknown"
 msgstr "Desconegut"
@@ -1842,7 +1843,7 @@ msgctxt "A type of command that affects the context view"
 msgid "Context"
 msgstr "Contextual"
 
-#: amarokurls/NavigationUrlGenerator.cpp:137 MainWindow.cpp:280
+#: amarokurls/NavigationUrlGenerator.cpp:137 MainWindow.cpp:281
 #, kde-format
 msgid "Files"
 msgstr "Fitxers"
@@ -1872,7 +1873,7 @@ msgstr "Artista «%1» de %2"
 msgid "Artist \"%1\""
 msgstr "Artista «%1»"
 
-#: amarokurls/NavigationUrlGenerator.cpp:252 MainWindow.cpp:778
+#: amarokurls/NavigationUrlGenerator.cpp:252 MainWindow.cpp:779
 #, kde-format
 msgid "Bookmark Media Sources View"
 msgstr "Anota la vista d'orígens de suports a les adreces d'interés"
@@ -1895,97 +1896,97 @@ msgctxt ""
 msgid "Play"
 msgstr "Reproduïx"
 
-#: App.cpp:361
+#: App.cpp:360
 #, kde-format
 msgid "Files/URLs to open"
 msgstr "Fitxers o URL que s'han d'obrir"
 
-#: App.cpp:362
+#: App.cpp:361
 #, kde-format
 msgid "Immediately start playing an audio cd"
 msgstr "Inicia immediatament la reproducció d'un CD d'àudio"
 
-#: App.cpp:363
+#: App.cpp:362
 #, kde-format
 msgid "Skip backwards in playlist"
 msgstr "Salta arrere en la llista de reproducció"
 
-#: App.cpp:364
+#: App.cpp:363
 #, kde-format
 msgid "Start playing current playlist"
 msgstr "Comença reproduint la llista de reproducció actual"
 
-#: App.cpp:365
+#: App.cpp:364
 #, kde-format
 msgid "Play if stopped, pause if playing"
 msgstr "Reproduïx si està parat, fa pausa si està reproduint"
 
-#: App.cpp:366
+#: App.cpp:365
 #, kde-format
 msgid "Pause playback"
 msgstr "Fa pausa en la reproducció"
 
-#: App.cpp:367
+#: App.cpp:366
 #, kde-format
 msgid "Stop playback"
 msgstr "Para la reproducció"
 
-#: App.cpp:368
+#: App.cpp:367
 #, kde-format
 msgid "Skip forwards in playlist"
 msgstr "Salta avant en la llista de reproducció"
 
-#: App.cpp:370
+#: App.cpp:369
 #, kde-format
 msgid "Additional options:"
 msgstr "Opcions addicionals:"
 
-#: App.cpp:371
+#: App.cpp:370
 #, kde-format
 msgid "Append files/URLs to playlist"
-msgstr "Afig fitxers/URL a la llista de reproducció"
+msgstr "Afig fitxers i URL a la llista de reproducció"
 
-#: App.cpp:372
+#: App.cpp:371
 #, kde-format
 msgid "Queue URLs after the currently playing track"
 msgstr "Posa a la cua els URL després de la peça actualment en reproducció"
 
-#: App.cpp:373
+#: App.cpp:372
 #, kde-format
 msgid "Load URLs, replacing current playlist"
 msgstr "Carrega els URL, substituint la llista de reproducció actual"
 
-#: App.cpp:374
+#: App.cpp:373 App.cpp:375
 #, kde-format
 msgid "Print verbose debugging information"
 msgstr "Mostra informació detallada de depuració"
 
-#: App.cpp:375
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Imprimix informació detallada de depuració del sistema d'àudio"
 
-#: App.cpp:376
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Desactiva l'acoloriment de l'eixida de depuració."
 
-#: App.cpp:377
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Permetre l'execució de múltiples instàncies d'Amarok"
 
-#: App.cpp:378
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Base per als noms/URL de fitxer relatius"
 
-#: App.cpp:514 configdialog/dialogs/DatabaseConfig.cpp:110
+#: App.cpp:515 configdialog/dialogs/DatabaseConfig.cpp:110
 #, kde-format
 msgid "Database Error"
 msgstr "S'ha produït un error de la base de dades"
 
-#: App.cpp:515
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1998,12 +1999,12 @@ msgstr ""
 "En la majoria dels casos heu de resoldre estos errors abans d'executar "
 "correctament Amarok."
 
-#: App.cpp:582
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
-msgstr "Llençant els fitxers a la paperera"
+msgstr "Llençant els fitxers a dins de la paperera"
 
-#: App.cpp:648
+#: App.cpp:649
 #, kde-format
 msgid ""
 "A music path, %1, is set in System Settings.\n"
@@ -2030,7 +2031,7 @@ msgstr "Orígens de &suports"
 #: browsers/BrowserDock.cpp:74
 #, kde-format
 msgid "Go Up in Media Sources Pane"
-msgstr "Moure amunt en la subfinestra d'orígens de suports"
+msgstr "Moure cap amunt en la subfinestra d'orígens de suports"
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:147
 #, kde-format
@@ -2041,7 +2042,7 @@ msgstr ""
 "Ací és a on trobareu la música local, i també la música dels reproductors "
 "d'àudio mòbils i CD."
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:168 MainWindow.cpp:926
+#: browsers/collectionbrowser/CollectionWidget.cpp:168 MainWindow.cpp:927
 #, kde-format
 msgid "Search collection"
 msgstr "Busca en la col·lecció"
@@ -2161,10 +2162,9 @@ msgid "Various Artists"
 msgstr "Artistes diversos"
 
 #: browsers/CollectionTreeItemModelBase.cpp:1100
-#: browsers/CollectionTreeView.cpp:344
-#: context/applets/albums/plugin/AlbumsEngine.cpp:273
-#: context/applets/wikipedia/package/contents/ui/main.qml:78
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:635
+#: browsers/CollectionTreeView.cpp:369
+#: context/applets/albums/plugin/AlbumsEngine.cpp:299
+#: context/applets/wikipedia/package/contents/ui/main.qml:110
 #: dialogs/transferdialog.cpp:104 musicbrainz/MusicBrainzTagsModel.cpp:38
 #: playlist/PlaylistModel.cpp:932 playlist/view/PlaylistViewCommon.cpp:65
 #: services/jamendo/JamendoInfoParser.cpp:83
@@ -2191,8 +2191,7 @@ msgid "Album Artist"
 msgstr "Artista de l'àlbum"
 
 #: browsers/CollectionTreeItemModelBase.cpp:1106
-#: context/applets/wikipedia/package/contents/ui/main.qml:71
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:629
+#: context/applets/wikipedia/package/contents/ui/main.qml:100
 #: playlist/PlaylistModel.cpp:930
 #, kde-format
 msgid "Composer"
@@ -2221,66 +2220,73 @@ msgstr "Etiqueta"
 msgid "None"
 msgstr "Cap"
 
-#: browsers/CollectionTreeView.cpp:364
+#: browsers/CollectionTreeView.cpp:356 dialogs/MusicBrainzTagger.cpp:105
+#: statsyncing/ui/MatchedTracksPage.cpp:167
+#, kde-format
+msgid "Collapse All"
+msgstr "Reduïx-ho tot"
+
+#: browsers/CollectionTreeView.cpp:389
 #, kde-format
 msgid "Collection"
 msgstr "Col·lecció"
 
-#: browsers/CollectionTreeView.cpp:388
+#: browsers/CollectionTreeView.cpp:413
 #, kde-format
 msgid "Copy to Collection"
 msgstr "Copia a la col·lecció"
 
-#: browsers/CollectionTreeView.cpp:397 browsers/filebrowser/FileView.cpp:126
+#: browsers/CollectionTreeView.cpp:422 browsers/filebrowser/FileView.cpp:126
 #, kde-format
 msgid "Move to Collection"
-msgstr "Mou a la col·lecció"
+msgstr "Mou cap a la col·lecció"
 
-#: browsers/CollectionTreeView.cpp:411
+#: browsers/CollectionTreeView.cpp:436
 #, kde-format
 msgid "Move Tracks to Trash"
-msgstr "Mou peces a la paperera"
+msgstr "Mou peces cap a dins de la paperera"
 
-#: browsers/CollectionTreeView.cpp:422
+#: browsers/CollectionTreeView.cpp:447
 #, kde-format
 msgid "Delete Tracks"
 msgstr "Suprimix peces"
 
-#: browsers/CollectionTreeView.cpp:700 services/lastfm/LastFmTreeView.cpp:187
+#: browsers/CollectionTreeView.cpp:716 services/lastfm/LastFmTreeView.cpp:187
 #, kde-format
 msgid "More..."
 msgstr "Més..."
 
-#: browsers/CollectionTreeView.cpp:1073 browsers/filebrowser/FileView.cpp:383
+#: browsers/CollectionTreeView.cpp:1089 browsers/filebrowser/FileView.cpp:383
 #: browsers/playlistbrowser/PlaylistBrowserView.cpp:71
-#: context/applets/albums/plugin/AlbumsEngine.cpp:258
+#: context/applets/albums/plugin/AlbumsEngine.cpp:284
 #: services/lastfm/LastFmTreeView.cpp:97
 #, kde-format
 msgid "&Add to Playlist"
 msgstr "Afi&g a la llista de reproducció"
 
-#: browsers/CollectionTreeView.cpp:1084 browsers/filebrowser/FileView.cpp:394
+#: browsers/CollectionTreeView.cpp:1100 browsers/filebrowser/FileView.cpp:394
 #: browsers/playlistbrowser/PlaylistBrowserView.cpp:76
-#: context/applets/albums/plugin/AlbumsEngine.cpp:259
+#: context/applets/albums/plugin/AlbumsEngine.cpp:285
 #: services/lastfm/LastFmTreeView.cpp:106
 #, kde-format
 msgctxt "Replace the currently loaded tracks with these"
 msgid "&Replace Playlist"
 msgstr "Substituïx la llista de &reproducció"
 
-#: browsers/CollectionTreeView.cpp:1133
+#: browsers/CollectionTreeView.cpp:1149
 #, kde-format
 msgctxt "Organize Files"
 msgid "Organize Files"
 msgstr "Organitza els fitxers"
 
-#: browsers/CollectionTreeView.cpp:1166 browsers/filebrowser/FileView.cpp:426
+#: browsers/CollectionTreeView.cpp:1182 browsers/filebrowser/FileView.cpp:426
 #, kde-format
 msgid "&Edit Track Details"
 msgstr "&Edita els detalls de la peça"
 
 #: browsers/filebrowser/FileBrowser.cpp:70
-#: context/applets/wikipedia/package/contents/ui/main.qml:54
+#: context/applets/wikipedia/package/contents/ui/main.qml:61
+#: context/applets/wikipedia/package/contents/ui/main.qml:157
 #, kde-format
 msgid "Refresh"
 msgstr "Actualitza"
@@ -2304,7 +2310,7 @@ msgstr ""
 #: browsers/filebrowser/FileView.cpp:403
 #, kde-format
 msgid "&Move to Trash"
-msgstr "&Mou a la paperera"
+msgstr "&Mou cap a dins de la paperera"
 
 #: browsers/filebrowser/FileView.cpp:571
 #: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:40
@@ -2325,14 +2331,14 @@ msgstr[1] "Segur que voleu suprimir estos %1 elements?"
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm Move to Trash"
-msgstr "Confirmeu el moure a la paperera"
+msgstr "Confirmeu el moure cap a dins de la paperera"
 
 #: browsers/filebrowser/FileView.cpp:579
 #, kde-format
 msgid "Are you sure you want to move this item to trash?"
 msgid_plural "Are you sure you want to move these %1 items to trash?"
-msgstr[0] "Segur que voleu moure este element a la paperera?"
-msgstr[1] "Segur que voleu moure estos %1 elements a la paperera?"
+msgstr[0] "Segur que voleu moure este element cap a dins de la paperera?"
+msgstr[1] "Segur que voleu moure estos %1 elements cap a dins de la paperera?"
 
 #: browsers/InfoProxy.cpp:166
 #, kde-format
@@ -2353,38 +2359,38 @@ msgstr "Crea llistes de reproducció especificant-ne els criteris"
 #: browsers/playlistbrowser/APGCategory.cpp:63
 #, kde-format
 msgid "Add new preset"
-msgstr "Afig un ambient nou"
+msgstr "Afig un predefinit nou"
 
 #: browsers/playlistbrowser/APGCategory.cpp:66
 #, kde-format
 msgid "Edit selected preset"
-msgstr "Edita l'ambient seleccionat"
+msgstr "Edita el predefinit seleccionat"
 
 #: browsers/playlistbrowser/APGCategory.cpp:71
 #, kde-format
 msgid "Delete selected preset"
-msgstr "Elimina l'ambient seleccionat"
+msgstr "Elimina el predefinit seleccionat"
 
 #: browsers/playlistbrowser/APGCategory.cpp:76
 #, kde-format
 msgid "Import a new preset"
-msgstr "Importa un ambient nou"
+msgstr "Importa un predefinit nou"
 
 #: browsers/playlistbrowser/APGCategory.cpp:80
 #, kde-format
 msgid "Export the selected preset"
-msgstr "Exporta l'ambient seleccionat"
+msgstr "Exporta el predefinit seleccionat"
 
 # APG -> Automated Playlist Generator
 #: browsers/playlistbrowser/APGCategory.cpp:87
 #, kde-format
 msgid "Run APG with selected preset"
-msgstr "Executa GALR amb l'ambient seleccionat"
+msgstr "Executa GALR amb el predefinit seleccionat"
 
 #: browsers/playlistbrowser/APGCategory.cpp:93
 #, kde-format
 msgid "APG Presets"
-msgstr "Ambients de GALR"
+msgstr "Predefinits de GALR"
 
 #: browsers/playlistbrowser/APGCategory.cpp:107
 #, kde-format
@@ -2447,7 +2453,7 @@ msgid ""
 "selecting tracks for you, based on a number of parameters that you select."
 msgstr ""
 "Amb una llista de reproducció dinàmica, Amarok esdevé el vostre PD personal, "
-"seleccionant automàticament les peces per a vós, a partir d'un nombre de "
+"seleccionant automàticament les peces per a tu, a partir d'un nombre de "
 "paràmetres que seleccioneu."
 
 #: browsers/playlistbrowser/DynamicCategory.cpp:65
@@ -2584,7 +2590,7 @@ msgstr ""
 "El navegador de llistes de reproducció conté la relació de les llistes de "
 "reproducció importades i guardades. També és a on podeu especificar les "
 "potents llistes de reproducció dinàmiques i gestionar les subscripcions a "
-"podcast i episodis."
+"pòdcast i episodis."
 
 #: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:77
 #: services/opmldirectory/OpmlDirectoryModel.cpp:42
@@ -2702,13 +2708,13 @@ msgctxt "%1 is playlist provider pretty name"
 msgid "Delete playlist from %1."
 msgstr "Suprimix la llista de reproducció de %1."
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:516 MainWindow.cpp:446
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:516 MainWindow.cpp:447
 #, kde-format
 msgid "Use relative path for &saving"
 msgstr "Utilitza l'adreça relativa per a &guardar"
 
 #: browsers/playlistbrowser/PlaylistBrowserView.cpp:529
-#: covermanager/CoverFoundDialog.cpp:383 MainWindow.cpp:459
+#: covermanager/CoverFoundDialog.cpp:383 MainWindow.cpp:460
 #, kde-format
 msgid "Save As"
 msgstr "Anomena i guarda"
@@ -2750,12 +2756,12 @@ msgstr "Segur que voleu suprimir esta carpeta i el seu contingut?"
 #: core-impl/collections/umscollection/UmsConfiguration.ui:136
 #, kde-format
 msgid "Podcasts"
-msgstr "Podcast"
+msgstr "Pòdcast"
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:83
 #, kde-format
 msgid "List of podcast subscriptions and episodes"
-msgstr "Llista de subscripcions a podcast i episodis"
+msgstr "Llista de subscripcions a pòdcast i episodis"
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:86
 #, kde-format
@@ -2764,14 +2770,14 @@ msgid ""
 "Downloading episodes to the disk is also done here, or you can tell Amarok "
 "to do this automatically."
 msgstr ""
-"Gestioneu les subscripcions a podcast i visualitzeu els episodis "
+"Gestioneu les subscripcions a pòdcast i visualitzeu els episodis "
 "individuals. La baixada dels episodis al disc també es fa des d'ací, o li "
 "podeu dir a Amarok que ho faça automàticament."
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:96
 #, kde-format
 msgid "&Add Podcast"
-msgstr "Afi&g un podcast"
+msgstr "Afi&g un pòdcast"
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:103
 #, kde-format
@@ -2814,19 +2820,19 @@ msgstr "Paraules clau:"
 #: browsers/playlistbrowser/PodcastCategoryBase.ui:24
 #, kde-format
 msgid "Add Podcast..."
-msgstr "Afig un podcast..."
+msgstr "Afig un pòdcast..."
 
 #. i18n: ectx: property (text), widget (QToolButton, addPodcastButton)
 #: browsers/playlistbrowser/PodcastCategoryBase.ui:27
 #, kde-format
 msgid "add podcast..."
-msgstr "afig un podcast..."
+msgstr "afig un pòdcast..."
 
 #. i18n: ectx: property (text), widget (QToolButton, refreshPodcastsButton)
 #: browsers/playlistbrowser/PodcastCategoryBase.ui:50
 #, kde-format
 msgid "Refresh All Podcasts"
-msgstr "Torna a carregar tots els podcast"
+msgstr "Torna a carregar tots els pòdcast"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, configurePodcastsButton)
 #. i18n: ectx: property (text), widget (QToolButton, configurePodcastsButton)
@@ -2834,7 +2840,7 @@ msgstr "Torna a carregar tots els podcast"
 #: browsers/playlistbrowser/PodcastCategoryBase.ui:76
 #, kde-format
 msgid "Configure Podcasts..."
-msgstr "Configura els podcast..."
+msgstr "Configura els pòdcast..."
 
 #. i18n: ectx: property (text), widget (QToolButton, podcastsIntervalButton)
 #: browsers/playlistbrowser/PodcastCategoryBase.ui:99
@@ -2842,8 +2848,8 @@ msgstr "Configura els podcast..."
 msgid "Scan Interval..."
 msgstr "Interval d'exploració..."
 
-#: browsers/playlistbrowser/PodcastModel.cpp:197
-#: browsers/playlistbrowser/PodcastModel.cpp:249
+#: browsers/playlistbrowser/PodcastModel.cpp:217
+#: browsers/playlistbrowser/PodcastModel.cpp:269
 #, kde-format
 msgctxt "number of podcasts from one source"
 msgid "One Channel"
@@ -2852,24 +2858,24 @@ msgstr[0] "Un canal"
 msgstr[1] "%1 canals"
 
 #. i18n: ectx: property (text), widget (QLabel, titleLabel)
-#: browsers/playlistbrowser/PodcastModel.cpp:301
+#: browsers/playlistbrowser/PodcastModel.cpp:321
 #: context/applets/tabs/ReloadEditDialog.ui:86
 #: musicbrainz/MusicBrainzTagsModel.cpp:36 playlist/PlaylistModel.cpp:927
 #, kde-format
 msgid "Title"
 msgstr "Títol"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:302 dialogs/TagDialog.cpp:512
+#: browsers/playlistbrowser/PodcastModel.cpp:322 dialogs/TagDialog.cpp:512
 #, kde-format
 msgid "Summary"
 msgstr "Resum"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:322
+#: browsers/playlistbrowser/PodcastModel.cpp:342
 #, kde-format
 msgid "Add Podcast"
-msgstr "Afig un podcast"
+msgstr "Afig un pòdcast"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:323
+#: browsers/playlistbrowser/PodcastModel.cpp:343
 #, kde-format
 msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
 msgstr "Introduïu l'URL del canal RSS 1.0/2.0 o Atom:"
@@ -2943,7 +2949,7 @@ msgstr "Configura la gestió de metadades"
 #: configdialog/ConfigDialog.cpp:62
 #, kde-format
 msgid "Playback"
-msgstr "Reproducció"
+msgstr "Reproduïu"
 
 #: configdialog/ConfigDialog.cpp:62
 #, kde-format
@@ -3490,7 +3496,7 @@ msgid ""
 "Write play-changing statistics (e.g. score, lastplayed, playcount)\n"
 "as tags back to the file."
 msgstr ""
-"Escriu les estadístiques de reproducció canviants (p. ex. punts, última "
+"Escriu les estadístiques de reproducció canviants (p. ex., punts, última "
 "reproducció o recompte de reproduccions)\n"
 "com a etiquetes en el fitxer."
 
@@ -3530,7 +3536,7 @@ msgid ""
 "Character Set Detector to attempt to automatically guess the\n"
 "character sets used in ID3 tags."
 msgstr ""
-"Si està seleccionada, Amarok utilitzarà el detector del joc de caràcters\n"
+"Si està marcada, Amarok utilitzarà el detector del joc de caràcters\n"
 "de Mozilla per a intentar deduir automàticament el joc de caràcters\n"
 "utilitzat en les etiquetes ID3."
 
@@ -3544,7 +3550,7 @@ msgstr "&Activa la detecció del joc de caràcters en les etiquetes ID3"
 #: configdialog/dialogs/MetadataConfig.ui:97
 #, kde-format
 msgid "Statistics Synchronization"
-msgstr "Sincronització d'estadístiques"
+msgstr "Sincronitzeu les estadístiques"
 
 #. i18n: ectx: property (text), widget (QLabel, m_syncedCollectionsLabel)
 #: configdialog/dialogs/MetadataConfig.ui:103
@@ -3693,7 +3699,7 @@ msgstr "Feu clic per a seleccionar el color del text d'OSD."
 #, kde-format
 msgid "If checked, enables translucency if supported by your desktop system."
 msgstr ""
-"Si està activada, habilita la translucidesa si està admesa pel sistema "
+"Si està marcada, s'habilitarà la translucidesa si està admesa pel sistema "
 "d'escriptori."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_OsdUseTranslucency)
@@ -3740,7 +3746,7 @@ msgid ""
 "If checked, Amarok will<br>resume playback from where you left it the "
 "previous session -- just like a tape-player."
 msgstr ""
-"Si està activada, Amarok<br/>reprendrà la reproducció on la vàreu deixar en "
+"Si està marcada, Amarok<br/>reprendrà la reproducció on la vàreu deixar en "
 "l'anterior sessió -- tal com passaria amb un reproductor de cintes."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ResumePlayback)
@@ -3759,9 +3765,9 @@ msgid ""
 "to the playlist using mouse, pressing Enter or when the playlist is "
 "replaced. Does nothing if something is already playing.</html>"
 msgstr ""
-"<html>Activeu esta opció per a iniciar la reproducció quan s'afigen una o "
-"més peces a la llista de reproducció utilitzant el ratolí, prement Retorn o "
-"quan la llista de reproducció se substituïsca. No farà res si ja hi ha "
+"<html>Marqueu esta opció per a iniciar la reproducció quan s'afigen una o "
+"més peces a la llista de reproducció utilitzant el ratolí, prement «Retorn» "
+"o quan la llista de reproducció se substituïsca. No farà res si ja hi ha "
 "alguna cosa en reproducció.</html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_StartPlayingOnAdd)
@@ -3812,8 +3818,8 @@ msgid ""
 "If enabled, Amarok will prevent the system from automatically suspending if "
 "it is playing a track"
 msgstr ""
-"Si està activada, Amarok evitarà que el sistema se suspenga automàticament "
-"si està reproduint una peça"
+"Si està marcada, Amarok evitarà que el sistema se suspenga automàticament si "
+"està reproduint una peça"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_InhibitSuspend)
 #: configdialog/dialogs/PlaybackConfig.ui:165
@@ -3860,7 +3866,7 @@ msgstr ""
 #: configdialog/dialogs/ScriptsConfig.cpp:138
 #, kde-format
 msgid "Select Archived Script"
-msgstr "Seleccioneu l'script arxivat"
+msgstr "Seleccioneu un script arxivat"
 
 #: configdialog/dialogs/ScriptsConfig.cpp:153
 #, kde-format
@@ -3916,38 +3922,8 @@ msgstr "Desinstal·la script"
 msgid "Install Local Script"
 msgstr "Instal·la script local"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoUpdateScripts)
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoUpdateScripts)
-#: configdialog/dialogs/ScriptsConfig.ui:54
-#: configdialog/dialogs/ScriptsConfig.ui:57
-#, kde-format
-msgid ""
-"Automatically download and install updates for the built-in scripts from the "
-"Amarok website if available"
-msgstr ""
-"Descarrega i instal·la automàticament les actualitzacions dels scripts "
-"integrats des del lloc web d'Amarok, si estan disponibles"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoUpdateScripts)
-#: configdialog/dialogs/ScriptsConfig.ui:60
-#, kde-format
-msgid "Automatically update built-in scripts"
-msgstr "Actualitza automàticament els scripts integrats"
-
-#. i18n: ectx: property (toolTip), widget (QPushButton, manageButton)
-#: configdialog/dialogs/ScriptsConfig.ui:80
-#, kde-format
-msgid "Browse, install, and uninstall scripts"
-msgstr "Explora, instal·la, i desinstal·la scripts"
-
-#. i18n: ectx: property (text), widget (QPushButton, manageButton)
-#: configdialog/dialogs/ScriptsConfig.ui:83
-#, kde-format
-msgid "Manage Scripts"
-msgstr "Gestiona scripts"
-
 #. i18n: ectx: property (title), widget (QGroupBox, m_scriptConsoleGroup)
-#: configdialog/dialogs/ScriptsConfig.ui:107
+#: configdialog/dialogs/ScriptsConfig.ui:52
 #: scripting/scriptconsole/ScriptConsole.cpp:74
 #, kde-format
 msgid "Script Console"
@@ -3955,14 +3931,14 @@ msgstr "Consola de script"
 
 #. i18n: ectx: property (statusTip), widget (QCheckBox, kcfg_EnableScriptConsole)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EnableScriptConsole)
-#: configdialog/dialogs/ScriptsConfig.ui:116
-#: configdialog/dialogs/ScriptsConfig.ui:119
+#: configdialog/dialogs/ScriptsConfig.ui:61
+#: configdialog/dialogs/ScriptsConfig.ui:64
 #, kde-format
 msgid "Enable the script console."
 msgstr "Activa la consola de scripts."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableScriptConsole)
-#: configdialog/dialogs/ScriptsConfig.ui:122
+#: configdialog/dialogs/ScriptsConfig.ui:67
 #, kde-format
 msgid "Enable Script Console"
 msgstr "Activa la consola de scripts"
@@ -3988,7 +3964,7 @@ msgstr "Fitxer d'icona de miniaplicació"
 msgid "Images"
 msgstr "Imatges"
 
-#: context/applets/albums/package/contents/ui/main.qml:76
+#: context/applets/albums/package/contents/ui/main.qml:77
 #, kde-format
 msgid "Display"
 msgstr "Visualització"
@@ -4001,17 +3977,17 @@ msgid_plural "%1 tracks"
 msgstr[0] "%1 peça"
 msgstr[1] "%1 peces"
 
-#: context/applets/albums/plugin/AlbumsEngine.cpp:185
+#: context/applets/albums/plugin/AlbumsEngine.cpp:211
 #, kde-format
 msgid "Disc %1"
 msgstr "Disc %1"
 
-#: context/applets/albums/plugin/AlbumsEngine.cpp:260
+#: context/applets/albums/plugin/AlbumsEngine.cpp:286
 #, kde-format
 msgid "&Queue"
 msgstr "En&cua la peça"
 
-#: context/applets/albums/plugin/AlbumsEngine.cpp:261
+#: context/applets/albums/plugin/AlbumsEngine.cpp:287
 #: playlist/view/PlaylistViewCommon.cpp:265
 #, kde-format
 msgid "Edit Track Details"
@@ -4061,24 +4037,24 @@ msgstr "%1 Hz"
 msgid "Sample size:"
 msgstr "Mida de la mostra:"
 
-#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:32
+#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:33
 #: playlist/PlaylistModel.cpp:945
 #, kde-format
 msgid "Play Count"
 msgstr "Nombre de reproduccions"
 
-#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:42
+#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:44
 #: playlist/PlaylistModel.cpp:943
 #, kde-format
 msgid "Score"
 msgstr "Puntuació"
 
-#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:52
+#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:55
 #, kde-format
 msgid "Last played"
 msgstr "Escoltada per última vegada"
 
-#: context/applets/currenttrack/plugin/CurrentEngine.cpp:258
+#: context/applets/currenttrack/plugin/CurrentEngine.cpp:200
 #: transcoding/TranscodingSelectConfigWidget.cpp:35
 #, kde-format
 msgid "Never"
@@ -4116,7 +4092,6 @@ msgid "Labels"
 msgstr "Etiquetes"
 
 #: context/applets/labels/LabelsApplet.cpp:104
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:617
 #, kde-format
 msgid "Reload"
 msgstr "Torna a carregar"
@@ -4126,8 +4101,8 @@ msgstr "Torna a carregar"
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:98
 #: context/applets/tabs/TabsApplet.cpp:108
 #: context/applets/upcomingevents/UpcomingEventsApplet.cpp:85
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:647
 #: core-impl/collections/ipodcollection/support/IpodConfiguration.ui:20
+#: core-impl/podcasts/sql/PodcastSettingsDialog.cpp:48
 #, kde-format
 msgid "Settings"
 msgstr "Configuració"
@@ -4315,7 +4290,7 @@ msgid ""
 msgstr ""
 "Açò vos ajudarà a mantindre ordenades les etiquetes de la col·lecció "
 "substituint les etiquetes descarregades segons les vostres preferències.\n"
-"P. ex. «hip hop» -> «hip-hop»"
+"P. ex., «hip hop» -> «hip-hop»"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, replacementTreeWidget)
 #: context/applets/labels/labelsReplacementSettings.ui:98
@@ -4480,14 +4455,12 @@ msgid "Similar Artists"
 msgstr "Artistes semblants"
 
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:77
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:604
 #: statsyncing/ui/MatchedTracksPage.cpp:138
 #, kde-format
 msgid "Back"
 msgstr "Arrere"
 
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:84
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:611
 #, kde-format
 msgid "Forward"
 msgstr "Avant"
@@ -4571,8 +4544,7 @@ msgstr "Torna a carregar les tabulatures pel títol i artista següent"
 
 #. i18n: ectx: property (text), widget (QLabel, artistLabel)
 #: context/applets/tabs/ReloadEditDialog.ui:73
-#: context/applets/wikipedia/package/contents/ui/main.qml:64
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:623
+#: context/applets/wikipedia/package/contents/ui/main.qml:90
 #: dialogs/transferdialog.cpp:103 musicbrainz/MusicBrainzTagsModel.cpp:37
 #: playlist/PlaylistModel.cpp:928 services/jamendo/JamendoInfoParser.cpp:51
 #: services/lastfm/LastFmService.cpp:456
@@ -4770,7 +4742,7 @@ msgstr "Llocs preferits"
 #, kde-format
 msgctxt "@info:tooltip Calendar action"
 msgid "Jump to Today"
-msgstr "Ves a hui"
+msgstr "Ves fins a hui"
 
 #. i18n: ectx: property (text), widget (QLabel, filterLabel)
 #: context/applets/upcomingevents/upcomingEventsGeneralSettings.ui:20
@@ -4975,108 +4947,88 @@ msgctxt "@info:tooltip"
 msgid "<strong>Location:</strong><nl/>%1"
 msgstr "<strong>Ubicació:</strong><nl/>%1"
 
-#: context/applets/wikipedia/package/contents/ui/main.qml:38
+#: context/applets/wikipedia/package/contents/ui/main.qml:39
+#: context/applets/wikipedia/package/contents/ui/main.qml:145
 #, kde-format
 msgid "Previous"
 msgstr "Anterior"
 
-#: context/applets/wikipedia/package/contents/ui/main.qml:46
+#: context/applets/wikipedia/package/contents/ui/main.qml:50
+#: context/applets/wikipedia/package/contents/ui/main.qml:151
 #: statsyncing/ui/ChooseProvidersPage.cpp:35
 #, kde-format
 msgid "Next"
 msgstr "Següent"
 
-#: context/applets/wikipedia/package/contents/ui/main.qml:85
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:641
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:366
+#: context/applets/wikipedia/package/contents/ui/main.qml:72
+#: widgets/PlayPauseButton.cpp:81
+#, kde-format
+msgid "Pause"
+msgstr "Pausa"
+
+#: context/applets/wikipedia/package/contents/ui/main.qml:120
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:364
 #: services/jamendo/JamendoInfoParser.cpp:109
 #, kde-format
 msgid "Track"
 msgstr "Peça"
 
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:368
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:444
+#: context/applets/wikipedia/package/contents/ui/main.qml:164
+#: dialogs/DiagnosticDialog.cpp:84
 #, kde-format
-msgid "Update Supported Languages"
-msgstr "Actualitza els idiomes acceptats"
+msgid "Copy to Clipboard"
+msgstr "Copia a dins del porta-retalls"
 
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:369
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:445
-#, kde-format
-msgid "Get Supported Languages"
-msgstr "Aconseguix idiomes acceptats"
-
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:594
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:763
-#, kde-format
-msgid "Wikipedia"
-msgstr "Viquipèdia"
-
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:737
-#, kde-format
-msgid "Wikipedia: %1"
-msgstr "Viquipèdia: %1"
-
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:806
-#, kde-format
-msgid "Wikipedia General Settings"
-msgstr "Configuració general de la Viquipèdia"
-
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:807
-#, kde-format
-msgid "Wikipedia Language Settings"
-msgstr "Configureu l'idioma de la Viquipèdia"
-
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:75
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:139
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:267
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:78
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:142
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:270
 #, kde-format
 msgid "Unable to retrieve Wikipedia information: %1"
 msgstr "No es pot recuperar la informació de la Viquipèdia: %1"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:90
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:246
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:304
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:93
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:249
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:307
 #, kde-format
 msgid "No information found..."
 msgstr "No s'ha trobat informació..."
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:314
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:317
 #, kde-format
 msgctxt "Search pattern for an artist or band"
 msgid ".*\\(.*(artist|band).*\\))"
 msgstr ".*\\(.*(artista|banda).*\\))"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:317
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:320
 #, kde-format
 msgctxt "Search pattern for a composer"
 msgid ".*\\(.*(composer|musician).*\\))"
 msgstr ".*\\(.*(compositor|músic).*\\))"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:320
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:323
 #, kde-format
 msgctxt "Search pattern for an album"
 msgid ".*\\(.*(album|score|soundtrack).*\\)"
 msgstr ".*\\(.*(àlbum|puntuació|peça_sonora).*\\)"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:324
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:327
 #, kde-format
 msgctxt "Search pattern for a song"
 msgid ".*\\(.*(song|track).*\\)"
 msgstr ".*\\(.*(cançó|peça).*\\)"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:523
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:532
 #, kde-format
 msgctxt "%1 is field name such as 'Artist Name'"
 msgid "%1 is needed for searching Wikipedia."
 msgstr "Es requerix %1 abans de buscar a la Viquipèdia."
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:746
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:758
 #, kde-format
 msgid "Choose Language"
 msgstr "Escolliu l'idioma"
 
-#: context/context_qml_package/contents/ui/toolbar/AppletToolbar.qml:129
+#: context/context_qml_package/contents/ui/toolbar/AppletToolbar.qml:130
 #, kde-format
 msgid "Configure Applets..."
 msgstr "Configura les miniaplicacions..."
@@ -5116,69 +5068,69 @@ msgstr "de gira"
 msgid "dates"
 msgstr "dates"
 
-#: context/tools/amarokpkg.cpp:84 context/tools/amarokpkg.cpp:97
+#: context/tools/amarokpkg.cpp:87 context/tools/amarokpkg.cpp:99
 #, kde-format
 msgid "Amarok Applet Manager"
 msgstr "Gestor de miniaplicacions d'Amarok"
 
-#: context/tools/amarokpkg.cpp:86
+#: context/tools/amarokpkg.cpp:89
 #, kde-format
 msgid "(C) 2008, Aaron Seigo, (C) 2009, Leo Franchi"
 msgstr "(C) 2008, Aaron Seigo, (C) 2009, Leo Franchi"
 
-#: context/tools/amarokpkg.cpp:87
+#: context/tools/amarokpkg.cpp:90
 #, kde-format
 msgid "Aaron Seigo"
 msgstr "Aaron Seigo"
 
-#: context/tools/amarokpkg.cpp:88
+#: context/tools/amarokpkg.cpp:91
 #, kde-format
 msgid "Original author"
 msgstr "Autor original"
 
-#: context/tools/amarokpkg.cpp:90 main.cpp:168
+#: context/tools/amarokpkg.cpp:93 main.cpp:171
 #, kde-format
 msgid "Leo Franchi"
 msgstr "Leo Franchi"
 
-#: context/tools/amarokpkg.cpp:91 main.cpp:252 main.cpp:254 main.cpp:268
-#: main.cpp:278 main.cpp:284 main.cpp:286 main.cpp:298 main.cpp:304
-#: main.cpp:306 main.cpp:310 main.cpp:318
+#: context/tools/amarokpkg.cpp:94 main.cpp:255 main.cpp:257 main.cpp:271
+#: main.cpp:281 main.cpp:287 main.cpp:289 main.cpp:301 main.cpp:307
+#: main.cpp:309 main.cpp:313 main.cpp:321
 #, kde-format
 msgid "Developer"
 msgstr "Desenvolupador"
 
-#: context/tools/amarokpkg.cpp:108
+#: context/tools/amarokpkg.cpp:110
 #, kde-format
 msgid "For install or remove, operates on applets installed for all users."
 msgstr ""
 "Per a instal·lar o eliminar, opera amb les miniaplicacions instal·lades per "
 "a tots els usuaris."
 
-#: context/tools/amarokpkg.cpp:110
+#: context/tools/amarokpkg.cpp:112
 #, kde-format
 msgctxt "Do not translate <path>"
 msgid "Install the applet at <path>"
 msgstr "Instal·la la miniaplicació a <path>"
 
-#: context/tools/amarokpkg.cpp:112
+#: context/tools/amarokpkg.cpp:114
 #, kde-format
 msgctxt "Do not translate <path>"
 msgid "Upgrade the applet at <path>"
 msgstr "Actualitza la miniaplicació a <path>"
 
-#: context/tools/amarokpkg.cpp:114
+#: context/tools/amarokpkg.cpp:116
 #, kde-format
 msgid "Most installed applets"
 msgstr "Miniaplicacions més instal·lades"
 
-#: context/tools/amarokpkg.cpp:116
+#: context/tools/amarokpkg.cpp:118
 #, kde-format
 msgctxt "Do not translate <name>"
 msgid "Remove the applet named <name>"
 msgstr "Suprimix la miniaplicació anomenada <name>"
 
-#: context/tools/amarokpkg.cpp:118
+#: context/tools/amarokpkg.cpp:120
 #, kde-format
 msgid ""
 "Absolute path to the package root. If not supplied, then the standard data "
@@ -5223,12 +5175,12 @@ msgstr "Es requerix un dels següents: «install», «remove», «upgrade» o «
 #: core-impl/capabilities/AlbumActionsCapability.cpp:38
 #, kde-format
 msgid "Do not show under Various Artists"
-msgstr "No mostres davall Artistes Diversos"
+msgstr "No mostres davall Artistes diversos"
 
 #: core-impl/capabilities/AlbumActionsCapability.cpp:43
 #, kde-format
 msgid "Show under Various Artists"
-msgstr "Mostra davall Artistes Diversos"
+msgstr "Mostra davall Artistes diversos"
 
 #: core-impl/capabilities/timecode/TimecodeWriteCapability.cpp:103
 #, kde-format
@@ -5247,7 +5199,7 @@ msgctxt ""
 msgid "Aggregate Collection"
 msgstr "Col·lecció agregada"
 
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:393
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:391
 #: core-impl/collections/audiocd/handler/AudioCdHandler.cpp:37
 #, kde-format
 msgid "Audio CD"
@@ -5263,7 +5215,7 @@ msgid ""
 msgstr ""
 "Ogg Vorbis és un format d'àudio comprimit totalment lliure i sense càrregues "
 "que és perfecte per a emmagatzemar música comprimida en l'ordinador. La "
-"qualitat del so és millor que la de l'MP3 a igualtat de taxa de bits. Cal "
+"qualitat del so és millor que la d'MP3 a igualtat de taxa de bits. Cal "
 "tindre en compte que no tots els reproductors mòbils accepten el format Ogg "
 "Vorbis."
 
@@ -5278,7 +5230,7 @@ msgstr ""
 "FLAC és un format d'àudio comprimit sense pèrdua lliure de qualsevol dret de "
 "patent o llicència. Té una qualitat d'àudio CD perfecte i reduïx la mida del "
 "fitxer aproximadament en un 50%. Com que la mida del fitxer és molt més gran "
-"que Ogg Vorbis o l'MP3, no es recomana si voleu transferir la música a un "
+"que Ogg Vorbis o MP3, no es recomana si voleu transferir la música cap a un "
 "reproductor mòbil."
 
 #: core-impl/collections/audiocd/FormatSelectionDialog.cpp:75
@@ -5299,7 +5251,7 @@ msgid ""
 "MP3 is the de facto standard in compressed audio compatible with almost all "
 "mobile players. It is however non free and generally not recommended."
 msgstr ""
-"L'MP3 és l'estàndard de fet en l'àudio comprimit, compatible amb quasi tots "
+"MP3 és l'estàndard de fet en l'àudio comprimit, compatible amb quasi tots "
 "els reproductors mòbils. Malgrat tot, no és lliure i generalment no és "
 "recomanat."
 
@@ -5351,12 +5303,12 @@ msgstr "Avançat"
 #: core-impl/collections/daap/DaapCollection.cpp:101
 #, kde-format
 msgid "Loading remote collection from host %1"
-msgstr "S'està carregant la col·lecció remota des de l'ordinador %1"
+msgstr "S'està carregant la col·lecció remota des de l'amfitrió %1"
 
 #: core-impl/collections/daap/DaapCollection.cpp:271
 #, kde-format
 msgid "Music share at %1"
-msgstr "Compartició de música a %1"
+msgstr "Compartiu la música a %1"
 
 #: core-impl/collections/db/sql/SqlCollection.cpp:243
 #, kde-format
@@ -5372,27 +5324,27 @@ msgstr ""
 msgid "Updating Amarok database schema"
 msgstr "S'està actualitzant l'esquema de la base de dades d'Amarok"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:532
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:528
 #, kde-format
 msgid "Source track does not exist: %1"
 msgstr "La peça origen no existix: %1"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:543
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:539
 #, kde-format
 msgid "Could not create directory: %1"
 msgstr "No s'ha pogut crear el directori: %1"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:620
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:616
 #, kde-format
 msgid "Transferring: %1"
 msgstr "S'està transferint: %1"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:622
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:618
 #, kde-format
 msgid "Transcoding: %1"
 msgstr "S'està transcodificant: %1"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:666
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:662
 #: core-impl/collections/support/FileCollectionLocation.cpp:87
 #, kde-format
 msgid "Removing: %1"
@@ -5463,7 +5415,7 @@ msgctxt "%1: iPod collection name"
 msgid "Writing iTunes database to %1 failed without an indication of error"
 msgstr ""
 "L'escriptura en la base de dades d'iTunes de %1 ha fallat sense cap "
-"indicació d'error."
+"indicació d'error"
 
 #: core-impl/collections/ipodcollection/IpodCollection.cpp:717
 #, kde-format
@@ -5487,7 +5439,7 @@ msgstr "Col·lecció desconeguda"
 #: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:91
 #: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:421
 #: core/meta/Meta.cpp:253 covermanager/CoverFetchUnit.cpp:594
-#: covermanager/CoverFetchUnit.cpp:604 playlist/PlaylistQueueEditor.cpp:64
+#: covermanager/CoverFetchUnit.cpp:604 playlist/PlaylistQueueEditor.cpp:69
 #, kde-format
 msgid "Unknown Artist"
 msgstr "Artista desconegut"
@@ -5534,8 +5486,8 @@ msgstr ""
 msgctxt "%2 is collection name"
 msgid "Transferred one track to %2."
 msgid_plural "Transferred %1 tracks to %2."
-msgstr[0] "S'ha transferit una peça a %2."
-msgstr[1] "S'han transferit %1 peces a %2."
+msgstr[0] "S'ha transferit una peça cap a %2."
+msgstr[1] "S'han transferit %1 peces cap a %2."
 
 #: core-impl/collections/ipodcollection/jobs/IpodCopyTracksJob.cpp:227
 #, kde-format
@@ -5566,7 +5518,7 @@ msgstr[1] "%2 Ja hi havia %1 peces."
 #, kde-format
 msgctxt "%1 is collection pretty name, e.g. My Little iPod"
 msgid "Transferred Tracks to %1"
-msgstr "S'han transferit les peces a %1"
+msgstr "S'han transferit les peces cap a %1"
 
 #: core-impl/collections/ipodcollection/jobs/IpodCopyTracksJob.cpp:375
 #, kde-format
@@ -5576,10 +5528,10 @@ msgid_plural ""
 "%1 tracks successfully transferred, but transfer of some other tracks failed."
 msgstr[0] ""
 "S'ha transferit correctament una peça, però ha fallat la transferència "
-"d'altres peces."
+"d'altres."
 msgstr[1] ""
 "S'han transferit correctament %1 peces, però ha fallat la transferència "
-"d'altres peces."
+"d'altres."
 
 #: core-impl/collections/ipodcollection/jobs/IpodCopyTracksJob.cpp:379
 #, kde-format
@@ -5943,7 +5895,7 @@ msgstr "No s'han copiat les peces: ja s'està copiant en el dispositiu"
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:351
 #, kde-format
 msgid "Unsupported format: %1"
-msgstr "Format no acceptat: %1"
+msgstr "Format no admés: %1"
 
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:394
 #, kde-format
@@ -5963,7 +5915,7 @@ msgstr "No s'han copiat les peces: el dispositiu no té suficient espai lliure"
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:441
 #, kde-format
 msgid "Transferring Tracks to Device"
-msgstr "S'estan transferint les peces al dispositiu"
+msgstr "S'estan transferint les peces cap al dispositiu"
 
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:483
 #, kde-format
@@ -6003,7 +5955,7 @@ msgid_plural "Removing Tracks from Device"
 msgstr[0] "S'està suprimint la peça del dispositiu"
 msgstr[1] "S'estan suprimint les peces del dispositiu"
 
-#: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:241
+#: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:239
 #, kde-format
 msgid "&Disconnect Device"
 msgstr "&Desconnecta el dispositiu"
@@ -6018,7 +5970,7 @@ msgstr "Llistes de reproducció del dispositiu de suports"
 #, kde-format
 msgctxt "Podcasts on a media device"
 msgid "Podcasts on %1"
-msgstr "Podcast a %1"
+msgstr "Pòdcast a %1"
 
 #: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:152
 #, kde-format
@@ -6100,9 +6052,11 @@ msgid ""
 msgid_plural ""
 "Do you really want to move these %1 tracks to the trash? They will be "
 "removed from %2."
-msgstr[0] "Segur que voleu moure esta peça a la paperera? S'eliminarà de %2."
+msgstr[0] ""
+"Segur que voleu moure esta peça cap a dins de la paperera? S'eliminarà de %2."
 msgstr[1] ""
-"Segur que voleu moure estes %1 peces a la paperera? S'eliminaran de %2."
+"Segur que voleu moure estes %1 peces cap a dins de la paperera? S'eliminaran "
+"de %2."
 
 #: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:63
 #, kde-format
@@ -6221,7 +6175,7 @@ msgstr "Paperera"
 #: core-impl/collections/support/TrashCollectionLocation.cpp:101
 #, kde-format
 msgid "Moving to trash: %1"
-msgstr "S'està movent a la paperera: %1"
+msgstr "S'està movent cap a dins de la paperera: %1"
 
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:194
 #, kde-format
@@ -6315,7 +6269,7 @@ msgstr "Esquema per als noms de fitxer de les peces que s'afigen al dispositiu"
 #: core-impl/collections/umscollection/UmsConfiguration.ui:176
 #, kde-format
 msgid "Podcast folder:"
-msgstr "Carpeta de podcast:"
+msgstr "Carpeta de pòdcast:"
 
 #: core-impl/meta/default/DefaultMetaTypes.h:39
 #: core-impl/meta/default/DefaultMetaTypes.h:75
@@ -6401,19 +6355,19 @@ msgstr "Llista_de_reproducció_%1"
 #, kde-format
 msgctxt "Change filename layout"
 msgid "Podcast Episode Filename Configuration"
-msgstr "Configureu els noms de fitxer dels episodis de podcast"
+msgstr "Configureu els noms de fitxer dels episodis de pòdcast"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, PodcastFilenameLayoutConfigWidget)
 #: core-impl/podcasts/sql/PodcastFilenameLayoutConfigWidget.ui:30
 #, kde-format
 msgid "Podcast Filename Layout Configuration"
-msgstr "Configureu el format de nom de fitxer del podcast"
+msgstr "Configureu el format de nom de fitxer del pòdcast"
 
 #. i18n: ectx: property (text), widget (QRadioButton, m_filenameLayoutDefault)
 #: core-impl/podcasts/sql/PodcastFilenameLayoutConfigWidget.ui:54
 #, kde-format
 msgid "Specified by podcast channel"
-msgstr "Especificat pel canal de podcast"
+msgstr "Especificat pel canal de pòdcast"
 
 #. i18n: ectx: property (text), widget (QRadioButton, m_filenameLayoutCustom)
 #: core-impl/podcasts/sql/PodcastFilenameLayoutConfigWidget.ui:79
@@ -6435,7 +6389,7 @@ msgstr ""
 #: core-impl/podcasts/sql/PodcastSettingsBase.ui:30
 #, kde-format
 msgid "Podcast Configuration"
-msgstr "Configuració de podcast"
+msgstr "Configuració de pòdcast"
 
 #. i18n: ectx: property (text), widget (QLabel, m_saveLocationlabel)
 #: core-impl/podcasts/sql/PodcastSettingsBase.ui:68
@@ -6450,7 +6404,7 @@ msgstr "Ubicació de guardada:"
 #, kde-format
 msgid "When checked, Amarok will automatically scan the podcast for updates"
 msgstr ""
-"Si està activada, Amarok escanejarà automàticament el podcast per a "
+"Si està marcada, Amarok explorarà automàticament el pòdcast per a "
 "actualitzacions"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoFetchCheck)
@@ -6488,7 +6442,7 @@ msgid ""
 "Media must be explicitly downloaded, otherwise the podcast will be played "
 "from the remote server."
 msgstr ""
-"Els suports s'han de descarregar explícitament, altrament el podcast es "
+"Els suports s'han de descarregar explícitament, altrament el pòdcast es "
 "reproduirà des del servidor remot."
 
 #. i18n: ectx: property (text), widget (QRadioButton, m_streamRadio)
@@ -6503,7 +6457,7 @@ msgstr "Flux de dades o descarrega davall &demanda"
 #: core-impl/podcasts/sql/PodcastSettingsBase.ui:155
 #, kde-format
 msgid "If checked, Amarok will throw away old podcast episodes"
-msgstr "Si està activada, Amarok llençarà els episodis de podcast antics"
+msgstr "Si està marcada, Amarok llençarà els episodis de pòdcast antics"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_purgeCheck)
 #: core-impl/podcasts/sql/PodcastSettingsBase.ui:158
@@ -6523,7 +6477,7 @@ msgstr "Conserva un màxim de:"
 #: core-impl/podcasts/sql/PodcastSettingsBase.ui:194
 #, kde-format
 msgid "The maximum number of podcast items to store"
-msgstr "El nombre màxim d'elements de podcast que s'han d'emmagatzemar"
+msgstr "El nombre màxim d'elements de pòdcast que s'han d'emmagatzemar"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_writeTagsCheck)
 #: core-impl/podcasts/sql/PodcastSettingsBase.ui:208
@@ -6556,7 +6510,7 @@ msgctxt "change options"
 msgid "Configure %1"
 msgstr "Configura %1"
 
-#: core-impl/podcasts/sql/PodcastSettingsDialog.cpp:80
+#: core-impl/podcasts/sql/PodcastSettingsDialog.cpp:77
 #, kde-format
 msgid " Item"
 msgid_plural " Items"
@@ -6567,7 +6521,7 @@ msgstr[1] " Elements"
 #: core/podcasts/PodcastMeta.h:385
 #, kde-format
 msgid "Podcast"
-msgstr "Podcast"
+msgstr "Pòdcast"
 
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:292
 #, kde-format
@@ -6626,7 +6580,7 @@ msgid ""
 "Downloaded files with this status wouldn't be deleted even if we apply a "
 "purge."
 msgstr ""
-"Canvia l'estat «mantindre» del fitxer baixat d'este episodi de podcast. Els "
+"Canvia l'estat «mantindre» del fitxer baixat d'este episodi de pòdcast. Els "
 "fitxers baixats amb este estat no se suprimiran encara que s'execute una "
 "purga."
 
@@ -6651,17 +6605,17 @@ msgstr[1] " minuts"
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:614
 #, kde-format
 msgid "Configure Local Podcasts"
-msgstr "Configura els podcast locals"
+msgstr "Configura els pòdcast locals"
 
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:635
 #, kde-format
 msgid "Move Podcasts"
-msgstr "Mou els podcast"
+msgstr "Mou els pòdcast"
 
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:636
 #, kde-format
 msgid "Do you want to move all downloaded episodes to the new location?"
-msgstr "Voleu moure tots els episodis descarregats a la nova ubicació?"
+msgstr "Voleu moure tots els episodis descarregats a la ubicació nova?"
 
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:703
 #, kde-format
@@ -6682,8 +6636,8 @@ msgstr "Suprimix els episodis descarregats"
 #, kde-format
 msgid "There is still a podcast download in progress"
 msgid_plural "There are still %1 podcast downloads in progress"
-msgstr[0] "Encara hi ha una baixada de podcast en curs"
-msgstr[1] "Encara hi ha %1 baixades de podcast en curs"
+msgstr[0] "Encara hi ha una baixada de pòdcast en curs"
+msgstr[1] "Encara hi ha %1 baixades de pòdcast en curs"
 
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:979
 #, kde-format
@@ -6694,22 +6648,22 @@ msgstr "Cancel·la la baixada i ix."
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1408
 #, kde-format
 msgid "Unable to save podcast episode file to %1"
-msgstr "No s'ha pogut guardar el fitxer d'episodi de podcast a %1"
+msgstr "No s'ha pogut guardar el fitxer d'episodi de pòdcast a %1"
 
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1168
 #, kde-format
 msgid "Downloading Podcast Media"
-msgstr "S'estan baixant els suports del podcast"
+msgstr "S'estan baixant els suports de pòdcast"
 
 #: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1169
 #, kde-format
 msgid "Downloading Podcast \"%1\""
-msgstr "S'està baixant el podcast «%1»"
+msgstr "S'està baixant el pòdcast «%1»"
 
 #: core-impl/podcasts/sql/SqlPodcastProvider.h:56
 #, kde-format
 msgid "Local Podcasts"
-msgstr "Podcast locals"
+msgstr "Pòdcast locals"
 
 #. i18n: ectx: property (text), widget (QLabel, m_intervalLabel)
 #: core-impl/podcasts/sql/SqlPodcastProviderSettingsWidget.ui:32
@@ -6762,10 +6716,10 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\">Directori base per a tots "
-"els nous canals de podcast.</p>\n"
+"els nous canals de pòdcast.</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\">Quan s'afig un canal de "
-"podcast, s'utilitza <span style=\" font-style:italic;\">&lt;directori "
+"pòdcast, s'utilitza <span style=\" font-style:italic;\">&lt;directori "
 "base&gt;</span>/<span style=\" font-style:italic;\">&lt;nom de canal&gt;</"
 "span> com a directori de baixada.</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
@@ -6781,8 +6735,8 @@ msgid ""
 "the download directory.\n"
 "This can be changed for each channel individually."
 msgstr ""
-"Directori base per a tots els canals nous de podcast.\n"
-"Quan s'afig un canal de podcast, s'utilitza <directori base>/<nom de canal> "
+"Directori base per a tots els canals nous de pòdcast.\n"
+"Quan s'afig un canal de pòdcast, s'utilitza <directori base>/<nom de canal> "
 "com a directori de baixada.\n"
 "Açò es pot canviar individualment per a cada canal."
 
@@ -7357,12 +7311,12 @@ msgstr[1] "%1 segons"
 #: core/podcasts/PodcastReader.cpp:453
 #, kde-format
 msgid "Importing podcast channel from %1"
-msgstr "S'està important el canal de podcast des de %1"
+msgstr "S'està important el canal de pòdcast des de %1"
 
 #: core/podcasts/PodcastReader.cpp:457
 #, kde-format
 msgid "Updating podcast channel"
-msgstr "S'està actualitzant el canal de podcast"
+msgstr "S'està actualitzant el canal de pòdcast"
 
 #: core/podcasts/PodcastReader.cpp:458
 #, kde-format
@@ -7372,12 +7326,12 @@ msgstr "S'està actualitzant «%1»"
 #: core/podcasts/PodcastReader.cpp:506 core/podcasts/PodcastReader.cpp:520
 #, kde-format
 msgid "Importing podcast from %1 failed with error:\n"
-msgstr "La importació del podcast des de %1 ha acabat amb error:\n"
+msgstr "La importació del pòdcast des de %1 ha acabat amb error:\n"
 
 #: core/podcasts/PodcastReader.cpp:510 core/podcasts/PodcastReader.cpp:524
 #, kde-format
 msgid "Updating podcast from %1 failed with error:\n"
-msgstr "L'actualització del podcast des de %1 ha acabat amb error:\n"
+msgstr "L'actualització del pòdcast des de %1 ha acabat amb error:\n"
 
 #: core/podcasts/PodcastReader.cpp:511 core/podcasts/PodcastReader.cpp:525
 #, kde-format
@@ -7602,11 +7556,11 @@ msgid ""
 msgstr ""
 "La taxa de bits és una mesura de la quantitat de dades utilitzades per a "
 "representar un segon de la peça d'àudio.<br>El codificador utilitzat per "
-"Amarok opera millor amb una taxa de bits constant.<br>El VBR és experimental "
-"i podria donar pitjors resultats que el CBR.<br>Per este motiu, la mesura de "
-"la taxa de bits en este control lliscant és una estimació força acurada de "
-"la taxa de bits de la peça codificada.<br>El codificador és transparent a "
-"128 kbps per a la majoria de mostres provades, amb distorsions que només "
+"Amarok opera millor amb una taxa de bits constant.<br>La VBR és experimental "
+"i podria donar pitjors resultats que CBR.<br>Per este motiu, la mesura de la "
+"taxa de bits en este control lliscant és una estimació força acurada de la "
+"taxa de bits de la peça codificada.<br>El codificador és transparent a 128 "
+"kbps per a la majoria de mostres provades, amb distorsions que només "
 "apareixen en casos extrems."
 
 #: core/transcoding/formats/TranscodingAacFormat.cpp:48
@@ -7652,10 +7606,10 @@ msgid ""
 "a reasonable choice for the iPod and some other portable music players."
 msgstr ""
 "L'<a href=http://ca.wikipedia.org/wiki/Advanced_Audio_Coding>Advanced Audio "
-"Coding</a> (AAC) és un còdec amb pèrdua patentat per a àudio digital."
-"<br>L'AAC generalment aconseguix millor qualitat de so que l'MP3 a taxes de "
-"bits similars. Una opció raonable per iPod i alguns altres reproductors de "
-"música portàtils."
+"Coding</a> (AAC) és un còdec amb pèrdua patentat per a àudio digital.<br>AAC "
+"generalment aconseguix millor qualitat de so que MP3 a taxes de bits "
+"similars. Una opció raonable per iPod i alguns altres reproductors de música "
+"portàtils."
 
 #: core/transcoding/formats/TranscodingAlacFormat.cpp:33
 #, kde-format
@@ -7675,8 +7629,8 @@ msgid ""
 msgstr ""
 "<a href=http://en.wikipedia.org/wiki/Apple_Lossless>Apple sense pèrdues</a> "
 "(ALAC) és un codificador per a comprimir música digital sense pèrdues."
-"<br>Només recomanat per reproductors de música d'Apple i reproductors que no "
-"admeten FLAC."
+"<br>Només recomanat per a reproductors de música d'Apple i reproductors que "
+"no admeten FLAC."
 
 #: core/transcoding/formats/TranscodingFlacFormat.cpp:30
 #, kde-format
@@ -7750,7 +7704,7 @@ msgid ""
 msgstr ""
 "La taxa de bits és una mesura de la quantitat de dades utilitzades per a "
 "representar un segon de la peça d'àudio.<br>El codificador d'<b>MP3</b> que "
-"utilitza Amarok permet alguns configuracions de <a href=http://en.wikipedia."
+"utilitza Amarok permet algunes configuracions de <a href=http://en.wikipedia."
 "org/wiki/MP3#VBR>taxa de bits variable (VBR)</a>, el qual vol dir que la "
 "taxa de bits fluctuarà durant la peça segons la complexitat del contingut de "
 "l'àudio. Els intervals de dades més complexos es codifiquen amb taxes de "
@@ -7758,7 +7712,7 @@ msgstr ""
 "general millor i fitxers més petits que utilitzant una taxa de bits constant "
 "durant tota la peça.<br>Per açò, la mesura de taxa de bits d'este control "
 "lliscant és només una estimació de la mitjana de la taxa de bits de la peça "
-"codificada.<br><b>160 kb/s</b> és una bona opció per escoltar música en un "
+"codificada.<br><b>160 kb/s</b> és una bona opció per a escoltar música en un "
 "reproductor portàtil.<br/>Valors per davall de <b>120 kb/s</b> poden ser "
 "insatisfactoris per a la música i valors per damunt de <b>205 kb/s</b> són "
 "probablement excessius."
@@ -7806,7 +7760,7 @@ msgid ""
 msgstr ""
 "La taxa de bits és una mesura de la quantitat de dades utilitzades per a "
 "representar un segon de la peça d'àudio.<br>El codificador d'<b>Opus</b></b> "
-"que utilitza Amarok permet alguns configuracions de <a href=http://en."
+"que utilitza Amarok permet algunes configuracions de <a href=http://en."
 "wikipedia.org/wiki/Variable_bitrate>taxa de bits variable (VBR)</a>, el qual "
 "vol dir que la taxa de bits fluctuarà durant la peça segons la complexitat "
 "del contingut de l'àudio. Els intervals de dades més complexos es codifiquen "
@@ -7814,7 +7768,7 @@ msgstr ""
 "una qualitat general millor i fitxers més petits que utilitzant una taxa de "
 "bits constant durant tota la peça.<br>Per açò, la mesura de taxa de bits "
 "d'este control lliscant és només una estimació de la mitjana de la taxa de "
-"bits de la peça codificada.<br><b>128 kb/s</b> és una bona opció per "
+"bits de la peça codificada.<br><b>128 kb/s</b> és una bona opció per a "
 "escoltar música en un reproductor portàtil.<br/>Valors per davall de <b>100 "
 "kb/s</b> poden ser insatisfactoris per a la música i valors per damunt de "
 "<b>256 kb/s</b> són probablement excessius."
@@ -7858,7 +7812,7 @@ msgid ""
 msgstr ""
 "La taxa de bits és una mesura de la quantitat de dades utilitzades per a "
 "representar un segon de la peça d'àudio.<br>El codificador <b>Vorbis</b> que "
-"utilitza Amarok permet alguns configuracions de <a href=http://en.wikipedia."
+"utilitza Amarok permet algunes configuracions de <a href=http://en.wikipedia."
 "org/wiki/Vorbis#Technical_details>taxa de bits variable (VBR)</a>, el qual "
 "vol dir que la taxa de bits fluctuarà durant la peça segons la complexitat "
 "del contingut de l'àudio. Els intervals de dades més complexos es codifiquen "
@@ -7870,7 +7824,7 @@ msgstr ""
 "lliscant és només una estimació aproximada (proporcionada per Vorbis) de la "
 "mitjana de la taxa de bits de la peça codificada donat un valor q. De fet, "
 "amb versions de Vorbis més noves i eficients, la taxa de bits és fins i tot "
-"més baixa.<br><b>-q5</b> és una bona opció per escoltar música en un "
+"més baixa.<br><b>-q5</b> és una bona opció per a escoltar música en un "
 "reproductor portàtil.<br/>Valors per davall de <b>-q3</b> poden ser "
 "insatisfactoris per a la música i valors per damunt de <b>-q8</b> són "
 "probablement excessius."
@@ -7894,9 +7848,9 @@ msgid ""
 msgstr ""
 "<a href=http://ca.wikipedia.org/wiki/Ogg_Vorbis>Ogg Vorbis</a> és un còdec "
 "obert i sense cànons per a comprimir música digital amb pèrdues.<br>Este "
-"produïx fitxers més petits que l'MP3 per qualitats equivalents o superiors. "
+"produïx fitxers més petits que MP3 per a qualitats equivalents o superiors. "
 "Ogg Vorbis és una opció excel·lent per a tots els contextos, especialment "
-"per reproductors de música portàtils compatibles."
+"per a reproductors de música portàtils compatibles."
 
 #: core/transcoding/formats/TranscodingWmaFormat.cpp:28
 #, kde-format
@@ -7920,7 +7874,7 @@ msgstr ""
 "Windows_Media_Audio#Windows_Media_Audio> taxa de bits constant (CBR)</a>."
 "<br>Per açò, la mesura de la taxa de bits d'este control lliscant és una "
 "estimació força acurada de la taxa de bits de la peça codificada.<br><b>136 "
-"kb/s</b> és una bona opció per escoltar música en un reproductor portàtil."
+"kb/s</b> és una bona opció per a escoltar música en un reproductor portàtil."
 "<br/>Valors per davall de <b>112 kb/s</b> poden ser insatisfactoris per a la "
 "música i valors per damunt de <b>182 kb/s</b> són probablement excessius."
 
@@ -7942,8 +7896,8 @@ msgid ""
 msgstr ""
 "<a href=http://en.wikipedia.org/wiki/Windows_Media_Audio>Windows Media "
 "Audio</a> (WMA) és un còdec privatiu desenvolupat per Microsoft, per a una "
-"compressió d'àudio amb pèrdues.<br>Només és recomanable per reproductors de "
-"música portàtils que no siguen compatibles amb Ogg Vorbis."
+"compressió d'àudio amb pèrdues.<br>Només és recomanable per a reproductors "
+"de música portàtils que no siguen compatibles amb Ogg Vorbis."
 
 #: core/transcoding/TranscodingConfiguration.cpp:109
 #, kde-format
@@ -8249,7 +8203,7 @@ msgctxt "@item::intable"
 msgid "URL"
 msgstr "URL"
 
-#: covermanager/CoverManager.cpp:111 MainWindow.cpp:798
+#: covermanager/CoverManager.cpp:111 MainWindow.cpp:799
 #, kde-format
 msgid "Cover Manager"
 msgstr "Gestor de caràtules"
@@ -8400,7 +8354,7 @@ msgstr "%1 - %2"
 msgid "No Artist"
 msgstr "Cap artista"
 
-#: covermanager/CoverViewDialog.cpp:34 covermanager/CoverViewDialog.cpp:45
+#: covermanager/CoverViewDialog.cpp:33 covermanager/CoverViewDialog.cpp:44
 #, kde-format
 msgid "Cover View"
 msgstr "Vista de la caràtula"
@@ -8452,8 +8406,8 @@ msgstr ""
 #, kde-format
 msgid "&Scan folders recursively (requires full rescan if newly checked)"
 msgstr ""
-"E&scaneja les carpetes recursivament (requerix una exploració completa si "
-"s'ha activat de nou)"
+"E&xplora les carpetes recursivament (requerix una exploració completa si "
+"s'ha marcat de nou)"
 
 #: dialogs/CollectionSetup.cpp:81
 #, kde-format
@@ -8463,7 +8417,7 @@ msgstr "&Vigila els canvis en les carpetes"
 #: dialogs/CollectionSetup.cpp:90
 #, kde-format
 msgid "If selected, Amarok will read all subfolders."
-msgstr "Si està seleccionada, Amarok llegirà totes les subcarpetes."
+msgstr "Si està marcada, Amarok llegirà totes les subcarpetes."
 
 #: dialogs/CollectionSetup.cpp:91
 #, kde-format
@@ -8471,8 +8425,7 @@ msgid ""
 "If selected, the collection folders will be watched for changes.\n"
 "The watcher will not notice changes behind symbolic links."
 msgstr ""
-"Si està seleccionada, es vigilaran els canvis en les carpetes de la "
-"col·lecció.\n"
+"Si està marcada, es vigilaran els canvis en les carpetes de la col·lecció.\n"
 "El vigilant no s'adonarà dels canvis darrere els enllaços simbòlics."
 
 #: dialogs/CollectionSetup.cpp:189
@@ -8603,12 +8556,12 @@ msgstr ""
 #: dialogs/deletedialog.cpp:75
 #, kde-format
 msgid "<qt>These items will be moved to the Trash Bin.</qt>"
-msgstr "<qt>Estos elements es mouran a la Paperera.</qt>"
+msgstr "<qt>Estos elements es mouran cap a dins de la paperera.</qt>"
 
 #: dialogs/deletedialog.cpp:87
 #, kde-format
 msgid "&Send to Trash"
-msgstr "&Llença a la paperera"
+msgstr "&Llença a dins de la paperera"
 
 #: dialogs/deletedialog.cpp:93
 #, kde-format
@@ -8655,7 +8608,7 @@ msgstr "Lloc de reserva per al nombre de fitxers, no es troba en la IGU"
 #: dialogs/deletedialogbase.ui:102
 #, kde-format
 msgid "&Delete files instead of moving them to the trash"
-msgstr "Sup&rimix els fitxers en lloc de llençar-los a la paperera"
+msgstr "Sup&rimix els fitxers en lloc de llençar-los a dins de la paperera"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, ddShouldDelete)
 #: dialogs/deletedialogbase.ui:105
@@ -8664,8 +8617,8 @@ msgid ""
 "If checked, files will be permanently removed instead of being placed in the "
 "Trash Bin"
 msgstr ""
-"Si està activada, els fitxers s'eliminaran definitivament en comptes de "
-"llençar-los a la paperera"
+"Si està marcada, els fitxers s'eliminaran definitivament en comptes de "
+"llençar-los a dins de la paperera"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ddShouldDelete)
 #: dialogs/deletedialogbase.ui:110
@@ -8677,8 +8630,8 @@ msgid ""
 "<p><em>Use this option with caution</em>: Most filesystems are unable to "
 "reliably undelete deleted files.</p></qt>"
 msgstr ""
-"<qt><p>Si esta casella està activada, els fitxers s'<b>eliminaran "
-"definitivament</b> en comptes de llençar-los a la paperera.</p>\n"
+"<qt><p>Si està marcada, els fitxers s'<b>eliminaran definitivament</b> en "
+"comptes de llençar-los a dins de la paperera.</p>\n"
 "\n"
 "<p><em>Utilitzeu esta opció amb cautela</em>: La majoria dels sistemes de "
 "fitxers són incapaços de recuperar un fitxer suprimit.</p></qt>"
@@ -8712,7 +8665,7 @@ msgid ""
 "Empty commands are not executed."
 msgstr ""
 "Establiu ací una ordre que s'executarà just abans de connectar-se amb el "
-"dispositiu (p. ex. una ordre «mount»).\n"
+"dispositiu (p. ex., una ordre «mount»).\n"
 "%d se substituirà pel node del dispositiu i %m pel punt de muntatge.\n"
 "Una ordre buida no s'executarà."
 
@@ -8735,14 +8688,14 @@ msgid ""
 "Empty commands are not executed."
 msgstr ""
 "Establiu ací una ordre que s'executarà just després de desconnectar-se del "
-"dispositiu (p. ex. una ordre «eject»).\n"
+"dispositiu (p. ex., una ordre «eject»).\n"
 "%d se substituirà pel node del dispositiu i %m pel punt de muntatge.\n"
 "Una ordre buida no s'executarà."
 
 #: dialogs/deviceconfiguredialog.cpp:100
 #, kde-format
 msgid "&Transcode before transferring to device"
-msgstr "&Transcodifica abans de transferir al dispositiu"
+msgstr "&Transcodifica abans de transferir cap al dispositiu"
 
 #: dialogs/deviceconfiguredialog.cpp:107
 #, kde-format
@@ -8770,11 +8723,6 @@ msgid "For this feature, a script of type \"Transcode\" has to be running"
 msgstr ""
 "Per a esta característica, s'ha d'estar executant un script del tipus "
 "«transcodificar»"
-
-#: dialogs/DiagnosticDialog.cpp:84
-#, kde-format
-msgid "Copy to Clipboard"
-msgstr "Copia al porta-retalls"
 
 #: dialogs/DiagnosticDialog.cpp:88
 #, kde-format
@@ -8943,8 +8891,8 @@ msgstr ""
 #, kde-format
 msgid "Reset selected preset setting to default or to the last saved change."
 msgstr ""
-"Restaura la configuració de l'ambient seleccionat al valor predeterminat o "
-"al últim canvi guardat."
+"Restaura la configuració de l'ambient seleccionat al valor predeterminat o a "
+"l'últim canvi guardat."
 
 #. i18n: ectx: property (text), widget (QPushButton, eqPresetResetBtn)
 #: dialogs/EqualizerDialog.ui:92
@@ -9034,11 +8982,6 @@ msgstr "Neteja totes les seleccions, inclús les manuals."
 #, kde-format
 msgid "Collapse Chosen"
 msgstr "Reduïx els seleccionats"
-
-#: dialogs/MusicBrainzTagger.cpp:105 statsyncing/ui/MatchedTracksPage.cpp:167
-#, kde-format
-msgid "Collapse All"
-msgstr "Reduïx-ho tot"
 
 #: dialogs/MusicBrainzTagger.cpp:112
 #, kde-format
@@ -9173,7 +9116,7 @@ msgstr "&Carpeta de la col·lecció:"
 #: dialogs/OrganizeCollectionDialogBase.ui:51
 #, kde-format
 msgid "The collection folder to which the files will be transferred."
-msgstr "La carpeta de col·leccions a on es transferiran els fitxers."
+msgstr "La carpeta de col·leccions cap a on es transferiran els fitxers."
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, optionsButton)
 #. i18n: ectx: property (whatsThis), widget (QToolButton, optionsButton)
@@ -9184,7 +9127,7 @@ msgid ""
 "<html>Show/hide additional controls to specify destination track paths based "
 "on their metadata.</html>"
 msgstr ""
-"<html>Mostra/oculta controls addicionals per a especificar els camins de "
+"<html>Mostra o oculta controls addicionals per a especificar els camins de "
 "destinació de les peces basats en les seues metadades.</html>"
 
 #. i18n: ectx: property (text), widget (QToolButton, optionsButton)
@@ -9206,7 +9149,7 @@ msgstr "Vista prèvia de la destinació"
 #, kde-format
 msgid "If checked, overwrite files of the same name without asking."
 msgstr ""
-"Si està activada, se sobreescriuran els fitxers amb el mateix nom sense "
+"Si està marcada, se sobreescriuran els fitxers amb el mateix nom sense "
 "demanar confirmació."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, overwriteCheck)
@@ -9233,7 +9176,7 @@ msgstr ""
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Activeu-la per a "
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Marqueu-la per a "
 "sobreescriure automàticament els fitxers amb el mateix nom. <span style=\" "
 "font-style:italic;\">(Avís: La sobreescriptura no es pot desfer)</span></p></"
 "body></html>"
@@ -9254,7 +9197,7 @@ msgstr "Substitució de caràcters"
 #: dialogs/OrganizeCollectionOptions.ui:35
 #, kde-format
 msgid "If checked, convert spaces to underscores."
-msgstr "SI està activat, convertix els espais en caràcters de subratllat."
+msgstr "Si està marcada, es convertiran els espais en caràcters de subratllat."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, spaceCheck)
 #: dialogs/OrganizeCollectionOptions.ui:38
@@ -9263,9 +9206,8 @@ msgid ""
 "If checked all spaces will be replaced with underscores in the file names. "
 "If not, spaces will be left as they are."
 msgstr ""
-"Si està activada, tots els espais se substituiran per caràcters de "
-"subratllat en els noms de fitxer. Si no, els espais es deixaran tal com "
-"estan."
+"Si està marcada, tots els espais se substituiran per caràcters de subratllat "
+"en els noms de fitxer. Si no, els espais es deixaran tal com estan."
 
 #. i18n: ectx: property (text), widget (QCheckBox, spaceCheck)
 #: dialogs/OrganizeCollectionOptions.ui:41
@@ -9278,8 +9220,8 @@ msgstr "Substituïx els espais per g&uions baixos"
 #, kde-format
 msgid "If checked, append ', The' to the artists' names starting with 'The'."
 msgstr ""
-"Si està activada, afig els noms dels artistes que comencen per «The» amb «, "
-"The»."
+"Si està marcada, s'afegirà «, The» als noms dels artistes que comencen per "
+"«The»."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreTheCheck)
 #: dialogs/OrganizeCollectionOptions.ui:57
@@ -9288,8 +9230,8 @@ msgid ""
 "If checked all artists starting with \"The\" will have it moved to the end. "
 "Example, \"The Beatles\" would become \"Beatles, The\""
 msgstr ""
-"Si està activada, tots els artistes que comencen per «The», es mourà al "
-"final. Per exemple, «The Beatles» esdevindria «Beatles, The»"
+"Si està marcada, tots els artistes que comencen per «The», este es mourà al "
+"final del nom. Per exemple, «The Beatles» esdevindria «Beatles, The»"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ignoreTheCheck)
 #: dialogs/OrganizeCollectionOptions.ui:60
@@ -9309,7 +9251,7 @@ msgstr ""
 "Substituïx els caràcters incompatibles amb els sistemes de fitxers MS-DOS/"
 "VFAT per caràcters de subratllat.\n"
 "\n"
-"La majoria de la gent pot deixar esta opció activada."
+"La majoria de la gent pot deixar esta opció marcada."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, vfatCheck)
 #: dialogs/OrganizeCollectionOptions.ui:80
@@ -9322,7 +9264,7 @@ msgid ""
 "Most people can leave this option enabled as it ensures copying to media "
 "devices will function correctly."
 msgstr ""
-"Si està activada, els caràcters incompatibles amb els sistemes de fitxers MS-"
+"Si està marcada, els caràcters incompatibles amb els sistemes de fitxers MS-"
 "DOS/VFAT se substituiran per caràcters de subratllat. Els caràcters "
 "incompatibles inclouen «|», «?», «*», «<», «\"», «:», «>», «+», «[», «]», i "
 "els caràcters de control Unicode.\n"
@@ -9373,7 +9315,7 @@ msgstr ""
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Si està activada, tots els "
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Si està marcada, tots els "
 "caràcters no ASCII se substituiran per subratllats.<span style=\" font-"
 "weight:600;\"> </span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
@@ -9381,14 +9323,14 @@ msgstr ""
 "weight:600;\"></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">No activeu esta opció si teniu caràcters no anglesos en les "
+"weight:600;\">No marqueu esta opció si teniu caràcters no anglesos en les "
 "vostres etiquetes. </span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
 "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
 "p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\">La majoria de la gent pot "
-"deixar esta opció desactivada.</p></body></html>"
+"deixar esta opció desmarcada.</p></body></html>"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, asciiCheck)
 #: dialogs/OrganizeCollectionOptions.ui:113
@@ -9422,17 +9364,17 @@ msgstr ""
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Si està activada, tots els "
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Si està marcada, tots els "
 "caràcters no ASCII se substituiran per subratllats.<span style=\" font-"
-"weight:600;\"> No activeu esta opció si teniu caràcters no anglesos en les "
+"weight:600;\"> No marqueu esta opció si teniu caràcters no anglesos en les "
 "vostres etiquetes. </span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
 "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
 "p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\">La majoria de la gent pot "
-"deixar esta opció <span style=\" font-style:italic;\">desactivada.</span></"
-"p> </body></html>"
+"deixar esta opció <span style=\" font-style:italic;\">desmarcada.</span></p> "
+"</body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, asciiCheck)
 #: dialogs/OrganizeCollectionOptions.ui:116
@@ -9945,7 +9887,7 @@ msgstr "Any desconegut"
 #: dialogs/transferdialog.cpp:61
 #, kde-format
 msgid "Transfer Queue to Device"
-msgstr "Transferix la cua al dispositiu"
+msgstr "Transferix la cua cap al dispositiu"
 
 #: dialogs/transferdialog.cpp:69
 #, kde-format
@@ -9958,7 +9900,7 @@ msgid ""
 "Your music will be transferred to:\n"
 "%1"
 msgstr ""
-"La seua música es transferirà a:\n"
+"La seua música es transferirà cap a:\n"
 "%1"
 
 #: dialogs/transferdialog.cpp:82
@@ -10046,14 +9988,13 @@ msgstr "S'està generant la llista de reproducció..."
 #, kde-format
 msgctxt "Name of the \"AlbumPlay\" bias"
 msgid "Album play"
-msgstr "Reproducció d'àlbum"
+msgstr "Reproduïu l'àlbum"
 
 #: dynamic/biases/AlbumPlayBias.cpp:45
 #, kde-format
 msgctxt "Description of the \"AlbumPlay\" bias"
 msgid "The \"AlbumPlay\" bias adds tracks that belong to one album."
-msgstr ""
-"La ponderació «Reproducció d'àlbum» afig peces que pertanyen a un àlbum."
+msgstr "La ponderació «Reproduïu l'àlbum» afig peces que pertanyen a un àlbum."
 
 #: dynamic/biases/AlbumPlayBias.cpp:107
 #, kde-format
@@ -10104,13 +10045,13 @@ msgstr ""
 "La ponderació «EchoNest» busca peces amb «EchoNest» i només afig peces "
 "similars."
 
-#: dynamic/biases/EchoNestBias.cpp:126
+#: dynamic/biases/EchoNestBias.cpp:125
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to the previous artist (as reported by EchoNest)"
 msgstr "Similar a l'artista anterior (segons «EchoNest»)"
 
-#: dynamic/biases/EchoNestBias.cpp:129
+#: dynamic/biases/EchoNestBias.cpp:128
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to any artist in the current playlist (as reported by EchoNest)"
@@ -10118,7 +10059,7 @@ msgstr ""
 "Similar a qualsevol artista de la llista de reproducció actual (segons "
 "«EchoNest»)"
 
-#: dynamic/biases/EchoNestBias.cpp:142
+#: dynamic/biases/EchoNestBias.cpp:141
 #, kde-format
 msgid ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> thinks the artist is "
@@ -10127,13 +10068,13 @@ msgstr ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> creu que l'artista és "
 "similar a"
 
-#: dynamic/biases/EchoNestBias.cpp:144
-#: services/lastfm/biases/LastFmBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:143
+#: services/lastfm/biases/LastFmBias.cpp:144
 #, kde-format
 msgid "the previous track's artist"
 msgstr "l'artista de la peça anterior"
 
-#: dynamic/biases/EchoNestBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:144
 #, kde-format
 msgid "one of the artist in the current playlist"
 msgstr "una de l'artista de la llista de reproducció actual"
@@ -10396,7 +10337,7 @@ msgstr "Pop"
 #: dynamic/DynamicModel.cpp:928
 #, kde-format
 msgid "Album play"
-msgstr "Reproducció d'àlbum"
+msgstr "Reproduïu l'àlbum"
 
 #: dynamic/DynamicModel.cpp:938
 #, kde-format
@@ -10408,7 +10349,7 @@ msgstr "Valoració"
 #, kde-format
 msgid "Too many errors encountered in playlist. Playback stopped."
 msgstr ""
-"S'han trobat massa errors en la llista de reproducció. S'ha parat la "
+"S'han trobat massa errors en la llista de reproducció. Es para la "
 "reproducció."
 
 #: EngineController.cpp:1299
@@ -10572,7 +10513,7 @@ msgstr "Nom de la destinació"
 #: importers/fastforward/FastForwardConfigWidget.ui:112
 #, kde-format
 msgid "Hostname"
-msgstr "Nom de l'ordinador"
+msgstr "Nom de l'amfitrió"
 
 #. i18n: ectx: property (text), widget (QLabel, m_portLabel)
 #: importers/amarok/AmarokConfigWidget.ui:117
@@ -10677,17 +10618,17 @@ msgstr "Nom de la destinació"
 msgid "Now playing"
 msgstr "Ara s'està reproduint"
 
-#: lyrics/LyricsManager.cpp:74
+#: lyrics/LyricsManager.cpp:75
 #, kde-format
 msgid "Retrieved lyrics is empty"
 msgstr "La lletra recuperada està buida"
 
-#: lyrics/LyricsManager.cpp:110
+#: lyrics/LyricsManager.cpp:111
 #, kde-format
 msgid "Lyrics data could not be parsed"
 msgstr "No s'ha pogut analitzar la informació de la lletra"
 
-#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:693
+#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:690
 #, kde-format
 msgid "No information available for this track"
 msgstr "No hi ha informació disponible per a esta peça"
@@ -10701,10 +10642,10 @@ msgstr "El reproductor d'àudio creat per la comunitat KDE"
 #, kde-format
 msgid ""
 "(C) 2002-2003, Mark Kretschmann\n"
-"(C) 2003-2013, The Amarok Development Squad"
+"(C) 2003-2024, The Amarok Development Squad"
 msgstr ""
 "(C) 2002-2003, Mark Kretschmann\n"
-"(C) 2003-2013, l'escamot de desenvolupament d'Amarok"
+"(C) 2003-2024, l'escamot de desenvolupament d'Amarok"
 
 #: main.cpp:101
 #, kde-format
@@ -10725,133 +10666,12 @@ msgstr ""
 "\n"
 "(Data de compilació: %1)"
 
-#: main.cpp:107
-#, kde-format
-msgid "Bart 'Where are my toothpicks' Cerneels"
-msgstr "Bart «Where are my toothpicks» Cerneels"
-
-#: main.cpp:108
-#, kde-format
-msgid "Developer (Stecchino)"
-msgstr "Desenvolupador (Stecchino)"
-
 #: main.cpp:111
-#, kde-format
-msgid "Edward \"Hades\" Toroshchin"
-msgstr "Edward «Hades» Toroshchin"
-
-#: main.cpp:112
-#, kde-format
-msgid "Developer (dr_lepper)"
-msgstr "Desenvolupador (dr_lepper)"
-
-#: main.cpp:115
-#, kde-format
-msgid "Mark Kretschmann"
-msgstr "Mark Kretschmann"
-
-#: main.cpp:116
-#, kde-format
-msgid "Project founder (markey)"
-msgstr "Fundador del projecte (markey)"
-
-#: main.cpp:119
-#, kde-format
-msgid "Matěj Laitl"
-msgstr "Matěj Laitl"
-
-#: main.cpp:120
-#, kde-format
-msgid "iPod collection rewrite & more (strohel)"
-msgstr "Reescriptura de la col·lecció iPod i més (strohel)"
-
-#: main.cpp:123
-#, kde-format
-msgid "Myriam Schweingruber"
-msgstr "Myriam Schweingruber"
-
-#: main.cpp:123
-#, kde-format
-msgid "Rokymoter, Bug triaging (Mamarok)"
-msgstr "Rokymoter, triatge d'errors (Mamarok)"
-
-#: main.cpp:126
-#, kde-format
-msgid "Ralf 'SalsaMaster' Engels"
-msgstr "Ralf «SalsaMaster» Engels"
-
-#: main.cpp:127
-#, kde-format
-msgid "Developer (rengels)"
-msgstr "Desenvolupador (rengels)"
-
-#: main.cpp:130
-#, kde-format
-msgid "Patrick von Reth"
-msgstr "Patrick von Reth"
-
-#: main.cpp:130
-#, kde-format
-msgid "Windows build (TheOneRing)"
-msgstr "Compilació a Windows (TheOneRing)"
-
-#: main.cpp:134
-#, kde-format
-msgid "Rick W. Chen"
-msgstr "Rick W. Chen"
-
-#: main.cpp:135
-#, kde-format
-msgid "Developer (stuffcorpse)"
-msgstr "Desenvolupador (stuffcorpse)"
-
-#: main.cpp:138
-#, kde-format
-msgid "Sam Lade"
-msgstr "Sam Lade"
-
-#: main.cpp:138
-#, kde-format
-msgid "Developer (Sentynel)"
-msgstr "Desenvolupador (Sentynel)"
-
-#: main.cpp:142
-#, kde-format
-msgid "Sven Krohlas"
-msgstr "Sven Krohlas"
-
-#: main.cpp:142
-#, kde-format
-msgid "Rokymoter, Developer (sven423)"
-msgstr "Rokymoter, desenvolupador (sven423)"
-
-#: main.cpp:145
-#, kde-format
-msgid "Téo Mrnjavac"
-msgstr "Téo Mrnjavac"
-
-# skip-rule: t-acc_obe
-#: main.cpp:146
-#, kde-format
-msgid "Developer (Teo`)"
-msgstr "Desenvolupador (Teo`)"
-
-#: main.cpp:149
-#, kde-format
-msgid "Valorie Zimmerman"
-msgstr "Valorie Zimmerman"
-
-#: main.cpp:150
-#, kde-format
-msgid "Rokymoter, Handbook (valorie)"
-msgstr "Rokymoter, Manual (valorie)"
-
-#: main.cpp:156
 #, kde-format
 msgid "<i>Inactive authors</i>"
 msgstr "<i>Autoria inactius</i>"
 
-#: main.cpp:157
+#: main.cpp:112
 #, kde-format
 msgid ""
 "Amarok authorship is not a hobby, it's a lifestyle. But when people move on "
@@ -10860,750 +10680,871 @@ msgstr ""
 "Ser autor d'Amarok no és un entreteniment, és un estil de vida. Però quan la "
 "gent se'n va, es vol mantindre el respecte fent-ne menció ací:"
 
-#: main.cpp:162
+#: main.cpp:117
+#, kde-format
+msgid "Bart 'Where are my toothpicks' Cerneels"
+msgstr "Bart «Where are my toothpicks» Cerneels"
+
+#: main.cpp:118
+#, kde-format
+msgid "Developer (Stecchino)"
+msgstr "Desenvolupador (Stecchino)"
+
+#: main.cpp:121
+#, kde-format
+msgid "Edward \"Hades\" Toroshchin"
+msgstr "Edward «Hades» Toroshchin"
+
+#: main.cpp:122
+#, kde-format
+msgid "Developer (dr_lepper)"
+msgstr "Desenvolupador (dr_lepper)"
+
+#: main.cpp:125
+#, kde-format
+msgid "Mark Kretschmann"
+msgstr "Mark Kretschmann"
+
+#: main.cpp:126
+#, kde-format
+msgid "Project founder (markey)"
+msgstr "Fundador del projecte (markey)"
+
+#: main.cpp:129
+#, kde-format
+msgid "Matěj Laitl"
+msgstr "Matěj Laitl"
+
+#: main.cpp:130
+#, kde-format
+msgid "iPod collection rewrite & more (strohel)"
+msgstr "Reescriptura de la col·lecció iPod i més (strohel)"
+
+#: main.cpp:133
+#, kde-format
+msgid "Myriam Schweingruber"
+msgstr "Myriam Schweingruber"
+
+#: main.cpp:133
+#, kde-format
+msgid "Rokymoter, Bug triaging (Mamarok)"
+msgstr "Rokymoter, triatge d'errors (Mamarok)"
+
+#: main.cpp:136
+#, kde-format
+msgid "Ralf 'SalsaMaster' Engels"
+msgstr "Ralf «SalsaMaster» Engels"
+
+#: main.cpp:137
+#, kde-format
+msgid "Developer (rengels)"
+msgstr "Desenvolupador (rengels)"
+
+#: main.cpp:140
+#, kde-format
+msgid "Patrick von Reth"
+msgstr "Patrick von Reth"
+
+#: main.cpp:140
+#, kde-format
+msgid "Windows build (TheOneRing)"
+msgstr "Compilació a Windows (TheOneRing)"
+
+#: main.cpp:144
+#, kde-format
+msgid "Rick W. Chen"
+msgstr "Rick W. Chen"
+
+#: main.cpp:145
+#, kde-format
+msgid "Developer (stuffcorpse)"
+msgstr "Desenvolupador (stuffcorpse)"
+
+#: main.cpp:148
+#, kde-format
+msgid "Sam Lade"
+msgstr "Sam Lade"
+
+#: main.cpp:148
+#, kde-format
+msgid "Developer (Sentynel)"
+msgstr "Desenvolupador (Sentynel)"
+
+#: main.cpp:152
+#, kde-format
+msgid "Sven Krohlas"
+msgstr "Sven Krohlas"
+
+#: main.cpp:152
+#, kde-format
+msgid "Rokymoter, Developer (sven423)"
+msgstr "Rokymoter, desenvolupador (sven423)"
+
+#: main.cpp:155
+#, kde-format
+msgid "Téo Mrnjavac"
+msgstr "Téo Mrnjavac"
+
+# skip-rule: t-acc_obe
+#: main.cpp:156
+#, kde-format
+msgid "Developer (Teo`)"
+msgstr "Desenvolupador (Teo`)"
+
+#: main.cpp:159
+#, kde-format
+msgid "Valorie Zimmerman"
+msgstr "Valorie Zimmerman"
+
+#: main.cpp:160
+#, kde-format
+msgid "Rokymoter, Handbook (valorie)"
+msgstr "Rokymoter, Manual (valorie)"
+
+#: main.cpp:165
 #, kde-format
 msgid "Ian 'The Beard' Monroe"
 msgstr "Ian «The Beard» Monroe"
 
-#: main.cpp:162
+#: main.cpp:165
 #, kde-format
 msgid "Developer (eean)"
 msgstr "Desenvolupador (eean)"
 
-#: main.cpp:165
+#: main.cpp:168
 #, kde-format
 msgid "Jeff 'IROKSOHARD' Mitchell"
 msgstr "Jeff «IROKSOHARD» Mitchell"
 
-#: main.cpp:165
+#: main.cpp:168
 #, kde-format
 msgid "Developer (jefferai)"
 msgstr "Desenvolupador (jefferai)"
 
-#: main.cpp:168
+#: main.cpp:171
 #, kde-format
 msgid "Developer (lfranchi)"
 msgstr "Desenvolupador (lfranchi)"
 
-#: main.cpp:171
+#: main.cpp:174
 #, kde-format
 msgid "Lydia 'is wrong(TM)' Pintscher"
 msgstr "Lydia «is wrong(TM)» Pintscher"
 
-#: main.cpp:171
+#: main.cpp:174
 #, kde-format
 msgid "Release Vixen (Nightrose)"
 msgstr "Release Vixen (Nightrose)"
 
-#: main.cpp:174
+#: main.cpp:177
 #, kde-format
 msgid "Max Howell"
 msgstr "Max Howell"
 
-#: main.cpp:174
+#: main.cpp:177
 #, kde-format
 msgid "Developer, Vision"
 msgstr "Desenvolupador, Vision"
 
-#: main.cpp:177
+#: main.cpp:180
 #, kde-format
 msgid "Maximilian Kossick"
 msgstr "Maximilian Kossick"
 
-#: main.cpp:177
+#: main.cpp:180
 #, kde-format
 msgid "Developer (maxx_k)"
 msgstr "Desenvolupador (maxx_k)"
 
-#: main.cpp:180
+#: main.cpp:183
 #, kde-format
 msgid "Nikolaj Hald 'Also very hot' Nielsen"
 msgstr "Nikolaj Hald «Also very hot» Nielsen"
 
-#: main.cpp:180
+#: main.cpp:183
 #, kde-format
 msgid "Developer (nhn)"
 msgstr "Desenvolupador (nhn)"
 
 # skip-rule: t-apo_fin
-#: main.cpp:183
+#: main.cpp:186
 #, kde-format
 msgid "Seb 'Surfin' down under' Ruiz"
 msgstr "Seb «Surfin' down under» Ruiz"
 
-#: main.cpp:183
+#: main.cpp:186
 #, kde-format
 msgid "Developer (sebr)"
 msgstr "Desenvolupador (sebr)"
 
-#: main.cpp:188
+#: main.cpp:191
 #, kde-format
 msgid "Alejandro Wainzinger"
 msgstr "Alejandro Wainzinger"
 
-#: main.cpp:188
+#: main.cpp:191
 #, kde-format
 msgid "Developer (xevix)"
 msgstr "Desenvolupador (xevix)"
 
-#: main.cpp:190
+#: main.cpp:193
 #, kde-format
 msgid "Alex Merry"
 msgstr "Alex Merry"
 
-#: main.cpp:190
+#: main.cpp:193
 #, kde-format
 msgid "Developer, Replay Gain support"
 msgstr "Desenvolupador, implementació de guany de repetició"
 
-#: main.cpp:192
+#: main.cpp:195
 #, kde-format
 msgid "Casey Link"
 msgstr "Casey Link"
 
-#: main.cpp:192
+#: main.cpp:195
 #, kde-format
 msgid "MP3tunes integration"
 msgstr "Integració amb MP3tunes"
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "Casper van Donderen"
 msgstr "Casper van Donderen"
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "Windows porting"
 msgstr "Adaptació a Windows"
 
-#: main.cpp:196
+#: main.cpp:199
 #, kde-format
 msgid "Christie Harris"
 msgstr "Christie Harris"
 
-#: main.cpp:196
+#: main.cpp:199
 #, kde-format
 msgid "Rokymoter (dangle)"
 msgstr "Rokymoter (dangle)"
 
-#: main.cpp:198
+#: main.cpp:201
 #, kde-format
 msgid "Dan Leinir Turthra Jensen"
 msgstr "Dan Leinir Turthra Jensen"
 
-#: main.cpp:198
+#: main.cpp:201
 #, kde-format
 msgid "Usability"
 msgstr "Usabilitat"
 
-#: main.cpp:200
+#: main.cpp:203
 #, kde-format
 msgid "Dan 'Hey, it compiled...' Meltzer"
 msgstr "Dan «Hey, it compiled...» Meltzer"
 
-#: main.cpp:200
+#: main.cpp:203
 #, kde-format
 msgid "Developer (hydrogen)"
 msgstr "Desenvolupador (hydrogen)"
 
-#: main.cpp:202
+#: main.cpp:205
 #, kde-format
 msgid "Daniel Caleb Jones"
 msgstr "Daniel Caleb Jones"
 
-#: main.cpp:202
+#: main.cpp:205
 #, kde-format
 msgid "Biased playlists"
 msgstr "Llistes de reproducció amb influència"
 
-#: main.cpp:204
+#: main.cpp:207
 #, kde-format
 msgid "Daniel Dewald"
 msgstr "Daniel Dewald"
 
-#: main.cpp:204
+#: main.cpp:207
 #, kde-format
 msgid "Tag Guesser, Labels, Spectrum Analyzer"
 msgstr "Deducció de marques, etiquetes, analitzador d'espectre"
 
-#: main.cpp:206
+#: main.cpp:209
 #, kde-format
 msgid "Daniel Winter"
 msgstr "Daniel Winter"
 
-#: main.cpp:206
+#: main.cpp:209
 #, kde-format
 msgid "Nepomuk integration"
 msgstr "Integració amb Nepomuk"
 
-#: main.cpp:208
+#: main.cpp:211
 #, kde-format
 msgid "Frank Meerkötter"
 msgstr "Frank Meerkötter"
 
-#: main.cpp:208 main.cpp:228
+#: main.cpp:211 main.cpp:231
 #, kde-format
 msgid "Podcast improvements"
-msgstr "Millores en els podcast"
+msgstr "Millores en els pòdcast"
 
-#: main.cpp:210
+#: main.cpp:213
 #, kde-format
 msgid "Greg Meyer"
 msgstr "Greg Meyer"
 
-#: main.cpp:210
+#: main.cpp:213
 #, kde-format
 msgid "Live CD, Bug squashing (oggb4mp3)"
 msgstr "Live CD, resolució d'errors (oggb4mp3)"
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "Phonon, Lord-President of KDE Multimedia (apachelogger)"
 msgstr "Phonon, Lord-President de KDE Multimedia (apachelogger)"
 
-#: main.cpp:214
+#: main.cpp:217
 #, kde-format
 msgid "John Atkinson"
 msgstr "John Atkinson"
 
-#: main.cpp:214
+#: main.cpp:217
 #, kde-format
 msgid "Assorted patches"
 msgstr "Pedaços diversos"
 
-#: main.cpp:216
+#: main.cpp:219
 #, kde-format
 msgid "Kenneth Wesley Wimer II"
 msgstr "Kenneth Wesley Wimer II"
 
-#: main.cpp:216
+#: main.cpp:219
 #, kde-format
 msgid "Icons"
 msgstr "Icones"
 
-#: main.cpp:218
+#: main.cpp:221
 #, kde-format
 msgid "Kevin Funk"
 msgstr "Kevin Funk"
 
-#: main.cpp:218
+#: main.cpp:221
 #, kde-format
 msgid "Developer, Website theme (KRF)"
 msgstr "Desenvolupador, tema del lloc Web (KRF)"
 
-#: main.cpp:220
+#: main.cpp:223
 #, kde-format
 msgid "Kuba Serafinowski"
 msgstr "Kuba Serafinowski"
 
-#: main.cpp:220
+#: main.cpp:223
 #, kde-format
 msgid "Rokymoter"
 msgstr "Rokymoter"
 
-#: main.cpp:222
+#: main.cpp:225
 #, kde-format
 msgid "Lee Olson"
 msgstr "Lee Olson"
 
-#: main.cpp:222 main.cpp:234
+#: main.cpp:225 main.cpp:237
 #, kde-format
 msgid "Artwork"
 msgstr "Grafisme"
 
-#: main.cpp:224
+#: main.cpp:227
 #, kde-format
 msgid "Ljubomir Simin"
 msgstr "Ljubomir Simin"
 
-#: main.cpp:224
+#: main.cpp:227
 #, kde-format
 msgid "Rokymoter (ljubomir)"
 msgstr "Rokymoter (ljubomir)"
 
-#: main.cpp:226
+#: main.cpp:229
 #, kde-format
 msgid "Lucas Gomes"
 msgstr "Lucas Gomes"
 
-#: main.cpp:226
+#: main.cpp:229
 #, kde-format
 msgid "Developer (MaskMaster)"
 msgstr "Desenvolupador (MaskMaster)"
 
-#: main.cpp:228
+#: main.cpp:231
 #, kde-format
 msgid "Mathias Panzenböck"
 msgstr "Mathias Panzenböck"
 
-#: main.cpp:230
+#: main.cpp:233
 #, kde-format
 msgid "Mikko Caldara"
 msgstr "Mikko Caldara"
 
-#: main.cpp:230
+#: main.cpp:233
 #, kde-format
 msgid "Bug triaging and sanitizing"
 msgstr "Triatge d'errors i sanejament"
 
-#: main.cpp:232
+#: main.cpp:235
 #, kde-format
 msgid "Nikhil Marathe"
 msgstr "Nikhil Marathe"
 
-#: main.cpp:232
+#: main.cpp:235
 #, kde-format
 msgid "UPnP support and patches (nsm)"
 msgstr "Implementació de l'UPnP i pedaços (nsm)"
 
-#: main.cpp:234
+#: main.cpp:237
 #, kde-format
 msgid "Nuno Pinheiro"
 msgstr "Nuno Pinheiro"
 
-#: main.cpp:236
+#: main.cpp:239
 #, kde-format
 msgid "Olivier Bédard"
 msgstr "Olivier Bédard"
 
-#: main.cpp:236
+#: main.cpp:239
 #, kde-format
 msgid "Website hosting"
 msgstr "Allotjament del lloc web"
 
-#: main.cpp:238
+#: main.cpp:241
 #, kde-format
 msgid "Pasi Lalinaho"
 msgstr "Pasi Lalinaho"
 
-#: main.cpp:238
+#: main.cpp:241
 #, kde-format
 msgid "Rokymoter (emunkki)"
 msgstr "Rokymoter (emunkki)"
 
-#: main.cpp:240
+#: main.cpp:243
 #, kde-format
 msgid "Peter Zhou Lei"
 msgstr "Peter Zhou Lei"
 
-#: main.cpp:240
+#: main.cpp:243
 #, kde-format
 msgid "Scripting interface"
 msgstr "Interfície de creació de scripts"
 
-#: main.cpp:242
+#: main.cpp:245
 #, kde-format
 msgid "Phalgun Guduthur"
 msgstr "Phalgun Guduthur"
 
-#: main.cpp:242
+#: main.cpp:245
 #, kde-format
 msgid "Nepomuk Collection (phalgun)"
 msgstr "Col·lecció Nepomuk (phalgun)"
 
-#: main.cpp:244
+#: main.cpp:247
 #, kde-format
 msgid "Scott Wheeler"
 msgstr "Scott Wheeler"
 
-#: main.cpp:244
+#: main.cpp:247
 #, kde-format
 msgid "TagLib & ktrm code"
 msgstr "TagLib & codi ktrm"
 
-#: main.cpp:246
+#: main.cpp:249
 #, kde-format
 msgid "Shane King"
 msgstr "Shane King"
 
-#: main.cpp:246
+#: main.cpp:249
 #, kde-format
 msgid "Patches & Windows porting (shakes)"
 msgstr "Pedaços i adaptació a Windows (shakes)"
 
-#: main.cpp:248
+#: main.cpp:251
 #, kde-format
 msgid "Simon Esneault"
 msgstr "Simon Esneault"
 
-#: main.cpp:248
+#: main.cpp:251
 #, kde-format
 msgid "Photos & Videos applets, Context View"
 msgstr "Miniaplicacions de fotos i vídeos, vista contextual"
 
-#: main.cpp:250
+#: main.cpp:253
 #, kde-format
 msgid "Soren Harward"
 msgstr "Soren Harward"
 
-#: main.cpp:250
+#: main.cpp:253
 #, kde-format
 msgid "Developer, Automated Playlist Generator"
 msgstr "Desenvolupador, generador automàtic de llistes de reproducció"
 
-#: main.cpp:252
+#: main.cpp:255
 #, kde-format
 msgid "Thomas Lübking"
 msgstr "Thomas Lübking"
 
-#: main.cpp:254
+#: main.cpp:257
 #, kde-format
 msgid "Valentin Rouet"
 msgstr "Valentin Rouet"
 
-#: main.cpp:256
+#: main.cpp:259
 #, kde-format
 msgid "Wade Olson"
 msgstr "Wade Olson"
 
-#: main.cpp:256
+#: main.cpp:259
 #, kde-format
 msgid "Splash screen artist"
 msgstr "Artista de la pantalla de presentació"
 
-#: main.cpp:258
+#: main.cpp:261
 #, kde-format
 msgid "William Viana Soares"
 msgstr "William Viana Soares"
 
-#: main.cpp:258
+#: main.cpp:261
 #, kde-format
 msgid "Context view"
 msgstr "Vista contextual"
 
-#: main.cpp:262
+#: main.cpp:265
 #, kde-format
 msgid "Former contributors"
 msgstr "Antics col·laboradors"
 
-#: main.cpp:262
+#: main.cpp:265
 #, kde-format
 msgid "People listed below have contributed to Amarok in the past. Thank you!"
 msgstr ""
 "Les persones següents han col·laborat amb Amarok en el passat. Gràcies!"
 
-#: main.cpp:264
+#: main.cpp:267
 #, kde-format
 msgid "Adam Pigg"
 msgstr "Adam Pigg"
 
-#: main.cpp:264
+#: main.cpp:267
 #, kde-format
 msgid "Analyzers, patches, shoutcast"
 msgstr "Analitzadors, pedaços, shoutcast"
 
-#: main.cpp:266
+#: main.cpp:269
 #, kde-format
 msgid "Adeodato Simó"
 msgstr "Adeodato Simó"
 
-#: main.cpp:266 main.cpp:274
+#: main.cpp:269 main.cpp:277
 #, kde-format
 msgid "Patches"
 msgstr "Pedaços"
 
-#: main.cpp:268
+#: main.cpp:271
 #, kde-format
 msgid "Alexandre Oliveira"
 msgstr "Alexandre Oliveira"
 
-#: main.cpp:270
+#: main.cpp:273
 #, kde-format
 msgid "Andreas Mair"
 msgstr "Andreas Mair"
 
-#: main.cpp:270
+#: main.cpp:273
 #, kde-format
 msgid "MySQL support"
 msgstr "Implementació de MySQL"
 
-#: main.cpp:272
+#: main.cpp:275
 #, kde-format
 msgid "Andrew de Quincey"
 msgstr "Andrew de Quincey"
 
-#: main.cpp:272
+#: main.cpp:275
 #, kde-format
 msgid "Postgresql support"
 msgstr "Implementació del Postgresql"
 
-#: main.cpp:274
+#: main.cpp:277
 #, kde-format
 msgid "Andrew Turner"
 msgstr "Andrew Turner"
 
-#: main.cpp:276
+#: main.cpp:279
 #, kde-format
 msgid "Andy Kelk"
 msgstr "Andy Kelk"
 
-#: main.cpp:276
+#: main.cpp:279
 #, kde-format
 msgid "MTP and Rio Karma media devices, patches"
 msgstr "Dispositius de suports MTP i Rio Karma, pedaços"
 
-#: main.cpp:278
+#: main.cpp:281
 #, kde-format
 msgid "Christian Muehlhaeuser"
 msgstr "Christian Muehlhaeuser"
 
-#: main.cpp:280
+#: main.cpp:283
 #, kde-format
 msgid "Derek Nelson"
 msgstr "Derek Nelson"
 
-#: main.cpp:280
+#: main.cpp:283
 #, kde-format
 msgid "Graphics, splash-screen"
 msgstr "Gràfics, pantalla de presentació"
 
-#: main.cpp:282
+#: main.cpp:285
 #, kde-format
 msgid "Enrico Ros"
 msgstr "Enrico Ros"
 
-#: main.cpp:282
+#: main.cpp:285
 #, kde-format
 msgid "Analyzers, Context Browser and systray eye-candy"
 msgstr "Analitzadors, navegador contextual i gràfics de la safata del sistema"
 
-#: main.cpp:284
+#: main.cpp:287
 #, kde-format
 msgid "Frederik Holljen"
 msgstr "Frederik Holljen"
 
-#: main.cpp:286
+#: main.cpp:289
 #, kde-format
 msgid "Gábor Lehel"
 msgstr "Gábor Lehel"
 
-#: main.cpp:288
+#: main.cpp:291
 #, kde-format
 msgid "Gérard Dürrmeyer"
 msgstr "Gérard Dürrmeyer"
 
-#: main.cpp:288
+#: main.cpp:291
 #, kde-format
 msgid "Icons and image work"
 msgstr "Icones i treball d'imatges"
 
-#: main.cpp:290
+#: main.cpp:293
 #, kde-format
 msgid "Giovanni Venturi"
 msgstr "Giovanni Venturi"
 
-#: main.cpp:290
+#: main.cpp:293
 #, kde-format
 msgid "Dialog to filter the collection titles"
 msgstr "Diàleg per a filtrar els títols de la col·lecció"
 
-#: main.cpp:292
+#: main.cpp:295
 #, kde-format
 msgid "Jarkko Lehti"
 msgstr "Jarkko Lehti"
 
-#: main.cpp:292
+#: main.cpp:295
 #, kde-format
 msgid "Tester, IRC channel operator, whipping"
 msgstr "Provador, operador del canal IRC, flagel·lació"
 
-#: main.cpp:294
+#: main.cpp:297
 #, kde-format
 msgid "Jocke Andersson"
 msgstr "Jocke Andersson"
 
-#: main.cpp:294
+#: main.cpp:297
 #, kde-format
 msgid "Rokymoter, bug fixer (Firetech)"
 msgstr "Rokymoter, esmena d'errors (Firetech)"
 
-#: main.cpp:296
+#: main.cpp:299
 #, kde-format
 msgid "Marco Gulino"
 msgstr "Marco Gulino"
 
-#: main.cpp:296
+#: main.cpp:299
 #, kde-format
 msgid "Konqueror Sidebar, some DCOP methods"
 msgstr "Barra lateral de Konqueror, alguns mètodes del DCOP"
 
-#: main.cpp:298
+#: main.cpp:301
 #, kde-format
 msgid "Martin Aumueller"
 msgstr "Martin Aumueller"
 
-#: main.cpp:300
+#: main.cpp:303
 #, kde-format
 msgid "Melchior Franz"
 msgstr "Melchior Franz"
 
-#: main.cpp:300
+#: main.cpp:303
 #, kde-format
 msgid "FHT routine, bugfixes"
 msgstr "Rutina FHT, esmena d'errors"
 
-#: main.cpp:302
+#: main.cpp:305
 #, kde-format
 msgid "Michael Pyne"
 msgstr "Michael Pyne"
 
-#: main.cpp:302
+#: main.cpp:305
 #, kde-format
 msgid "K3b export code"
 msgstr "Codi d'exportació de K3b"
 
-#: main.cpp:304
+#: main.cpp:307
 #, kde-format
 msgid "Mike Diehl"
 msgstr "Mike Diehl"
 
-#: main.cpp:306
+#: main.cpp:309
 #, kde-format
 msgid "Paul Cifarelli"
 msgstr "Paul Cifarelli"
 
-#: main.cpp:308
+#: main.cpp:311
 #, kde-format
 msgid "Peter C. Ndikuwera"
 msgstr "Peter C. Ndikuwera"
 
-#: main.cpp:308
+#: main.cpp:311
 #, kde-format
 msgid "Bugfixes, PostgreSQL support"
 msgstr "Esmena d'errors, implementació de PostgreSQL"
 
-#: main.cpp:310
+#: main.cpp:313
 #, kde-format
 msgid "Pierpaolo Panfilo"
 msgstr "Pierpaolo Panfilo"
 
-#: main.cpp:312
+#: main.cpp:315
 #, kde-format
 msgid "Reigo Reinmets"
 msgstr "Reigo Reinmets"
 
-#: main.cpp:312
+#: main.cpp:315
 #, kde-format
 msgid "Wikipedia support, patches"
 msgstr "Implementació de la Viquipèdia, pedaços"
 
-#: main.cpp:314
+#: main.cpp:317
 #, kde-format
 msgid "Roman Becker"
 msgstr "Roman Becker"
 
-#: main.cpp:314
+#: main.cpp:317
 #, kde-format
 msgid "Former Amarok logo, former splash screen, former icons"
 msgstr "Logo antic d'Amarok, pantalla de presentació antiga, icones antigues"
 
-#: main.cpp:316
+#: main.cpp:319
 #, kde-format
 msgid "Sami Nieminen"
 msgstr "Sami Nieminen"
 
-#: main.cpp:316
+#: main.cpp:319
 #, kde-format
 msgid "Audioscrobbler support"
 msgstr "Implementació d'Audioscrobbler"
 
-#: main.cpp:318
+#: main.cpp:321
 #, kde-format
 msgid "Stanislav Karchebny"
 msgstr "Stanislav Karchebny"
 
-#: main.cpp:320
+#: main.cpp:323
 #, kde-format
 msgid "Stefan Bogner"
 msgstr "Stefan Bogner"
 
-#: main.cpp:320
+#: main.cpp:323
 #, kde-format
 msgid "Loads of stuff"
 msgstr "Càrregues de material"
 
-#: main.cpp:322
+#: main.cpp:325
 #, kde-format
 msgid "Tomasz Dudzik"
 msgstr "Tomasz Dudzik"
 
-#: main.cpp:322
+#: main.cpp:325
 #, kde-format
 msgid "Splash screen"
 msgstr "Pantalla de presentació"
 
-#: main.cpp:327
+#: main.cpp:330
 #, kde-format
 msgid "Andrew Browning"
 msgstr "Andrew Browning"
 
-#: main.cpp:328
+#: main.cpp:331
 #, kde-format
 msgid "Chris Wales"
 msgstr "Chris Wales"
 
-#: main.cpp:329
+#: main.cpp:332
 #, kde-format
 msgid "ZImin Stanislav"
 msgstr "ZImin Stanislav"
 
-#: MainWindow.cpp:255
+#: MainWindow.cpp:256
 #, kde-format
 msgid "Local Music"
 msgstr "Música local"
 
-#: MainWindow.cpp:257
+#: MainWindow.cpp:258
 #, kde-format
 msgid "Local sources of content"
 msgstr "Orígens locals de contingut"
 
-#: MainWindow.cpp:264
+#: MainWindow.cpp:265
 #, kde-format
 msgid "Internet"
 msgstr "Internet"
 
-#: MainWindow.cpp:266
+#: MainWindow.cpp:267
 #, kde-format
 msgid "Online sources of content"
 msgstr "Orígens en línia de contingut"
 
-#: MainWindow.cpp:272
+#: MainWindow.cpp:273
 #, kde-format
 msgid "Playlists"
 msgstr "Llistes de reproducció"
 
-#: MainWindow.cpp:274
+#: MainWindow.cpp:275
 #, kde-format
 msgid "Various types of playlists"
 msgstr "Diversos tipus de llistes de reproducció"
 
-#: MainWindow.cpp:283
+#: MainWindow.cpp:284
 #, kde-format
 msgid "Browse local hard drive for content"
 msgstr "Navega pel disc dur local buscant contingut"
 
-#: MainWindow.cpp:326
+#: MainWindow.cpp:327
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "&View"
 msgstr "Vi&sualitza"
 
-#: MainWindow.cpp:329
+#: MainWindow.cpp:330
 #, kde-format
 msgid "Lock Layout"
 msgstr "Bloqueja el format"
 
-#: MainWindow.cpp:366 MainWindow.cpp:1300
+#: MainWindow.cpp:367 MainWindow.cpp:1301
 #, kde-format
 msgid "Reset Layout"
 msgstr "Reinicia el format"
 
-#: MainWindow.cpp:423
+#: MainWindow.cpp:424
 #, kde-format
 msgid ""
 "<qt>Closing the main window will keep Amarok running in the System Tray. Use "
@@ -11614,276 +11555,276 @@ msgstr ""
 "la safata del sistema. Utilitzeu <B>Ix</B> del menú, o la icona de la safata "
 "del sistema d'Amarok per a eixir del programa.</qt>"
 
-#: MainWindow.cpp:425
+#: MainWindow.cpp:426
 #, kde-format
 msgid "Docking in System Tray"
 msgstr "Acobla en la safata del sistema"
 
-#: MainWindow.cpp:525
+#: MainWindow.cpp:526
 #, kde-format
 msgid "Play Media (Files or URLs)"
 msgstr "Reproduïx suports (fitxers o URL)"
 
-#: MainWindow.cpp:525
+#: MainWindow.cpp:526
 #, kde-format
 msgid "Add Media (Files or URLs)"
 msgstr "Afig suports (fitxers o URL)"
 
-#: MainWindow.cpp:545
+#: MainWindow.cpp:546
 #, kde-format
 msgid "Add Stream"
 msgstr "Afig un flux de dades"
 
-#: MainWindow.cpp:545
+#: MainWindow.cpp:546
 #, kde-format
 msgid "Enter Stream URL:"
 msgstr "Introduïu l'URL del flux de dades:"
 
-#: MainWindow.cpp:748
+#: MainWindow.cpp:749
 #, kde-format
 msgid "&Add Media..."
 msgstr "Afi&g suports..."
 
-#: MainWindow.cpp:753
+#: MainWindow.cpp:754
 #, kde-format
 msgctxt "clear playlist"
 msgid "&Clear Playlist"
 msgstr "&Buida la llista de reproducció"
 
-#: MainWindow.cpp:758
+#: MainWindow.cpp:759
 #, kde-format
 msgctxt "edit play queue of playlist"
 msgid "Edit &Queue"
 msgstr "Edita la c&ua"
 
-#: MainWindow.cpp:763
+#: MainWindow.cpp:764
 #, kde-format
 msgctxt "Remove duplicate and dead (unplayable) tracks from the playlist"
 msgid "Re&move Duplicates"
 msgstr "Eli&mina els duplicats"
 
-#: MainWindow.cpp:770
+#: MainWindow.cpp:771
 #, kde-format
 msgid "&Add Stream..."
 msgstr "Afi&g un flux de dades..."
 
-#: MainWindow.cpp:774
+#: MainWindow.cpp:775
 #, kde-format
 msgid "&Export Playlist As..."
 msgstr "&Exporta la llista de reproducció com a..."
 
-#: MainWindow.cpp:786
+#: MainWindow.cpp:787
 #, kde-format
 msgid "Equalizer"
 msgstr "Equalitzador"
 
-#: MainWindow.cpp:790 playlist/PlaylistViewUrlGenerator.cpp:102
+#: MainWindow.cpp:791 playlist/PlaylistViewUrlGenerator.cpp:102
 #, kde-format
 msgid "Bookmark Playlist Setup"
 msgstr "Configureu els punts de la llista de reproducció"
 
-#: MainWindow.cpp:794
+#: MainWindow.cpp:795
 #, kde-format
 msgid "Bookmark Context Applets"
 msgstr "Anota les miniaplicacions de context a les adreces d'interés"
 
-#: MainWindow.cpp:802
+#: MainWindow.cpp:803
 #, kde-format
 msgid "Play Media..."
 msgstr "Reproduïx suports..."
 
-#: MainWindow.cpp:807
+#: MainWindow.cpp:808
 #, kde-format
 msgid "Edit Details of Currently Selected Track"
 msgstr "Edita els detalls de la peça actualment seleccionada"
 
-#: MainWindow.cpp:813 MainWindow.cpp:819 MainWindow.cpp:826
+#: MainWindow.cpp:814 MainWindow.cpp:820 MainWindow.cpp:827
 #, kde-format
 msgid "Seek Forward by %1 seconds"
 msgstr "Busca avant durant %1 segons"
 
-#: MainWindow.cpp:833 MainWindow.cpp:839 MainWindow.cpp:846
+#: MainWindow.cpp:834 MainWindow.cpp:840 MainWindow.cpp:847
 #, kde-format
 msgid "Seek Backward by %1 seconds"
 msgstr "Busca arrere durant %1 segons"
 
-#: MainWindow.cpp:852
+#: MainWindow.cpp:853
 #, kde-format
 msgid "Update Collection"
 msgstr "Actualitza la col·lecció"
 
-#: MainWindow.cpp:856
+#: MainWindow.cpp:857
 #, kde-format
 msgid "Synchronize Statistics..."
 msgstr "Sincronitza les estadístiques..."
 
-#: MainWindow.cpp:864
+#: MainWindow.cpp:865
 #, kde-format
 msgid "Previous Track"
 msgstr "Peça anterior"
 
-#: MainWindow.cpp:871
+#: MainWindow.cpp:872
 #, kde-format
 msgid "Restart current track"
 msgstr "Reinicia la peça actual"
 
-#: MainWindow.cpp:878
+#: MainWindow.cpp:879
 #, kde-format
 msgid "Shuffle Playlist"
 msgstr "Barreja la llista de reproducció"
 
-#: MainWindow.cpp:884
+#: MainWindow.cpp:885
 #, kde-format
 msgid "Repopulate Playlist"
 msgstr "Torna a informar la llista de reproducció"
 
-#: MainWindow.cpp:890
+#: MainWindow.cpp:891
 #, kde-format
 msgid "Disable Dynamic Playlist"
 msgstr "Desactiva la llista de reproducció dinàmica"
 
-#: MainWindow.cpp:894
+#: MainWindow.cpp:895
 #, kde-format
 msgid "Next Track"
 msgstr "Peça següent"
 
-#: MainWindow.cpp:899
+#: MainWindow.cpp:900
 #, kde-format
 msgid "Increase Volume"
 msgstr "Apuja el volum"
 
-#: MainWindow.cpp:905
+#: MainWindow.cpp:906
 #, kde-format
 msgid "Decrease Volume"
 msgstr "Abaixa el volum"
 
-#: MainWindow.cpp:911
+#: MainWindow.cpp:912
 #, kde-format
 msgid "Toggle Main Window"
 msgstr "Canvia la finestra principal"
 
-#: MainWindow.cpp:916
+#: MainWindow.cpp:917
 #, kde-format
 msgid "Toggle Full Screen"
 msgstr "Canvia a pantalla completa"
 
-#: MainWindow.cpp:921 playlist/ProgressiveSearchWidget.cpp:48
+#: MainWindow.cpp:922 playlist/ProgressiveSearchWidget.cpp:48
 #, kde-format
 msgid "Search playlist"
 msgstr "Busca en la llista de reproducció"
 
-#: MainWindow.cpp:931
+#: MainWindow.cpp:932
 #, kde-format
 msgid "Show active track"
 msgstr "Mostra la peça activa"
 
-#: MainWindow.cpp:935
+#: MainWindow.cpp:936
 #, kde-format
 msgid "Show Notification Popup"
 msgstr "Mostra notificació en una finestra emergent"
 
-#: MainWindow.cpp:940
+#: MainWindow.cpp:941
 #, kde-format
 msgid "Mute Volume"
 msgstr "Silencia el volum"
 
-#: MainWindow.cpp:945
+#: MainWindow.cpp:946
 #, kde-format
 msgid "Last.fm: Love Current Track"
 msgstr "Last.fm: la peça actual agrada"
 
-#: MainWindow.cpp:950
+#: MainWindow.cpp:951
 #, kde-format
 msgid "Last.fm: Ban Current Track"
 msgstr "Last.fm: veta la peça actual"
 
-#: MainWindow.cpp:955
+#: MainWindow.cpp:956
 #, kde-format
 msgid "Last.fm: Skip Current Track"
 msgstr "Last.fm: salta la peça actual"
 
-#: MainWindow.cpp:960 playlist/view/PlaylistViewCommon.cpp:117
+#: MainWindow.cpp:961 playlist/view/PlaylistViewCommon.cpp:117
 #, kde-format
 msgid "Queue Track"
 msgstr "Posa la peça a la cua"
 
-#: MainWindow.cpp:965
+#: MainWindow.cpp:966
 #, kde-format
 msgid "Put Artist - Title of the current track to the clipboard"
 msgstr "Posa l'«Artista - Títol» de la peça actual en el porta-retalls"
 
-#: MainWindow.cpp:970
+#: MainWindow.cpp:971
 #, kde-format
 msgid "Rate Current Track: 1"
 msgstr "Valora la peça actual: 1"
 
-#: MainWindow.cpp:975
+#: MainWindow.cpp:976
 #, kde-format
 msgid "Rate Current Track: 2"
 msgstr "Valora la peça actual: 2"
 
-#: MainWindow.cpp:980
+#: MainWindow.cpp:981
 #, kde-format
 msgid "Rate Current Track: 3"
 msgstr "Valora la peça actual: 3"
 
-#: MainWindow.cpp:985
+#: MainWindow.cpp:986
 #, kde-format
 msgid "Rate Current Track: 4"
 msgstr "Valora la peça actual: 4"
 
-#: MainWindow.cpp:990
+#: MainWindow.cpp:991
 #, kde-format
 msgid "Rate Current Track: 5"
 msgstr "Valora la peça actual: 5"
 
-#: MainWindow.cpp:996
+#: MainWindow.cpp:997
 #, kde-format
 msgid "Network Request Viewer"
 msgstr "Visor de sol·licituds de xarxa"
 
-#: MainWindow.cpp:1014
+#: MainWindow.cpp:1015
 #, kde-format
 msgid "&About Amarok"
 msgstr "&Quant a Amarok"
 
-#: MainWindow.cpp:1018
+#: MainWindow.cpp:1019
 #, kde-format
 msgid "&Diagnostics"
 msgstr "&Diagnòstics"
 
-#: MainWindow.cpp:1022
+#: MainWindow.cpp:1023
 #, kde-format
 msgid "&Report Bug..."
 msgstr "&Informe d'error..."
 
-#: MainWindow.cpp:1069
+#: MainWindow.cpp:1070
 #, kde-format
 msgid "&Music"
 msgstr "&Música"
 
-#: MainWindow.cpp:1071
+#: MainWindow.cpp:1072
 #, kde-format
 msgid "&Amarok"
 msgstr "&Amarok"
 
-#: MainWindow.cpp:1095 playlist/PlaylistDock.cpp:59
+#: MainWindow.cpp:1096 playlist/PlaylistDock.cpp:59
 #: playlist/PlaylistToolBar.cpp:39
 #, kde-format
 msgid "&Playlist"
 msgstr "&Llista de reproducció"
 
-#: MainWindow.cpp:1112
+#: MainWindow.cpp:1113
 #, kde-format
 msgid "&Tools"
 msgstr "&Eines"
 
-#: MainWindow.cpp:1127
+#: MainWindow.cpp:1128
 #, kde-format
 msgid "&Settings"
 msgstr "Con&figuracions"
 
-#: MainWindow.cpp:1170
+#: MainWindow.cpp:1171
 #, kde-format
 msgid ""
 "You have chosen to hide the menu bar.\n"
@@ -11895,22 +11836,22 @@ msgstr ""
 "Recordeu que sempre podeu utilitzar la drecera «%1» per a tornar a mostrar-"
 "la."
 
-#: MainWindow.cpp:1171
+#: MainWindow.cpp:1172
 #, kde-format
 msgid "Hide Menu"
 msgstr "Oculta el menú"
 
-#: MainWindow.cpp:1213
+#: MainWindow.cpp:1214
 #, kde-format
 msgid "Paused  ::  %1"
 msgstr "En pausa :: %1"
 
-#: MainWindow.cpp:1226
+#: MainWindow.cpp:1227
 #, kde-format
 msgid "%1 - %2  ::  %3"
 msgstr "%1. %2 - %3"
 
-#: MainWindow.cpp:1300
+#: MainWindow.cpp:1301
 #, kde-format
 msgid "Apply this layout change?"
 msgstr "Voleu aplicar este canvi de format?"
@@ -11933,17 +11874,17 @@ msgstr "Selecciona les millors coincidències d'este àlbum"
 #: musicbrainz/MusicBrainzTagsView.cpp:91
 #, kde-format
 msgid "Go to Artist Page"
-msgstr "Ves a la pàgina de l'artista"
+msgstr "Ves fins a la pàgina de l'artista"
 
 #: musicbrainz/MusicBrainzTagsView.cpp:112
 #, kde-format
 msgid "Go to Album Page"
-msgstr "Ves a la pàgina de l'àlbum"
+msgstr "Ves fins a la pàgina de l'àlbum"
 
 #: musicbrainz/MusicBrainzTagsView.cpp:119
 #, kde-format
 msgid "Go to Track Page"
-msgstr "Ves a la pàgina de la peça"
+msgstr "Ves fins a la pàgina de la peça"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, NetworkRequestsDialog)
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -12010,7 +11951,7 @@ msgstr "Valor"
 #: OpmlParser.cpp:127
 #, kde-format
 msgid "Reading OPML podcast from %1 failed with error:\n"
-msgstr "La lectura de l'OPML del podcast des de %1 ha acabat amb error:\n"
+msgstr "La lectura de l'OPML del pòdcast des de %1 ha acabat amb error:\n"
 
 #: playback/EqualizerController.cpp:133
 #, kde-format
@@ -12071,7 +12012,7 @@ msgstr "Personalitzada"
 #, kde-format
 msgid ""
 "Either a fixed (absolute) value, or a relative value (e.g. 128px or 12%)."
-msgstr "Un valor fix (absolut), o un valor relatiu (p. ex. 128px o 12%)."
+msgstr "Un valor fix (absolut), o un valor relatiu (p. ex., 128px o 12%)."
 
 #: playlist/layouts/LayoutEditDialog.cpp:105
 #, kde-format
@@ -12175,12 +12116,12 @@ msgstr "Cos"
 #: playlist/layouts/PlaylistLayoutEditDialog.cpp:83
 #, kde-format
 msgid "Body (Various artists)"
-msgstr "Contingut (Artistes diversos)"
+msgstr "Cos (Artistes diversos)"
 
 #: playlist/layouts/PlaylistLayoutEditDialog.cpp:84
 #, kde-format
 msgid "Single"
-msgstr "senzill"
+msgstr "Senzilla"
 
 #: playlist/layouts/PlaylistLayoutEditDialog.cpp:118
 #, kde-format
@@ -12229,7 +12170,7 @@ msgstr "No es pot crear un format sense cap nom."
 #: playlist/layouts/PlaylistLayoutEditDialog.cpp:277
 #, kde-format
 msgid "Layout name error"
-msgstr "Error al nom de format"
+msgstr "S'ha produït un error en el nom de format"
 
 #: playlist/layouts/PlaylistLayoutEditDialog.cpp:169
 #: playlist/layouts/PlaylistLayoutEditDialog.cpp:220
@@ -12327,7 +12268,7 @@ msgid "Show tooltips"
 msgstr "Mostra els consells"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewButton)
-#: playlist/layouts/PlaylistLayoutEditDialog.ui:291
+#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:504
 #, kde-format
 msgid "Preview"
 msgstr "Vista prèvia"
@@ -12523,7 +12464,7 @@ msgstr ""
 "<a href='%1'>Mode dinàmic</a> actiu. <a href='%2'>Repobla</a> | <a "
 "href='%3'>Apaga</a>"
 
-#: playlist/PlaylistDock.cpp:180
+#: playlist/PlaylistDock.cpp:179
 #, kde-format
 msgid "&Save Current Playlist"
 msgstr "Guar&da la llista de reproducció actual"
@@ -12654,7 +12595,7 @@ msgstr "Humor"
 msgid "File Size"
 msgstr "Mida de fitxer"
 
-#: playlist/PlaylistQueueEditor.cpp:64
+#: playlist/PlaylistQueueEditor.cpp:69
 #, kde-format
 msgctxt "Iten in queue, %1 is position, %2 artist, %3 track"
 msgid "%1: %2 - %3"
@@ -13581,6 +13522,7 @@ msgctxt "an alphabetical tag (like title or artist name) contains some string"
 msgid "contains"
 msgstr "conté"
 
+# skip-rule: punctuation-period-no
 #: playlistgenerator/constraints/TagMatch.cpp:366
 #, kde-format
 msgid "regexp"
@@ -13965,14 +13907,14 @@ msgstr "nombre de reproduccions"
 msgid "label"
 msgstr "etiqueta"
 
-#: playlistgenerator/ConstraintSolver.cpp:231
+#: playlistgenerator/ConstraintSolver.cpp:230
 #, kde-format
 msgid "The playlist generator failed to load any tracks from the collection."
 msgstr ""
 "El generador de llistes de reproducció ha fallat en carregar les peces de la "
 "col·lecció."
 
-#: playlistgenerator/ConstraintSolver.cpp:237
+#: playlistgenerator/ConstraintSolver.cpp:236
 #, kde-format
 msgid ""
 "There are no tracks that match all constraints. The playlist generator will "
@@ -14026,7 +13968,7 @@ msgstr "Grup de restriccions"
 #: playlistgenerator/PresetEditDialog.ui:15
 #, kde-format
 msgid "APG Preset Editor"
-msgstr "Editor de predefinicions de GALR"
+msgstr "Editor de predefinits de GALR"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_Tree)
 #: playlistgenerator/PresetEditDialog.ui:23
@@ -14048,7 +13990,7 @@ msgstr "Importa una predefinició"
 #: playlistgenerator/PresetModel.cpp:156
 #, kde-format
 msgid "Preset files"
-msgstr "Fitxers d'ambient"
+msgstr "Fitxers de predefinits"
 
 #: playlistgenerator/PresetModel.cpp:216
 #, kde-format
@@ -14098,12 +14040,12 @@ msgstr "Exemple 5: un CD de 80 minuts de rock, metal, i industrial"
 #: playlistgenerator/PresetModel.cpp:297
 #, kde-format
 msgid "Export \"%1\" preset"
-msgstr "Exporta l'ambient «%1»"
+msgstr "Exporta el predefinit «%1»"
 
 #: playlistgenerator/PresetModel.cpp:299
 #, kde-format
 msgid "Preset files (*.xml)"
-msgstr "Fitxers d'ambient (*.xml)"
+msgstr "Fitxers de predefinits (*.xml)"
 
 #: playlistmanager/file/PlaylistFileProvider.cpp:98
 #, kde-format
@@ -14314,7 +14256,7 @@ msgstr ""
 "Contacteu amb l'autor de l'script, %2 a %3, i demaneu-li que l'actualitze "
 "abans de la propera publicació d'Amarok."
 
-#: scripting/scriptmanager/ScriptManager.cpp:286
+#: scripting/scriptmanager/ScriptManager.cpp:290
 #, kde-format
 msgid ""
 "Script error reported by: %1\n"
@@ -14464,7 +14406,7 @@ msgstr "Comprovació d'&identificació"
 #: services/gpodder/GpodderProvider.cpp:291
 #, kde-format
 msgid "Gpodder Podcasts"
-msgstr "Podcast de Gpodder"
+msgstr "Pòdcast de Gpodder"
 
 #: services/gpodder/GpodderProvider.cpp:468
 #, kde-format
@@ -14489,13 +14431,13 @@ msgstr ""
 #: services/gpodder/GpodderService.cpp:113
 #, kde-format
 msgid "gpodder.net: Podcast Directory Service"
-msgstr "gpodder.net: Servei de directori de podcast"
+msgstr "gpodder.net: Servei de directori de pòdcast"
 
 #: services/gpodder/GpodderService.cpp:116
 #, kde-format
 msgid "gpodder.net is an online Podcast Directory & Synchonisation Service."
 msgstr ""
-"gpodder.net és un servei en línia de directori de podcast i sincronització."
+"gpodder.net és un servei en línia de directori de pòdcast i sincronització."
 
 #: services/gpodder/GpodderService.cpp:222
 #: services/opmldirectory/OpmlDirectoryService.cpp:127
@@ -14571,8 +14513,8 @@ msgid ""
 "Error parsing the Reply, check if gpodder.net is working correctly and "
 "report a bug"
 msgstr ""
-"S'ha produït un error en analitzar la resposta. Verifiqueu que gpodder.net "
-"estiga funcionant correctament i informeu de l'error"
+"S'ha produït un error en l'anàlisi sintàctica de la resposta. Verifiqueu que "
+"gpodder.net estiga funcionant correctament i informeu de l'error"
 
 #: services/jamendo/JamendoInfoParser.cpp:46
 #: services/jamendo/JamendoInfoParser.cpp:77
@@ -14703,26 +14645,26 @@ msgstr ""
 "La ponderació «Pareixent a Last.fm» busca peces a Last.fm i només afig peces "
 "similars."
 
-#: services/lastfm/biases/LastFmBias.cpp:126
+#: services/lastfm/biases/LastFmBias.cpp:125
 #, kde-format
 msgctxt "Last.fm bias representation"
 msgid "Similar to the previous track (as reported by Last.fm)"
 msgstr "Similar a la peça anterior (segons Last.fm)"
 
-#: services/lastfm/biases/LastFmBias.cpp:129
+#: services/lastfm/biases/LastFmBias.cpp:128
 #, kde-format
 msgctxt "Last.fm bias representation"
 msgid "Similar to the previous artist (as reported by Last.fm)"
 msgstr "Similar a l'artista anterior (segons Last.fm)"
 
-#: services/lastfm/biases/LastFmBias.cpp:143
+#: services/lastfm/biases/LastFmBias.cpp:142
 #, kde-format
 msgid ""
 "<a href=\"http://www.last.fm/\">Last.fm</a> thinks the track is similar to"
 msgstr ""
 "<a href=\"http://www.last.fm/\">Last.fm</a> creu que l'artista és similar a"
 
-#: services/lastfm/biases/LastFmBias.cpp:146
+#: services/lastfm/biases/LastFmBias.cpp:145
 #, kde-format
 msgid "the previous track"
 msgstr "la peça anterior"
@@ -14827,7 +14769,7 @@ msgid ""
 msgstr ""
 "<html>En fer l'anàlisi musical de peces a Last.fm, es corregixen "
 "automàticament els errors comuns en les peces com l'artista, l'àlbum i el "
-"títol. Activeu-la per a rebre una notificació quan es faça la correcció "
+"títol. Marqueu-la per a rebre una notificació quan es faça la correcció "
 "automàtica i què ha sigut</html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AnnounceCorrections)
@@ -15270,7 +15212,7 @@ msgid ""
 "If you check this box, Amarok will periodically check for Magnatune database "
 "updates and download them automatically."
 msgstr ""
-"Si activeu esta casella, Amarok comprovarà periòdicament si hi ha "
+"Si marqueu esta casella, Amarok comprovarà periòdicament si hi ha "
 "actualitzacions de la base de dades de Magnatune i les baixarà "
 "automàticament."
 
@@ -15371,7 +15313,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "family:'Sans Serif';\">Per més informació sobre les diferents afiliacions de "
-"Magnatune.com, i per a registrar-vos, aneu a </span><a href=\"http://"
+"Magnatune.com, i per a registrar-vos, aneu fins a </span><a href=\"http://"
 "magnatune.com/compare_plans?referal_id=amarok\"><span style=\" font-"
 "family:'Sans Serif'; text-decoration: underline; color:#0000ff;\">http://"
 "magnatune.com/compare_plans</span></a></p></body></html>"
@@ -15570,8 +15512,8 @@ msgid ""
 "and download them automatically. You can always disable this option later in "
 "Magnatune service configuration."
 msgstr ""
-"Si activeu l'opció següent, Amarok comprovarà si hi ha actualitzacions de "
-"Magnatune i les baixarà automàticament. Sempre podreu desactivar esta opció "
+"Si marqueu l'opció següent, Amarok comprovarà si hi ha actualitzacions de "
+"Magnatune i les baixarà automàticament. Sempre podreu desmarcar esta opció "
 "més tard en el servei de configuració de Magnatune."
 
 #. i18n: ectx: property (text), widget (QPushButton, update)
@@ -15702,8 +15644,9 @@ msgstr ""
 "p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\">Després d'inscriure-vos, "
-"aneu a la configuració de Magnatune a «Configuració->Configura Amarok-"
-">Connectors» i introduïu la vostra informació de soci. </p></body></html>"
+"aneu fins a la configuració de Magnatune en «Configuració -> Configura "
+"Amarok... -> Connectors» i introduïu la vostra informació de soci. </p></"
+"body></html>"
 
 #. i18n: ectx: property (text), widget (QPushButton, closeButton)
 #: services/magnatune/MagnatuneSignupDialogBase.ui:45
@@ -16065,8 +16008,8 @@ msgid ""
 "Only the following types of tracks can be uploaded to MP3tunes: mp3, mp4, "
 "m4a, m4p, aac, wma, and ogg. "
 msgstr ""
-"A MP3tunes només es poden pujar els tipus de fitxers següents: mp3, mp4, "
-"m4a, m4p, aac, wma, i ogg. "
+"A MP3tunes només es poden pujar els tipus de fitxer següents: mp3, mp4, m4a, "
+"m4p, aac, wma, i ogg. "
 
 #: services/mp3tunes/Mp3tunesWorkers.cpp:344
 #, kde-format
@@ -16093,12 +16036,12 @@ msgstr "Si es deixa en blanc, s'utilitzarà el títol de l'OPML."
 #: services/opmldirectory/OpmlDirectoryInfoParser.cpp:56
 #, kde-format
 msgid "Loading Podcast Info..."
-msgstr "S'està carregant la informació dels podcast..."
+msgstr "S'està carregant la informació dels pòdcast..."
 
 #: services/opmldirectory/OpmlDirectoryInfoParser.cpp:66
 #, kde-format
 msgid "Fetching Podcast Info"
-msgstr "S'està arreplegant la informació dels podcast"
+msgstr "S'està arreplegant la informació dels pòdcast"
 
 #: services/opmldirectory/OpmlDirectoryModel.cpp:39
 #: services/opmldirectory/OpmlDirectoryService.cpp:136
@@ -16120,12 +16063,12 @@ msgstr "Carpeta nova"
 #: services/opmldirectory/OpmlDirectoryService.cpp:50
 #, kde-format
 msgid "Podcast Directory"
-msgstr "Directori de podcast"
+msgstr "Directori de pòdcast"
 
 #: services/opmldirectory/OpmlDirectoryService.cpp:70
 #, kde-format
 msgid "A large listing of podcasts"
-msgstr "Una llista gran de podcast"
+msgstr "Una llista gran de pòdcast"
 
 #: services/opmldirectory/OpmlDirectoryService.cpp:73
 #, kde-format
@@ -16133,7 +16076,7 @@ msgid ""
 "A comprehensive list of searchable podcasts that you can subscribe to "
 "directly from within Amarok."
 msgstr ""
-"Una llista exhaustiva de podcast que es poden buscar i que vos hi podeu "
+"Una llista exhaustiva de pòdcast que es poden buscar i que vos hi podeu "
 "subscriure directament des d'Amarok."
 
 #: services/opmldirectory/OpmlDirectoryService.cpp:160
@@ -16579,19 +16522,19 @@ msgstr "Peces excloses"
 msgid "Scrobbling"
 msgstr "Anàlisi musical"
 
-#: statusbar/CompoundProgressBar.cpp:67 statusbar/CompoundProgressBar.cpp:196
+#: statusbar/CompoundProgressBar.cpp:66 statusbar/CompoundProgressBar.cpp:195
 #: statusbar/ProgressBar.cpp:48
 #, kde-format
 msgid "Abort"
 msgstr "Interromp"
 
-#: statusbar/CompoundProgressBar.cpp:71 statusbar/CompoundProgressBar.cpp:208
+#: statusbar/CompoundProgressBar.cpp:70 statusbar/CompoundProgressBar.cpp:207
 #, kde-format
 msgid "Multiple background tasks running (click to show)"
 msgstr ""
 "S'estan executant diverses tasques en segon pla (cliqueu per a veure-les)"
 
-#: statusbar/CompoundProgressBar.cpp:72 statusbar/CompoundProgressBar.cpp:209
+#: statusbar/CompoundProgressBar.cpp:71 statusbar/CompoundProgressBar.cpp:208
 #, kde-format
 msgid "Abort all background tasks"
 msgstr "Interromp totes les operacions en segon pla"
@@ -16612,12 +16555,12 @@ msgid "Slim Toolbar"
 msgstr "Barra d'eines fina"
 
 #: toolbar/VolumePopupButton.cpp:104 toolbar/VolumePopupButton.cpp:115
-#: widgets/Osd.cpp:202
+#: widgets/Osd.cpp:200
 #, kde-format
 msgid "Volume: %1% (muted)"
 msgstr "Volum: %1% (silenciat)"
 
-#: toolbar/VolumePopupButton.cpp:104 widgets/Osd.cpp:202
+#: toolbar/VolumePopupButton.cpp:104 widgets/Osd.cpp:200
 #: widgets/VolumeDial.cpp:303 widgets/VolumeDial.cpp:342
 #, kde-format
 msgid "Volume: %1%"
@@ -16760,9 +16703,9 @@ msgid ""
 msgstr ""
 "<b>Nota:</b> No hi ha cap codificador disponible. Si voleu transcodificar "
 "peces, instal·leu els paquets <i>ffmpeg</i> o <i>libav</i> (amb un embolcall "
-"de <i>ffmpeg</i>) amb els codificadors apropiats. Altrament, podeu activar "
+"de <i>ffmpeg</i>) amb els codificadors apropiats. Altrament, podeu marcar "
 "l'opció <i>Recorda esta elecció per a la propera vegada</i> per tal d'ometre "
-"este diàleg per les transferències futures."
+"este diàleg per a les transferències futures."
 
 #. i18n: ectx: property (text), widget (QCheckBox, rememberCheckBox)
 #: transcoding/TranscodingAssistantDialog.ui:275
@@ -16852,7 +16795,8 @@ msgstr "Adreces d'interés d'Amarok"
 #: widgets/BreadcrumbItemButton.cpp:276
 #, kde-format
 msgid "Copy Current View Bookmark to Clipboard"
-msgstr "Copia les adreces d'interés de la vista actual al porta-retalls"
+msgstr ""
+"Copia les adreces d'interés de la vista actual a dins del porta-retalls"
 
 #: widgets/FilenameLayoutWidget.cpp:78
 #, kde-format
@@ -17062,17 +17006,17 @@ msgctxt "a numerical tag (like year or track number) is between two values"
 msgid "between"
 msgstr "entre"
 
-#: widgets/Osd.cpp:188
+#: widgets/Osd.cpp:186
 #, kde-format
 msgid "Rating changed"
 msgstr "S'ha canviat la valoració"
 
-#: widgets/Osd.cpp:263
+#: widgets/Osd.cpp:261
 #, kde-format
 msgid "Volume: 100% (muted)"
 msgstr "Volum: 100% (silenciat)"
 
-#: widgets/Osd.cpp:511
+#: widgets/Osd.cpp:504
 #, kde-format
 msgid ""
 "On-Screen-Display preview\n"
@@ -17081,12 +17025,12 @@ msgstr ""
 "Vista prèvia d'OSD\n"
 "Arrossegueu per a canviar de posició"
 
-#: widgets/Osd.cpp:759
+#: widgets/Osd.cpp:756
 #, kde-format
 msgid "Stopped"
 msgstr "Parat"
 
-#: widgets/Osd.cpp:768
+#: widgets/Osd.cpp:765
 #, kde-format
 msgid "Paused"
 msgstr "En pausa"
@@ -17095,11 +17039,6 @@ msgstr "En pausa"
 #, kde-format
 msgid "Play"
 msgstr "Reproduïx"
-
-#: widgets/PlayPauseButton.cpp:81
-#, kde-format
-msgid "Pause"
-msgstr "Pausa"
 
 #: widgets/PrettyTreeDelegate.cpp:219
 #, kde-format
@@ -17174,9 +17113,9 @@ msgctxt ""
 "position in the currently playing track that Amarok will seek to if you "
 "click the mouse. Keep it concise."
 msgid "Jump to: %1"
-msgstr "Ves a: %1"
+msgstr "Ves fins a: %1"
 
-#: widgets/TokenDropTarget.cpp:315
+#: widgets/TokenDropTarget.cpp:334
 #, kde-format
 msgid "Drag in and out items from above."
 msgstr "Arrossegueu-hi i traeu elements des de la part superior."

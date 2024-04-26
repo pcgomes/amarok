@@ -1,6 +1,78 @@
 Amarok ChangeLog
 ================
-(C) 2002-2017 the Amarok authors.
+(C) 2002-2024 the Amarok authors.
+
+
+VERSION 2.9.90
+  FEATURES:
+   * Added a visual hint that context view applets can be resized in edit mode.
+   * Display missing metadata errors in Wikipedia applet UI.
+   * Add a button to stop automatic Wikipedia page updating. (BR 485813)
+
+  CHANGES:
+   * Replace defunct lyricwiki with lyrics.ovh as lyrics provider for now. (BR 455937)
+   * Show only relevant items in wikipedia applet right click menu (BR 323941), use
+     monobook skin for opened links and silently ignore non-wikipedia links.
+   * Don't show non-functional play mode controls in dynamic mode (BR 287055)
+
+  BUGFIXES:
+   * Fix loading of some Flickr photos in the photos context view applet and show
+     more relevant photos. (BR 317108)
+   * Fix playlist inline play control slider knob & draw playlist delegate icons with
+     higher DPI.
+   * Fix searching for composer and album info for local files in Wikipedia applet.
+   * Don't remove wrong songs from collection when contents of a folder, whose name is
+     a substring of another collection folder, are changed (BR 475528)
+   * Prefer symbolic systray icon to fix colours in Plasma6 systray (BR 485748)
+
+
+VERSION 2.9.82
+  FEATURES:
+   * Enable dragging and dropping tracks from context view to playlist again. (BR 439736)
+   * Add menu entry for collapsing all expanded items in collection view. (BR 244509)
+   * Show song progress on OSD (BR 278445), make only background translucent (BR 187781)
+   * Allow copying track details by clicking on current track context applet. (BR 283457)
+   * Allow drag&drop rearranging in queue editor. (BR 263563)
+   * Added support for FFmpeg 5.0. (BR 459933)
+   * Added support for TagLib 2.0.
+
+  CHANGES:
+   * Amarok now depends on TagLib 1.12, Qt 5.15, and KDE Frameworks 5.77.
+   * Wide-ranging changes to remove usages of deprecated methods of Qt and
+     KDE Frameworks, that should not affect functionality.
+   * Removed upnpcollectionplugin.
+   * Non-functional OSD positioning settings disabled in UI on Wayland for now.
+   * Unified OSD to use system-styled rating stars. Also use higher DPI for images.
+   * The scripting engine has been ported from QtScript to QJSEngine. This is a work in
+     progress, and previous scripts are often not compatible. The script API documented
+     at https://community.kde.org/Amarok/Development/Script_API is partially out of date.
+     Additionally, due to incompatibilities and other issues, KNewStuff downloading of
+     scripts is disabled for the time being.
+
+  BUGFIXES:
+   * Fix playlist generator UI strings. (BR 423598)
+   * Fix potential corruption of Ogg files by requiring a recent-enough TagLib
+     version (BR 397184).
+   * Fix TagLib Extras to be treated as optional and not required for building Amarok.
+   * Various fixes for e.g. crashes (including BR 428769, BR 444408, BR 468303, BR 477180,
+     BR 393080, BR 446543), problems of playback stalling on missing files (including
+     fix for BR 438651), context applets (BR 420964, BR 195338) UI bugs (e.g.
+     podcasts BR 484395, BR 219518, and playlist layout editor), CD collections
+     (BR 455371, BR 279188), and .desktop files, AppStream metadata and DBus service
+     specifications.
+
+
+VERSION 2.9.71
+  FEATURES:
+   * Initial version of Qt 5 / KDE Frameworks 5 port.
+
+  CHANGES:
+   * Amarok now depends on Qt 5.8 and KDE Frameworks 5. The changes, which may include
+     functionalities temporarily or permanently removed due to porting, are too numerous
+     to be accurately represented here.
+
+  BUGFIXES:
+
 
 VERSION 2.9.0
   FEATURES:

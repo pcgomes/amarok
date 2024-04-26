@@ -76,7 +76,8 @@ void TestMetaMultiTrack::initTestCase()
     QCOMPARE( m_playlist->trackCount(), 4 );
 
     // now wait for all MetaProxy::Tracks to actually load their real tracks:
-    NotifyObserversWaiter wainter( m_playlist->tracks().toSet() );
+    Meta::TrackList tracks = m_playlist->tracks();
+    NotifyObserversWaiter wainter( QSet<Meta::TrackPtr> ( tracks.begin(), tracks.end() ) );
     QSignalSpy spyDone( &wainter, &NotifyObserversWaiter::done );
     QVERIFY( spyDone.wait( 5000 ) );
 }
@@ -169,7 +170,7 @@ NotifyObserversWaiter::slotFilterResolved()
 }
 
 void
-NotifyObserversWaiter::metadataChanged( Meta::TrackPtr track )
+NotifyObserversWaiter::metadataChanged( const Meta::TrackPtr &track )
 {
     QMutexLocker locker( &m_mutex );
     m_tracks.remove( track );

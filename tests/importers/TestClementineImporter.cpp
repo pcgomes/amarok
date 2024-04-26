@@ -20,6 +20,8 @@
 #include "importers/clementine/ClementineConfigWidget.h"
 #include "importers/clementine/ClementineProvider.h"
 
+#include <KLocalizedString>
+
 #include <QTest>
 
 
@@ -32,7 +34,7 @@ TestClementineImporter::getProvider()
 {
     QVariantMap cfg = ClementineConfigWidget( QVariantMap() ).config();
     cfg.insert( "dbPath", QApplication::applicationDirPath()
-                          + "/importers_files/clementine.db" );
+                          + "/../tests/importers_files/clementine.db" );
 
     return ProviderPtr( new ClementineProvider( cfg, nullptr ) );
 }
@@ -45,7 +47,7 @@ TestClementineImporter::getWritableProvider()
 
     const QString dst = base.filePath( "importers_tmp/clementine.db" );
     QFile( dst ).remove();
-    QFile( base.filePath( "importers_files/clementine.db" ) ).copy( dst );
+    QFile( base.filePath( "../tests/importers_files/clementine.db" ) ).copy( dst );
 
     QVariantMap cfg = ClementineConfigWidget( QVariantMap() ).config();
     cfg.insert( "dbPath", dst );
@@ -62,6 +64,7 @@ TestClementineImporter::reliableStatistics() const
 void
 TestClementineImporter::init()
 {
+    KLocalizedString::setApplicationDomain("amarok-test");
     m_cfg = ClementineConfigWidget( QVariantMap() ).config();
 }
 

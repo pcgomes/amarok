@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-13 00:47+0000\n"
+"POT-Creation-Date: 2024-04-26 01:37+0000\n"
 "PO-Revision-Date: 2012-01-25 09:17+0330\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@ubuntu.ir>\n"
 "Language-Team: Farsi (Persian) <>\n"
@@ -375,8 +375,9 @@ msgstr ""
 msgid "Stop after current track: On"
 msgstr ""
 
-#: ActionClasses.cpp:498 EngineController.cpp:1331 mac/GrowlInterface.cpp:43
-#: widgets/Osd.cpp:669
+#: ActionClasses.cpp:498
+#: context/applets/currenttrack/package/contents/ui/main.qml:102
+#: EngineController.cpp:1331 mac/GrowlInterface.cpp:43 widgets/Osd.cpp:663
 #, kde-format
 msgid "No track playing"
 msgstr "هیچ قطعهی پخش نمی‌شود"
@@ -384,7 +385,7 @@ msgstr "هیچ قطعهی پخش نمی‌شود"
 #. i18n: ectx: property (windowTitle), widget (QDialog, FormatSelectionDialog)
 #: ActionClasses.cpp:502
 #: core-impl/collections/audiocd/FormatSelectionDialog.ui:14 main.cpp:55
-#: main.cpp:96 MainWindow.cpp:112
+#: main.cpp:96 MainWindow.cpp:113
 #, kde-format
 msgid "Amarok"
 msgstr ""
@@ -1653,7 +1654,7 @@ msgstr "ناشناخته"
 msgid "New Bookmark"
 msgstr "چوب‌الف جدید"
 
-#: amarokurls/BookmarkManager.cpp:35 MainWindow.cpp:782
+#: amarokurls/BookmarkManager.cpp:35 MainWindow.cpp:783
 #, kde-format
 msgid "Bookmark Manager"
 msgstr "مدیر چوب‌الف‌ها"
@@ -1695,7 +1696,7 @@ msgid "Group"
 msgstr "گروه"
 
 #: amarokurls/BookmarkModel.cpp:259
-#: browsers/playlistbrowser/PodcastModel.cpp:300 playlist/PlaylistModel.cpp:939
+#: browsers/playlistbrowser/PodcastModel.cpp:320 playlist/PlaylistModel.cpp:939
 #, kde-format
 msgid "Type"
 msgstr "نوع"
@@ -1754,10 +1755,10 @@ msgstr ""
 #: amarokurls/BookmarkTreeView.cpp:370 amarokurls/BookmarkTreeView.cpp:371
 #: amarokurls/BookmarkTreeView.cpp:372
 #: context/applets/albums/plugin/AlbumItem.cpp:99
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:484
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:485
 #: core-impl/collections/audiocd/AudioCdCollection.cpp:486
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:487
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:488
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:489 MainWindow.cpp:1226
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:487 MainWindow.cpp:1227
 #, kde-format
 msgid "Unknown"
 msgstr "ناشناخته"
@@ -1778,7 +1779,7 @@ msgctxt "A type of command that affects the context view"
 msgid "Context"
 msgstr "متن"
 
-#: amarokurls/NavigationUrlGenerator.cpp:137 MainWindow.cpp:280
+#: amarokurls/NavigationUrlGenerator.cpp:137 MainWindow.cpp:281
 #, kde-format
 msgid "Files"
 msgstr "پرونده‌ها"
@@ -1808,7 +1809,7 @@ msgstr ""
 msgid "Artist \"%1\""
 msgstr "هنرمند \"%1\""
 
-#: amarokurls/NavigationUrlGenerator.cpp:252 MainWindow.cpp:778
+#: amarokurls/NavigationUrlGenerator.cpp:252 MainWindow.cpp:779
 #, kde-format
 msgid "Bookmark Media Sources View"
 msgstr ""
@@ -1831,97 +1832,97 @@ msgctxt ""
 msgid "Play"
 msgstr "پخش"
 
-#: App.cpp:361
+#: App.cpp:360
 #, kde-format
 msgid "Files/URLs to open"
 msgstr "پرونده‌ها/نشانیهای وب برای باز کردن"
 
-#: App.cpp:362
+#: App.cpp:361
 #, kde-format
 msgid "Immediately start playing an audio cd"
 msgstr ""
 
-#: App.cpp:363
+#: App.cpp:362
 #, kde-format
 msgid "Skip backwards in playlist"
 msgstr "پرش به پس‌سو در فهرست پخش"
 
-#: App.cpp:364
+#: App.cpp:363
 #, kde-format
 msgid "Start playing current playlist"
 msgstr "آغاز پخش فهرست پخش جاری"
 
-#: App.cpp:365
+#: App.cpp:364
 #, kde-format
 msgid "Play if stopped, pause if playing"
 msgstr "اگر ایستاد، پخش شود؛ اگر پخش می‌شود، مکث کند"
 
-#: App.cpp:366
+#: App.cpp:365
 #, kde-format
 msgid "Pause playback"
 msgstr "مکث بازپخش"
 
-#: App.cpp:367
+#: App.cpp:366
 #, kde-format
 msgid "Stop playback"
 msgstr "ایست بازپخش"
 
-#: App.cpp:368
+#: App.cpp:367
 #, kde-format
 msgid "Skip forwards in playlist"
 msgstr "پرش به پیش‌سو در فهرست پخش"
 
-#: App.cpp:370
+#: App.cpp:369
 #, kde-format
 msgid "Additional options:"
 msgstr "گزینه‌های اضافی:"
 
-#: App.cpp:371
+#: App.cpp:370
 #, kde-format
 msgid "Append files/URLs to playlist"
 msgstr "پیوستن پرونده‌ها/نشانیهای وب به فهرست پخش"
 
-#: App.cpp:372
+#: App.cpp:371
 #, kde-format
 msgid "Queue URLs after the currently playing track"
 msgstr "صف کردن نشانیهای وب بعد از قطعهی که در حال حاضر پخش می‌شود"
 
-#: App.cpp:373
+#: App.cpp:372
 #, kde-format
 msgid "Load URLs, replacing current playlist"
 msgstr "بار کردن نشانیهای وب، جایگزینی فهرست پخش جاری"
 
-#: App.cpp:374
+#: App.cpp:373 App.cpp:375
 #, kde-format
 msgid "Print verbose debugging information"
 msgstr ""
 
-#: App.cpp:375
+#: App.cpp:376
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr ""
 
-#: App.cpp:376
+#: App.cpp:377
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr ""
 
-#: App.cpp:377
+#: App.cpp:378
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr ""
 
-#: App.cpp:378
+#: App.cpp:379
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "پایه برای نام پرونده‌ها/نشانیهای وب نسبی"
 
-#: App.cpp:514 configdialog/dialogs/DatabaseConfig.cpp:110
+#: App.cpp:515 configdialog/dialogs/DatabaseConfig.cpp:110
 #, kde-format
 msgid "Database Error"
 msgstr ""
 
-#: App.cpp:515
+#: App.cpp:516
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1930,12 +1931,12 @@ msgid ""
 "properly."
 msgstr ""
 
-#: App.cpp:582
+#: App.cpp:583
 #, kde-format
 msgid "Moving files to trash"
 msgstr "حرکت پرونده‌ها به زباله"
 
-#: App.cpp:648
+#: App.cpp:649
 #, kde-format
 msgid ""
 "A music path, %1, is set in System Settings.\n"
@@ -1969,7 +1970,7 @@ msgid ""
 "audio players and CDs."
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:168 MainWindow.cpp:926
+#: browsers/collectionbrowser/CollectionWidget.cpp:168 MainWindow.cpp:927
 #, kde-format
 msgid "Search collection"
 msgstr ""
@@ -2089,10 +2090,9 @@ msgid "Various Artists"
 msgstr "هنرمندان مختلف"
 
 #: browsers/CollectionTreeItemModelBase.cpp:1100
-#: browsers/CollectionTreeView.cpp:344
-#: context/applets/albums/plugin/AlbumsEngine.cpp:273
-#: context/applets/wikipedia/package/contents/ui/main.qml:78
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:635
+#: browsers/CollectionTreeView.cpp:369
+#: context/applets/albums/plugin/AlbumsEngine.cpp:299
+#: context/applets/wikipedia/package/contents/ui/main.qml:110
 #: dialogs/transferdialog.cpp:104 musicbrainz/MusicBrainzTagsModel.cpp:38
 #: playlist/PlaylistModel.cpp:932 playlist/view/PlaylistViewCommon.cpp:65
 #: services/jamendo/JamendoInfoParser.cpp:83
@@ -2120,8 +2120,7 @@ msgid "Album Artist"
 msgstr "هنرمند آلبوم"
 
 #: browsers/CollectionTreeItemModelBase.cpp:1106
-#: context/applets/wikipedia/package/contents/ui/main.qml:71
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:629
+#: context/applets/wikipedia/package/contents/ui/main.qml:100
 #: playlist/PlaylistModel.cpp:930
 #, kde-format
 msgid "Composer"
@@ -2150,67 +2149,74 @@ msgstr "برچسب"
 msgid "None"
 msgstr "هیچ‌کدام"
 
-#: browsers/CollectionTreeView.cpp:364
+#: browsers/CollectionTreeView.cpp:356 dialogs/MusicBrainzTagger.cpp:105
+#: statsyncing/ui/MatchedTracksPage.cpp:167
+#, kde-format
+msgid "Collapse All"
+msgstr "فروپاشی همه"
+
+#: browsers/CollectionTreeView.cpp:389
 #, kde-format
 msgid "Collection"
 msgstr "مجموعه"
 
-#: browsers/CollectionTreeView.cpp:388
+#: browsers/CollectionTreeView.cpp:413
 #, kde-format
 msgid "Copy to Collection"
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:397 browsers/filebrowser/FileView.cpp:126
+#: browsers/CollectionTreeView.cpp:422 browsers/filebrowser/FileView.cpp:126
 #, kde-format
 msgid "Move to Collection"
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:411
+#: browsers/CollectionTreeView.cpp:436
 #, fuzzy, kde-format
 #| msgid "Moving files to trash"
 msgid "Move Tracks to Trash"
 msgstr "حرکت پرونده‌ها به زباله"
 
-#: browsers/CollectionTreeView.cpp:422
+#: browsers/CollectionTreeView.cpp:447
 #, kde-format
 msgid "Delete Tracks"
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:700 services/lastfm/LastFmTreeView.cpp:187
+#: browsers/CollectionTreeView.cpp:716 services/lastfm/LastFmTreeView.cpp:187
 #, kde-format
 msgid "More..."
 msgstr "بیشتر..."
 
-#: browsers/CollectionTreeView.cpp:1073 browsers/filebrowser/FileView.cpp:383
+#: browsers/CollectionTreeView.cpp:1089 browsers/filebrowser/FileView.cpp:383
 #: browsers/playlistbrowser/PlaylistBrowserView.cpp:71
-#: context/applets/albums/plugin/AlbumsEngine.cpp:258
+#: context/applets/albums/plugin/AlbumsEngine.cpp:284
 #: services/lastfm/LastFmTreeView.cpp:97
 #, kde-format
 msgid "&Add to Playlist"
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:1084 browsers/filebrowser/FileView.cpp:394
+#: browsers/CollectionTreeView.cpp:1100 browsers/filebrowser/FileView.cpp:394
 #: browsers/playlistbrowser/PlaylistBrowserView.cpp:76
-#: context/applets/albums/plugin/AlbumsEngine.cpp:259
+#: context/applets/albums/plugin/AlbumsEngine.cpp:285
 #: services/lastfm/LastFmTreeView.cpp:106
 #, kde-format
 msgctxt "Replace the currently loaded tracks with these"
 msgid "&Replace Playlist"
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:1133
+#: browsers/CollectionTreeView.cpp:1149
 #, kde-format
 msgctxt "Organize Files"
 msgid "Organize Files"
 msgstr "سازماندهی پرونده‌ها"
 
-#: browsers/CollectionTreeView.cpp:1166 browsers/filebrowser/FileView.cpp:426
+#: browsers/CollectionTreeView.cpp:1182 browsers/filebrowser/FileView.cpp:426
 #, kde-format
 msgid "&Edit Track Details"
 msgstr ""
 
 #: browsers/filebrowser/FileBrowser.cpp:70
-#: context/applets/wikipedia/package/contents/ui/main.qml:54
+#: context/applets/wikipedia/package/contents/ui/main.qml:61
+#: context/applets/wikipedia/package/contents/ui/main.qml:157
 #, kde-format
 msgid "Refresh"
 msgstr ""
@@ -2639,13 +2645,13 @@ msgctxt "%1 is playlist provider pretty name"
 msgid "Delete playlist from %1."
 msgstr "&جستجوی فهرست پخش...‌"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:516 MainWindow.cpp:446
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:516 MainWindow.cpp:447
 #, kde-format
 msgid "Use relative path for &saving"
 msgstr ""
 
 #: browsers/playlistbrowser/PlaylistBrowserView.cpp:529
-#: covermanager/CoverFoundDialog.cpp:383 MainWindow.cpp:459
+#: covermanager/CoverFoundDialog.cpp:383 MainWindow.cpp:460
 #, kde-format
 msgid "Save As"
 msgstr "ذخیره به عنوان"
@@ -2776,8 +2782,8 @@ msgstr "پیکربندی پادکست‌ها..."
 msgid "Scan Interval..."
 msgstr "پویش فاصله..."
 
-#: browsers/playlistbrowser/PodcastModel.cpp:197
-#: browsers/playlistbrowser/PodcastModel.cpp:249
+#: browsers/playlistbrowser/PodcastModel.cpp:217
+#: browsers/playlistbrowser/PodcastModel.cpp:269
 #, fuzzy, kde-format
 msgctxt "number of podcasts from one source"
 msgid "One Channel"
@@ -2786,24 +2792,24 @@ msgstr[0] "%1 مجرا"
 msgstr[1] ""
 
 #. i18n: ectx: property (text), widget (QLabel, titleLabel)
-#: browsers/playlistbrowser/PodcastModel.cpp:301
+#: browsers/playlistbrowser/PodcastModel.cpp:321
 #: context/applets/tabs/ReloadEditDialog.ui:86
 #: musicbrainz/MusicBrainzTagsModel.cpp:36 playlist/PlaylistModel.cpp:927
 #, kde-format
 msgid "Title"
 msgstr "عنوان"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:302 dialogs/TagDialog.cpp:512
+#: browsers/playlistbrowser/PodcastModel.cpp:322 dialogs/TagDialog.cpp:512
 #, kde-format
 msgid "Summary"
 msgstr "خلاصه"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:322
+#: browsers/playlistbrowser/PodcastModel.cpp:342
 #, kde-format
 msgid "Add Podcast"
 msgstr "افزودن پادکست"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:323
+#: browsers/playlistbrowser/PodcastModel.cpp:343
 #, kde-format
 msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
 msgstr ""
@@ -3812,38 +3818,8 @@ msgstr "عزل"
 msgid "Install Local Script"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoUpdateScripts)
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoUpdateScripts)
-#: configdialog/dialogs/ScriptsConfig.ui:54
-#: configdialog/dialogs/ScriptsConfig.ui:57
-#, kde-format
-msgid ""
-"Automatically download and install updates for the built-in scripts from the "
-"Amarok website if available"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoUpdateScripts)
-#: configdialog/dialogs/ScriptsConfig.ui:60
-#, fuzzy, kde-format
-#| msgid "Automatically scan for updates"
-msgid "Automatically update built-in scripts"
-msgstr "پویش خودکار برای به‌روزرسانی"
-
-#. i18n: ectx: property (toolTip), widget (QPushButton, manageButton)
-#: configdialog/dialogs/ScriptsConfig.ui:80
-#, kde-format
-msgid "Browse, install, and uninstall scripts"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, manageButton)
-#: configdialog/dialogs/ScriptsConfig.ui:83
-#, fuzzy, kde-format
-#| msgid "Configure Scripts"
-msgid "Manage Scripts"
-msgstr "پیکربندی دست‌نوشته‌ها"
-
 #. i18n: ectx: property (title), widget (QGroupBox, m_scriptConsoleGroup)
-#: configdialog/dialogs/ScriptsConfig.ui:107
+#: configdialog/dialogs/ScriptsConfig.ui:52
 #: scripting/scriptconsole/ScriptConsole.cpp:74
 #, fuzzy, kde-format
 #| msgid "Scripts"
@@ -3852,14 +3828,14 @@ msgstr "دست‌نوشته‌ها"
 
 #. i18n: ectx: property (statusTip), widget (QCheckBox, kcfg_EnableScriptConsole)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EnableScriptConsole)
-#: configdialog/dialogs/ScriptsConfig.ui:116
-#: configdialog/dialogs/ScriptsConfig.ui:119
+#: configdialog/dialogs/ScriptsConfig.ui:61
+#: configdialog/dialogs/ScriptsConfig.ui:64
 #, kde-format
 msgid "Enable the script console."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableScriptConsole)
-#: configdialog/dialogs/ScriptsConfig.ui:122
+#: configdialog/dialogs/ScriptsConfig.ui:67
 #, fuzzy, kde-format
 #| msgid "Configure Scripts"
 msgid "Enable Script Console"
@@ -3887,7 +3863,7 @@ msgstr ""
 msgid "Images"
 msgstr ""
 
-#: context/applets/albums/package/contents/ui/main.qml:76
+#: context/applets/albums/package/contents/ui/main.qml:77
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "One word translation used in the collection filter. First played time / "
@@ -3904,17 +3880,17 @@ msgid_plural "%1 tracks"
 msgstr[0] "%1 قطعه"
 msgstr[1] ""
 
-#: context/applets/albums/plugin/AlbumsEngine.cpp:185
+#: context/applets/albums/plugin/AlbumsEngine.cpp:211
 #, kde-format
 msgid "Disc %1"
 msgstr "دیسک %1"
 
-#: context/applets/albums/plugin/AlbumsEngine.cpp:260
+#: context/applets/albums/plugin/AlbumsEngine.cpp:286
 #, kde-format
 msgid "&Queue"
 msgstr "صف"
 
-#: context/applets/albums/plugin/AlbumsEngine.cpp:261
+#: context/applets/albums/plugin/AlbumsEngine.cpp:287
 #: playlist/view/PlaylistViewCommon.cpp:265
 #, kde-format
 msgid "Edit Track Details"
@@ -3965,24 +3941,24 @@ msgstr ""
 msgid "Sample size:"
 msgstr "نرخ نمونه:"
 
-#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:32
+#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:33
 #: playlist/PlaylistModel.cpp:945
 #, kde-format
 msgid "Play Count"
 msgstr "شمارش پخش"
 
-#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:42
+#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:44
 #: playlist/PlaylistModel.cpp:943
 #, kde-format
 msgid "Score"
 msgstr "امتیاز"
 
-#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:52
+#: context/applets/currenttrack/package/contents/ui/StatsItem.qml:55
 #, kde-format
 msgid "Last played"
 msgstr "آخرین پخش"
 
-#: context/applets/currenttrack/plugin/CurrentEngine.cpp:258
+#: context/applets/currenttrack/plugin/CurrentEngine.cpp:200
 #: transcoding/TranscodingSelectConfigWidget.cpp:35
 #, fuzzy, kde-format
 #| msgctxt "The amount of time since last played"
@@ -4022,7 +3998,6 @@ msgid "Labels"
 msgstr "برچسبها"
 
 #: context/applets/labels/LabelsApplet.cpp:104
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:617
 #, kde-format
 msgid "Reload"
 msgstr "بازخوانی"
@@ -4032,8 +4007,8 @@ msgstr "بازخوانی"
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:98
 #: context/applets/tabs/TabsApplet.cpp:108
 #: context/applets/upcomingevents/UpcomingEventsApplet.cpp:85
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:647
 #: core-impl/collections/ipodcollection/support/IpodConfiguration.ui:20
+#: core-impl/podcasts/sql/PodcastSettingsDialog.cpp:48
 #, kde-format
 msgid "Settings"
 msgstr "تنظیمات"
@@ -4396,14 +4371,12 @@ msgid "Similar Artists"
 msgstr "هنرمندان مشابه‌"
 
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:77
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:604
 #: statsyncing/ui/MatchedTracksPage.cpp:138
 #, kde-format
 msgid "Back"
 msgstr "عقب"
 
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:84
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:611
 #, kde-format
 msgid "Forward"
 msgstr "پیش‌سو"
@@ -4489,8 +4462,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, artistLabel)
 #: context/applets/tabs/ReloadEditDialog.ui:73
-#: context/applets/wikipedia/package/contents/ui/main.qml:64
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:623
+#: context/applets/wikipedia/package/contents/ui/main.qml:90
 #: dialogs/transferdialog.cpp:103 musicbrainz/MusicBrainzTagsModel.cpp:37
 #: playlist/PlaylistModel.cpp:928 services/jamendo/JamendoInfoParser.cpp:51
 #: services/lastfm/LastFmService.cpp:456
@@ -4903,110 +4875,90 @@ msgctxt "@info:tooltip"
 msgid "<strong>Location:</strong><nl/>%1"
 msgstr "<strong>محل:</strong><nl/>%1"
 
-#: context/applets/wikipedia/package/contents/ui/main.qml:38
+#: context/applets/wikipedia/package/contents/ui/main.qml:39
+#: context/applets/wikipedia/package/contents/ui/main.qml:145
 #, fuzzy, kde-format
 #| msgid "Previous:"
 msgid "Previous"
 msgstr "قبلی‌:"
 
-#: context/applets/wikipedia/package/contents/ui/main.qml:46
+#: context/applets/wikipedia/package/contents/ui/main.qml:50
+#: context/applets/wikipedia/package/contents/ui/main.qml:151
 #: statsyncing/ui/ChooseProvidersPage.cpp:35
 #, fuzzy, kde-format
 #| msgid "&Next"
 msgid "Next"
 msgstr "&بعدی‌"
 
-#: context/applets/wikipedia/package/contents/ui/main.qml:85
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:641
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:366
+#: context/applets/wikipedia/package/contents/ui/main.qml:72
+#: widgets/PlayPauseButton.cpp:81
+#, kde-format
+msgid "Pause"
+msgstr "مکث"
+
+#: context/applets/wikipedia/package/contents/ui/main.qml:120
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:364
 #: services/jamendo/JamendoInfoParser.cpp:109
 #, kde-format
 msgid "Track"
 msgstr "قطعه"
 
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:368
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:444
+#: context/applets/wikipedia/package/contents/ui/main.qml:164
+#: dialogs/DiagnosticDialog.cpp:84
 #, kde-format
-msgid "Update Supported Languages"
+msgid "Copy to Clipboard"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:369
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:445
-#, kde-format
-msgid "Get Supported Languages"
-msgstr ""
-
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:594
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:763
-#, kde-format
-msgid "Wikipedia"
-msgstr "ویکی‌پدیا"
-
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:737
-#, kde-format
-msgid "Wikipedia: %1"
-msgstr "ویکی‌پدیا: %1"
-
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:806
-#, kde-format
-msgid "Wikipedia General Settings"
-msgstr ""
-
-#: context/applets/wikipedia/plugin/WikipediaApplet.cpp:807
-#, kde-format
-msgid "Wikipedia Language Settings"
-msgstr ""
-
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:75
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:139
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:267
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:78
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:142
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:270
 #, kde-format
 msgid "Unable to retrieve Wikipedia information: %1"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:90
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:246
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:304
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:93
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:249
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:307
 #, kde-format
 msgid "No information found..."
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:314
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:317
 #, kde-format
 msgctxt "Search pattern for an artist or band"
 msgid ".*\\(.*(artist|band).*\\))"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:317
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:320
 #, kde-format
 msgctxt "Search pattern for a composer"
 msgid ".*\\(.*(composer|musician).*\\))"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:320
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:323
 #, kde-format
 msgctxt "Search pattern for an album"
 msgid ".*\\(.*(album|score|soundtrack).*\\)"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:324
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:327
 #, kde-format
 msgctxt "Search pattern for a song"
 msgid ".*\\(.*(song|track).*\\)"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:523
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:532
 #, kde-format
 msgctxt "%1 is field name such as 'Artist Name'"
 msgid "%1 is needed for searching Wikipedia."
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:746
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:758
 #, kde-format
 msgid "Choose Language"
 msgstr ""
 
-#: context/context_qml_package/contents/ui/toolbar/AppletToolbar.qml:129
+#: context/context_qml_package/contents/ui/toolbar/AppletToolbar.qml:130
 #, fuzzy, kde-format
 #| msgid "Configure Podcasts..."
 msgid "Configure Applets..."
@@ -5047,70 +4999,70 @@ msgstr ""
 msgid "dates"
 msgstr ""
 
-#: context/tools/amarokpkg.cpp:84 context/tools/amarokpkg.cpp:97
+#: context/tools/amarokpkg.cpp:87 context/tools/amarokpkg.cpp:99
 #, kde-format
 msgid "Amarok Applet Manager"
 msgstr "مدیر برنامک آماروک"
 
-#: context/tools/amarokpkg.cpp:86
+#: context/tools/amarokpkg.cpp:89
 #, kde-format
 msgid "(C) 2008, Aaron Seigo, (C) 2009, Leo Franchi"
 msgstr "(C) 2008, Aaron Seigo, (C) 2009, Leo Franchi"
 
-#: context/tools/amarokpkg.cpp:87
+#: context/tools/amarokpkg.cpp:90
 #, kde-format
 msgid "Aaron Seigo"
 msgstr "Aaron Seigo"
 
-#: context/tools/amarokpkg.cpp:88
+#: context/tools/amarokpkg.cpp:91
 #, kde-format
 msgid "Original author"
 msgstr "نویسنده اصلی"
 
-#: context/tools/amarokpkg.cpp:90 main.cpp:168
+#: context/tools/amarokpkg.cpp:93 main.cpp:171
 #, kde-format
 msgid "Leo Franchi"
 msgstr "Leo Franchi"
 
-#: context/tools/amarokpkg.cpp:91 main.cpp:252 main.cpp:254 main.cpp:268
-#: main.cpp:278 main.cpp:284 main.cpp:286 main.cpp:298 main.cpp:304
-#: main.cpp:306 main.cpp:310 main.cpp:318
+#: context/tools/amarokpkg.cpp:94 main.cpp:255 main.cpp:257 main.cpp:271
+#: main.cpp:281 main.cpp:287 main.cpp:289 main.cpp:301 main.cpp:307
+#: main.cpp:309 main.cpp:313 main.cpp:321
 #, kde-format
 msgid "Developer"
 msgstr "توسعه‌دهنده"
 
-#: context/tools/amarokpkg.cpp:108
+#: context/tools/amarokpkg.cpp:110
 #, kde-format
 msgid "For install or remove, operates on applets installed for all users."
 msgstr ""
 "برای نصب یا حذف، عملیاتی را روی  برنامک‌های نصب شده آماروک برای همه کاربران "
 "انجام میدهد."
 
-#: context/tools/amarokpkg.cpp:110
+#: context/tools/amarokpkg.cpp:112
 #, kde-format
 msgctxt "Do not translate <path>"
 msgid "Install the applet at <path>"
 msgstr "نصب برنامک از <path>"
 
-#: context/tools/amarokpkg.cpp:112
+#: context/tools/amarokpkg.cpp:114
 #, kde-format
 msgctxt "Do not translate <path>"
 msgid "Upgrade the applet at <path>"
 msgstr "ارتقا برنامک از <path>"
 
-#: context/tools/amarokpkg.cpp:114
+#: context/tools/amarokpkg.cpp:116
 #, fuzzy, kde-format
 #| msgid "List installed applets"
 msgid "Most installed applets"
 msgstr "فهرست برنامک‌های نصب شده"
 
-#: context/tools/amarokpkg.cpp:116
+#: context/tools/amarokpkg.cpp:118
 #, kde-format
 msgctxt "Do not translate <name>"
 msgid "Remove the applet named <name>"
 msgstr "حذف کردن برنامک با نام <name>"
 
-#: context/tools/amarokpkg.cpp:118
+#: context/tools/amarokpkg.cpp:120
 #, kde-format
 msgid ""
 "Absolute path to the package root. If not supplied, then the standard data "
@@ -5180,7 +5132,7 @@ msgctxt ""
 msgid "Aggregate Collection"
 msgstr "به‌روزرسانی مجموعه"
 
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:393
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:391
 #: core-impl/collections/audiocd/handler/AudioCdHandler.cpp:37
 #, kde-format
 msgid "Audio CD"
@@ -5287,27 +5239,27 @@ msgstr ""
 msgid "Updating Amarok database schema"
 msgstr ""
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:532
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:528
 #, kde-format
 msgid "Source track does not exist: %1"
 msgstr ""
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:543
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:539
 #, kde-format
 msgid "Could not create directory: %1"
 msgstr ""
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:620
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:616
 #, kde-format
 msgid "Transferring: %1"
 msgstr "انتقال: %1"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:622
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:618
 #, kde-format
 msgid "Transcoding: %1"
 msgstr ""
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:666
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:662
 #: core-impl/collections/support/FileCollectionLocation.cpp:87
 #, kde-format
 msgid "Removing: %1"
@@ -5395,7 +5347,7 @@ msgstr "مجموعه"
 #: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:91
 #: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:421
 #: core/meta/Meta.cpp:253 covermanager/CoverFetchUnit.cpp:594
-#: covermanager/CoverFetchUnit.cpp:604 playlist/PlaylistQueueEditor.cpp:64
+#: covermanager/CoverFetchUnit.cpp:604 playlist/PlaylistQueueEditor.cpp:69
 #, kde-format
 msgid "Unknown Artist"
 msgstr "هنرمند ناشناخته"
@@ -5889,7 +5841,7 @@ msgid_plural "Removing Tracks from Device"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:241
+#: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:239
 #, kde-format
 msgid "&Disconnect Device"
 msgstr "&قطع دستگاه"
@@ -6430,7 +6382,7 @@ msgctxt "change options"
 msgid "Configure %1"
 msgstr "پیکربندی %1"
 
-#: core-impl/podcasts/sql/PodcastSettingsDialog.cpp:80
+#: core-impl/podcasts/sql/PodcastSettingsDialog.cpp:77
 #, fuzzy, kde-format
 msgid " Item"
 msgid_plural " Items"
@@ -8051,7 +8003,7 @@ msgctxt "@item::intable"
 msgid "URL"
 msgstr "نشانی اینترنتی"
 
-#: covermanager/CoverManager.cpp:111 MainWindow.cpp:798
+#: covermanager/CoverManager.cpp:111 MainWindow.cpp:799
 #, kde-format
 msgid "Cover Manager"
 msgstr "مدیر پوشش"
@@ -8204,7 +8156,7 @@ msgstr ""
 msgid "No Artist"
 msgstr ""
 
-#: covermanager/CoverViewDialog.cpp:34 covermanager/CoverViewDialog.cpp:45
+#: covermanager/CoverViewDialog.cpp:33 covermanager/CoverViewDialog.cpp:44
 #, kde-format
 msgid "Cover View"
 msgstr ""
@@ -8553,11 +8505,6 @@ msgstr "حذف پرونده‌های ترارمزشده پس از انتقال"
 msgid "For this feature, a script of type \"Transcode\" has to be running"
 msgstr "برای این ویژگی، یک دست‌نوشته از نوع »ترارمز« باید اجرا شود"
 
-#: dialogs/DiagnosticDialog.cpp:84
-#, kde-format
-msgid "Copy to Clipboard"
-msgstr ""
-
 #: dialogs/DiagnosticDialog.cpp:88
 #, fuzzy, kde-format
 #| msgid "St&atistics"
@@ -8801,11 +8748,6 @@ msgstr ""
 #, kde-format
 msgid "Collapse Chosen"
 msgstr ""
-
-#: dialogs/MusicBrainzTagger.cpp:105 statsyncing/ui/MatchedTracksPage.cpp:167
-#, kde-format
-msgid "Collapse All"
-msgstr "فروپاشی همه"
 
 #: dialogs/MusicBrainzTagger.cpp:112
 #, kde-format
@@ -9802,33 +9744,33 @@ msgid ""
 "tracks."
 msgstr ""
 
-#: dynamic/biases/EchoNestBias.cpp:126
+#: dynamic/biases/EchoNestBias.cpp:125
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to the previous artist (as reported by EchoNest)"
 msgstr ""
 
-#: dynamic/biases/EchoNestBias.cpp:129
+#: dynamic/biases/EchoNestBias.cpp:128
 #, kde-format
 msgctxt "EchoNest bias representation"
 msgid "Similar to any artist in the current playlist (as reported by EchoNest)"
 msgstr ""
 
-#: dynamic/biases/EchoNestBias.cpp:142
+#: dynamic/biases/EchoNestBias.cpp:141
 #, kde-format
 msgid ""
 "<a href=\"http://the.echonest.com/\">the echonest</a> thinks the artist is "
 "similar to"
 msgstr ""
 
-#: dynamic/biases/EchoNestBias.cpp:144
-#: services/lastfm/biases/LastFmBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:143
+#: services/lastfm/biases/LastFmBias.cpp:144
 #, fuzzy, kde-format
 #| msgid "the previous track"
 msgid "the previous track's artist"
 msgstr "قطعه &قبلی‌"
 
-#: dynamic/biases/EchoNestBias.cpp:145
+#: dynamic/biases/EchoNestBias.cpp:144
 #, fuzzy, kde-format
 #| msgid "Start playing current playlist"
 msgid "one of the artist in the current playlist"
@@ -10352,17 +10294,17 @@ msgstr "نام هنرمند"
 msgid "Now playing"
 msgstr "درحال پخش"
 
-#: lyrics/LyricsManager.cpp:74
+#: lyrics/LyricsManager.cpp:75
 #, kde-format
 msgid "Retrieved lyrics is empty"
 msgstr ""
 
-#: lyrics/LyricsManager.cpp:110
+#: lyrics/LyricsManager.cpp:111
 #, kde-format
 msgid "Lyrics data could not be parsed"
 msgstr ""
 
-#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:693
+#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:690
 #, kde-format
 msgid "No information available for this track"
 msgstr "اطلاعاتی برای این قطعه موجود نیست"
@@ -10377,7 +10319,7 @@ msgstr "پخش‌کننده صوتی برای KDE"
 #, kde-format
 msgid ""
 "(C) 2002-2003, Mark Kretschmann\n"
-"(C) 2003-2013, The Amarok Development Squad"
+"(C) 2003-2024, The Amarok Development Squad"
 msgstr ""
 
 #: main.cpp:101
@@ -10392,886 +10334,886 @@ msgid ""
 "(Build Date: %1)"
 msgstr ""
 
-#: main.cpp:107
-#, kde-format
-msgid "Bart 'Where are my toothpicks' Cerneels"
-msgstr ""
-
-#: main.cpp:108
-#, kde-format
-msgid "Developer (Stecchino)"
-msgstr ""
-
 #: main.cpp:111
-#, kde-format
-msgid "Edward \"Hades\" Toroshchin"
-msgstr ""
-
-#: main.cpp:112
-#, fuzzy, kde-format
-#| msgid "Developer (eean)"
-msgid "Developer (dr_lepper)"
-msgstr "توسعه‌دهنده )eean("
-
-#: main.cpp:115
-#, kde-format
-msgid "Mark Kretschmann"
-msgstr ""
-
-#: main.cpp:116
-#, kde-format
-msgid "Project founder (markey)"
-msgstr "مؤسس پروژه )مارکی("
-
-#: main.cpp:119
-#, kde-format
-msgid "Matěj Laitl"
-msgstr ""
-
-#: main.cpp:120
-#, kde-format
-msgid "iPod collection rewrite & more (strohel)"
-msgstr ""
-
-#: main.cpp:123
-#, kde-format
-msgid "Myriam Schweingruber"
-msgstr ""
-
-#: main.cpp:123
-#, kde-format
-msgid "Rokymoter, Bug triaging (Mamarok)"
-msgstr ""
-
-#: main.cpp:126
-#, kde-format
-msgid "Ralf 'SalsaMaster' Engels"
-msgstr ""
-
-#: main.cpp:127
-#, fuzzy, kde-format
-#| msgid "Developer (eean)"
-msgid "Developer (rengels)"
-msgstr "توسعه‌دهنده )eean("
-
-#: main.cpp:130
-#, kde-format
-msgid "Patrick von Reth"
-msgstr ""
-
-#: main.cpp:130
-#, kde-format
-msgid "Windows build (TheOneRing)"
-msgstr ""
-
-#: main.cpp:134
-#, kde-format
-msgid "Rick W. Chen"
-msgstr ""
-
-#: main.cpp:135
-#, kde-format
-msgid "Developer (stuffcorpse)"
-msgstr ""
-
-#: main.cpp:138
-#, fuzzy, kde-format
-#| msgid "Sample Rate"
-msgid "Sam Lade"
-msgstr "نرخ نمونه"
-
-#: main.cpp:138
-#, fuzzy, kde-format
-#| msgid "Developer (eean)"
-msgid "Developer (Sentynel)"
-msgstr "توسعه‌دهنده )eean("
-
-#: main.cpp:142
-#, kde-format
-msgid "Sven Krohlas"
-msgstr ""
-
-#: main.cpp:142
-#, kde-format
-msgid "Rokymoter, Developer (sven423)"
-msgstr ""
-
-#: main.cpp:145
-#, kde-format
-msgid "Téo Mrnjavac"
-msgstr ""
-
-#: main.cpp:146
-#, kde-format
-msgid "Developer (Teo`)"
-msgstr ""
-
-#: main.cpp:149
-#, kde-format
-msgid "Valorie Zimmerman"
-msgstr ""
-
-#: main.cpp:150
-#, kde-format
-msgid "Rokymoter, Handbook (valorie)"
-msgstr ""
-
-#: main.cpp:156
 #, kde-format
 msgid "<i>Inactive authors</i>"
 msgstr ""
 
-#: main.cpp:157
+#: main.cpp:112
 #, kde-format
 msgid ""
 "Amarok authorship is not a hobby, it's a lifestyle. But when people move on "
 "we want to keep respecting them by mentioning them here:"
 msgstr ""
 
-#: main.cpp:162
+#: main.cpp:117
+#, kde-format
+msgid "Bart 'Where are my toothpicks' Cerneels"
+msgstr ""
+
+#: main.cpp:118
+#, kde-format
+msgid "Developer (Stecchino)"
+msgstr ""
+
+#: main.cpp:121
+#, kde-format
+msgid "Edward \"Hades\" Toroshchin"
+msgstr ""
+
+#: main.cpp:122
+#, fuzzy, kde-format
+#| msgid "Developer (eean)"
+msgid "Developer (dr_lepper)"
+msgstr "توسعه‌دهنده )eean("
+
+#: main.cpp:125
+#, kde-format
+msgid "Mark Kretschmann"
+msgstr ""
+
+#: main.cpp:126
+#, kde-format
+msgid "Project founder (markey)"
+msgstr "مؤسس پروژه )مارکی("
+
+#: main.cpp:129
+#, kde-format
+msgid "Matěj Laitl"
+msgstr ""
+
+#: main.cpp:130
+#, kde-format
+msgid "iPod collection rewrite & more (strohel)"
+msgstr ""
+
+#: main.cpp:133
+#, kde-format
+msgid "Myriam Schweingruber"
+msgstr ""
+
+#: main.cpp:133
+#, kde-format
+msgid "Rokymoter, Bug triaging (Mamarok)"
+msgstr ""
+
+#: main.cpp:136
+#, kde-format
+msgid "Ralf 'SalsaMaster' Engels"
+msgstr ""
+
+#: main.cpp:137
+#, fuzzy, kde-format
+#| msgid "Developer (eean)"
+msgid "Developer (rengels)"
+msgstr "توسعه‌دهنده )eean("
+
+#: main.cpp:140
+#, kde-format
+msgid "Patrick von Reth"
+msgstr ""
+
+#: main.cpp:140
+#, kde-format
+msgid "Windows build (TheOneRing)"
+msgstr ""
+
+#: main.cpp:144
+#, kde-format
+msgid "Rick W. Chen"
+msgstr ""
+
+#: main.cpp:145
+#, kde-format
+msgid "Developer (stuffcorpse)"
+msgstr ""
+
+#: main.cpp:148
+#, fuzzy, kde-format
+#| msgid "Sample Rate"
+msgid "Sam Lade"
+msgstr "نرخ نمونه"
+
+#: main.cpp:148
+#, fuzzy, kde-format
+#| msgid "Developer (eean)"
+msgid "Developer (Sentynel)"
+msgstr "توسعه‌دهنده )eean("
+
+#: main.cpp:152
+#, kde-format
+msgid "Sven Krohlas"
+msgstr ""
+
+#: main.cpp:152
+#, kde-format
+msgid "Rokymoter, Developer (sven423)"
+msgstr ""
+
+#: main.cpp:155
+#, kde-format
+msgid "Téo Mrnjavac"
+msgstr ""
+
+#: main.cpp:156
+#, kde-format
+msgid "Developer (Teo`)"
+msgstr ""
+
+#: main.cpp:159
+#, kde-format
+msgid "Valorie Zimmerman"
+msgstr ""
+
+#: main.cpp:160
+#, kde-format
+msgid "Rokymoter, Handbook (valorie)"
+msgstr ""
+
+#: main.cpp:165
 #, kde-format
 msgid "Ian 'The Beard' Monroe"
 msgstr ""
 
-#: main.cpp:162
+#: main.cpp:165
 #, kde-format
 msgid "Developer (eean)"
 msgstr "توسعه‌دهنده )eean("
 
-#: main.cpp:165
+#: main.cpp:168
 #, kde-format
 msgid "Jeff 'IROKSOHARD' Mitchell"
 msgstr ""
 
-#: main.cpp:165
+#: main.cpp:168
 #, kde-format
 msgid "Developer (jefferai)"
 msgstr "توسعه‌دهنده )jefferai("
 
-#: main.cpp:168
+#: main.cpp:171
 #, kde-format
 msgid "Developer (lfranchi)"
 msgstr ""
 
-#: main.cpp:171
+#: main.cpp:174
 #, kde-format
 msgid "Lydia 'is wrong(TM)' Pintscher"
 msgstr ""
 
-#: main.cpp:171
+#: main.cpp:174
 #, kde-format
 msgid "Release Vixen (Nightrose)"
 msgstr ""
 
-#: main.cpp:174
+#: main.cpp:177
 #, kde-format
 msgid "Max Howell"
 msgstr ""
 
-#: main.cpp:174
+#: main.cpp:177
 #, kde-format
 msgid "Developer, Vision"
 msgstr ""
 
-#: main.cpp:177
+#: main.cpp:180
 #, kde-format
 msgid "Maximilian Kossick"
 msgstr ""
 
-#: main.cpp:177
+#: main.cpp:180
 #, kde-format
 msgid "Developer (maxx_k)"
 msgstr ""
 
-#: main.cpp:180
+#: main.cpp:183
 #, kde-format
 msgid "Nikolaj Hald 'Also very hot' Nielsen"
 msgstr ""
 
-#: main.cpp:180
+#: main.cpp:183
 #, kde-format
 msgid "Developer (nhn)"
 msgstr ""
 
-#: main.cpp:183
+#: main.cpp:186
 #, kde-format
 msgid "Seb 'Surfin' down under' Ruiz"
 msgstr ""
 
-#: main.cpp:183
+#: main.cpp:186
 #, kde-format
 msgid "Developer (sebr)"
 msgstr "توسعه‌دهنده )sebr("
 
-#: main.cpp:188
+#: main.cpp:191
 #, kde-format
 msgid "Alejandro Wainzinger"
 msgstr ""
 
-#: main.cpp:188
+#: main.cpp:191
 #, kde-format
 msgid "Developer (xevix)"
 msgstr ""
 
-#: main.cpp:190
+#: main.cpp:193
 #, kde-format
 msgid "Alex Merry"
 msgstr ""
 
-#: main.cpp:190
+#: main.cpp:193
 #, kde-format
 msgid "Developer, Replay Gain support"
 msgstr ""
 
-#: main.cpp:192
+#: main.cpp:195
 #, kde-format
 msgid "Casey Link"
 msgstr ""
 
-#: main.cpp:192
+#: main.cpp:195
 #, kde-format
 msgid "MP3tunes integration"
 msgstr ""
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "Casper van Donderen"
 msgstr ""
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "Windows porting"
 msgstr ""
 
-#: main.cpp:196
+#: main.cpp:199
 #, kde-format
 msgid "Christie Harris"
 msgstr ""
 
-#: main.cpp:196
+#: main.cpp:199
 #, kde-format
 msgid "Rokymoter (dangle)"
 msgstr ""
 
-#: main.cpp:198
+#: main.cpp:201
 #, kde-format
 msgid "Dan Leinir Turthra Jensen"
 msgstr ""
 
-#: main.cpp:198
+#: main.cpp:201
 #, kde-format
 msgid "Usability"
 msgstr ""
 
-#: main.cpp:200
+#: main.cpp:203
 #, kde-format
 msgid "Dan 'Hey, it compiled...' Meltzer"
 msgstr ""
 
-#: main.cpp:200
+#: main.cpp:203
 #, kde-format
 msgid "Developer (hydrogen)"
 msgstr ""
 
-#: main.cpp:202
+#: main.cpp:205
 #, kde-format
 msgid "Daniel Caleb Jones"
 msgstr ""
 
-#: main.cpp:202
+#: main.cpp:205
 #, kde-format
 msgid "Biased playlists"
 msgstr ""
 
-#: main.cpp:204
+#: main.cpp:207
 #, kde-format
 msgid "Daniel Dewald"
 msgstr ""
 
-#: main.cpp:204
+#: main.cpp:207
 #, kde-format
 msgid "Tag Guesser, Labels, Spectrum Analyzer"
 msgstr ""
 
-#: main.cpp:206
+#: main.cpp:209
 #, kde-format
 msgid "Daniel Winter"
 msgstr ""
 
-#: main.cpp:206
+#: main.cpp:209
 #, kde-format
 msgid "Nepomuk integration"
 msgstr ""
 
-#: main.cpp:208
+#: main.cpp:211
 #, kde-format
 msgid "Frank Meerkötter"
 msgstr ""
 
-#: main.cpp:208 main.cpp:228
+#: main.cpp:211 main.cpp:231
 #, kde-format
 msgid "Podcast improvements"
 msgstr ""
 
-#: main.cpp:210
+#: main.cpp:213
 #, kde-format
 msgid "Greg Meyer"
 msgstr ""
 
-#: main.cpp:210
+#: main.cpp:213
 #, kde-format
 msgid "Live CD, Bug squashing (oggb4mp3)"
 msgstr ""
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "Harald Sitter"
 msgstr ""
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "Phonon, Lord-President of KDE Multimedia (apachelogger)"
 msgstr ""
 
-#: main.cpp:214
+#: main.cpp:217
 #, kde-format
 msgid "John Atkinson"
 msgstr ""
 
-#: main.cpp:214
+#: main.cpp:217
 #, kde-format
 msgid "Assorted patches"
 msgstr ""
 
-#: main.cpp:216
+#: main.cpp:219
 #, kde-format
 msgid "Kenneth Wesley Wimer II"
 msgstr ""
 
-#: main.cpp:216
+#: main.cpp:219
 #, kde-format
 msgid "Icons"
 msgstr "شمایلها"
 
-#: main.cpp:218
+#: main.cpp:221
 #, kde-format
 msgid "Kevin Funk"
 msgstr ""
 
-#: main.cpp:218
+#: main.cpp:221
 #, kde-format
 msgid "Developer, Website theme (KRF)"
 msgstr ""
 
-#: main.cpp:220
+#: main.cpp:223
 #, kde-format
 msgid "Kuba Serafinowski"
 msgstr ""
 
-#: main.cpp:220
+#: main.cpp:223
 #, kde-format
 msgid "Rokymoter"
 msgstr ""
 
-#: main.cpp:222
+#: main.cpp:225
 #, kde-format
 msgid "Lee Olson"
 msgstr ""
 
-#: main.cpp:222 main.cpp:234
+#: main.cpp:225 main.cpp:237
 #, kde-format
 msgid "Artwork"
 msgstr "طرحها و تصاویر"
 
-#: main.cpp:224
+#: main.cpp:227
 #, kde-format
 msgid "Ljubomir Simin"
 msgstr ""
 
-#: main.cpp:224
+#: main.cpp:227
 #, kde-format
 msgid "Rokymoter (ljubomir)"
 msgstr ""
 
-#: main.cpp:226
+#: main.cpp:229
 #, kde-format
 msgid "Lucas Gomes"
 msgstr ""
 
-#: main.cpp:226
+#: main.cpp:229
 #, fuzzy, kde-format
 #| msgid "Developer (sebr)"
 msgid "Developer (MaskMaster)"
 msgstr "توسعه‌دهنده )sebr("
 
-#: main.cpp:228
+#: main.cpp:231
 #, kde-format
 msgid "Mathias Panzenböck"
 msgstr ""
 
-#: main.cpp:230
+#: main.cpp:233
 #, kde-format
 msgid "Mikko Caldara"
 msgstr ""
 
-#: main.cpp:230
+#: main.cpp:233
 #, kde-format
 msgid "Bug triaging and sanitizing"
 msgstr ""
 
-#: main.cpp:232
+#: main.cpp:235
 #, kde-format
 msgid "Nikhil Marathe"
 msgstr ""
 
-#: main.cpp:232
+#: main.cpp:235
 #, kde-format
 msgid "UPnP support and patches (nsm)"
 msgstr ""
 
-#: main.cpp:234
+#: main.cpp:237
 #, kde-format
 msgid "Nuno Pinheiro"
 msgstr ""
 
-#: main.cpp:236
+#: main.cpp:239
 #, kde-format
 msgid "Olivier Bédard"
 msgstr ""
 
-#: main.cpp:236
+#: main.cpp:239
 #, kde-format
 msgid "Website hosting"
 msgstr "میزبان وب‌گاه"
 
-#: main.cpp:238
+#: main.cpp:241
 #, kde-format
 msgid "Pasi Lalinaho"
 msgstr ""
 
-#: main.cpp:238
+#: main.cpp:241
 #, kde-format
 msgid "Rokymoter (emunkki)"
 msgstr ""
 
-#: main.cpp:240
+#: main.cpp:243
 #, kde-format
 msgid "Peter Zhou Lei"
 msgstr ""
 
-#: main.cpp:240
+#: main.cpp:243
 #, kde-format
 msgid "Scripting interface"
 msgstr ""
 
-#: main.cpp:242
+#: main.cpp:245
 #, kde-format
 msgid "Phalgun Guduthur"
 msgstr ""
 
-#: main.cpp:242
+#: main.cpp:245
 #, kde-format
 msgid "Nepomuk Collection (phalgun)"
 msgstr ""
 
-#: main.cpp:244
+#: main.cpp:247
 #, kde-format
 msgid "Scott Wheeler"
 msgstr "Scott Wheeler"
 
-#: main.cpp:244
+#: main.cpp:247
 #, kde-format
 msgid "TagLib & ktrm code"
 msgstr "کد ktrm و TagLib"
 
-#: main.cpp:246
+#: main.cpp:249
 #, kde-format
 msgid "Shane King"
 msgstr ""
 
-#: main.cpp:246
+#: main.cpp:249
 #, kde-format
 msgid "Patches & Windows porting (shakes)"
 msgstr ""
 
-#: main.cpp:248
+#: main.cpp:251
 #, kde-format
 msgid "Simon Esneault"
 msgstr ""
 
-#: main.cpp:248
+#: main.cpp:251
 #, kde-format
 msgid "Photos & Videos applets, Context View"
 msgstr ""
 
-#: main.cpp:250
+#: main.cpp:253
 #, kde-format
 msgid "Soren Harward"
 msgstr ""
 
-#: main.cpp:250
+#: main.cpp:253
 #, kde-format
 msgid "Developer, Automated Playlist Generator"
 msgstr ""
 
-#: main.cpp:252
+#: main.cpp:255
 #, kde-format
 msgid "Thomas Lübking"
 msgstr ""
 
-#: main.cpp:254
+#: main.cpp:257
 #, kde-format
 msgid "Valentin Rouet"
 msgstr ""
 
-#: main.cpp:256
+#: main.cpp:259
 #, kde-format
 msgid "Wade Olson"
 msgstr ""
 
-#: main.cpp:256
+#: main.cpp:259
 #, kde-format
 msgid "Splash screen artist"
 msgstr ""
 
-#: main.cpp:258
+#: main.cpp:261
 #, kde-format
 msgid "William Viana Soares"
 msgstr ""
 
-#: main.cpp:258
+#: main.cpp:261
 #, kde-format
 msgid "Context view"
 msgstr ""
 
-#: main.cpp:262
+#: main.cpp:265
 #, kde-format
 msgid "Former contributors"
 msgstr ""
 
-#: main.cpp:262
+#: main.cpp:265
 #, kde-format
 msgid "People listed below have contributed to Amarok in the past. Thank you!"
 msgstr ""
 
-#: main.cpp:264
+#: main.cpp:267
 #, kde-format
 msgid "Adam Pigg"
 msgstr ""
 
-#: main.cpp:264
+#: main.cpp:267
 #, kde-format
 msgid "Analyzers, patches, shoutcast"
 msgstr "تحلیل‌کننده‌ها، کژنه‌ها، shoutcast"
 
-#: main.cpp:266
+#: main.cpp:269
 #, kde-format
 msgid "Adeodato Simó"
 msgstr ""
 
-#: main.cpp:266 main.cpp:274
+#: main.cpp:269 main.cpp:277
 #, kde-format
 msgid "Patches"
 msgstr "کژنه‌ها"
 
-#: main.cpp:268
+#: main.cpp:271
 #, kde-format
 msgid "Alexandre Oliveira"
 msgstr ""
 
-#: main.cpp:270
+#: main.cpp:273
 #, kde-format
 msgid "Andreas Mair"
 msgstr ""
 
-#: main.cpp:270
+#: main.cpp:273
 #, kde-format
 msgid "MySQL support"
 msgstr "پشتیبان MySQL"
 
-#: main.cpp:272
+#: main.cpp:275
 #, kde-format
 msgid "Andrew de Quincey"
 msgstr ""
 
-#: main.cpp:272
+#: main.cpp:275
 #, kde-format
 msgid "Postgresql support"
 msgstr "پشتیبان Postgresql"
 
-#: main.cpp:274
+#: main.cpp:277
 #, kde-format
 msgid "Andrew Turner"
 msgstr ""
 
-#: main.cpp:276
+#: main.cpp:279
 #, kde-format
 msgid "Andy Kelk"
 msgstr ""
 
-#: main.cpp:276
+#: main.cpp:279
 #, kde-format
 msgid "MTP and Rio Karma media devices, patches"
 msgstr ""
 
-#: main.cpp:278
+#: main.cpp:281
 #, kde-format
 msgid "Christian Muehlhaeuser"
 msgstr ""
 
-#: main.cpp:280
+#: main.cpp:283
 #, kde-format
 msgid "Derek Nelson"
 msgstr ""
 
-#: main.cpp:280
+#: main.cpp:283
 #, kde-format
 msgid "Graphics, splash-screen"
 msgstr ""
 
-#: main.cpp:282
+#: main.cpp:285
 #, kde-format
 msgid "Enrico Ros"
 msgstr ""
 
-#: main.cpp:282
+#: main.cpp:285
 #, kde-format
 msgid "Analyzers, Context Browser and systray eye-candy"
 msgstr "تحلیل‌کننده‌ها، مرورگر متن و eye-candy سینی سیستم"
 
-#: main.cpp:284
+#: main.cpp:287
 #, kde-format
 msgid "Frederik Holljen"
 msgstr ""
 
-#: main.cpp:286
+#: main.cpp:289
 #, kde-format
 msgid "Gábor Lehel"
 msgstr ""
 
-#: main.cpp:288
+#: main.cpp:291
 #, kde-format
 msgid "Gérard Dürrmeyer"
 msgstr ""
 
-#: main.cpp:288
+#: main.cpp:291
 #, kde-format
 msgid "Icons and image work"
 msgstr ""
 
-#: main.cpp:290
+#: main.cpp:293
 #, kde-format
 msgid "Giovanni Venturi"
 msgstr ""
 
-#: main.cpp:290
+#: main.cpp:293
 #, kde-format
 msgid "Dialog to filter the collection titles"
 msgstr ""
 
-#: main.cpp:292
+#: main.cpp:295
 #, kde-format
 msgid "Jarkko Lehti"
 msgstr ""
 
-#: main.cpp:292
+#: main.cpp:295
 #, kde-format
 msgid "Tester, IRC channel operator, whipping"
 msgstr "آزماینده، عملگر مجرای IRC، whipping"
 
-#: main.cpp:294
+#: main.cpp:297
 #, kde-format
 msgid "Jocke Andersson"
 msgstr ""
 
-#: main.cpp:294
+#: main.cpp:297
 #, kde-format
 msgid "Rokymoter, bug fixer (Firetech)"
 msgstr ""
 
-#: main.cpp:296
+#: main.cpp:299
 #, kde-format
 msgid "Marco Gulino"
 msgstr ""
 
-#: main.cpp:296
+#: main.cpp:299
 #, kde-format
 msgid "Konqueror Sidebar, some DCOP methods"
 msgstr "میله جانبی Konqueror، برخی روشهای DCOP"
 
-#: main.cpp:298
+#: main.cpp:301
 #, kde-format
 msgid "Martin Aumueller"
 msgstr ""
 
-#: main.cpp:300
+#: main.cpp:303
 #, kde-format
 msgid "Melchior Franz"
 msgstr ""
 
-#: main.cpp:300
+#: main.cpp:303
 #, kde-format
 msgid "FHT routine, bugfixes"
 msgstr "روال FHT، اشکال‌زداییها"
 
-#: main.cpp:302
+#: main.cpp:305
 #, kde-format
 msgid "Michael Pyne"
 msgstr ""
 
-#: main.cpp:302
+#: main.cpp:305
 #, kde-format
 msgid "K3b export code"
 msgstr ""
 
-#: main.cpp:304
+#: main.cpp:307
 #, kde-format
 msgid "Mike Diehl"
 msgstr ""
 
-#: main.cpp:306
+#: main.cpp:309
 #, kde-format
 msgid "Paul Cifarelli"
 msgstr ""
 
-#: main.cpp:308
+#: main.cpp:311
 #, kde-format
 msgid "Peter C. Ndikuwera"
 msgstr ""
 
-#: main.cpp:308
+#: main.cpp:311
 #, kde-format
 msgid "Bugfixes, PostgreSQL support"
 msgstr "رفع اشکالها، پشتیبان Postgresql"
 
-#: main.cpp:310
+#: main.cpp:313
 #, kde-format
 msgid "Pierpaolo Panfilo"
 msgstr ""
 
-#: main.cpp:312
+#: main.cpp:315
 #, kde-format
 msgid "Reigo Reinmets"
 msgstr ""
 
-#: main.cpp:312
+#: main.cpp:315
 #, kde-format
 msgid "Wikipedia support, patches"
 msgstr "پشتیبان ویکی‌پدیا، کژنه‌ها"
 
-#: main.cpp:314
+#: main.cpp:317
 #, kde-format
 msgid "Roman Becker"
 msgstr ""
 
-#: main.cpp:314
+#: main.cpp:317
 #, kde-format
 msgid "Former Amarok logo, former splash screen, former icons"
 msgstr ""
 
-#: main.cpp:316
+#: main.cpp:319
 #, kde-format
 msgid "Sami Nieminen"
 msgstr ""
 
-#: main.cpp:316
+#: main.cpp:319
 #, kde-format
 msgid "Audioscrobbler support"
 msgstr "پشتیبان Audioscrobbler"
 
-#: main.cpp:318
+#: main.cpp:321
 #, kde-format
 msgid "Stanislav Karchebny"
 msgstr ""
 
-#: main.cpp:320
+#: main.cpp:323
 #, kde-format
 msgid "Stefan Bogner"
 msgstr ""
 
-#: main.cpp:320
+#: main.cpp:323
 #, kde-format
 msgid "Loads of stuff"
 msgstr ""
 
-#: main.cpp:322
+#: main.cpp:325
 #, kde-format
 msgid "Tomasz Dudzik"
 msgstr ""
 
-#: main.cpp:322
+#: main.cpp:325
 #, kde-format
 msgid "Splash screen"
 msgstr "پرده رنگ‌پاشی"
 
-#: main.cpp:327
+#: main.cpp:330
 #, kde-format
 msgid "Andrew Browning"
 msgstr ""
 
-#: main.cpp:328
+#: main.cpp:331
 #, kde-format
 msgid "Chris Wales"
 msgstr ""
 
-#: main.cpp:329
+#: main.cpp:332
 #, kde-format
 msgid "ZImin Stanislav"
 msgstr ""
 
-#: MainWindow.cpp:255
+#: MainWindow.cpp:256
 #, kde-format
 msgid "Local Music"
 msgstr ""
 
-#: MainWindow.cpp:257
+#: MainWindow.cpp:258
 #, kde-format
 msgid "Local sources of content"
 msgstr ""
 
-#: MainWindow.cpp:264
+#: MainWindow.cpp:265
 #, kde-format
 msgid "Internet"
 msgstr "اینترنت"
 
-#: MainWindow.cpp:266
+#: MainWindow.cpp:267
 #, kde-format
 msgid "Online sources of content"
 msgstr ""
 
-#: MainWindow.cpp:272
+#: MainWindow.cpp:273
 #, kde-format
 msgid "Playlists"
 msgstr "فهرستهای پخش"
 
-#: MainWindow.cpp:274
+#: MainWindow.cpp:275
 #, kde-format
 msgid "Various types of playlists"
 msgstr ""
 
-#: MainWindow.cpp:283
+#: MainWindow.cpp:284
 #, kde-format
 msgid "Browse local hard drive for content"
 msgstr ""
 
-#: MainWindow.cpp:326
+#: MainWindow.cpp:327
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "&View"
 msgstr "&نما‌"
 
-#: MainWindow.cpp:329
+#: MainWindow.cpp:330
 #, kde-format
 msgid "Lock Layout"
 msgstr ""
 
-#: MainWindow.cpp:366 MainWindow.cpp:1300
+#: MainWindow.cpp:367 MainWindow.cpp:1301
 #, fuzzy, kde-format
 #| msgid "Layout"
 msgid "Reset Layout"
 msgstr "طرح‌بندی"
 
-#: MainWindow.cpp:423
+#: MainWindow.cpp:424
 #, kde-format
 msgid ""
 "<qt>Closing the main window will keep Amarok running in the System Tray. Use "
@@ -11279,122 +11221,122 @@ msgid ""
 "qt>"
 msgstr ""
 
-#: MainWindow.cpp:425
+#: MainWindow.cpp:426
 #, kde-format
 msgid "Docking in System Tray"
 msgstr "پیوند زدن در سینی سیستم"
 
-#: MainWindow.cpp:525
+#: MainWindow.cpp:526
 #, kde-format
 msgid "Play Media (Files or URLs)"
 msgstr "پخش رسانه )پرونده‌ها یا نشانیهای وب("
 
-#: MainWindow.cpp:525
+#: MainWindow.cpp:526
 #, kde-format
 msgid "Add Media (Files or URLs)"
 msgstr "افزودن رسانه )پرونده‌ها یا نشانیهای وب("
 
-#: MainWindow.cpp:545
+#: MainWindow.cpp:546
 #, kde-format
 msgid "Add Stream"
 msgstr "افزودن جریان"
 
-#: MainWindow.cpp:545
+#: MainWindow.cpp:546
 #, kde-format
 msgid "Enter Stream URL:"
 msgstr ""
 
-#: MainWindow.cpp:748
+#: MainWindow.cpp:749
 #, kde-format
 msgid "&Add Media..."
 msgstr "&افزودن رسانه...‌"
 
-#: MainWindow.cpp:753
+#: MainWindow.cpp:754
 #, kde-format
 msgctxt "clear playlist"
 msgid "&Clear Playlist"
 msgstr ""
 
-#: MainWindow.cpp:758
+#: MainWindow.cpp:759
 #, kde-format
 msgctxt "edit play queue of playlist"
 msgid "Edit &Queue"
 msgstr ""
 
-#: MainWindow.cpp:763
+#: MainWindow.cpp:764
 #, kde-format
 msgctxt "Remove duplicate and dead (unplayable) tracks from the playlist"
 msgid "Re&move Duplicates"
 msgstr ""
 
-#: MainWindow.cpp:770
+#: MainWindow.cpp:771
 #, kde-format
 msgid "&Add Stream..."
 msgstr "&افزودن جریان...‌"
 
-#: MainWindow.cpp:774
+#: MainWindow.cpp:775
 #, kde-format
 msgid "&Export Playlist As..."
 msgstr ""
 
-#: MainWindow.cpp:786
+#: MainWindow.cpp:787
 #, kde-format
 msgid "Equalizer"
 msgstr "برابرساز"
 
-#: MainWindow.cpp:790 playlist/PlaylistViewUrlGenerator.cpp:102
+#: MainWindow.cpp:791 playlist/PlaylistViewUrlGenerator.cpp:102
 #, kde-format
 msgid "Bookmark Playlist Setup"
 msgstr ""
 
-#: MainWindow.cpp:794
+#: MainWindow.cpp:795
 #, kde-format
 msgid "Bookmark Context Applets"
 msgstr ""
 
-#: MainWindow.cpp:802
+#: MainWindow.cpp:803
 #, kde-format
 msgid "Play Media..."
 msgstr "پخش رسانه..."
 
-#: MainWindow.cpp:807
+#: MainWindow.cpp:808
 #, kde-format
 msgid "Edit Details of Currently Selected Track"
 msgstr ""
 
-#: MainWindow.cpp:813 MainWindow.cpp:819 MainWindow.cpp:826
+#: MainWindow.cpp:814 MainWindow.cpp:820 MainWindow.cpp:827
 #, fuzzy, kde-format
 #| msgid "&Seek Forward"
 msgid "Seek Forward by %1 seconds"
 msgstr "&پیگردی پیش‌سو‌"
 
-#: MainWindow.cpp:833 MainWindow.cpp:839 MainWindow.cpp:846
+#: MainWindow.cpp:834 MainWindow.cpp:840 MainWindow.cpp:847
 #, fuzzy, kde-format
 #| msgid "&Seek Backward"
 msgid "Seek Backward by %1 seconds"
 msgstr "&پیگردی پس‌سو‌"
 
-#: MainWindow.cpp:852
+#: MainWindow.cpp:853
 #, kde-format
 msgid "Update Collection"
 msgstr "به‌روزرسانی مجموعه"
 
-#: MainWindow.cpp:856
+#: MainWindow.cpp:857
 #, kde-format
 msgid "Synchronize Statistics..."
 msgstr ""
 
-#: MainWindow.cpp:864
+#: MainWindow.cpp:865
 #, kde-format
 msgid "Previous Track"
 msgstr "قطعه &قبلی‌"
 
-#: MainWindow.cpp:871
+#: MainWindow.cpp:872
 #, kde-format
 msgid "Restart current track"
 msgstr ""
 
-#: MainWindow.cpp:878
+#: MainWindow.cpp:879
 #, fuzzy, kde-format
 #| msgctxt "number of playlists from one source"
 #| msgid "One Playlist"
@@ -11402,160 +11344,160 @@ msgstr ""
 msgid "Shuffle Playlist"
 msgstr "%1 فهرستهای پخش"
 
-#: MainWindow.cpp:884
+#: MainWindow.cpp:885
 #, kde-format
 msgid "Repopulate Playlist"
 msgstr ""
 
-#: MainWindow.cpp:890
+#: MainWindow.cpp:891
 #, kde-format
 msgid "Disable Dynamic Playlist"
 msgstr ""
 
-#: MainWindow.cpp:894
+#: MainWindow.cpp:895
 #, kde-format
 msgid "Next Track"
 msgstr "قطعه &بعدی‌"
 
-#: MainWindow.cpp:899
+#: MainWindow.cpp:900
 #, kde-format
 msgid "Increase Volume"
 msgstr "افزایش حجم صدا"
 
-#: MainWindow.cpp:905
+#: MainWindow.cpp:906
 #, kde-format
 msgid "Decrease Volume"
 msgstr "کاهش حجم صدا"
 
-#: MainWindow.cpp:911
+#: MainWindow.cpp:912
 #, kde-format
 msgid "Toggle Main Window"
 msgstr ""
 
-#: MainWindow.cpp:916
+#: MainWindow.cpp:917
 #, kde-format
 msgid "Toggle Full Screen"
 msgstr ""
 
-#: MainWindow.cpp:921 playlist/ProgressiveSearchWidget.cpp:48
+#: MainWindow.cpp:922 playlist/ProgressiveSearchWidget.cpp:48
 #, kde-format
 msgid "Search playlist"
 msgstr "جستجوی فهرست پخش‌"
 
-#: MainWindow.cpp:931
+#: MainWindow.cpp:932
 #, kde-format
 msgid "Show active track"
 msgstr ""
 
-#: MainWindow.cpp:935
+#: MainWindow.cpp:936
 #, kde-format
 msgid "Show Notification Popup"
 msgstr ""
 
-#: MainWindow.cpp:940
+#: MainWindow.cpp:941
 #, kde-format
 msgid "Mute Volume"
 msgstr "حجم صدای خاموش"
 
-#: MainWindow.cpp:945
+#: MainWindow.cpp:946
 #, kde-format
 msgid "Last.fm: Love Current Track"
 msgstr ""
 
-#: MainWindow.cpp:950
+#: MainWindow.cpp:951
 #, kde-format
 msgid "Last.fm: Ban Current Track"
 msgstr ""
 
-#: MainWindow.cpp:955
+#: MainWindow.cpp:956
 #, fuzzy, kde-format
 #| msgid "Rate Current Track: 1"
 msgid "Last.fm: Skip Current Track"
 msgstr "ارزیابی قطعه جاری: ۱"
 
-#: MainWindow.cpp:960 playlist/view/PlaylistViewCommon.cpp:117
+#: MainWindow.cpp:961 playlist/view/PlaylistViewCommon.cpp:117
 #, kde-format
 msgid "Queue Track"
 msgstr ""
 
-#: MainWindow.cpp:965
+#: MainWindow.cpp:966
 #, kde-format
 msgid "Put Artist - Title of the current track to the clipboard"
 msgstr ""
 
-#: MainWindow.cpp:970
+#: MainWindow.cpp:971
 #, kde-format
 msgid "Rate Current Track: 1"
 msgstr "ارزیابی قطعه جاری: ۱"
 
-#: MainWindow.cpp:975
+#: MainWindow.cpp:976
 #, kde-format
 msgid "Rate Current Track: 2"
 msgstr "ارزیابی قطعه جاری: ۲"
 
-#: MainWindow.cpp:980
+#: MainWindow.cpp:981
 #, kde-format
 msgid "Rate Current Track: 3"
 msgstr "ارزیابی قطعه جاری: ۳"
 
-#: MainWindow.cpp:985
+#: MainWindow.cpp:986
 #, kde-format
 msgid "Rate Current Track: 4"
 msgstr "ارزیابی قطعه جاری: ۴"
 
-#: MainWindow.cpp:990
+#: MainWindow.cpp:991
 #, kde-format
 msgid "Rate Current Track: 5"
 msgstr "ارزیابی قطعه جاری: ۵"
 
-#: MainWindow.cpp:996
+#: MainWindow.cpp:997
 #, kde-format
 msgid "Network Request Viewer"
 msgstr ""
 
-#: MainWindow.cpp:1014
+#: MainWindow.cpp:1015
 #, kde-format
 msgid "&About Amarok"
 msgstr ""
 
-#: MainWindow.cpp:1018
+#: MainWindow.cpp:1019
 #, fuzzy, kde-format
 #| msgid "St&atistics"
 msgid "&Diagnostics"
 msgstr "آمار"
 
-#: MainWindow.cpp:1022
+#: MainWindow.cpp:1023
 #, kde-format
 msgid "&Report Bug..."
 msgstr "&گزارش اشکال...‌"
 
-#: MainWindow.cpp:1069
+#: MainWindow.cpp:1070
 #, kde-format
 msgid "&Music"
 msgstr "&موسیقی"
 
-#: MainWindow.cpp:1071
+#: MainWindow.cpp:1072
 #, kde-format
 msgid "&Amarok"
 msgstr ""
 
-#: MainWindow.cpp:1095 playlist/PlaylistDock.cpp:59
+#: MainWindow.cpp:1096 playlist/PlaylistDock.cpp:59
 #: playlist/PlaylistToolBar.cpp:39
 #, kde-format
 msgid "&Playlist"
 msgstr "فهرست پخش"
 
-#: MainWindow.cpp:1112
+#: MainWindow.cpp:1113
 #, kde-format
 msgid "&Tools"
 msgstr "&ابزارها‌"
 
-#: MainWindow.cpp:1127
+#: MainWindow.cpp:1128
 #, kde-format
 msgid "&Settings"
 msgstr "&تنظیمات‌"
 
-#: MainWindow.cpp:1170
+#: MainWindow.cpp:1171
 #, kde-format
 msgid ""
 "You have chosen to hide the menu bar.\n"
@@ -11563,22 +11505,22 @@ msgid ""
 "Please remember that you can always use the shortcut \"%1\" to bring it back."
 msgstr ""
 
-#: MainWindow.cpp:1171
+#: MainWindow.cpp:1172
 #, kde-format
 msgid "Hide Menu"
 msgstr "مخفی کردن گزینگان‌"
 
-#: MainWindow.cpp:1213
+#: MainWindow.cpp:1214
 #, kde-format
 msgid "Paused  ::  %1"
 msgstr "مکث کرد  ::  %1"
 
-#: MainWindow.cpp:1226
+#: MainWindow.cpp:1227
 #, kde-format
 msgid "%1 - %2  ::  %3"
 msgstr ""
 
-#: MainWindow.cpp:1300
+#: MainWindow.cpp:1301
 #, kde-format
 msgid "Apply this layout change?"
 msgstr ""
@@ -11984,7 +11926,7 @@ msgid "Show tooltips"
 msgstr "نمایش نکته ابزار"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewButton)
-#: playlist/layouts/PlaylistLayoutEditDialog.ui:291
+#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:504
 #, kde-format
 msgid "Preview"
 msgstr "پیش‌نمایش"
@@ -12181,7 +12123,7 @@ msgid ""
 "href='%3'>Turn off</a>"
 msgstr ""
 
-#: playlist/PlaylistDock.cpp:180
+#: playlist/PlaylistDock.cpp:179
 #, kde-format
 msgid "&Save Current Playlist"
 msgstr ""
@@ -12314,7 +12256,7 @@ msgstr "حالت"
 msgid "File Size"
 msgstr "اندازه پرونده"
 
-#: playlist/PlaylistQueueEditor.cpp:64
+#: playlist/PlaylistQueueEditor.cpp:69
 #, fuzzy, kde-format
 #| msgctxt "Guitar tablature"
 #| msgid "Tabs: %1 - %2"
@@ -13550,12 +13492,12 @@ msgstr "شمارش پخش"
 msgid "label"
 msgstr "برچسب"
 
-#: playlistgenerator/ConstraintSolver.cpp:231
+#: playlistgenerator/ConstraintSolver.cpp:230
 #, kde-format
 msgid "The playlist generator failed to load any tracks from the collection."
 msgstr ""
 
-#: playlistgenerator/ConstraintSolver.cpp:237
+#: playlistgenerator/ConstraintSolver.cpp:236
 #, kde-format
 msgid ""
 "There are no tracks that match all constraints. The playlist generator will "
@@ -13881,7 +13823,7 @@ msgid ""
 "author, %2 at %3, and ask him to upgrade it before the next Amarok release."
 msgstr ""
 
-#: scripting/scriptmanager/ScriptManager.cpp:286
+#: scripting/scriptmanager/ScriptManager.cpp:290
 #, kde-format
 msgid ""
 "Script error reported by: %1\n"
@@ -14240,25 +14182,25 @@ msgid ""
 "similar tracks."
 msgstr ""
 
-#: services/lastfm/biases/LastFmBias.cpp:126
+#: services/lastfm/biases/LastFmBias.cpp:125
 #, kde-format
 msgctxt "Last.fm bias representation"
 msgid "Similar to the previous track (as reported by Last.fm)"
 msgstr ""
 
-#: services/lastfm/biases/LastFmBias.cpp:129
+#: services/lastfm/biases/LastFmBias.cpp:128
 #, kde-format
 msgctxt "Last.fm bias representation"
 msgid "Similar to the previous artist (as reported by Last.fm)"
 msgstr ""
 
-#: services/lastfm/biases/LastFmBias.cpp:143
+#: services/lastfm/biases/LastFmBias.cpp:142
 #, kde-format
 msgid ""
 "<a href=\"http://www.last.fm/\">Last.fm</a> thinks the track is similar to"
 msgstr ""
 
-#: services/lastfm/biases/LastFmBias.cpp:146
+#: services/lastfm/biases/LastFmBias.cpp:145
 #, kde-format
 msgid "the previous track"
 msgstr "قطعه &قبلی‌"
@@ -15969,18 +15911,18 @@ msgstr "قطعههای برگزیده"
 msgid "Scrobbling"
 msgstr ""
 
-#: statusbar/CompoundProgressBar.cpp:67 statusbar/CompoundProgressBar.cpp:196
+#: statusbar/CompoundProgressBar.cpp:66 statusbar/CompoundProgressBar.cpp:195
 #: statusbar/ProgressBar.cpp:48
 #, kde-format
 msgid "Abort"
 msgstr "قطع کردن"
 
-#: statusbar/CompoundProgressBar.cpp:71 statusbar/CompoundProgressBar.cpp:208
+#: statusbar/CompoundProgressBar.cpp:70 statusbar/CompoundProgressBar.cpp:207
 #, kde-format
 msgid "Multiple background tasks running (click to show)"
 msgstr ""
 
-#: statusbar/CompoundProgressBar.cpp:72 statusbar/CompoundProgressBar.cpp:209
+#: statusbar/CompoundProgressBar.cpp:71 statusbar/CompoundProgressBar.cpp:208
 #, kde-format
 msgid "Abort all background tasks"
 msgstr ""
@@ -16001,13 +15943,13 @@ msgid "Slim Toolbar"
 msgstr ""
 
 #: toolbar/VolumePopupButton.cpp:104 toolbar/VolumePopupButton.cpp:115
-#: widgets/Osd.cpp:202
+#: widgets/Osd.cpp:200
 #, fuzzy, kde-format
 #| msgid "Volume: %1%"
 msgid "Volume: %1% (muted)"
 msgstr "حجم صدا: %1٪"
 
-#: toolbar/VolumePopupButton.cpp:104 widgets/Osd.cpp:202
+#: toolbar/VolumePopupButton.cpp:104 widgets/Osd.cpp:200
 #: widgets/VolumeDial.cpp:303 widgets/VolumeDial.cpp:342
 #, kde-format
 msgid "Volume: %1%"
@@ -16439,29 +16381,29 @@ msgctxt "a numerical tag (like year or track number) is between two values"
 msgid "between"
 msgstr "میان"
 
-#: widgets/Osd.cpp:188
+#: widgets/Osd.cpp:186
 #, kde-format
 msgid "Rating changed"
 msgstr ""
 
-#: widgets/Osd.cpp:263
+#: widgets/Osd.cpp:261
 #, kde-format
 msgid "Volume: 100% (muted)"
 msgstr ""
 
-#: widgets/Osd.cpp:511
+#: widgets/Osd.cpp:504
 #, kde-format
 msgid ""
 "On-Screen-Display preview\n"
 "Drag to reposition"
 msgstr ""
 
-#: widgets/Osd.cpp:759
+#: widgets/Osd.cpp:756
 #, kde-format
 msgid "Stopped"
 msgstr "ایستاد"
 
-#: widgets/Osd.cpp:768
+#: widgets/Osd.cpp:765
 #, kde-format
 msgid "Paused"
 msgstr "مکث کرد"
@@ -16470,11 +16412,6 @@ msgstr "مکث کرد"
 #, kde-format
 msgid "Play"
 msgstr "پخش"
-
-#: widgets/PlayPauseButton.cpp:81
-#, kde-format
-msgid "Pause"
-msgstr "مکث"
 
 #: widgets/PrettyTreeDelegate.cpp:219
 #, kde-format
@@ -16551,7 +16488,7 @@ msgctxt ""
 msgid "Jump to: %1"
 msgstr ""
 
-#: widgets/TokenDropTarget.cpp:315
+#: widgets/TokenDropTarget.cpp:334
 #, kde-format
 msgid "Drag in and out items from above."
 msgstr ""
@@ -16590,6 +16527,22 @@ msgstr "هنرمند: %1"
 #, kde-format
 msgid "empty"
 msgstr "خالی"
+
+#~ msgid "Wikipedia"
+#~ msgstr "ویکی‌پدیا"
+
+#~ msgid "Wikipedia: %1"
+#~ msgstr "ویکی‌پدیا: %1"
+
+#, fuzzy
+#~| msgid "Automatically scan for updates"
+#~ msgid "Automatically update built-in scripts"
+#~ msgstr "پویش خودکار برای به‌روزرسانی"
+
+#, fuzzy
+#~| msgid "Configure Scripts"
+#~ msgid "Manage Scripts"
+#~ msgstr "پیکربندی دست‌نوشته‌ها"
 
 #~ msgid "Scanning %1"
 #~ msgstr "پویش %1"

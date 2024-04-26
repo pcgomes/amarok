@@ -57,12 +57,23 @@ AlbumsEngine::AlbumsEngine( QObject *parent )
     m_proxyModel->setDynamicSortFilter( true );
     m_proxyModel->setSourceModel( m_model );
     m_proxyModel->setFilterRole( NameRole );
+    updateRecentlyAddedAlbums();
 }
 
 void AlbumsEngine::slotTrackMetadataChanged( Meta::TrackPtr track )
 {
-    if( !track || !track->album() || !track->album()->albumArtist() )
+    if( !track )
         return;
+    if( !track->album() || !track->album()->albumArtist() )
+    { // No album artist? Show other albums for the artist if available
+      // (and if none known, at least the current album if available)
+        if( track->artist() && m_artist != track->artist() )
+        {
+            m_artist = track->artist();
+            update();
+        }
+        return;
+    }
 
     if( track->album()->albumArtist() == m_artist )
         return;
@@ -86,19 +97,7 @@ void AlbumsEngine::stopped()
     m_currentTrack.clear();
     m_artist.clear();
 
-    // Collect data for the recently added albums
-    Collections::QueryMaker *qm = CollectionManager::instance()->queryMaker();
-    qm->setAutoDelete( true );
-    qm->setQueryType( Collections::QueryMaker::Album );
-    qm->excludeFilter( Meta::valAlbum, QString(), true, true );
-    qm->orderBy( Meta::valCreateDate, true );
-    qm->limitMaxResultSize( Amarok::config("Albums Applet").readEntry("RecentlyAdded", 5) );
-
-    connect( qm, &Collections::QueryMaker::newAlbumsReady,
-             this, &AlbumsEngine::resultReady, Qt::QueuedConnection );
-
-    m_lastQueryMaker = qm;
-    qm->run();
+    updateRecentlyAddedAlbums();
 }
 
 void AlbumsEngine::update()
@@ -119,6 +118,25 @@ void AlbumsEngine::update()
     qm->run();
 }
 
+void AlbumsEngine::updateRecentlyAddedAlbums()
+{
+    DEBUG_BLOCK
+
+    // Collect data for the recently added albums
+    Collections::QueryMaker *qm = CollectionManager::instance()->queryMaker();
+    qm->setAutoDelete( true );
+    qm->setQueryType( Collections::QueryMaker::Album );
+    qm->excludeFilter( Meta::valAlbum, QString(), true, true );
+    qm->orderBy( Meta::valCreateDate, true );
+    qm->limitMaxResultSize( Amarok::config("Albums Applet").readEntry("RecentlyAdded", 5) );
+
+    connect( qm, &Collections::QueryMaker::newAlbumsReady,
+             this, &AlbumsEngine::resultReady, Qt::QueuedConnection );
+
+    m_lastQueryMaker = qm;
+    qm->run();
+}
+
 void AlbumsEngine::resultReady( const Meta::AlbumList &albums )
 {
     if( sender() != m_lastQueryMaker )
@@ -127,7 +145,15 @@ void AlbumsEngine::resultReady( const Meta::AlbumList &albums )
     m_model->clear();
     m_proxyModel->setMode( m_currentTrack ? AlbumsProxyModel::SortByYear : AlbumsProxyModel::SortByCreateDate );
 
-    for( auto album : albums )
+    // Include currently playing album in results even when album artist is not current artist
+    Meta::AlbumList amended;
+    if( m_currentTrack && m_currentTrack->album() && std::find_if( albums.cbegin(), albums.cend(),
+                        [=](auto a) { return *m_currentTrack->album() == *a; } ) == albums.cend() )
+    {
+        amended.append( albums );
+        amended.append( m_currentTrack->album() );
+    }
+    for( auto album : ( amended.length() == 0 ? albums : amended ) )
     {
         // do not show all tracks without an album from the collection, this takes ages
         // TODO: show all tracks from this artist that are not part of an album
@@ -158,15 +184,15 @@ void AlbumsEngine::resultReady( const Meta::AlbumList &albums )
             trackItem->setTrack( track );
 
             // bold the current track to make it more visible
-            if( m_currentTrack && m_currentTrack == track )
+            if( m_currentTrack && *m_currentTrack == *track )
             {
-                trackItem->bold();
+                trackItem->bolden();
             }
 
             // If compilation and same artist, then highlight, but only if there's a current track
             if( m_currentTrack
                 && m_currentTrack->artist() && track->artist()
-                && album->isCompilation() )
+                && *m_currentTrack->artist() == *track->artist() && album->isCompilation() )
             {
                 trackItem->italicise();
             }

@@ -31,11 +31,12 @@ class WikipediaEngine : public QObject
     Q_OBJECT
     Q_PROPERTY(QString page READ page NOTIFY pageChanged)
     Q_PROPERTY(QUrl url READ url WRITE setUrl NOTIFY urlChanged)
-    Q_PROPERTY(QString message READ message NOTIFY messageChanged)
+    Q_PROPERTY(QString message READ message WRITE setMessage NOTIFY messageChanged)
     Q_PROPERTY(bool busy READ busy NOTIFY busyChanged)
     Q_PROPERTY(SelectionType selection READ selection WRITE setSelection NOTIFY selectionChanged)
     Q_PROPERTY(QString title READ title NOTIFY titleChanged)
     Q_PROPERTY(QString language READ language WRITE setLanguage NOTIFY languageChanged)
+    Q_PROPERTY(bool pauseState READ pauseState WRITE setPauseState)
 
 public:
     enum SelectionType
@@ -54,9 +55,12 @@ public:
     QUrl url() const { return wikiCurrentUrl; }
     void setUrl( const QUrl &url );
     QString message() const { return m_message; }
+    void setMessage( const QString &message );
     bool busy() const { return m_busy; }
     SelectionType selection() const;
     bool setSelection( SelectionType type ); // returns true if selection is changed
+    bool pauseState() const;
+    void setPauseState( const bool state );
     QString title() const { return m_title; }
     QString language() const { return preferredLangs.first(); }
     void setLanguage( const QString &language );
@@ -80,7 +84,6 @@ private:
     void wikiParse( QString &page );
     QString createLanguageComboBox( const QMap<QString, QString> &languageMap );
     void setPage( const QString &page );
-    void setMessage( const QString &message );
     void setBusy( bool busy );
     void setTitle( const QString &title );
     void clear();
@@ -108,6 +111,7 @@ private:
     QString m_page;
     QString m_message;
     bool m_busy;
+    bool m_pauseState;
     QString m_title;
     QString m_css;
 

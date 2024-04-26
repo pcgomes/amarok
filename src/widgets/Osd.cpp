@@ -32,19 +32,20 @@
 #include "core/meta/support/MetaUtility.h"
 #include "core/support/Amarok.h"
 #include "core/support/Debug.h"
-#include "widgets/StarManager.h"
 
 #include <QApplication>
 #include <QIcon>
 #include <KLocalizedString>
 #include <KWindowSystem>
 #include <KIconLoader>
+#include <KRatingPainter>
 
 #include <QDesktopWidget>
 #include <QMouseEvent>
 #include <QPainter>
 #include <QPixmap>
 #include <QRegExp>
+#include <QScreen>
 #include <QTimeLine>
 #include <QTimer>
 
@@ -55,7 +56,7 @@ namespace ShadowEngine
 
 namespace Amarok
 {
-    inline QImage icon() { return QImage( KIconLoader::global()->iconPath( "amarok", -KIconLoader::SizeHuge ) ); }
+    inline QPixmap icon() { return KIconLoader::global()->iconPath( "amarok", -KIconLoader::SizeHuge ); }
 }
 
 OSDWidget::OSDWidget( QWidget *parent, const char *name )
@@ -83,12 +84,9 @@ OSDWidget::OSDWidget( QWidget *parent, const char *name )
     flags |= Qt::Tool | Qt::X11BypassWindowManagerHint;
     #endif
     setWindowFlags( flags );
+    setAttribute( Qt::WA_TranslucentBackground );
     setObjectName( name );
     setFocusPolicy( Qt::NoFocus );
-
-    #ifdef Q_WS_X11
-    KWindowSystem::setType( winId(), NET::Notification );
-    #endif
 
     m_timer->setSingleShot( true );
     connect( m_timer, &QTimer::timeout, this, &OSDWidget::hide );
@@ -106,7 +104,7 @@ OSDWidget::~OSDWidget()
 }
 
 void
-OSDWidget::show( const QString &text, const QImage &newImage )
+OSDWidget::show( const QString &text, const QPixmap &newImage )
 {
     DEBUG_BLOCK
     m_showVolume = false;
@@ -115,7 +113,7 @@ OSDWidget::show( const QString &text, const QImage &newImage )
         m_cover = newImage;
         int w = m_scaledCover.width();
         int h = m_scaledCover.height();
-        m_scaledCover = QPixmap::fromImage( m_cover.scaled( w, h, Qt::IgnoreAspectRatio, Qt::SmoothTransformation ) );
+        m_scaledCover = m_cover.scaled( w, h, Qt::IgnoreAspectRatio, Qt::SmoothTransformation );
     }
     else
         m_cover = Amarok::icon();
@@ -140,7 +138,7 @@ OSDWidget::show()
         else
         {
             m_fadeTimeLine->stop();
-            setWindowOpacity( maxOpacity() );
+            setWindowOpacity( 1 );
         }
     }
 }
@@ -245,7 +243,7 @@ OSDWidget::determineMetrics( const int M )
     // determine a sensible maximum size, don't cover the whole desktop or cross the screen
     const QSize margin( ( M + MARGIN ) * 2, ( M + MARGIN ) * 2 ); //margins
     const QSize image = m_cover.isNull() ? QSize( 0, 0 ) : minImageSize;
-    const QSize max = QApplication::desktop()->screen( m_screen )->size() - margin;
+    const QSize max = QApplication::screens()[ screen() ]->size() - margin;
 
     // If we don't do that, the boundingRect() might not be suitable for drawText() (Qt issue N67674)
     m_text.replace( QRegExp( " +\n" ), "\n" );
@@ -270,34 +268,31 @@ OSDWidget::determineMetrics( const int M )
         rect = tmpRect;
 
         if ( The::engineController()->isMuted() )
-            m_cover = The::svgHandler()->renderSvg( "Muted", 100, 100, "Muted" ).toImage();
+            m_cover = The::svgHandler()->renderSvg( "Muted", 200, 200, "Muted" );
         else if( m_volume > 66 )
-            m_cover = The::svgHandler()->renderSvg( "Volume", 100, 100, "Volume" ).toImage();
+            m_cover = The::svgHandler()->renderSvg( "Volume", 200, 200, "Volume" );
         else if ( m_volume > 33 )
-            m_cover = The::svgHandler()->renderSvg( "Volume_mid", 100, 100, "Volume_mid" ).toImage();
+            m_cover = The::svgHandler()->renderSvg( "Volume_mid", 200, 200, "Volume_mid" );
         else
-            m_cover = The::svgHandler()->renderSvg( "Volume_low", 100, 100, "Volume_low" ).toImage();
+            m_cover = The::svgHandler()->renderSvg( "Volume_low", 200, 200, "Volume_low" );
     }
     // Don't show both volume and rating
     else if( m_rating )
     {
-        QPixmap* star = StarManager::instance()->getStar( 1 );
-        if( rect.width() < star->width() * 5 )
-            rect.setWidth( star->width() * 5 ); //changes right edge position
-        rect.setHeight( rect.height() + star->height() + M ); //changes bottom edge pos
+        if( rect.width() < 36 * 5 ) // using 36 as star width
+            rect.setWidth( 36 * 5 ); //changes right edge position
+        rect.setHeight( rect.height() + 36 + M ); //changes bottom edge pos
     }
 
     if( !m_cover.isNull() )
     {
         const int availableWidth = max.width() - rect.width() - M; //WILL be >= (minImageSize.width() - M)
 
-        m_scaledCover = QPixmap::fromImage(
-                m_cover.scaled(
+        m_scaledCover = m_cover.scaled(
                     qMin( availableWidth, m_cover.width() ),
                     qMin( rect.height(), m_cover.height() ),
                     Qt::KeepAspectRatio, Qt::SmoothTransformation
-                              )
-                                          ); //this will force us to be with our bounds
+                              ); //this will force us to be with our bounds
 
 
         const int widthIncludingImage = rect.width()
@@ -311,7 +306,7 @@ OSDWidget::determineMetrics( const int M )
     rect.adjust( -M, -M, M, M );
 
     const QSize newSize = rect.size();
-    const QRect screen = QApplication::desktop()->screenGeometry( m_screen );
+    const QRect screenRect = QApplication::screens()[ screen() ]->geometry();
     QPoint newPos( MARGIN, m_yOffset );
 
     switch( m_alignment )
@@ -320,25 +315,25 @@ OSDWidget::determineMetrics( const int M )
             break;
 
         case Right:
-            newPos.rx() = screen.width() - MARGIN - newSize.width();
+            newPos.rx() = screenRect.width() - MARGIN - newSize.width();
             break;
 
         case Center:
-            newPos.ry() = ( screen.height() - newSize.height() ) / 2;
+            newPos.ry() = ( screenRect.height() - newSize.height() ) / 2;
 
             Q_FALLTHROUGH();
 
         case Middle:
-            newPos.rx() = ( screen.width() - newSize.width() ) / 2;
+            newPos.rx() = ( screenRect.width() - newSize.width() ) / 2;
             break;
     }
 
     //ensure we don't dip below the screen
-    if ( newPos.y() + newSize.height() > screen.height() - MARGIN )
-        newPos.ry() = screen.height() - MARGIN - newSize.height();
+    if ( newPos.y() + newSize.height() > screenRect.height() - MARGIN )
+        newPos.ry() = screenRect.height() - MARGIN - newSize.height();
 
     // correct for screen position
-    newPos += screen.topLeft();
+    newPos += screenRect.topLeft();
 
     return QRect( newPos, rect.size() );
 }
@@ -361,6 +356,9 @@ OSDWidget::paintEvent( QPaintEvent *e )
     p.setRenderHints( QPainter::Antialiasing | QPainter::TextAntialiasing | QPainter::SmoothPixmapTransform | QPainter::HighQualityAntialiasing );
     p.setClipRect( e->rect() );
 
+    QColor windowBackground = QGuiApplication::palette().color( QPalette::Window );
+    windowBackground.setAlphaF( backgroundOpacity() );
+    p.fillRect( e->rect(), windowBackground );
     QPixmap background = The::svgHandler()->renderSvgWithDividers( "service_list_item", width(), height(), "service_list_item" );
     p.drawPixmap( 0, 0, background );
 
@@ -382,28 +380,9 @@ OSDWidget::paintEvent( QPaintEvent *e )
 
     if( !m_showVolume && m_rating > 0 && !m_paused )
     {
-        // TODO: Check if we couldn't use a KRatingPainter instead
-        QPixmap* star = StarManager::instance()->getStar( m_rating/2 );
-        QRect r( rect );
-
-        //Align to center...
-        r.setLeft( ( rect.left() + rect.width() / 2 ) - star->width() * m_rating / 4 );
-        r.setTop( rect.bottom() - star->height() );
-        graphicsHeight += star->height() + m_margin;
-
-        const bool half = m_rating % 2;
-
-        if( half )
-        {
-            QPixmap* halfStar = StarManager::instance()->getHalfStar( m_rating / 2 + 1 );
-            p.drawPixmap( r.left() + star->width() * ( m_rating / 2 ), r.top(), *halfStar );
-            star = StarManager::instance()->getStar( m_rating / 2 + 1 );
-        }
-
-        for( int i = 0; i < m_rating / 2; i++ )
-        {
-            p.drawPixmap( r.left() + i * star->width(), r.top(), *star );
-        }
+        QRect r( rect.left(), rect.bottom() - 36, rect.width(), 36 ); // using 36 as star width
+        graphicsHeight += 36 + m_margin;
+        KRatingPainter::paintRating( &p, r, Qt::AlignHCenter, m_rating, 0 );
     }
 
     rect.setBottom( rect.bottom() - graphicsHeight );
@@ -412,6 +391,18 @@ OSDWidget::paintEvent( QPaintEvent *e )
     QPixmap pixmap( rect.size() );
     pixmap.fill( Qt::black );
 
+    QString osdtext = m_text;
+    int pos = The::engineController()->trackPositionMs();
+
+    // Only show position if the track didn't just start playing
+    if( pos > 3000 )
+    {
+        QTimer::singleShot( 1000, this, [=] () { update(); });
+        osdtext.replace("%{\eA%}", QString(Meta::msToPrettyTime( pos ) + '/') );
+    }
+    else
+        osdtext.replace("%{\eA%}", "" );
+
     QPainter p2( &pixmap );
     p2.setFont( font() );
     p2.setPen( Qt::white );
@@ -419,7 +410,7 @@ OSDWidget::paintEvent( QPaintEvent *e )
     p2.drawText( QRect( QPoint( SHADOW_SIZE, SHADOW_SIZE ),
                         QSize( rect.size().width() - SHADOW_SIZE * 2,
                                rect.size().height() - SHADOW_SIZE * 2 ) ),
-                 align, m_text );
+                 align, osdtext );
     p2.end();
 
     p.drawImage( rect.topLeft(), ShadowEngine::makeShadow( pixmap, shadowColor ) );
@@ -427,7 +418,7 @@ OSDWidget::paintEvent( QPaintEvent *e )
     p.setPen( palette().color( QPalette::Active, QPalette::WindowText ) );
 
     p.drawText( rect.adjusted( SHADOW_SIZE, SHADOW_SIZE,
-                               -SHADOW_SIZE, -SHADOW_SIZE ), align, m_text );
+                               -SHADOW_SIZE, -SHADOW_SIZE ), align, osdtext );
 }
 
 void
@@ -463,14 +454,14 @@ OSDWidget::setTextColor(const QColor& color)
 void
 OSDWidget::setScreen( int screen )
 {
-    const int n = QApplication::desktop()->numScreens();
+    const int n = QApplication::screens().size();
     m_screen = ( screen >= n ) ? n - 1 : screen;
 }
 
 void
 OSDWidget::setFadeOpacity( qreal value )
 {
-    setWindowOpacity( value * maxOpacity() );
+    setWindowOpacity( value );
 
     if( value == 0.0 )
     {
@@ -508,7 +499,9 @@ OSDPreviewWidget::OSDPreviewWidget( QWidget *parent )
     setDuration( 0 );
     setImage( Amarok::icon() );
     setTranslucent( AmarokConfig::osdUseTranslucency() );
-    setText( i18n( "On-Screen-Display preview\nDrag to reposition" ) );
+    // Drag-positioning not available on Wayland, so let's hide any untrue ideas about dragging
+    // TODO maybe one day Wayland will be first-class OSD citizen
+    setText( KWindowSystem::isPlatformWayland() ? i18n ( "Preview" ) : i18n( "On-Screen-Display preview\nDrag to reposition" ) );
 }
 
 void
@@ -516,7 +509,9 @@ OSDPreviewWidget::mousePressEvent( QMouseEvent *event )
 {
     m_dragYOffset = event->pos();
 
-    if( event->button() == Qt::LeftButton && !m_dragging )
+    // As we can't position OSD on Wayland at the moment, and grabbing mouse doesn't quite work
+    // either, let's disable this for now.
+    if( !KWindowSystem::isPlatformWayland() && event->button() == Qt::LeftButton && !m_dragging )
     {
         grabMouse( Qt::SizeAllCursor );
         m_dragging = true;
@@ -551,7 +546,7 @@ OSDPreviewWidget::mouseMoveEvent( QMouseEvent *e )
     {
         // Here we implement a "snap-to-grid" like positioning system for the preview widget
 
-        const QRect screenRect  = QApplication::desktop()->screenGeometry( screen() );
+        const QRect screenRect  = QApplication::screens()[ screen() ]->geometry();
         const uint  hcenter     = screenRect.width() / 2;
         const uint  eGlobalPosX = e->globalPos().x() - screenRect.left();
         const uint  snapZone    = screenRect.width() / 24;
@@ -592,8 +587,7 @@ OSDPreviewWidget::mouseMoveEvent( QMouseEvent *e )
         move( destination );
 
         // compute current Position && Y-offset
-        QDesktopWidget *desktop = QApplication::desktop();
-        const int currentScreen = desktop->screenNumber( pos() );
+        const int currentScreen = QGuiApplication::screens().indexOf( QGuiApplication::screenAt( pos() ) );
 
         // set new data
         OSDWidget::setScreen( currentScreen );
@@ -674,13 +668,16 @@ Amarok::OSD::show( Meta::TrackPtr track ) //slot
         setRating( track->statistics()->rating() );
         text = track->prettyName();
         if( track->artist() && !track->artist()->prettyName().isEmpty() )
-            text = track->artist()->prettyName() + " - " + text;
+            text = track->artist()->prettyName() + " – " + text;
         if( track->album() && !track->album()->prettyName().isEmpty() )
             text += "\n (" + track->album()->prettyName() + ") ";
         else
             text += '\n';
         if( track->length() > 0 )
+        {
+            text += "%{\eA%}"; // Add a tag to be replaced later
             text += Meta::msToPrettyTime( track->length() );
+        }
     }
 
     if( text.isEmpty() )
@@ -692,9 +689,9 @@ Amarok::OSD::show( Meta::TrackPtr track ) //slot
     if( text.isEmpty() ) //still
         text = i18n("No information available for this track");
 
-    QImage image;
+    QPixmap image;
     if( track && track->album() )
-        image = The::svgHandler()->imageWithBorder( track->album(), 100, 5 ).toImage();
+        image = The::svgHandler()->imageWithBorder( track->album(), 200, 5 );
 
     OSDWidget::show( text, image );
 }
@@ -754,7 +751,7 @@ Amarok::OSD::trackPlaying( const Meta::TrackPtr &track )
 void
 Amarok::OSD::stopped()
 {
-    setImage( QImage( KIconLoader::global()->iconPath( "amarok", -KIconLoader::SizeHuge ) ) );
+    setImage( KIconLoader::global()->iconPath( "amarok", -KIconLoader::SizeHuge ) );
     setRating( 0 ); // otherwise stars from last rating change are visible
     OSDWidget::show( i18n( "Stopped" ) );
     setPaused(false);
@@ -763,7 +760,7 @@ Amarok::OSD::stopped()
 void
 Amarok::OSD::paused()
 {
-    setImage( QImage( KIconLoader::global()->iconPath( "amarok", -KIconLoader::SizeHuge ) ) );
+    setImage( KIconLoader::global()->iconPath( "amarok", -KIconLoader::SizeHuge ) );
     setRating( 0 ); // otherwise stars from last rating change are visible
     OSDWidget::show( i18n( "Paused" ) );
     setPaused(true);

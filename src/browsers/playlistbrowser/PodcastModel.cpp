@@ -29,12 +29,14 @@
 #include "widgets/PrettyTreeRoles.h"
 
 #include <QAction>
+#include <QGuiApplication>
 #include <QIcon>
 #include <QInputDialog>
 #include <QListIterator>
 #include <QPainter>
 
 #include <KIconEngine>
+#include <KIconLoader>
 
 using namespace Podcasts;
 
@@ -47,6 +49,7 @@ namespace The
 }
 
 PlaylistBrowserNS::PodcastModel* PlaylistBrowserNS::PodcastModel::s_instance = nullptr;
+QPixmap *PlaylistBrowserNS::PodcastModel::m_shadedStar = nullptr;
 
 PlaylistBrowserNS::PodcastModel*
 PlaylistBrowserNS::PodcastModel::instance()
@@ -119,14 +122,31 @@ PlaylistBrowserNS::PodcastModel::icon( const PodcastChannelPtr &channel ) const
 
         // if it's a new episode draw the overlay:
         if( !emblems.isEmpty() )
-            // draw the overlay the same way KIconLoader does:
-            p.drawPixmap( 2, 32 - 16 - 2, QIcon::fromTheme( QStringLiteral("rating") ).pixmap( 16, 16 ) );
+        {
+            if( !m_shadedStar )
+            {
+                // Prepare a background-foreground pair of stars for better visibility, BR 219518
+                m_shadedStar = new QPixmap( 32, 32 );
+                m_shadedStar->fill(Qt::transparent);
+                QPainter iconp( m_shadedStar );
+
+                QPalette pal = QGuiApplication::palette();
+                pal.setColor( QPalette::WindowText , pal.color( QPalette::Window ) );
+                KIconLoader::global()->setCustomPalette(pal);
+                iconp.drawPixmap( 0, 0, KIconLoader::global()->loadScaledIcon( QStringLiteral("rating"), KIconLoader::NoGroup, 1, QSize( 32, 32 ) ) );
+
+                KIconLoader::global()->resetPalette();
+                iconp.drawPixmap( 4, 4, KIconLoader::global()->loadScaledIcon( QStringLiteral("rating"), KIconLoader::NoGroup, 1, QSize( 24, 24 ) ) );
+                iconp.end();
+            }
+            p.drawPixmap( 2, 32 - 16 - 2, 16, 16, *m_shadedStar );
+        }
         p.end();
 
         return pixmap;
     }
     else
-        return ( QIcon(new KIconEngine( "podcast-amarok", nullptr, emblems )).pixmap( 32, 32 ) );
+        return ( QIcon(new KIconEngine( "podcast-amarok", KIconLoader::global(), emblems )).pixmap( 32, 32 ) );
 }
 
 QVariant
@@ -137,9 +157,9 @@ PlaylistBrowserNS::PodcastModel::icon( const PodcastEpisodePtr &episode ) const
         emblems << QStringLiteral("go-down");
 
     if( episode->isNew() )
-        return ( QIcon( new KIconEngine( "rating", nullptr, emblems )).pixmap( 24, 24 ) );
+        return ( QIcon( new KIconEngine( "rating", KIconLoader::global(), emblems )).pixmap( 24, 24 ) );
     else
-        return ( QIcon( new KIconEngine( "podcast-amarok", nullptr, emblems )).pixmap( 24, 24 ));
+        return ( QIcon( new KIconEngine( "podcast-amarok", KIconLoader::global(), emblems )).pixmap( 24, 24 ));
 }
 
 QVariant

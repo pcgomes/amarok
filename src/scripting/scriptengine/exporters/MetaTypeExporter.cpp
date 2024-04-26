@@ -56,20 +56,15 @@ MetaTrackPrototypeWrapper::trackCtor( QJSValue arg )
 {
     QUrl url( qjsvalue_cast<QUrl>( arg ) );
     if( !url.isValid() ) {
-        /* TODO - Use commented code once QT versions >= 5.12
         QJSValue errorObj = m_engine->newErrorObject( QJSValue::TypeError, QStringLiteral("Invalid QUrl") );
         m_engine->throwError( errorObj.errorType(), errorObj.toString() );
         return errorObj;
-        */
-        return m_engine->evaluate("throw new TypeError('Invalid QUrl')");
     }
 
     MetaProxy::TrackPtr proxyTrack( new MetaProxy::Track( url ) );
     proxyTrack->setTitle( url.fileName() ); // set temporary name
     return m_engine->newQObject( new MetaTrackPrototype( Meta::TrackPtr( proxyTrack.data() ) ) );
 }
-
-MetaTrackPrototypeWrapper *MetaTrackPrototype::s_wrapper = nullptr;
 
 void
 MetaTrackPrototype::init( QJSEngine *engine )
@@ -106,11 +101,9 @@ MetaTrackPrototype::init( QJSEngine *engine )
         return fieldHash;
     } );
 
-    if (s_wrapper == nullptr)
-        s_wrapper = new MetaTrackPrototypeWrapper( engine );
-    QJSValue scriptObj = engine->newQObject( s_wrapper );
+    QJSValue scriptObj = engine->newQObject( new MetaTrackPrototypeWrapper( engine ) );
 
-    engine->globalObject().setProperty( QStringLiteral("Track"),  scriptObj.property("trackCtor"));
+    engine->globalObject().setProperty( QStringLiteral("Track"), scriptObj.property("trackCtor"));
 }
 
 MetaTrackPrototype::MetaTrackPrototype( const Meta::TrackPtr &track )

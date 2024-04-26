@@ -120,8 +120,6 @@ BlockAnalyzer::paletteChange( const QPalette& palette ) //virtual
 
     m_barPixmap.fill( QColor( ( highlight.red() + bg.red() ) / 2, ( highlight.green() + bg.green() ) / 2, ( highlight.blue() + bg.blue() ) / 2 ) );
 
-    QPainter p( &m_barPixmap );
-
     int h, s, v;
     palette.color( QPalette::Active, QPalette::Dark ).getHsv( &h, &s, &v );
     const QColor fade = QColor::fromHsv( h + 30, s, v );
@@ -130,6 +128,9 @@ BlockAnalyzer::paletteChange( const QPalette& palette ) //virtual
     const double dg = fade.green() - abg.green();
     const double db = fade.blue() - abg.blue();
     const int r = abg.red(), g = abg.green(), b = abg.blue();
+
+    if( m_rows == 0 )
+        return; // Nothing to draw yet, avoid some QPainter warnings from empty surfaces
 
     // Precalculate all fade-bar pixmaps
     for( int y = 0; y < FADE_SIZE; ++y )
@@ -161,6 +162,7 @@ BlockAnalyzer::drawBackground( const QPalette &palette )
     m_backgroundPixmap.fill( bg );
 
     QPainter p( &m_backgroundPixmap );
+    p.scale( 1/QGuiApplication::primaryScreen()->devicePixelRatio(), 1/QGuiApplication::primaryScreen()->devicePixelRatio() );
     for( int x = 0; x < m_columns; ++x )
         for( int y = 0; y < m_rows; ++y )
             p.fillRect( x * ( m_columnWidth + 1 ), y * ( BLOCK_HEIGHT + 1 ), m_columnWidth, BLOCK_HEIGHT, abg );

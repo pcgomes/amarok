@@ -25,7 +25,7 @@
 #include <QString>
 #include <QWidget> //baseclass
 
-#define OSD_WINDOW_OPACITY 0.74
+#define OSD_WINDOW_BACKGROUND_OPACITY 0.74
 
 class QTimeLine;
 
@@ -43,7 +43,7 @@ class OSDWidget : public QWidget
          
     public Q_SLOTS:
         /** calls setText() then show(), after setting image if needed */
-        void show( const QString &text, const QImage &newImage = QImage() );
+        void show( const QString &text, const QPixmap &newImage = QPixmap() );
 
         void ratingChanged( const short rating );
         void ratingChanged( const QString& path, int rating );
@@ -76,10 +76,10 @@ class OSDWidget : public QWidget
         void setScreen( int screen );
 
         void setPaused( bool paused ) { m_paused = paused; }
-        void setImage( const QImage &image ) { m_cover = image; }
+        void setImage( const QPixmap &image ) { m_cover = image; }
         void setText( const QString &text ) { m_text = text; }
         void setRating( const short rating ) { m_rating = rating; }
-        void setTranslucent( bool enabled ) { m_translucent = enabled; setWindowOpacity( maxOpacity() ); }
+        void setTranslucent( bool enabled ) { m_translucent = enabled; }
         void setFadeOpacity( qreal value );
         void setFontScale( int scale );
         void setHideWhenFullscreenWindowIsActive( bool hide );
@@ -91,7 +91,7 @@ class OSDWidget : public QWidget
         // work-around to get default point size on this platform, Qt API does not offer this directly
         inline qreal defaultPointSize() const { return QFont(font().family()).pointSizeF(); }
 
-        inline qreal maxOpacity() const { return m_translucent ? OSD_WINDOW_OPACITY : 1.0; }
+        inline qreal backgroundOpacity() const { return m_translucent ? OSD_WINDOW_BACKGROUND_OPACITY : 1.0; }
 
         /** determine new size and position */
         QRect determineMetrics( const int marginMetric );
@@ -127,7 +127,7 @@ class OSDWidget : public QWidget
         int         m_volume;
         bool        m_showVolume;
         QString     m_text;
-        QImage      m_cover;
+        QPixmap     m_cover;
         QPixmap     m_scaledCover;
         bool        m_paused;
         bool        m_hideWhenFullscreenWindowIsActive;

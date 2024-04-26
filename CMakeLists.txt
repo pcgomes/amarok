@@ -9,7 +9,7 @@ endif()
 
 ###############
 
-set(KF5_MIN_VERSION "5.57.0")
+set(KF5_MIN_VERSION "5.77.0")
 set(QT_REQUIRED_VERSION "5.15.0")
 find_package(PkgConfig REQUIRED)
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED CONFIG)
@@ -79,7 +79,7 @@ option(WITH_IPOD "Enable iPod support in Amarok" ON)
 option(WITH_PLAYGROUND "Enable building of playground scripts and applets (WARNING: some of them might have legal issues!)" OFF)
 
 ############### Taglib
-set(TAGLIB_MIN_VERSION "1.7")
+set(TAGLIB_MIN_VERSION "1.12")
 find_package(Taglib REQUIRED)
 set_package_properties( Taglib PROPERTIES DESCRIPTION "Support for Audio metadata." URL "http://developer.kde.org/~wheeler/taglib.html" TYPE REQUIRED PURPOSE "Required for tag reading" )
 
@@ -292,8 +292,12 @@ if( WITH_PLAYER )
         set_package_properties( GLIB2 PROPERTIES DESCRIPTION "Required by libgpod and mp3tunes" URL "http://www.gtk.org" TYPE OPTIONAL )
     endif()
 
-    find_package(PythonInterp)
-    set_package_properties( PYTHON PROPERTIES DESCRIPTION "Required for generating the autocompletion file for the script console" URL "https://www.python.org" TYPE OPTIONAL )
+    find_package(Python3 COMPONENTS Interpreter)
+    set_package_properties(Python3 PROPERTIES
+        DESCRIPTION "Required for generating the autocompletion file for the script console"
+        URL "https://www.python.org"
+        TYPE OPTIONAL
+    )
 
     find_package(FFTW3 REQUIRED)
 
@@ -307,6 +311,8 @@ if( WITH_PLAYER )
 
     feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
+    ki18n_install( po )
+    kdoctools_install( po )
 endif()
 
 # this needs to be here because also code in shared/ needs config.h. This is also the
@@ -317,12 +323,10 @@ add_subdirectory( shared )
 
 if( WITH_UTILITIES )
     add_subdirectory( utilities )
+    ecm_install_po_files_as_qm( poqm )
 endif()
 
 if( WITH_PLAYGROUND )
     add_subdirectory( playground )
     message(STATUS "Included playground subdirectory in configuration")
 endif()
-
-ki18n_install( po )
-ecm_install_po_files_as_qm(poqm)

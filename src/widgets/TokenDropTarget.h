@@ -83,6 +83,7 @@ public Q_SLOTS:
     */
     void insertToken( Token*, int row, int col );
     void appendToken( Token *token ) { insertToken( token, -1, -1 ); } // -1 -> append to last row
+    void removeToken( Token* );
 
     void deleteEmptyRows();
 Q_SIGNALS:
@@ -121,9 +122,6 @@ private:
         (using the layout is not very practical in that since it seems that the layout
         adds at least one empty entry by itself if it's empty) */
     uint m_rows;
-
-    /** True if stretch are inserted at the ends of every row. */
-    bool m_horizontalStretch;
 
     /** True if a stretch is inserted as a last row.
         For now we always have a vertical stretch if the m_rowLimit > 1 */

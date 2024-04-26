@@ -141,6 +141,7 @@ PhotosEngine::update( bool force )
 
         QStringList tags = m_keywords;
         tags << m_artist;
+        tags << "music";
         tags.removeDuplicates();
 
         // Query flickr, order by relevance, 10 max
@@ -153,7 +154,7 @@ PhotosEngine::update( bool force )
         query.addQueryItem( "method", "flickr.photos.search" );
         query.addQueryItem( "api_key", Amarok::flickrApiKey() );
         query.addQueryItem( "per_page", QString::number( m_nbPhotos ) );
-        query.addQueryItem( "sort", "date-posted-desc" );
+        query.addQueryItem( "sort", "relevance" );
         query.addQueryItem( "media", "photos" );
         query.addQueryItem( "content_type", QString::number(1) );
         query.addQueryItem( "text", tags.join(" ") );
@@ -218,12 +219,12 @@ PhotosEngine::photosListFromXml( QXmlStreamReader &xml )
             QStringRef title  = attr.value( QLatin1String("title") );
 
             QUrl photoUrl;
-            photoUrl.setScheme( "http" );
-            photoUrl.setHost( QStringLiteral("farm%1.static.flickr.com").arg( farm.toString() ) );
+            photoUrl.setScheme( "https" );
+            photoUrl.setHost( QStringLiteral("live.staticflickr.com") );
             photoUrl.setPath( QStringLiteral("/%1/%2_%3.jpg").arg( server.toString(), id.toString(), secret.toString() ) );
 
             QUrl pageUrl;
-            pageUrl.setScheme( "http" );
+            pageUrl.setScheme( "https" );
             pageUrl.setHost( QLatin1String("www.flickr.com") );
             pageUrl.setPath( QStringLiteral("/photos/%1/%2").arg( owner.toString(), id.toString() ) );
 

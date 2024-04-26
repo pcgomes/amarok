@@ -415,7 +415,8 @@ void Playlist::PrettyItemDelegate::paintItem( const LayoutItemConfig &config,
         {
             const int x = markerOffsetX;
             const int y = nominalImageRect.y() + ( coverHeight - smallIconSize );
-            painter->drawPixmap( x, y, The::svgHandler()->renderSvg( QStringLiteral("multi_marker"), smallIconSize, smallIconSize, QStringLiteral("multi_marker") ) );
+            painter->drawPixmap( x, y, smallIconSize, smallIconSize, The::svgHandler()->renderSvg(
+                QStringLiteral("multi_marker"),smallIconSize * 2, smallIconSize * 2, QStringLiteral("multi_marker") ) );
 
             markerOffsetX += ( smallIconSize + iconSpacing );
 
@@ -427,7 +428,8 @@ void Playlist::PrettyItemDelegate::paintItem( const LayoutItemConfig &config,
         {
             const int x = markerOffsetX;
             const int y = nominalImageRect.y() + ( coverHeight - smallIconSize );
-            painter->drawPixmap( x, y, The::svgHandler()->renderSvg( QStringLiteral("stop_button"), smallIconSize, smallIconSize, QStringLiteral("stop_button") ) );
+            painter->drawPixmap( x, y, smallIconSize, smallIconSize, The::svgHandler()->renderSvg(
+                QStringLiteral("stop_button"), smallIconSize * 2, smallIconSize * 2, QStringLiteral("stop_button") ) );
 
             markerOffsetX += ( smallIconSize + iconSpacing );
 
@@ -548,7 +550,7 @@ void Playlist::PrettyItemDelegate::paintItem( const LayoutItemConfig &config,
                 //we cannot ask the model for the moodbar directly as we have no
                 //way of asking for a specific size. Instead just get the track from
                 //the model and ask the moodbar manager ourselves.
-                Meta::TrackPtr track = index.data( TrackRole ).value<Meta::TrackPtr>();
+                Meta::TrackPtr track = textIndex.data( TrackRole ).value<Meta::TrackPtr>();
 
                 if( The::moodbarManager()->hasMoodbar( track ) )
                 {
@@ -616,39 +618,39 @@ void Playlist::PrettyItemDelegate::paintActiveTrackExtras( const QRect &rect, QP
     //just paint some "buttons for now
 
     int offset = x + frameHMargin;
-    painter->drawPixmap( offset, y + 2,
+    painter->drawPixmap( offset, y + 2, buttonSize, buttonSize,
                          The::svgHandler()->renderSvg( QStringLiteral("back_button"),
-                                                       buttonSize, buttonSize,
+                                                       buttonSize * 2, buttonSize * 2,
                                                        QStringLiteral("back_button") ) );
 
     if( The::engineController()->isPlaying() )
     {
         offset += ( buttonSize + iconSpacing );
-        painter->drawPixmap( offset, y + 2,
+        painter->drawPixmap( offset, y + 2, buttonSize, buttonSize,
                              The::svgHandler()->renderSvg( QStringLiteral("pause_button"),
-                                                           buttonSize, buttonSize,
+                                                           buttonSize * 2, buttonSize * 2,
                                                            QStringLiteral("pause_button") ) );
 
     }
     else
     {
         offset += ( buttonSize + iconSpacing );
-        painter->drawPixmap( offset, y + 2,
+        painter->drawPixmap( offset, y + 2, buttonSize, buttonSize,
                              The::svgHandler()->renderSvg( QStringLiteral("play_button"),
-                                                           buttonSize, buttonSize,
+                                                           buttonSize * 2, buttonSize * 2,
                                                            QStringLiteral("play_button") ) );
     }
 
     offset += ( buttonSize + iconSpacing );
-    painter->drawPixmap( offset, y + 2,
+    painter->drawPixmap( offset, y + 2, buttonSize, buttonSize,
                          The::svgHandler()->renderSvg( QStringLiteral("stop_button"),
-                                                       buttonSize, buttonSize,
+                                                       buttonSize * 2, buttonSize * 2,
                                                        QStringLiteral("stop_button") ) );
 
     offset += ( buttonSize + iconSpacing );
-    painter->drawPixmap( offset, y + 2,
+    painter->drawPixmap( offset, y + 2, buttonSize, buttonSize,
                          The::svgHandler()->renderSvg( QStringLiteral("next_button"),
-                                                       buttonSize, buttonSize,
+                                                       buttonSize * 2, buttonSize * 2,
                                                        QStringLiteral("next_button") ) );
 
     offset += ( buttonSize + iconSpacing );
@@ -657,11 +659,14 @@ void Playlist::PrettyItemDelegate::paintActiveTrackExtras( const QRect &rect, QP
     long trackPos = The::engineController()->trackPositionMs();
     qreal trackPercentage = 0.0;
 
+    QStyleOptionSlider opt;
     if ( trackLength > 0 )
+    {
+        opt.state = QStyle::State_Enabled;
         trackPercentage = ( (qreal) trackPos / (qreal) trackLength );
+    }
 
     int sliderWidth = width - ( offset + frameHMargin );
-    QStyleOptionSlider opt;
     opt.rect.setRect( offset, y, sliderWidth, height );
     The::svgHandler()->paintCustomSlider( painter, &opt, trackPercentage, false );
 }

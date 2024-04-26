@@ -14,10 +14,10 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.                           *
  ****************************************************************************************/
 
-import QtQuick 2.4
-import QtQuick.Controls 2.0
+import QtQuick 2.15
+import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.3
-import org.kde.kirigami 2.0 as Kirigami
+import org.kde.kirigami 2.14 as Kirigami
 import org.kde.amarok.qml 1.0 as AmarokQml
 import org.kde.amarok.currenttrack 1.0
 
@@ -43,16 +43,21 @@ AmarokQml.Applet {
             bottom: parent.bottom
         }
 
-        RowLayout {
+        GridLayout {
+            id: artistRatingGrid
+            Layout.preferredWidth: parent.width
             Layout.fillWidth: true
             Layout.fillHeight: true
             Layout.alignment: Qt.AlignTop
+            flow: parent.width < ( infoItem.Layout.minimumWidth + ratingItem.Layout.minimumWidth ) * 8 ? GridLayout.TopToBottom : GridLayout.LeftToRight
 
             InfoItem {
                 id: infoItem
 
+                width: ( artistRatingGrid.flow == GridLayout.TopToBottom ? parent.width : parent.width / 2 )
+                Layout.minimumWidth: 24
+                Layout.maximumWidth: parent.width
                 Layout.fillHeight: true
-                Layout.fillWidth: true
                 Layout.alignment: Qt.AlignLeft
             }
             AmarokQml.RatingItem {
@@ -60,6 +65,11 @@ AmarokQml.Applet {
 
                 Layout.preferredWidth: height * 6
                 Layout.preferredHeight: parent.height / 5
+                Layout.maximumHeight: parent.height / 5
+                Layout.minimumWidth: 24
+                Layout.maximumWidth: parent.width / ( artistRatingGrid.flow == GridLayout.TopToBottom ? 1 : 2 )
+                Layout.minimumHeight: 100
+
                 Layout.alignment: Qt.AlignTop | Qt.AlignRight
                 rating: CurrentTrackEngine.rating
                 onClicked: CurrentTrackEngine.rating = newRating
@@ -72,6 +82,43 @@ AmarokQml.Applet {
             Layout.alignment: Qt.AlignBottom
             Layout.preferredHeight: parent.height / 5
         }
+        visible: CurrentTrackEngine.track !== ""
+    }
+
+    RowLayout {
+        anchors {
+            left: cover.right
+            leftMargin: applet.spacing
+            right: parent.right
+            top: parent.top
+            bottom: parent.bottom
+        }
+        Label {
+            id: nothingPlaying
+            font.bold: true
+            color: Kirigami.Theme.textColor
+            Layout.alignment: Qt.AlignCenter
+            Layout.minimumWidth: parent.height / 3
+            text: i18n("No track playing")
+        }
+        Item {
+            id: logoComponent
+            Layout.minimumWidth: parent.height / 3
+            Layout.maximumWidth: parent.height
+            Layout.fillHeight: true
+            AmarokQml.PixmapItem {
+                id: amarokLogo
+                source: Svg.renderSvg(applet.imageUrl("amarok-currenttrack.svg"),
+                                    "CurrentTrackLogo",
+                                    512,
+                                    512,
+                                    "amarok_logo");
+                width: parent.width
+                height: width
+                anchors.centerIn: parent
+            }
+        }
+        visible: CurrentTrackEngine.track === ""
     }
 
     Component {
@@ -82,9 +129,8 @@ AmarokQml.Applet {
 
             color: "white"
             radius: Kirigami.Units.smallSpacing / 2
-            border.width: 1
-            border.color: applet.palette.light
-
+            border.width: albumCoverMouse.containsMouse ? 3 : 1
+            border.color: albumCoverMouse.containsMouse ? Kirigami.Theme.highlightColor : applet.palette.light
 
             AmarokQml.PixmapItem {
                 id: iconItem
@@ -93,6 +139,12 @@ AmarokQml.Applet {
                 anchors.margins: parent.radius
                 source: CurrentTrackEngine.cover
             }
+            MouseArea {
+                id: albumCoverMouse
+                anchors.fill: parent
+                hoverEnabled: true
+                onClicked: CurrentTrackEngine.displayCover()
+            }
         }
     }
     Component {
@@ -100,10 +152,12 @@ AmarokQml.Applet {
 
         AmarokQml.PixmapItem {
             source: Svg.renderSvg(applet.imageUrl("amarok-currenttrack.svg"),
-                                  "CurrentTrack",
-                                  width,
-                                  height,
+                                  "CurrentTrackAlbum",
+                                  512,
+                                  512,
                                   "album_old");
+            width: parent.width
+            height: parent.height
         }
     }
 }

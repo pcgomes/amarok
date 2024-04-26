@@ -139,14 +139,14 @@ PlaylistFileProvider::save( const Meta::TrackList &tracks, const QString &name )
     filename.replace( QLatin1Char('/'), QLatin1Char('-') );
     filename.replace( QLatin1Char('\\'), QLatin1Char('-') );
 
-    Playlists::PlaylistFormat format = Playlists::getFormat( QUrl::fromUserInput(filename) );
+    Playlists::PlaylistFormat format = Playlists::getFormat( QUrl::fromUserInput( filename, QString(), QUrl::AssumeLocalFile ) );
     if( format == Playlists::Unknown ) // maybe the name just had a dot in it. We just add .xspf
     {
         format = Playlists::XSPF;
         filename.append( QLatin1String( ".xspf" ) );
     }
 
-    QUrl path( Amarok::saveLocation( QStringLiteral("playlists") ) );
+    QUrl path = QUrl::fromLocalFile( Amarok::saveLocation( QStringLiteral("playlists") ) );
     path = path.adjusted(QUrl::StripTrailingSlash);
     path.setPath(path.path() + QLatin1Char('/') + ( Amarok::vfatPath( filename ) ));
     if( QFileInfo( path.toLocalFile() ).exists() )

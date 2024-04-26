@@ -139,11 +139,16 @@ private Q_SLOTS:
      */
     void testCrossRenaming();
 
+    /** Test the partial update scan functionality to ensure e.g. correct handling
+     *  of paths (BR: 475528)
+     */
+    void testPartialUpdate();
+
     void slotCollectionUpdated();
 
 private:
     void fullScanAndWait();
-    void incrementalScanAndWait();
+    void incrementalScanAndWait( const QList<QUrl> &paths = QList<QUrl>() );
     void importAndWait( QIODevice* import );
 
     void waitScannerFinished();
@@ -171,7 +176,7 @@ private:
     int m_collectionUpdatedCount;
 
     QSharedPointer<MySqlEmbeddedStorage> m_storage;
-    QTemporaryDir *m_tmpDatabaseDir;
+    static QTemporaryDir *s_tmpDatabaseDir;
     QTemporaryDir *m_tmpCollectionDir;
     QString m_sourcePath; // the path to the template .mp3 file
     bool m_autoGetCoverArt;

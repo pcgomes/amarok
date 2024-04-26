@@ -20,8 +20,9 @@
 #include "importers/rhythmbox/RhythmboxConfigWidget.h"
 #include "importers/rhythmbox/RhythmboxProvider.h"
 
-#include <QTest>
+#include <KLocalizedString>
 
+#include <QTest>
 
 QTEST_MAIN( TestRhythmboxImporter )
 
@@ -32,7 +33,7 @@ TestRhythmboxImporter::getProvider()
 {
     QVariantMap cfg = RhythmboxConfigWidget( QVariantMap() ).config();
     cfg.insert( "dbPath", QApplication::applicationDirPath()
-                          + "/importers_files/rhythmdb.xml" );
+                          + "/../tests/importers_files/rhythmdb.xml" );
 
     return ProviderPtr( new RhythmboxProvider( cfg, nullptr ) );
 }
@@ -45,7 +46,7 @@ TestRhythmboxImporter::getWritableProvider()
 
     const QString dst = base.filePath( "importers_tmp/rhythmdb.xml" );
     QFile( dst ).remove();
-    QFile( base.filePath( "importers_files/rhythmdb.xml" ) ).copy( dst );
+    QFile( base.filePath( "../tests/importers_files/rhythmdb.xml" ) ).copy( dst );
 
     QVariantMap cfg = RhythmboxConfigWidget( QVariantMap() ).config();
     cfg.insert( "dbPath", dst );
@@ -68,6 +69,7 @@ TestRhythmboxImporter::hasOddRatings() const
 void
 TestRhythmboxImporter::init()
 {
+    KLocalizedString::setApplicationDomain("amarok-test");
     m_cfg = RhythmboxConfigWidget( QVariantMap() ).config();
 }
 

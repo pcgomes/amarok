@@ -51,11 +51,15 @@ NotificationsConfig::NotificationsConfig( Amarok2ConfigDialog* parent )
     #endif
 
     // Enable/disable the translucency option depending on availability of desktop compositing
-    kcfg_OsdUseTranslucency->setEnabled( KWindowSystem::compositingActive() );
+    // As opacity functionality is not available on Wayland at least with current implementation, don't enable option there
+    kcfg_OsdUseTranslucency->setEnabled( !KWindowSystem::isPlatformWayland() && KWindowSystem::compositingActive() );
+
+    // Also disable other functionalities not (yet?) available on Wayland
+    kcfg_OsdScreen->setEnabled( !KWindowSystem::isPlatformWayland() );
 
     connect( m_osdPreview, &OSDPreviewWidget::positionChanged, this, &NotificationsConfig::slotPositionChanged );
 
-    const int numScreens = QApplication::desktop()->numScreens();
+    const int numScreens = QApplication::screens().size();
     for( int i = 0; i < numScreens; i++ )
         kcfg_OsdScreen->addItem( QString::number( i ) );
 

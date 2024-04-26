@@ -28,8 +28,7 @@ target_link_libraries(amarok_collection-umscollection
   amarokcore
   amarok-transcoding
   KF5::KIOCore
-  
-  ${KDE4_SOLID_LIBRARY}
+  KF5::Solid
   KF5::ThreadWeaver
   Qt5::Gui
   )
@@ -38,5 +37,3 @@ install(TARGETS
   amarok_collection-umscollection 
   DESTINATION 
   ${KDE_INSTALL_PLUGINDIR} )
-
-kcoreaddons_desktop_to_json(amarok_collection-umscollection amarok_collection-umscollection.desktop SERVICE_TYPES ${CMAKE_SOURCE_DIR}/src/amarok-plugin.desktop)

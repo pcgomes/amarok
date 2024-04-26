@@ -22,6 +22,7 @@
 
 #include <QTest>
 
+#include <KLocalizedString>
 
 QTEST_MAIN( TestBansheeImporter )
 
@@ -32,7 +33,7 @@ TestBansheeImporter::getProvider()
 {
     QVariantMap cfg = BansheeConfigWidget( QVariantMap() ).config();
     cfg.insert( "dbPath", QApplication::applicationDirPath()
-                          + "/importers_files/banshee.db" );
+                          + "/../tests/importers_files/banshee.db" );
 
     return ProviderPtr( new BansheeProvider( cfg, nullptr ) );
 }
@@ -45,7 +46,7 @@ TestBansheeImporter::getWritableProvider()
 
     const QString dst = base.filePath( "importers_tmp/banshee.db" );
     QFile( dst ).remove();
-    QFile( base.filePath( "importers_files/banshee.db" ) ).copy( dst );
+    QFile( base.filePath( "../tests/importers_files/banshee.db" ) ).copy( dst );
 
     QVariantMap cfg = BansheeConfigWidget( QVariantMap() ).config();
     cfg.insert( "dbPath", dst );
@@ -68,6 +69,7 @@ TestBansheeImporter::hasOddRatings() const
 void
 TestBansheeImporter::init()
 {
+    KLocalizedString::setApplicationDomain("amarok-test");
     m_cfg = BansheeConfigWidget( QVariantMap() ).config();
 }
 

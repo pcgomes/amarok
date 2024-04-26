@@ -22,6 +22,8 @@
 #include "config-amarok-test.h"
 #include "amarokconfig.h"
 
+#include <KLocalizedString>
+
 #include <QTemporaryDir>
 
 #include <QTest>
@@ -35,7 +37,9 @@ QTEST_GUILESS_MAIN( TestMetaFileTrack )
 
 TestMetaFileTrack::TestMetaFileTrack()
     : m_tmpDir( nullptr )
-{}
+{
+    KLocalizedString::setApplicationDomain("amarok-test");
+}
 
 void TestMetaFileTrack::initTestCase()
 {
@@ -374,7 +378,7 @@ void TestMetaFileTrack::testSetGetDiscNumber()
 
 void TestMetaFileTrack::testLength()
 {
-    QCOMPARE( m_track->length(), 12000LL );
+    QCOMPARE( m_track->length(), 12095LL );
 }
 
 void TestMetaFileTrack::testFilesize()

@@ -25,6 +25,8 @@
 #include "core/meta/Statistics.h"
 #include "core-impl/collections/support/CollectionManager.h"
 
+#include <KLocalizedString>
+
 #include <QTest>
 
 
@@ -32,7 +34,9 @@ QTEST_GUILESS_MAIN( TestMetaTrack )
 
 TestMetaTrack::TestMetaTrack()
     : m_trackPath( dataPath( "/data/audio/Platz 01.mp3" ) )
-{}
+{
+    KLocalizedString::setApplicationDomain("amarok-test");
+}
 
 TestMetaTrack::~TestMetaTrack()
 {
@@ -155,7 +159,7 @@ void TestMetaTrack::testSetAndGetRating()
 
 void TestMetaTrack::testLength()
 {
-    QCOMPARE( m_testTrack1->length(), 12000LL );
+    QCOMPARE( m_testTrack1->length(), 12095LL );
 }
 
 void TestMetaTrack::testFilesize()
@@ -185,12 +189,12 @@ void TestMetaTrack::testDiscNumber()
 
 void TestMetaTrack::testLastPlayed()
 {
-    QCOMPARE( m_testTrack1->statistics()->lastPlayed().toSecsSinceEpoch(), 4294967295U ); // portability?
+    QCOMPARE( m_testTrack1->statistics()->lastPlayed().toString(), "" );
 }
 
 void TestMetaTrack::testFirstPlayed()
 {
-    QCOMPARE( m_testTrack1->statistics()->firstPlayed().toSecsSinceEpoch(), 4294967295U ); // portability?
+    QCOMPARE( m_testTrack1->statistics()->firstPlayed().toString(), "" );
 }
 
 void TestMetaTrack::testPlayCount()

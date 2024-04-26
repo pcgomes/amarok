@@ -189,6 +189,7 @@ CollectionTreeView::CollectionTreeView( QWidget *parent)
     , m_loadAction( nullptr )
     , m_editAction( nullptr )
     , m_organizeAction( nullptr )
+    , m_collapseAction( nullptr )
     , m_ongoingDrag( false )
 {
     setSortingEnabled( true );
@@ -301,6 +302,17 @@ CollectionTreeView::contextMenuEvent( QContextMenuEvent *event )
         setCurrentIndex( index );
     }
 
+    // Go through here, as the indices might change in the next phase before menu construction
+    bool expanded = false;
+    for( auto idx : indices )
+    {
+        if(isExpanded(idx) || idx.parent() != QModelIndex() )
+        {
+            expanded = true;
+            break;
+        }
+    }
+
     //TODO: get rid of this, it's a hack.
     // Put remove actions in model so we don't need access to the internal pointer in view
     if( m_filterModel )
@@ -334,6 +346,19 @@ CollectionTreeView::contextMenuEvent( QContextMenuEvent *event )
 
     // create basic actions
     QActionList actions = createBasicActions( indices );
+
+    // Adding this action here is maybe less intrusive than in e.g.
+    // createBasicActions, especially as it's not relevant in popupdropper.
+    if( expanded )
+    {
+        if( m_collapseAction == nullptr )
+        {
+            m_collapseAction = new QAction( i18n( "Collapse All" ), this );
+                connect( m_collapseAction, &QAction::triggered,
+                            this, &CollectionTreeView::collapseAll );
+        }
+        actions.append( m_collapseAction );
+    }
     foreach( QAction *action, actions ) {
         menu.addAction( action );
     }
@@ -569,15 +594,6 @@ CollectionTreeView::keyPressEvent( QKeyEvent *event )
             break;
         case Qt::Key_Down:
             break;
-        // L and R should magically work when we get a patched version of qt
-        case Qt::Key_Right:
-        case Qt::Key_Direction_R:
-            expand( current );
-            return;
-        case Qt::Key_Left:
-        case Qt::Key_Direction_L:
-            collapse( current );
-            return;
         default:
             break;
     }

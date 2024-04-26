@@ -20,6 +20,8 @@
 #include "importers/itunes/ITunesConfigWidget.h"
 #include "importers/itunes/ITunesProvider.h"
 
+#include <KLocalizedString>
+
 #include <QTest>
 
 
@@ -32,7 +34,7 @@ TestITunesImporter::getProvider()
 {
     QVariantMap cfg = ITunesConfigWidget( QVariantMap() ).config();
     cfg.insert( "dbPath", QApplication::applicationDirPath()
-                          + "/importers_files/iTunes_Music_Library.xml" );
+                          + "/../tests/importers_files/iTunes_Music_Library.xml" );
 
     return ProviderPtr( new ITunesProvider( cfg, nullptr ) );
 }
@@ -45,7 +47,7 @@ TestITunesImporter::getWritableProvider()
 
     const QString dst = base.filePath( "importers_tmp/iTunes_Music_Library.xml" );
     QFile( dst ).remove();
-    QFile( base.filePath( "importers_files/iTunes_Music_Library.xml" ) ).copy( dst );
+    QFile( base.filePath( "../tests/importers_files/iTunes_Music_Library.xml" ) ).copy( dst );
 
     QVariantMap cfg = ITunesConfigWidget( QVariantMap() ).config();
     cfg.insert( "dbPath", dst);
@@ -69,6 +71,7 @@ TestITunesImporter::hasOddRatings() const
 void
 TestITunesImporter::init()
 {
+    KLocalizedString::setApplicationDomain("amarok-test");
     m_cfg = ITunesConfigWidget( QVariantMap() ).config();
 }
 

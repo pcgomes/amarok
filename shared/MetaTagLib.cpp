@@ -233,7 +233,7 @@ Meta::Tag::readTags( const QString &path, bool /*useCharsetDetector*/ )
         }
 
         result.insert( Meta::valFormat, tagHelper->fileType() );
-        result.unite( tagHelper->tags() );
+        result.insert( tagHelper->tags() );
         delete tagHelper;
     }
 
@@ -242,8 +242,8 @@ Meta::Tag::readTags( const QString &path, bool /*useCharsetDetector*/ )
     {
         if( !result.contains( Meta::valBitrate ) && properties->bitrate() )
             result.insert( Meta::valBitrate, properties->bitrate() );
-        if( !result.contains( Meta::valLength ) && properties->length() )
-            result.insert( Meta::valLength, properties->length() * 1000 );
+        if( !result.contains( Meta::valLength ) && properties->lengthInMilliseconds() )
+            result.insert( Meta::valLength, properties->lengthInMilliseconds() );
         if( !result.contains( Meta::valSamplerate ) && properties->sampleRate() )
             result.insert( Meta::valSamplerate, properties->sampleRate() );
     }
@@ -251,7 +251,21 @@ Meta::Tag::readTags( const QString &path, bool /*useCharsetDetector*/ )
     //If tags doesn't contains title and artist, try to guess It from file name
     if( !result.contains( Meta::valTitle ) ||
         result.value( Meta::valTitle ).toString().isEmpty() )
-        result.unite( TagGuesser::guessTags( path ) );
+    {
+        Meta::FieldHash secondResult = TagGuesser::guessTags( path );
+        // We got here because title is empty. But what if other fields are OK? They should
+        // probably be preferred over guessed values - unless, if they are empty. Existing fields
+        // are overwritten with Hash::insert, so first remove empty fields from result, then
+        // swap read tags and guessed fields, and then overwrite those guessed fields that have
+        // a perhaps ok value in the read tags.
+        for( auto t : { Meta::valTitle, Meta::valAlbum, Meta::valArtist, Meta::valTrackNr } )
+        {
+            if( result.value( t ).toString().isEmpty() )
+                result.remove( t );
+        }
+        result.swap( secondResult );
+        result.insert( secondResult );
+    }
 
     //we didn't set a FileType till now, let's look it up via FileExtension
     if( !result.contains( Meta::valFormat ) )

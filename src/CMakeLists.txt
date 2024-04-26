@@ -495,10 +495,10 @@ set(scriptconsole_SRCS
     scripting/scriptconsole/ScriptConsoleItem.cpp
 )
 
-if (PYTHONINTERP_FOUND)
-    execute_process(COMMAND "${PYTHON_EXECUTABLE}" ${CMAKE_SOURCE_DIR}/src/scripting/scriptengine/PHAACG2.py
-                                                   ${CMAKE_SOURCE_DIR}/src/scripting/scriptengine
-                                                   ${CMAKE_BINARY_DIR}/scriptconsole)
+if (TARGET Python3::Interpreter)
+    execute_process(COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/src/scripting/scriptengine/PHAACG2.py
+                                                  ${CMAKE_SOURCE_DIR}/src/scripting/scriptengine
+                                                  ${CMAKE_BINARY_DIR}/scriptconsole)
     install(FILES ${CMAKE_BINARY_DIR}/scriptconsole/AutoComplete.txt
             DESTINATION ${KDE_INSTALL_DATADIR}/amarok/scriptconsole)
 endif()
@@ -742,7 +742,6 @@ set(amaroklib_LIB_SRCS
     widgets/ProgressWidget.cpp
     widgets/SearchWidget.cpp
     widgets/SliderWidget.cpp
-    widgets/StarManager.cpp
     widgets/TokenPool.cpp
     widgets/Token.cpp
     widgets/TokenWithLayout.cpp

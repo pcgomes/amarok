@@ -14,10 +14,10 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.                           *
  ****************************************************************************************/
 
-import QtQuick 2.6
-import QtQuick.Controls 2.0
+import QtQuick 2.15
+import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.3
-import org.kde.kirigami 2.0 as Kirigami
+import org.kde.kirigami 2.14 as Kirigami
 
 
 MouseArea {
@@ -30,7 +30,7 @@ MouseArea {
     property bool configEnabled: !!toolbar ? toolbar.configEnabled : false
     property bool held: false
 
-    height: held ? toolbar.height : toolbar.height - Kirigami.Units.smallSpacing
+    height: toolbar.height - Kirigami.Units.smallSpacing;
     anchors.verticalCenter: parent.verticalCenter
     implicitWidth: label.implicitWidth + Kirigami.Units.smallSpacing * 2
 
@@ -39,9 +39,10 @@ MouseArea {
     drag.target: held ? content : undefined
     drag.axis: Drag.XAxis
     cursorShape: configEnabled ? held ? Qt.ClosedHandCursor : Qt.PointingHandCursor : Qt.ArrowCursor
+    pressAndHoldInterval: 200;
 
-    onPressAndHold: if (configEnabled) held = true
-    onReleased: held = false
+    onPressAndHold: if (configEnabled) { held = true; toolbarAppletRow.interactive = false; height = toolbar.height; }
+    onReleased: { toolbarAppletRow.interactive = true; held = false; height = toolbar.height - Kirigami.Units.smallSpacing; }
     onPressed: if (!configEnabled) flickable.scrollToApplet(appletId)
     onImplicitWidthChanged: toolbar.resizeApplets()
 
@@ -96,6 +97,7 @@ MouseArea {
 
         Label {
             id: label
+            color: Kirigami.Theme.textColor
 
             anchors {
                 fill: parent

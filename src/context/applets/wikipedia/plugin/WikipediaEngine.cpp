@@ -40,6 +40,7 @@ WikipediaEngine::WikipediaEngine( QObject* parent )
     : QObject( parent )
     , currentSelection( Artist )
     , useMobileVersion( false )
+    , m_pauseState( false )
 {
     preferredLangs = Amarok::config("Wikipedia Applet").readEntry( "PreferredLang", QStringList() << "en" );
 
@@ -56,6 +57,8 @@ WikipediaEngine::WikipediaEngine( QObject* parent )
              this, &WikipediaEngine::_stopped );
     connect( The::paletteHandler(), &PaletteHandler::newPalette,
              this, &WikipediaEngine::_paletteChanged );
+    connect( The::networkAccessManager(), &NetworkAccessManagerProxy::requestRedirectedUrl,
+             [=](auto url, auto redirurl) { if( urls.contains( url ) ) { urls << redirurl; } } );
 }
 
 WikipediaEngine::~WikipediaEngine()
@@ -334,6 +337,8 @@ WikipediaEngine::_parseListingResult( const QUrl &url,
 void
 WikipediaEngine::_checkRequireUpdate( Meta::TrackPtr track )
 {
+    if( m_pauseState )
+        return;
     if( !track )
         return;
 
@@ -379,6 +384,9 @@ void
 WikipediaEngine::_stopped()
 {
     DEBUG_BLOCK
+
+    if( m_pauseState )
+        return;
 
     clear();
 //     dataContainer->setData( "stopped", 1 );
@@ -453,6 +461,7 @@ WikipediaEngine::fetchWikiUrl( const QString &title, const QString &urlPrefix )
     pageUrl.setQuery( query );
     wikiCurrentUrl = pageUrl;
     urls << pageUrl;
+    setMessage( QString() );
     Q_EMIT urlChanged();
     The::networkAccessManager()->getData( pageUrl, this, &WikipediaEngine::_wikiResult );
 }
@@ -555,6 +564,8 @@ WikipediaEngine::updateEngine()
                 ( currentTrack->playableUrl().scheme() == QLatin1String("daap") ) ||
                 !The::engineController()->isStream() )
                 tmpWikiStr = currentTrack->composer()->name();
+            else
+                tmpWikiStr = currentTrack->composer()->prettyName();
         }
         break;
     case Album:
@@ -570,7 +581,8 @@ WikipediaEngine::updateEngine()
                 ( currentTrack->playableUrl().scheme() == QLatin1String("daap") ) ||
                 !The::engineController()->isStream() )
                 tmpWikiStr = currentTrack->album()->name();
-
+            else
+                tmpWikiStr = currentTrack->album()->prettyName();
         }
         break;
 
@@ -824,6 +836,20 @@ WikipediaEngine::setBusy(bool busy)
     Q_EMIT busyChanged();
 }
 
+bool
+WikipediaEngine::pauseState() const
+{
+    return m_pauseState;
+}
+
+void
+WikipediaEngine::setPauseState( const bool state )
+{
+    m_pauseState = state;
+    if( !m_pauseState )
+        _checkRequireUpdate(  The::engineController()->currentTrack() );
+}
+
 void
 WikipediaEngine::setTitle(const QString& title)
 {
@@ -858,13 +884,26 @@ WikipediaEngine::setLanguage(const QString& language)
 void
 WikipediaEngine::setUrl(const QUrl& url)
 {
-    if( wikiCurrentUrl == url )
+    if( !url.host().endsWith( ".wikipedia.org" ) )
+        return;
+    QUrl monobookUrl = url;
+    monobookUrl.setPath( QLatin1String("/w/index.php") );
+
+    QUrlQuery query;
+    query.addQueryItem( QLatin1String("title"), url.path().mid( url.path().lastIndexOf("/") + 1 ) );
+    query.addQueryItem( QLatin1String("redirects"), QString::number(1) );
+    query.addQueryItem( QLatin1String("useskin"), QLatin1String("monobook") );
+    monobookUrl.setQuery( query );
+
+    if( wikiCurrentUrl == monobookUrl )
         return;
 
-    wikiCurrentUrl = url;
-    urls << url;
+    wikiCurrentUrl = monobookUrl;
+    urls << monobookUrl;
+    setMessage( QString() );
     Q_EMIT urlChanged();
 
-    The::networkAccessManager()->getData( url, this, &WikipediaEngine::_wikiResult );
+    The::networkAccessManager()->getData( monobookUrl, this, &WikipediaEngine::_wikiResult );
+    setBusy( true );
 }
 

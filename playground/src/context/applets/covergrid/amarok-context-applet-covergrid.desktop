@@ -1,6 +1,7 @@
 
 [Desktop Entry]
 Name=CoverGrid
+Name[bg]=CoverGrid
 Name[bs]=CoverGrid
 Name[ca]=CoverGrid
 Name[ca@valencia]=CoverGrid
@@ -9,6 +10,7 @@ Name[da]=CoverGrid
 Name[de]=CoverGrid
 Name[el]=CoverGrid
 Name[en_GB]=CoverGrid
+Name[eo]=Kovrilo
 Name[es]=CoverGrid
 Name[et]=CoverGrid
 Name[eu]=Azalen matrizea
@@ -34,6 +36,7 @@ Name[ro]=CoverGrid
 Name[ru]=Все обложки
 Name[sk]=CoverGrid
 Name[sl]=CoverGrid
+Name[sq]=CoverGrid
 Name[sr]=Омотоплет
 Name[sr@ijekavian]=Омотоплет
 Name[sr@ijekavianlatin]=Omotoplet
