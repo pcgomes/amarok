@@ -7206,7 +7206,7 @@ msgctxt ""
 "the time format for a time length when the time is below 1 hour see QTime "
 "documentation."
 msgid "m:ss"
-msgstr "m:ss"
+msgstr "d:ss"
 
 #: core/meta/support/MetaUtility.cpp:428
 #, kde-format
