@@ -7206,7 +7206,7 @@ msgctxt ""
 "the time format for a time length when the time is below 1 hour see QTime "
 "documentation."
 msgid "m:ss"
-msgstr "d:ss"
+msgstr "m:ss"
 
 #: core/meta/support/MetaUtility.cpp:428
 #, kde-format
@@ -12855,7 +12855,7 @@ msgstr ""
 #: playlistgenerator/constraints/TagMatchEditWidget.ui:507
 #, kde-format
 msgid "h:mm:ss"
-msgstr "s:dd:ss"
+msgstr "h:mm:ss"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_Strictness)
 #. i18n: ectx: property (whatsThis), widget (QSlider, slider_Strictness)
