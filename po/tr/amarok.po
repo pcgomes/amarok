@@ -5350,7 +5350,7 @@ msgstr ""
 "<b>%1</b><br><br>Güvenlik önlemi olarak Amarok, iPod’a <i>herhangi bir yazma "
 "işlemi gerçekleştirmeyi reddedecektir</i>. (iTunes veritabanını değiştirmek, "
 "aygıtın bakış açısından boş görünmesine neden olabilir).<br>Daha fazla bilgi "
-"için libgpod kaynak deposundaki <a href='%2'>README.overview</a> dosyasına "
+"için libgpod kaynak deposundaki <a href=“%2”>README.overview</a> dosyasına "
 "bakın."
 
 #: core-impl/collections/ipodcollection/support/IpodDeviceHelper.cpp:372
@@ -6767,7 +6767,7 @@ msgctxt ""
 "the time format for a time length when the time is below 1 hour see QTime "
 "documentation."
 msgid "m:ss"
-msgstr "d:ss"
+msgstr "m:ss"
 
 #: core/meta/support/MetaUtility.cpp:427
 #, kde-format
@@ -9047,13 +9047,13 @@ msgid ""
 "font>,                           <font color=\"%9\">%genre%</font>, %ignore%."
 msgstr ""
 "Bir dosya adı şemasını tanımlamak için aşağıdaki jetonlar kullanılabilir:"
-"<br>                           <font color=\"%1\">%track%</font>, <font "
-"color=\"%2\">%title%</font>,                           <font color=\"%3\">"
-"%artist%</font>, <font color=\"%4\">%composer%</"
-"font>,                           <font color=\"%5\">%year%</font>, <font "
-"color=\"%6\">%album%</font>,                           <font color=\"%7\">"
-"%albumartist%</font>, <font color=\"%8\">%comment%</"
-"font>,                           <font color=\"%9\">%genre%</font>, %ignore%."
+"<br>                           <font color=“%1”>%track%</font>, <font "
+"color=“%2”>%title%</font>,                           <font color=“%3”>%artist"
+"%</font>, <font color=“%4”>%composer%</font>,                           "
+"<font color=“%5”>%year%</font>, <font color=\"%6\">%album%</"
+"font>,                           <font color=\"%7\">%albumartist%</font>, "
+"<font color=\"%8\">%comment%</font>,                           <font color="
+"\"%9\">%genre%</font>, %ignore%."
 
 #: dialogs/TagGuesserDialog.cpp:224
 #, kde-format
@@ -11739,8 +11739,8 @@ msgid ""
 "<a href='%1'>Dynamic Mode</a> Enabled. <a href='%2'>Repopulate</a> | <a "
 "href='%3'>Turn off</a>"
 msgstr ""
-"<a href='%1'>Devingen Kip</a> etkin. <a href='%2'>Yeniden Doldur</a> | <a "
-"href='%3'>Kapat</a>"
+"<a href=“%1”>Devingen Kip</a> etkin. <a href=“%2”>Yeniden Doldur</a> | <a "
+"href=“%3”>Kapat</a>"
 
 #: playlist/PlaylistDock.cpp:177
 #, kde-format
@@ -12202,7 +12202,7 @@ msgstr ""
 #: playlistgenerator/constraints/TagMatchEditWidget.ui:507
 #, kde-format
 msgid "h:mm:ss"
-msgstr "s:dd:ss"
+msgstr "h:mm:ss"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_Strictness)
 #. i18n: ectx: property (whatsThis), widget (QSlider, slider_Strictness)
