@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop">
-  <id>org.kde.amarok.desktop</id>
+  <id>org.kde.amarok</id>
   <launchable type="desktop-id">org.kde.amarok.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
@@ -277,6 +277,18 @@
       <li xml:lang="zh-CN">支持基础款 iPod、MTP、UMP 的音乐播放器</li>
       <li xml:lang="zh-TW">支援基本的 iPod、MTP 和 UMS 音樂播放裝置</li>
       <li>Integrated Internet services: last.fm, Magnatune, Ampache and more.</li>
+      <li xml:lang="ca">Serveis integrats d'Internet: last.fm, Magnatune, Ampache i més.</li>
+      <li xml:lang="ca-valencia">Serveis integrats d'Internet: last.fm, Magnatune, Ampache i més.</li>
+      <li xml:lang="eo">Integritaj interretaj servoj: last.fm, Magnatune, Ampache kaj pli.</li>
+      <li xml:lang="es">Servicios de Internet integrados: last.fm, Magnatune, Ampache y otros.</li>
+      <li xml:lang="it">Servizi Internet integrati: last.fm, Magnatune, Ampache e altri.</li>
+      <li xml:lang="nl">Geïntegreerde internetservices: last.fm, Magnatune, Ampache en meer.</li>
+      <li xml:lang="sl">Vgrajene internetne storitve: last.fm, Magnatune, Ampache in druge.</li>
+      <li xml:lang="sv">Integrerade Internet-tjänster: last.fm, Magnatune, Ampache med flera.</li>
+      <li xml:lang="tr">Tümleştirilmiş İnternet hizmetleri: last.fm, Magnatune, Ampache ve daha fazlası.</li>
+      <li xml:lang="uk">інтеграція з інтернет-службами: last.fm, Magnatune, Ampache тощо;</li>
+      <li xml:lang="x-test">xxIntegrated Internet services: last.fm, Magnatune, Ampache and more.xx</li>
+      <li xml:lang="zh-TW">整合了這些網路服務：last.fm、Magnatune、Ampache 等等。</li>
       <li>Scripting support</li>
       <li xml:lang="bg">Поддръжка скриптове</li>
       <li xml:lang="bs">Podrška za skriptiranje</li>
@@ -402,6 +414,18 @@
   <screenshots>
     <screenshot type="default">
       <caption>Playing music in Amarok 3.0</caption>
+      <caption xml:lang="ca">Reproduint música en l'Amarok 3.0</caption>
+      <caption xml:lang="ca-valencia">Reproduint música en Amarok 3.0</caption>
+      <caption xml:lang="eo">Ludante muzikon en Amarok 3.0</caption>
+      <caption xml:lang="es">Reproduciendo música en Amarok 3.0</caption>
+      <caption xml:lang="it">Riproduzione della musica con Amarok 3.0</caption>
+      <caption xml:lang="nl">Muziek afspelen in Amarok 3.0</caption>
+      <caption xml:lang="sl">Predvajanje glasbe v Amaroku 3.0</caption>
+      <caption xml:lang="sv">Spela musik i Amarok 3.0</caption>
+      <caption xml:lang="tr">Amarok 3.0’da müzik çalma</caption>
+      <caption xml:lang="uk">Відтворення музики в Amarok 3.0</caption>
+      <caption xml:lang="x-test">xxPlaying music in Amarok 3.0xx</caption>
+      <caption xml:lang="zh-TW">Amarok 3.0 播放音樂時的畫面</caption>
       <image>https://cdn.kde.org/screenshots/amarok/amarok30.png</image>
     </screenshot>
     <screenshot>
@@ -484,6 +508,7 @@
     <binary>amarok</binary>
   </provides>
   <releases>
+    <release version="3.0.0" date="2024-04-29" type="stable"/>
     <release version="2.9.82" date="2024-04-12" type="development"/>
     <release version="2.9.71" date="2021-01-31" type="development"/>
     <release version="2.9.0" date="2018-03-07" type="stable"/>

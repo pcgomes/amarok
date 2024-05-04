@@ -16,6 +16,7 @@
                 "Name[it]": "Alejandro Wainzinger",
                 "Name[nl]": "Alejandro Wainzinger",
                 "Name[sl]": "Alejandro Wainzinger",
+                "Name[sv]": "Alejandro Wainzinger",
                 "Name[tr]": "Alejandro Wainzinger",
                 "Name[uk]": "Alejandro Wainzinger",
                 "Name[x-test]": "xxAlejandro Wainzingerxx",
@@ -35,6 +36,7 @@
         "Description[it]": "Estensione della collezione MTP di Amarok",
         "Description[nl]": "MTP-collectieplugin voor Amarok",
         "Description[sl]": "Vstavek za zbirko MTP za Amarok",
+        "Description[sv]": "Insticksprogram med MTP-samling för Amarok",
         "Description[tr]": "Amarok için MTP koleksiyonu eklentisi",
         "Description[uk]": "Додаток збірки MTP для Amarok",
         "Description[x-test]": "xxMTP collection plugin for Amarokxx",
@@ -111,7 +113,7 @@
     "X-KDE-Amarok-email": [
         "aikawarazuni@gmail.com"
     ],
-    "X-KDE-Amarok-framework-version": 75,
+    "X-KDE-Amarok-framework-version": 76,
     "X-KDE-Amarok-name": "mtp-collection",
     "X-KDE-Amarok-rank": 100,
     "X-KDE-Amarok-version": 1

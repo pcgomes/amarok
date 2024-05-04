@@ -16,6 +16,7 @@
                 "Name[it]": "Stefan Derkits, Christian Wagner, Felix Winter, Lucas Lira Gomes",
                 "Name[nl]": "Stefan Derkits, Christian Wagner, Felix Winter, Lucas Lira Gomes",
                 "Name[sl]": "Stefan Derkits, Christian Wagner, Felix Winter, Lucas Lira Gomes",
+                "Name[sv]": "Stefan Derkits, Christian Wagner, Felix Winter, Lucas Lira Gomes",
                 "Name[tr]": "Stefan Derkits, Christian Wagner, Felix Winter, Lucas Lira Gomes",
                 "Name[uk]": "Stefan Derkits, Christian Wagner, Felix Winter, Lucas Lira Gomes",
                 "Name[x-test]": "xxStefan Derkits, Christian Wagner, Felix Winter, Lucas Lira Gomesxx",
@@ -36,6 +37,7 @@
         "Description[it]": "Servizio Podcast",
         "Description[nl]": "Podcast-service",
         "Description[sl]": "Storitev za podcaste",
+        "Description[sv]": "Poddsändningstjänst",
         "Description[tr]": "Pod Yayını Hizmeti",
         "Description[uk]": "Служба трансляцій",
         "Description[x-test]": "xxPodcast Servicexx",
@@ -111,7 +113,7 @@
         " ixos01@gmail.com",
         " x8lucas8x@gmail.com"
     ],
-    "X-KDE-Amarok-framework-version": 75,
+    "X-KDE-Amarok-framework-version": 76,
     "X-KDE-Amarok-name": "gpodderService",
     "X-KDE-Amarok-rank": 100,
     "X-KDE-Amarok-version": 1

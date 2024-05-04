@@ -16,6 +16,7 @@
                 "Name[it]": "Maximilian Kossick",
                 "Name[nl]": "Maximilian Kossick",
                 "Name[sl]": "Maximilian Kossick",
+                "Name[sv]": "Maximilian Kossick",
                 "Name[tr]": "Maximilian Kossick",
                 "Name[uk]": "Maximilian Kossick",
                 "Name[x-test]": "xxMaximilian Kossickxx",
@@ -35,6 +36,7 @@
         "Description[it]": "Estensione della collezione DAAP di Amarok",
         "Description[nl]": "DAAP-collectieplugin voor Amarok",
         "Description[sl]": "Vstavek za zbirko DAAP za Amarok",
+        "Description[sv]": "Insticksprogram med DAAP-samling för Amarok",
         "Description[tr]": "Amarok için DAAP koleksiyonu eklentisi",
         "Description[uk]": "Додаток збірки DAAP для Amarok",
         "Description[x-test]": "xxDAAP collection plugin for Amarokxx",
@@ -112,7 +114,7 @@
     "X-KDE-Amarok-email": [
         "maximilian.kossick@googlemail.com"
     ],
-    "X-KDE-Amarok-framework-version": 75,
+    "X-KDE-Amarok-framework-version": 76,
     "X-KDE-Amarok-name": "daap-collection",
     "X-KDE-Amarok-rank": 100,
     "X-KDE-Amarok-version": 1
