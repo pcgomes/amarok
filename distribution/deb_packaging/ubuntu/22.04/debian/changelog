@@ -1,3 +1,10 @@
+amarok (3:3.0.0-0ubuntu1ppa1~ubuntu22.04.1) jammy; urgency=medium
+
+  * Release of v3.0.0
+  * Support for mantic(23.10) and noble (24.04)
+
+ -- Pedro de Carvalho Gomes <pedrogomes81@gmail.com>  Sat, 04 May 2024 13:03:57 +0200
+
 amarok (2:2.9.71+1SNAPSHOT20230729222932+0200-0ubuntu1ppa1~ubuntu22.04.1) jammy; urgency=medium
 
   * New attempt to release for 22.04 jammy
