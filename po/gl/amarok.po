@@ -10068,6 +10068,11 @@ msgstr "Leo Franchi"
 
 #: main.cpp:166
 #, kde-format
+msgid "Leo Franchi"
+msgstr "Leo Franchi"
+
+#: main.cpp:166
+#, kde-format
 msgid "Developer (lfranchi)"
 msgstr "Desenvolvemento (lfranchi)"
 

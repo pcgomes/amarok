@@ -15414,6 +15414,40 @@ msgstr "कलाकार: %1"
 msgid "empty"
 msgstr "रिकामी"
 
+#~ msgid "Aaron Seigo"
+#~ msgstr "एरॉन सीगो"
+
+#~ msgid "Original author"
+#~ msgstr "मूळ लेखक"
+
+#~ msgid ""
+#~ "Absolute path to the package root. If not supplied, then the standard "
+#~ "data directories for this KDE session will be searched instead."
+#~ msgstr ""
+#~ "पॅकेज रूट करिता परम मार्ग. जर हा पुरविला नाही, तर या KDE सत्राच्या प्रमाणित डेटा "
+#~ "संचयीका शोधल्या जातील."
+
+#~ msgid "Successfully removed %1"
+#~ msgstr "%1 हे यशस्वीरित्या काढून टाकले"
+
+#~ msgid "Removal of %1 failed."
+#~ msgstr "%1 हे काढून टाकण्यात अपयश."
+
+#~ msgid "Plugin %1 is not installed."
+#~ msgstr "%1 हे प्लगइन प्रतिष्ठापीत झालेले नाही."
+
+#~ msgid "Successfully installed %1"
+#~ msgstr "%1 हे यशस्वीरित्या प्रतिष्ठापीत केले"
+
+#~ msgid "Installation of %1 failed."
+#~ msgstr "%1 ची प्रतिष्ठापना करण्यास अपयश."
+
+#~ msgctxt ""
+#~ "No option was given, this is the error message telling the user he needs "
+#~ "at least one, do not translate install, remove, upgrade nor list"
+#~ msgid "One of install, remove, upgrade or list is required."
+#~ msgstr "प्रतिष्ठापन, काढून टाका, अद्ययावत करा किंवा यादी यापैकी एकाची गरज आहे."
+
 #, fuzzy
 #~ msgid "Match: %1%"
 #~ msgstr "<b>1</b> जुळवणी"

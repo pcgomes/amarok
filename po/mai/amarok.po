@@ -15892,6 +15892,40 @@ msgstr "कलाकार: %1"
 msgid "empty"
 msgstr "खाली"
 
+#~ msgid "Aaron Seigo"
+#~ msgstr "एरान सीगो"
+
+#~ msgid "Original author"
+#~ msgstr "मूल लेखक"
+
+#~ msgid ""
+#~ "Absolute path to the package root. If not supplied, then the standard "
+#~ "data directories for this KDE session will be searched instead."
+#~ msgstr ""
+#~ "संकुल रूट क' निरपेक्ष पथ. जँ नहि देल जाएत अछि, तब मानक आँकडा निर्देशिका एहि KDE सत्र "
+#~ "क' लेल बदलामे खोजल जएताह."
+
+#~ msgid "Successfully removed %1"
+#~ msgstr "सफलतापूर्वक हटओलक %1"
+
+#~ msgid "Removal of %1 failed."
+#~ msgstr "%1 क' हटाएल जएनाइ विफल."
+
+#~ msgid "Plugin %1 is not installed."
+#~ msgstr "प्लगिन %1 सँस्थापित नहि अछि."
+
+#~ msgid "Successfully installed %1"
+#~ msgstr "सफलतापूर्वक सँस्थापित %1"
+
+#~ msgid "Installation of %1 failed."
+#~ msgstr "%1 क' सँस्थापन विफल."
+
+#~ msgctxt ""
+#~ "No option was given, this is the error message telling the user he needs "
+#~ "at least one, do not translate install, remove, upgrade nor list"
+#~ msgid "One of install, remove, upgrade or list is required."
+#~ msgstr "सँस्थापन, हटओनाइ, उन्नयन अथवा सूचीमे सँ एकटा जरूरी."
+
 #, fuzzy
 #~| msgid "Tags"
 #~ msgctxt "@label:textbox"
