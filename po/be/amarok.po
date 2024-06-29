@@ -16686,6 +16686,36 @@ msgstr "Паўтарыць"
 #~ msgstr "Міжнародны"
 
 #, fuzzy
+#~ msgid "Amarok Applet Manager"
+#~ msgstr "Amarok"
+
+#, fuzzy
+#~ msgid "(C) 2008, Aaron Seigo, (C) 2009, Leo Franchi"
+#~ msgstr "(c) 2006, Aaron Seigo"
+
+#~ msgid "Aaron Seigo"
+#~ msgstr "Аарон Дж. Сейга"
+
+#~ msgid "Original author"
+#~ msgstr "Аўтар праграмы"
+
+#, fuzzy
+#~| msgid "Get New Widgets"
+#~ msgctxt "Do not translate <path>"
+#~ msgid "Install the applet at <path>"
+#~ msgstr "Атрымаць новыя віджэты"
+
+#, fuzzy
+#~| msgid "Get New Widgets"
+#~ msgid "Most installed applets"
+#~ msgstr "Атрымаць новыя віджэты"
+
+#, fuzzy
+#~| msgid "International"
+#~ msgid "Installation of %1 failed."
+#~ msgstr "Міжнародны"
+
+#, fuzzy
 #~| msgid "Show Friend Events"
 #~ msgid "Upcoming Events"
 #~ msgstr "Паказаць падзеі сяброў"

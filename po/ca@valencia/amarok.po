@@ -16468,3 +16468,64 @@ msgstr "Artista: %1"
 #, kde-format
 msgid "empty"
 msgstr "buit"
+
+#~ msgid "Amarok Applet Manager"
+#~ msgstr "Gestor de miniaplicacions d'Amarok"
+
+#~ msgid "(C) 2008, Aaron Seigo, (C) 2009, Leo Franchi"
+#~ msgstr "(C) 2008, Aaron Seigo, (C) 2009, Leo Franchi"
+
+#~ msgid "Aaron Seigo"
+#~ msgstr "Aaron Seigo"
+
+#~ msgid "Original author"
+#~ msgstr "Autor original"
+
+#~ msgid "For install or remove, operates on applets installed for all users."
+#~ msgstr ""
+#~ "Per a instal·lar o eliminar, opera amb les miniaplicacions instal·lades "
+#~ "per a tots els usuaris."
+
+#~ msgctxt "Do not translate <path>"
+#~ msgid "Install the applet at <path>"
+#~ msgstr "Instal·la la miniaplicació a <path>"
+
+#~ msgctxt "Do not translate <path>"
+#~ msgid "Upgrade the applet at <path>"
+#~ msgstr "Actualitza la miniaplicació a <path>"
+
+#~ msgid "Most installed applets"
+#~ msgstr "Miniaplicacions més instal·lades"
+
+#~ msgctxt "Do not translate <name>"
+#~ msgid "Remove the applet named <name>"
+#~ msgstr "Suprimix la miniaplicació anomenada <name>"
+
+#~ msgid ""
+#~ "Absolute path to the package root. If not supplied, then the standard "
+#~ "data directories for this KDE session will be searched instead."
+#~ msgstr ""
+#~ "Camí absolut cap a l'arrel del paquet. Si no es proporciona, es buscaran "
+#~ "en els directoris de dades estàndard per a esta sessió de KDE."
+
+#~ msgid "Successfully removed %1"
+#~ msgstr "%1 s'ha eliminat correctament"
+
+#~ msgid "Removal of %1 failed."
+#~ msgstr "L'eliminació de %1 ha fallat."
+
+#~ msgid "Plugin %1 is not installed."
+#~ msgstr "El connector %1 no està instal·lat."
+
+#~ msgid "Successfully installed %1"
+#~ msgstr "%1 s'ha instal·lat correctament"
+
+#~ msgid "Installation of %1 failed."
+#~ msgstr "La instal·lació de %1 ha fallat."
+
+#~ msgctxt ""
+#~ "No option was given, this is the error message telling the user he needs "
+#~ "at least one, do not translate install, remove, upgrade nor list"
+#~ msgid "One of install, remove, upgrade or list is required."
+#~ msgstr ""
+#~ "Es requerix un dels següents: «install», «remove», «upgrade» o «list»."

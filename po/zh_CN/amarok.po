@@ -15731,3 +15731,63 @@ msgstr "艺人：%1"
 #, kde-format
 msgid "empty"
 msgstr "空"
+
+#~ msgid "Amarok Applet Manager"
+#~ msgstr "Amarok 小程序管理器"
+
+#~ msgid "(C) 2008, Aaron Seigo, (C) 2009, Leo Franchi"
+#~ msgstr "(C) 2008, Aaron Seigo, (C) 2009, Leo Franchi"
+
+#~ msgid "Aaron Seigo"
+#~ msgstr "Aaron Seigo"
+
+#~ msgid "Original author"
+#~ msgstr "原作者"
+
+#~ msgid "For install or remove, operates on applets installed for all users."
+#~ msgstr "为所有用户安装部件、删除部件或修改已安装的小程序。"
+
+#~ msgctxt "Do not translate <path>"
+#~ msgid "Install the applet at <path>"
+#~ msgstr "安装位于 <path> 的小程序"
+
+#~ msgctxt "Do not translate <path>"
+#~ msgid "Upgrade the applet at <path>"
+#~ msgstr "更新位于 <path> 的小程序"
+
+#~ msgid "Most installed applets"
+#~ msgstr "安装量最多的小程序"
+
+#~ msgctxt "Do not translate <name>"
+#~ msgid "Remove the applet named <name>"
+#~ msgstr "移除名为 <name> 的小程序"
+
+#~ msgid ""
+#~ "Absolute path to the package root. If not supplied, then the standard "
+#~ "data directories for this KDE session will be searched instead."
+#~ msgstr ""
+#~ "软件包根目录的绝对路径。如果没有提供，则会搜索并使用本次 KDE 会话的标准数"
+#~ "据目录。"
+
+#~ msgid "Successfully removed %1"
+#~ msgstr "已成功删除 %1"
+
+#~ msgid "Removal of %1 failed."
+#~ msgstr "删除 %1 时失败。"
+
+#~ msgid "Plugin %1 is not installed."
+#~ msgstr "插件 %1 尚未安装。"
+
+#~ msgid "Successfully installed %1"
+#~ msgstr "已成功安装 %1"
+
+#~ msgid "Installation of %1 failed."
+#~ msgstr "%1 安装失败。"
+
+#~ msgctxt ""
+#~ "No option was given, this is the error message telling the user he needs "
+#~ "at least one, do not translate install, remove, upgrade nor list"
+#~ msgid "One of install, remove, upgrade or list is required."
+#~ msgstr ""
+#~ "必须使用安装 (install)、删除 (remove)、升级 (upgrade) 或查看列表 (list) 这"
+#~ "四个选项之一。"

@@ -17113,6 +17113,32 @@ msgstr ""
 #~ msgstr "התקנת <b>%1</b> נכשלה."
 
 #, fuzzy
+#~| msgid "Amarok AFT Tagger"
+#~ msgid "Amarok Applet Manager"
+#~ msgstr "מתייג AFT של Amarok"
+
+#, fuzzy
+#~| msgid "Amarok Version"
+#~ msgid "Aaron Seigo"
+#~ msgstr "גרסת Amarok"
+
+#, fuzzy
+#~| msgid "&Install Script"
+#~ msgctxt "Do not translate <path>"
+#~ msgid "Install the applet at <path>"
+#~ msgstr "&התקן תסריטים"
+
+#, fuzzy
+#~| msgid "&Install Script"
+#~ msgid "Most installed applets"
+#~ msgstr "&התקן תסריטים"
+
+#, fuzzy
+#~| msgid "Installation of <b>%1</b> failed!"
+#~ msgid "Installation of %1 failed."
+#~ msgstr "התקנת <b>%1</b> נכשלה."
+
+#, fuzzy
 #~| msgid "No track playing"
 #~ msgctxt "@title:group"
 #~ msgid "No track is currently playing"
