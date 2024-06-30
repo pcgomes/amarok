@@ -15414,6 +15414,9 @@ msgstr "कलाकार: %1"
 msgid "empty"
 msgstr "रिकामी"
 
+#~ msgid "Network error"
+#~ msgstr "संजाळ त्रुटी"
+
 #~ msgid "Aaron Seigo"
 #~ msgstr "एरॉन सीगो"
 

@@ -16469,6 +16469,89 @@ msgstr "Artista: %1"
 msgid "empty"
 msgstr "buit"
 
+#~ msgid "Get data from openDesktop.org to learn more about the team"
+#~ msgstr ""
+#~ "Aconseguiu les dades des d'openDesktop.org per a aprendre més quant a "
+#~ "l'equip"
+
+#~ msgid "Get data from openDesktop.org to learn more about contributors"
+#~ msgstr ""
+#~ "Aconseguiu les dades des d'openDesktop.org per a aprendre més quant als "
+#~ "col·laboradors"
+
+#~ msgid ""
+#~ "Get data from openDesktop.org to learn more about our generous donors"
+#~ msgstr ""
+#~ "Aconseguiu les dades des d'openDesktop.org per a saber-ne més sobre els "
+#~ "nostres mecenes"
+
+#~ msgid "Internet connection not available"
+#~ msgstr "La connexió amb Internet no està disponible"
+
+#~ msgid "Network error"
+#~ msgstr "S'ha produït un error de la xarxa"
+
+#~ msgctxt "A person's location: City, Country"
+#~ msgid "%1, %2"
+#~ msgstr "%1, %2"
+
+#~ msgid "IRC channels: "
+#~ msgstr "Canals d'IRC: "
+
+#~ msgid "Favorite music: "
+#~ msgstr "Música preferida: "
+
+#~ msgid "Visit %1's openDesktop.org profile"
+#~ msgstr "Visiteu el perfil openDesktop.org de %1"
+
+#~ msgid "Visit %1's profile on openDesktop.org"
+#~ msgstr "Visiteu el perfil de %1 a openDesktop.org"
+
+#~ msgid "Visit contributor's blog"
+#~ msgstr "Visiteu el blog del col·laborador"
+
+#~ msgid "Visit contributor's del.icio.us profile"
+#~ msgstr "Visiteu el perfil del col·laborador a del.icio.vos"
+
+#~ msgid "Visit contributor's Digg profile"
+#~ msgstr "Visiteu el perfil del col·laborador a Digg"
+
+#~ msgid "Visit contributor's Facebook profile"
+#~ msgstr "Visiteu el perfil del col·laborador a Facebook"
+
+#~ msgid "Visit contributor's Last.fm profile"
+#~ msgstr "Visiteu el perfil del col·laborador a Last.fm"
+
+#~ msgid "Visit contributor's LinkedIn profile"
+#~ msgstr "Visiteu el perfil del col·laborador a LinkedIn"
+
+#~ msgid "Visit contributor's MySpace homepage"
+#~ msgstr "Visiteu la pàgina personal del col·laborador a MySpace"
+
+#~ msgid "Visit contributor's Reddit profile"
+#~ msgstr "Visiteu el perfil del col·laborador a Reddit"
+
+#~ msgid "Visit contributor's YouTube profile"
+#~ msgstr "Visiteu el perfil del col·laborador a YouTube"
+
+#~ msgid "Visit contributor's Twitter feed"
+#~ msgstr "Visiteu el canal del col·laborador a Twitter"
+
+#~ msgid "Visit contributor's Wikipedia profile"
+#~ msgstr "Visiteu el perfil del col·laborador en la Viquipèdia"
+
+#~ msgid "Visit contributor's Xing profile"
+#~ msgstr "Visiteu el perfil del col·laborador a Xing"
+
+#~ msgid "Visit contributor's identi.ca feed"
+#~ msgstr "Visiteu el canal col·laborador a identi.ca"
+
+#~ msgid "Visit contributor's libre.fm profile"
+#~ msgstr "Visiteu el perfil del col·laborador a libre.fm"
+
+#~ msgid "Visit contributor's StackOverflow profile"
+#~ msgstr "Visiteu el perfil del col·laborador a StackOverflow"
+
 #~ msgid "Amarok Applet Manager"
 #~ msgstr "Gestor de miniaplicacions d'Amarok"
 

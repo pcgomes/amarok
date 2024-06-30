@@ -15981,6 +15981,48 @@ msgstr "Izvođač"
 msgid "empty"
 msgstr ""
 
+#~ msgid "Get data from openDesktop.org to learn more about the team"
+#~ msgstr "Preuzmi podatke s openDesktop.org da bi saznao više o timu"
+
+#~ msgid "Get data from openDesktop.org to learn more about contributors"
+#~ msgstr ""
+#~ "Preuzmi podatke s openDesktop.org da bi saznao više o pridonositeljima"
+
+#, fuzzy
+#~| msgid "Get data from openDesktop.org to learn more about contributors"
+#~ msgid ""
+#~ "Get data from openDesktop.org to learn more about our generous donors"
+#~ msgstr ""
+#~ "Preuzmi podatke s openDesktop.org da bi saznao više o pridonositeljima"
+
+#~ msgid "Internet connection not available"
+#~ msgstr "Internet veza nije dostupna"
+
+#~ msgid "Network error"
+#~ msgstr "Mrežna pogreška"
+
+#, fuzzy
+#~| msgctxt "monthname year"
+#~| msgid "%1 %2"
+#~ msgctxt "A person's location: City, Country"
+#~ msgid "%1, %2"
+#~ msgstr "%1 %2"
+
+#~ msgid "IRC channels: "
+#~ msgstr "IRC kanali: "
+
+#~ msgid "Favorite music: "
+#~ msgstr "Omiljena glazba: "
+
+#~ msgid "Visit %1's openDesktop.org profile"
+#~ msgstr "Posjetite profil %1 na stranicama openDesktop.org"
+
+#~ msgid "Visit %1's profile on openDesktop.org"
+#~ msgstr "Posjetite profil %1 na stranicama openDesktop.org"
+
+#~ msgid "Visit contributor's blog"
+#~ msgstr "Posjetite blog pridonositelja"
+
 #, fuzzy
 #~| msgid "All Artists"
 #~ msgid "Show Similar Artists to %1"

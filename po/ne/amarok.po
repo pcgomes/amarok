@@ -17186,6 +17186,28 @@ msgstr "पुन: प्रयास गर्नुहोस्"
 #~ msgstr "प्रमाणीकरण असफलता"
 
 #, fuzzy
+#~| msgid "No Error"
+#~ msgid "Network error"
+#~ msgstr "कुनै त्रुटि छैन"
+
+#, fuzzy
+#~| msgctxt "monthname year"
+#~| msgid "%1 %2"
+#~ msgctxt "A person's location: City, Country"
+#~ msgid "%1, %2"
+#~ msgstr "%1: %2"
+
+#, fuzzy
+#~| msgid "&4 Channels:"
+#~ msgid "IRC channels: "
+#~ msgstr "४ च्यानल:"
+
+#, fuzzy
+#~| msgid "Favorite"
+#~ msgid "Favorite music: "
+#~ msgstr "मन पर्ने"
+
+#, fuzzy
 #~| msgid "Amarok is paused"
 #~ msgid "Amarok Applet Manager"
 #~ msgstr "अमारोक पज गरिएको छ"

@@ -15892,6 +15892,15 @@ msgstr "कलाकार: %1"
 msgid "empty"
 msgstr "खाली"
 
+#, fuzzy
+#~| msgctxt ""
+#~| "%1 is e.g. Cached lyrics updated for 2 tracks, %2 is e.g. labels added "
+#~| "to 3 tracks"
+#~| msgid "%1, %2."
+#~ msgctxt "A person's location: City, Country"
+#~ msgid "%1, %2"
+#~ msgstr "%1, %2."
+
 #~ msgid "Aaron Seigo"
 #~ msgstr "एरान सीगो"
 

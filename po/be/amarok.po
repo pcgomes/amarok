@@ -16686,6 +16686,27 @@ msgstr "Паўтарыць"
 #~ msgstr "Міжнародны"
 
 #, fuzzy
+#~| msgid "No Error"
+#~ msgid "Network error"
+#~ msgstr "Няма памылкі"
+
+#, fuzzy
+#~| msgctxt "monthname year"
+#~| msgid "%1 %2"
+#~ msgctxt "A person's location: City, Country"
+#~ msgid "%1, %2"
+#~ msgstr "%1 %2"
+
+#, fuzzy
+#~ msgid "IRC channels: "
+#~ msgstr "<tr><td><i>Каналы</i></td><td>%1</td></tr>"
+
+#, fuzzy
+#~| msgid "Favorite Albums"
+#~ msgid "Favorite music: "
+#~ msgstr "Любімыя альбомы"
+
+#, fuzzy
 #~ msgid "Amarok Applet Manager"
 #~ msgstr "Amarok"
 
