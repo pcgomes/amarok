@@ -16181,6 +16181,13 @@ msgstr ""
 #~ msgstr "%1 %2"
 
 #, fuzzy
+#~| msgctxt "monthname year"
+#~| msgid "%1 %2"
+#~ msgctxt "A person's location: City, Country"
+#~ msgid "%1, %2"
+#~ msgstr "%1 %2"
+
+#, fuzzy
 #~| msgid "Collection Setup"
 #~ msgid "No upcoming events"
 #~ msgstr "එකතුව සැකසීම"

@@ -17120,6 +17120,33 @@ msgstr ""
 #~ msgstr "Saz kirina <b>%1</b> têk çû!"
 
 #, fuzzy
+#~| msgid "Framework Version"
+#~ msgid "Network error"
+#~ msgstr "Guhertoya Pêşvebira Çarçovê"
+
+#, fuzzy
+#~| msgctxt "monthname year"
+#~| msgid "%1 %2"
+#~ msgctxt "A person's location: City, Country"
+#~ msgid "%1, %2"
+#~ msgstr "%1 %2"
+
+#, fuzzy
+#~| msgid "Favorite Albums"
+#~ msgid "Favorite music: "
+#~ msgstr "Albumên Bijarte"
+
+#, fuzzy
+#~| msgid "Former contributors"
+#~ msgid "Visit contributor's blog"
+#~ msgstr "Former contributors"
+
+#, fuzzy
+#~| msgid "Former contributors"
+#~ msgid "Visit contributor's Last.fm profile"
+#~ msgstr "Former contributors"
+
+#, fuzzy
 #~| msgid "Amarok AFT Tagger"
 #~ msgid "Amarok Applet Manager"
 #~ msgstr "Etîketvanê Amarok AFT"
