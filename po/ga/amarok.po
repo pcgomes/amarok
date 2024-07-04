@@ -1808,22 +1808,22 @@ msgstr "Luchtaigh URLanna, in ionad an tseinmliosta reatha"
 msgid "Print verbose debugging information"
 msgstr "Taispeáin faisnéis fhoclach dífhabhtaithe"
 
-#: App.cpp:376
+#: App.cpp:374
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Taispeáin faisnéis fhoclach dífhabhtaithe ón chóras fuaime"
 
-#: App.cpp:377
+#: App.cpp:375
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Díchumasaigh dathanna san aschur dífhabhtaithe."
 
-#: App.cpp:378
+#: App.cpp:376
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Ceadaigh níos mó ná cóip amháin d'Amarok"
 
-#: App.cpp:379
+#: App.cpp:377
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Bunchomhadlann le haghaidh comhaid/URLanna coibhneasta"
@@ -1833,7 +1833,7 @@ msgstr "Bunchomhadlann le haghaidh comhaid/URLanna coibhneasta"
 msgid "Database Error"
 msgstr "Earráid Bhunachair Sonraí"
 
-#: App.cpp:516
+#: App.cpp:514
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1842,7 +1842,7 @@ msgid ""
 "properly."
 msgstr ""
 
-#: App.cpp:583
+#: App.cpp:581
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Comhaid á gcur sa bhruscar"
@@ -2580,7 +2580,7 @@ msgstr "&Scrios..."
 msgid "&Export As..."
 msgstr "&Easpórtáil Seinmliosta Mar..."
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:374
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:370
 #, fuzzy, kde-format
 #| msgid "1 Track"
 #| msgid_plural "%1 Tracks"
@@ -2593,7 +2593,7 @@ msgstr[2] "%1 Amhrán"
 msgstr[3] "%1 nAmhrán"
 msgstr[4] "%1 Amhrán"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:374
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:370
 #, fuzzy, kde-format
 #| msgctxt "Remove a track from a saved playlist"
 #| msgid "Remove From \"%1\""
@@ -2601,7 +2601,7 @@ msgctxt "%1: number of tracks. %2: number of playlists"
 msgid "Remove %1 From %2"
 msgstr "Bain ó \"%1\""
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:375
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:371
 #, fuzzy, kde-format
 #| msgid "Playlist"
 msgctxt "Second part of 'Remove %1 From %2'"
@@ -2613,7 +2613,7 @@ msgstr[2] "Seinmliosta"
 msgstr[3] "Seinmliosta"
 msgstr[4] "Seinmliosta"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:379
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:375
 #, fuzzy, kde-format
 #| msgctxt "%2 is saved playlist name"
 #| msgid "Remove a track from %2"
@@ -2627,7 +2627,7 @@ msgstr[2] "Bain %1 amhrán ó %2"
 msgstr[3] "Bain %1 n-amhrán ó %2"
 msgstr[4] "Bain %1 amhrán ó %2"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:470
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:466
 #, fuzzy, kde-format
 #| msgid "&Delete playlist"
 msgctxt ""
@@ -2636,7 +2636,7 @@ msgctxt ""
 msgid "Delete playlist <i>%1</i> from %2?"
 msgstr "&Scrios an seinmliosta"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:472
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:468
 #, fuzzy, kde-format
 #| msgid "&Delete playlist"
 msgctxt ""
@@ -2645,7 +2645,7 @@ msgctxt ""
 msgid "Delete %1 playlists from %2?"
 msgstr "&Scrios an seinmliosta"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:476
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:472
 #, fuzzy, kde-format
 #| msgid "Configure Playlist Info Applet"
 msgid "Confirm Playlist Deletion"
@@ -3771,17 +3771,17 @@ msgstr "Cuir URLanna sa chiú tar éis an amhráin reatha"
 msgid "&Pause playback on suspend"
 msgstr "Cuir athsheinm ar shos"
 
-#: configdialog/dialogs/PluginsConfig.cpp:44
+#: configdialog/dialogs/PluginsConfig.cpp:43
 #, kde-format
 msgid "Collections"
 msgstr "Bailiúcháin"
 
-#: configdialog/dialogs/PluginsConfig.cpp:47
+#: configdialog/dialogs/PluginsConfig.cpp:46
 #, kde-format
 msgid "Internet Services"
 msgstr "Seirbhísí Idirlín"
 
-#: configdialog/dialogs/PluginsConfig.cpp:50
+#: configdialog/dialogs/PluginsConfig.cpp:49
 #, fuzzy, kde-format
 #| msgid "Statistics"
 msgid "Statistics importers"
@@ -4553,39 +4553,39 @@ msgctxt "Right-click menu option for images in Wikipedia applet"
 msgid "Copy Image to Clipboard"
 msgstr "Cóipeáil go dtí an Ghearrthaisce"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:78
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:142
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:270
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:77
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:141
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:269
 #, kde-format
 msgid "Unable to retrieve Wikipedia information: %1"
 msgstr "Ní féidir faisnéis Wikipedia a fháil: %1"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:93
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:249
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:307
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:92
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:248
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:306
 #, kde-format
 msgid "No information found..."
 msgstr "Níor aimsíodh aon eolas..."
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:317
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:316
 #, kde-format
 msgctxt "Search pattern for an artist or band"
 msgid ".*\\(.*(artist|band).*\\)"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:320
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:319
 #, kde-format
 msgctxt "Search pattern for a composer"
 msgid ".*\\(.*(composer|musician).*\\)"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:323
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:322
 #, kde-format
 msgctxt "Search pattern for an album"
 msgid ".*\\(.*(album|score|soundtrack).*\\)"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:327
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:326
 #, kde-format
 msgctxt "Search pattern for a song"
 msgid ".*\\(.*(song|track).*\\)"
@@ -7846,12 +7846,12 @@ msgstr "URL"
 msgid "Cover Manager"
 msgstr "Bainisteoir na gClúdach"
 
-#: covermanager/CoverManager.cpp:124
+#: covermanager/CoverManager.cpp:123
 #, kde-format
 msgid "Albums By"
 msgstr "Albaim De Réir"
 
-#: covermanager/CoverManager.cpp:134
+#: covermanager/CoverManager.cpp:133
 #, kde-format
 msgid "All Artists"
 msgstr "Gach Ealaíontóir"
@@ -7861,43 +7861,43 @@ msgstr "Gach Ealaíontóir"
 msgid "Enter search terms here"
 msgstr "Iontráil téarmaí cuardaigh anseo"
 
-#: covermanager/CoverManager.cpp:193
+#: covermanager/CoverManager.cpp:192
 #, kde-format
 msgid "All Albums"
 msgstr "Gach Albam"
 
-#: covermanager/CoverManager.cpp:194
+#: covermanager/CoverManager.cpp:193
 #, kde-format
 msgid "Albums With Cover"
 msgstr "Albaim Le Clúdach"
 
-#: covermanager/CoverManager.cpp:195
+#: covermanager/CoverManager.cpp:194
 #, kde-format
 msgid "Albums Without Cover"
 msgstr "Albaim Gan Chlúdach"
 
-#: covermanager/CoverManager.cpp:208
+#: covermanager/CoverManager.cpp:207
 #, kde-format
 msgid "Fetch Missing Covers"
 msgstr "Faigh Clúdaigh Ar Iarraidh"
 
-#: covermanager/CoverManager.cpp:314
+#: covermanager/CoverManager.cpp:313
 #, kde-format
 msgid "Fetching"
 msgstr "Á fháil"
 
-#: covermanager/CoverManager.cpp:409
+#: covermanager/CoverManager.cpp:408
 #, kde-format
 msgid "Loading"
 msgstr "Á Luchtú"
 
-#: covermanager/CoverManager.cpp:620
+#: covermanager/CoverManager.cpp:619
 #, kde-format
 msgctxt "The fetching is done."
 msgid "Finished."
 msgstr "Críochnaithe."
 
-#: covermanager/CoverManager.cpp:622
+#: covermanager/CoverManager.cpp:621
 #, kde-format
 msgid " Cover not found"
 msgid_plural " <b>%1</b> covers not found"
@@ -7907,17 +7907,17 @@ msgstr[2] " <b>%1</b> chlúdach gan aimsiú"
 msgstr[3] " <b>%1</b> gclúdach gan aimsiú"
 msgstr[4] " <b>%1</b> clúdach gan aimsiú"
 
-#: covermanager/CoverManager.cpp:640
+#: covermanager/CoverManager.cpp:639
 #, kde-format
 msgid "Fetching cover for %1 - %2..."
 msgstr "Clúdach á fháil le haghaidh %1 - %2..."
 
-#: covermanager/CoverManager.cpp:646
+#: covermanager/CoverManager.cpp:645
 #, kde-format
 msgid "Fetching cover for %1..."
 msgstr "Clúdach á fháil le haghaidh %1..."
 
-#: covermanager/CoverManager.cpp:652
+#: covermanager/CoverManager.cpp:651
 #, kde-format
 msgid "Fetching 1 cover: "
 msgid_plural "Fetching <b>%1</b> covers... : "
@@ -7927,7 +7927,7 @@ msgstr[2] "<b>%1</b> chlúdach á n-íosluchtú... : "
 msgstr[3] "<b>%1</b> gclúdach á n-íosluchtú... : "
 msgstr[4] "<b>%1</b> clúdach á n-íosluchtú... : "
 
-#: covermanager/CoverManager.cpp:654
+#: covermanager/CoverManager.cpp:653
 #, kde-format
 msgid "1 fetched"
 msgid_plural "%1 fetched"
@@ -7937,12 +7937,12 @@ msgstr[2] "Íosluchtaíodh %1 chlúdach"
 msgstr[3] "Íosluchtaíodh %1 gclúdach"
 msgstr[4] "Íosluchtaíodh %1 clúdach"
 
-#: covermanager/CoverManager.cpp:658
+#: covermanager/CoverManager.cpp:657
 #, kde-format
 msgid " - "
 msgstr " - "
 
-#: covermanager/CoverManager.cpp:659
+#: covermanager/CoverManager.cpp:658
 #, kde-format
 msgid "1 not found"
 msgid_plural "%1 not found"
@@ -7958,7 +7958,7 @@ msgstr[4] "%1 cinn gan aimsiú"
 msgid "Connecting..."
 msgstr "Ag ceangal..."
 
-#: covermanager/CoverManager.cpp:685
+#: covermanager/CoverManager.cpp:684
 #, kde-format
 msgid "1 result for \"%2\""
 msgid_plural "%1 results for \"%2\""
@@ -7968,7 +7968,7 @@ msgstr[2] "%1 thoradh le haghaidh \"%2\""
 msgstr[3] "%1 dtoradh le haghaidh \"%2\""
 msgstr[4] "%1 toradh le haghaidh \"%2\""
 
-#: covermanager/CoverManager.cpp:689
+#: covermanager/CoverManager.cpp:688
 #, kde-format
 msgid "1 album"
 msgid_plural "%1 albums"
@@ -7978,7 +7978,7 @@ msgstr[2] "%1 albam"
 msgstr[3] "%1 n-albam"
 msgstr[4] "%1 albam"
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:700
 #, fuzzy, kde-format
 #| msgctxt "comma between list words"
 #| msgid ", "
@@ -7986,14 +7986,14 @@ msgctxt "Separator for artists"
 msgid ", "
 msgstr ", "
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:700
 #, fuzzy, kde-format
 #| msgctxt "%1 is track url, %2 artist name"
 #| msgid "%1 (by %2)"
 msgid "%1 by %2"
 msgstr "%1 (le %2)"
 
-#: covermanager/CoverManager.cpp:706
+#: covermanager/CoverManager.cpp:705
 #, fuzzy, kde-format
 #| msgid " - ( <b>%1</b> without cover )"
 msgid "%2 - ( <b>1</b> without cover )"
@@ -10087,7 +10087,7 @@ msgstr "Bhí na liricí faighte folamh"
 msgid "Lyrics data could not be parsed"
 msgstr "Níorbh fhéidir na liricí a pharsáil"
 
-#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:690
+#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:689
 #, kde-format
 msgid "No information available for this track"
 msgstr "Níl aon fhaisnéis faoin amhrán seo ar fáil"
@@ -11748,7 +11748,7 @@ msgstr "Taispeáin rialtáin athsheinnte inlíne"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: playlist/layouts/PlaylistLayoutEditDialog.ui:267
-#: services/ServiceBase.cpp:163
+#: services/ServiceBase.cpp:162
 #, kde-format
 msgid "Group By"
 msgstr "Grúpáil De Réir"
@@ -11760,7 +11760,7 @@ msgid "Show tooltips"
 msgstr "Taispeáin leideanna uirlisí"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewButton)
-#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:504
+#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:503
 #, kde-format
 msgid "Preview"
 msgstr "Réamhamharc"
@@ -14393,12 +14393,12 @@ msgid ""
 "will not be scrobbled</html>"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:100
+#: services/lastfm/LastFmService.cpp:98
 #, kde-format
 msgid "Last.fm: The social music revolution"
 msgstr "Last.fm: Réabhlóid i gceol sóisialta"
 
-#: services/lastfm/LastFmService.cpp:102
+#: services/lastfm/LastFmService.cpp:100
 #, fuzzy, kde-format
 #| msgid ""
 #| "Last.fm is a popular online service that provides personal radio stations "
@@ -14422,12 +14422,12 @@ msgstr ""
 "leith air, agus éisteacht le sruthanna ó do chuid cairde nó ó dhaoine atá "
 "ina \"gcomharsana ceoil\" de réir Last.fm"
 
-#: services/lastfm/LastFmService.cpp:129 services/lastfm/LoveTrackAction.cpp:24
+#: services/lastfm/LastFmService.cpp:127 services/lastfm/LoveTrackAction.cpp:24
 #, kde-format
 msgid "Last.fm: Love"
 msgstr "Last.fm: Grá"
 
-#: services/lastfm/LastFmService.cpp:131
+#: services/lastfm/LastFmService.cpp:129
 #, kde-format
 msgid "Ctrl+L"
 msgstr "Ctrl+L"
@@ -15670,12 +15670,12 @@ msgstr "Cuir comhad OPML leis an liosta."
 msgid "Loading info..."
 msgstr "Eolas á luchtú..."
 
-#: services/ServiceBase.cpp:337
+#: services/ServiceBase.cpp:336
 #, kde-format
 msgid "This service does not accept any messages"
 msgstr "Ní ghlacann an tseirbhís seo le haon teachtaireachtaí"
 
-#: services/ServiceBase.cpp:344
+#: services/ServiceBase.cpp:343
 #, kde-format
 msgid "ERROR: unknown message"
 msgstr "EARRÁID: teachtaireacht anaithnid"
@@ -16164,7 +16164,7 @@ msgid "Slim Toolbar"
 msgstr "Barra Uirlisí Caol"
 
 #: toolbar/VolumePopupButton.cpp:104 toolbar/VolumePopupButton.cpp:115
-#: widgets/Osd.cpp:200
+#: widgets/Osd.cpp:199
 #, fuzzy, kde-format
 #| msgid "Volume: 100% (muted)"
 msgid "Volume: %1% (muted)"
@@ -16612,17 +16612,17 @@ msgctxt "a numerical tag (like year or track number) is between two values"
 msgid "between"
 msgstr "idir"
 
-#: widgets/Osd.cpp:186
+#: widgets/Osd.cpp:185
 #, kde-format
 msgid "Rating changed"
 msgstr "Athraíodh an rátáil"
 
-#: widgets/Osd.cpp:261
+#: widgets/Osd.cpp:260
 #, kde-format
 msgid "Volume: 100% (muted)"
 msgstr "Airde: 100% (gan fuaim)"
 
-#: widgets/Osd.cpp:504
+#: widgets/Osd.cpp:503
 #, kde-format
 msgid ""
 "On-Screen-Display preview\n"
@@ -16631,12 +16631,12 @@ msgstr ""
 "Réamhamharc ar an Taispeáint ar Scáileán\n"
 "Tarraing chun suíomh nua más mian leat"
 
-#: widgets/Osd.cpp:756
+#: widgets/Osd.cpp:755
 #, kde-format
 msgid "Stopped"
 msgstr "Stadtha"
 
-#: widgets/Osd.cpp:765
+#: widgets/Osd.cpp:764
 #, kde-format
 msgid "Paused"
 msgstr "Moillithe"

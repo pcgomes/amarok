@@ -1816,22 +1816,22 @@ msgstr "Carica URL, sostituendo la scaletta attuale"
 msgid "Print verbose debugging information"
 msgstr "Stampa informazioni di debug dettagliate"
 
-#: App.cpp:376
+#: App.cpp:374
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Stampa informazioni di debug dettagliate del sistema audio"
 
-#: App.cpp:377
+#: App.cpp:375
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Disabilita la colorazione per il risultato del debug."
 
-#: App.cpp:378
+#: App.cpp:376
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Consenti l'esecuzione di istanze multiple di Amarok"
 
-#: App.cpp:379
+#: App.cpp:377
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Base per nomi dei file/URL relativi"
@@ -1841,7 +1841,7 @@ msgstr "Base per nomi dei file/URL relativi"
 msgid "Database Error"
 msgstr "Errore della banca dati"
 
-#: App.cpp:516
+#: App.cpp:514
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1854,7 +1854,7 @@ msgstr ""
 "Nella maggior parte dei casi, sarà necessario risolvere tali errori prima di "
 "poter eseguire correttamente Amarok."
 
-#: App.cpp:583
+#: App.cpp:581
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Cestinamento file"
@@ -2567,7 +2567,7 @@ msgstr "E&limina..."
 msgid "&Export As..."
 msgstr "&Esporta come..."
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:374
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:370
 #, kde-format
 msgctxt "First part of 'Remove %1 From %2'"
 msgid "a Track"
@@ -2575,13 +2575,13 @@ msgid_plural "%1 Tracks"
 msgstr[0] "una traccia"
 msgstr[1] "%1 tracce"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:374
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:370
 #, kde-format
 msgctxt "%1: number of tracks. %2: number of playlists"
 msgid "Remove %1 From %2"
 msgstr "Rimuovi %1 da %2"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:375
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:371
 #, kde-format
 msgctxt "Second part of 'Remove %1 From %2'"
 msgid "1 Playlist"
@@ -2589,7 +2589,7 @@ msgid_plural "%1 Playlists"
 msgstr[0] "1 scaletta"
 msgstr[1] "%1 scalette"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:379
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:375
 #, kde-format
 msgctxt "%2 is saved playlist name"
 msgid "Remove a Track From %2"
@@ -2597,7 +2597,7 @@ msgid_plural "Remove %1 Tracks From %2"
 msgstr[0] "Rimuovi una traccia da %2"
 msgstr[1] "Rimuovi %1 tracce da %2"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:470
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:466
 #, kde-format
 msgctxt ""
 "Playlist deletion confirmation dialog. %1 is playlist name, %2 is playlist "
@@ -2605,7 +2605,7 @@ msgctxt ""
 msgid "Delete playlist <i>%1</i> from %2?"
 msgstr "Vuoi eliminare la scaletta <i>%1</i> da %2?"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:472
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:468
 #, kde-format
 msgctxt ""
 "Playlist deletion confirmation dialog. %1 is the playlist count (always more "
@@ -2613,7 +2613,7 @@ msgctxt ""
 msgid "Delete %1 playlists from %2?"
 msgstr "Vuoi eliminare %1 scalette da %2?"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:476
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:472
 #, kde-format
 msgid "Confirm Playlist Deletion"
 msgstr "Conferma l'eliminazione della scaletta"
@@ -3748,17 +3748,17 @@ msgstr ""
 msgid "&Pause playback on suspend"
 msgstr "&Pausa della riproduzione in caso di sospensione"
 
-#: configdialog/dialogs/PluginsConfig.cpp:44
+#: configdialog/dialogs/PluginsConfig.cpp:43
 #, kde-format
 msgid "Collections"
 msgstr "Collezioni"
 
-#: configdialog/dialogs/PluginsConfig.cpp:47
+#: configdialog/dialogs/PluginsConfig.cpp:46
 #, kde-format
 msgid "Internet Services"
 msgstr "Servizi Internet"
 
-#: configdialog/dialogs/PluginsConfig.cpp:50
+#: configdialog/dialogs/PluginsConfig.cpp:49
 #, kde-format
 msgid "Statistics importers"
 msgstr "Importatori delle statistiche"
@@ -4491,39 +4491,39 @@ msgctxt "Right-click menu option for images in Wikipedia applet"
 msgid "Copy Image to Clipboard"
 msgstr "Copia l'immagine negli appunti"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:78
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:142
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:270
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:77
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:141
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:269
 #, kde-format
 msgid "Unable to retrieve Wikipedia information: %1"
 msgstr "Impossibile recuperare informazioni da Wikipedia: %1"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:93
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:249
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:307
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:92
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:248
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:306
 #, kde-format
 msgid "No information found..."
 msgstr "Nessuna informazione trovata..."
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:317
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:316
 #, kde-format
 msgctxt "Search pattern for an artist or band"
 msgid ".*\\(.*(artist|band).*\\)"
 msgstr ".*\\(.*(artista|gruppo).*\\)"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:320
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:319
 #, kde-format
 msgctxt "Search pattern for a composer"
 msgid ".*\\(.*(composer|musician).*\\)"
 msgstr ".*\\(.*(compositore|musicista).*\\)"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:323
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:322
 #, kde-format
 msgctxt "Search pattern for an album"
 msgid ".*\\(.*(album|score|soundtrack).*\\)"
 msgstr ".*\\(.*(album|punteggio|traccia).*\\)"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:327
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:326
 #, kde-format
 msgctxt "Search pattern for a song"
 msgid ".*\\(.*(song|track).*\\)"
@@ -7648,12 +7648,12 @@ msgstr "URL"
 msgid "Cover Manager"
 msgstr "Gestore delle copertine"
 
-#: covermanager/CoverManager.cpp:124
+#: covermanager/CoverManager.cpp:123
 #, kde-format
 msgid "Albums By"
 msgstr "Album di"
 
-#: covermanager/CoverManager.cpp:134
+#: covermanager/CoverManager.cpp:133
 #, kde-format
 msgid "All Artists"
 msgstr "Tutti gli artisti"
@@ -7663,79 +7663,79 @@ msgstr "Tutti gli artisti"
 msgid "Enter search terms here"
 msgstr "Inserisci qui i termini di ricerca"
 
-#: covermanager/CoverManager.cpp:193
+#: covermanager/CoverManager.cpp:192
 #, kde-format
 msgid "All Albums"
 msgstr "Tutti gli album"
 
-#: covermanager/CoverManager.cpp:194
+#: covermanager/CoverManager.cpp:193
 #, kde-format
 msgid "Albums With Cover"
 msgstr "Album con copertina"
 
-#: covermanager/CoverManager.cpp:195
+#: covermanager/CoverManager.cpp:194
 #, kde-format
 msgid "Albums Without Cover"
 msgstr "Album senza copertina"
 
-#: covermanager/CoverManager.cpp:208
+#: covermanager/CoverManager.cpp:207
 #, kde-format
 msgid "Fetch Missing Covers"
 msgstr "Scarica le copertine mancanti"
 
-#: covermanager/CoverManager.cpp:314
+#: covermanager/CoverManager.cpp:313
 #, kde-format
 msgid "Fetching"
 msgstr "Scaricamento in corso"
 
-#: covermanager/CoverManager.cpp:409
+#: covermanager/CoverManager.cpp:408
 #, kde-format
 msgid "Loading"
 msgstr "Caricamento in corso"
 
-#: covermanager/CoverManager.cpp:620
+#: covermanager/CoverManager.cpp:619
 #, kde-format
 msgctxt "The fetching is done."
 msgid "Finished."
 msgstr "Finito."
 
-#: covermanager/CoverManager.cpp:622
+#: covermanager/CoverManager.cpp:621
 #, kde-format
 msgid " Cover not found"
 msgid_plural " <b>%1</b> covers not found"
 msgstr[0] "Copertina non trovata"
 msgstr[1] " <b>%1</b> copertine non trovate"
 
-#: covermanager/CoverManager.cpp:640
+#: covermanager/CoverManager.cpp:639
 #, kde-format
 msgid "Fetching cover for %1 - %2..."
 msgstr "Scarico la copertina per %1 - %2..."
 
-#: covermanager/CoverManager.cpp:646
+#: covermanager/CoverManager.cpp:645
 #, kde-format
 msgid "Fetching cover for %1..."
 msgstr "Scarico copertina per %1..."
 
-#: covermanager/CoverManager.cpp:652
+#: covermanager/CoverManager.cpp:651
 #, kde-format
 msgid "Fetching 1 cover: "
 msgid_plural "Fetching <b>%1</b> covers... : "
 msgstr[0] "Scarico 1 copertina: "
 msgstr[1] "Scarico <b>%1</b> copertine...: "
 
-#: covermanager/CoverManager.cpp:654
+#: covermanager/CoverManager.cpp:653
 #, kde-format
 msgid "1 fetched"
 msgid_plural "%1 fetched"
 msgstr[0] "1 scaricata"
 msgstr[1] "%1 scaricate"
 
-#: covermanager/CoverManager.cpp:658
+#: covermanager/CoverManager.cpp:657
 #, kde-format
 msgid " - "
 msgstr " - "
 
-#: covermanager/CoverManager.cpp:659
+#: covermanager/CoverManager.cpp:658
 #, kde-format
 msgid "1 not found"
 msgid_plural "%1 not found"
@@ -7748,32 +7748,32 @@ msgstr[1] "%1 non trovate"
 msgid "Connecting..."
 msgstr "Connessione..."
 
-#: covermanager/CoverManager.cpp:685
+#: covermanager/CoverManager.cpp:684
 #, kde-format
 msgid "1 result for \"%2\""
 msgid_plural "%1 results for \"%2\""
 msgstr[0] "1 risultato per «%2»"
 msgstr[1] "%1 risultati per «%2»"
 
-#: covermanager/CoverManager.cpp:689
+#: covermanager/CoverManager.cpp:688
 #, kde-format
 msgid "1 album"
 msgid_plural "%1 albums"
 msgstr[0] "1 album"
 msgstr[1] "%1 album"
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:700
 #, kde-format
 msgctxt "Separator for artists"
 msgid ", "
 msgstr ", "
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:700
 #, kde-format
 msgid "%1 by %2"
 msgstr "%1 di %2"
 
-#: covermanager/CoverManager.cpp:706
+#: covermanager/CoverManager.cpp:705
 #, kde-format
 msgid "%2 - ( <b>1</b> without cover )"
 msgid_plural "%2 - ( <b>%1</b> without cover )"
@@ -9832,7 +9832,7 @@ msgstr "Il testo recuperato è vuoto"
 msgid "Lyrics data could not be parsed"
 msgstr "Impossibile analizzare i dati del testo"
 
-#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:690
+#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:689
 #, kde-format
 msgid "No information available for this track"
 msgstr "Non ci sono informazioni disponibili per questa traccia"
@@ -11482,7 +11482,7 @@ msgstr "Mostra controlli di riproduzione incorporati"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: playlist/layouts/PlaylistLayoutEditDialog.ui:267
-#: services/ServiceBase.cpp:163
+#: services/ServiceBase.cpp:162
 #, kde-format
 msgid "Group By"
 msgstr "Raggruppa per"
@@ -11494,7 +11494,7 @@ msgid "Show tooltips"
 msgstr "Mostra suggerimenti"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewButton)
-#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:504
+#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:503
 #, kde-format
 msgid "Preview"
 msgstr "Anteprima"
@@ -14068,12 +14068,12 @@ msgstr ""
 "<html>Seleziona un'etichetta preferita (o creane una nuova). Le tracce con "
 "questa etichetta non saranno inviate</html>"
 
-#: services/lastfm/LastFmService.cpp:100
+#: services/lastfm/LastFmService.cpp:98
 #, kde-format
 msgid "Last.fm: The social music revolution"
 msgstr "Last.fm: La rivoluzione sociale della musica"
 
-#: services/lastfm/LastFmService.cpp:102
+#: services/lastfm/LastFmService.cpp:100
 #, kde-format
 msgid ""
 "Last.fm is a popular online service that provides personal radio stations "
@@ -14090,12 +14090,12 @@ msgstr ""
 "particolare artista così come ascoltare flussi di persone che hai aggiunto "
 "agli amici"
 
-#: services/lastfm/LastFmService.cpp:129 services/lastfm/LoveTrackAction.cpp:24
+#: services/lastfm/LastFmService.cpp:127 services/lastfm/LoveTrackAction.cpp:24
 #, kde-format
 msgid "Last.fm: Love"
 msgstr "Last.fm: Mi piace"
 
-#: services/lastfm/LastFmService.cpp:131
+#: services/lastfm/LastFmService.cpp:129
 #, kde-format
 msgid "Ctrl+L"
 msgstr "Ctrl+L"
@@ -15371,12 +15371,12 @@ msgstr "Aggiungi un file OPML all'elenco."
 msgid "Loading info..."
 msgstr "Caricamento informazioni in corso..."
 
-#: services/ServiceBase.cpp:337
+#: services/ServiceBase.cpp:336
 #, kde-format
 msgid "This service does not accept any messages"
 msgstr "Il servizio non accetta alcun messaggio"
 
-#: services/ServiceBase.cpp:344
+#: services/ServiceBase.cpp:343
 #, kde-format
 msgid "ERROR: unknown message"
 msgstr "ERRORE: messaggio sconosciuto"
@@ -15843,7 +15843,7 @@ msgid "Slim Toolbar"
 msgstr "Barra degli strumenti sottile"
 
 #: toolbar/VolumePopupButton.cpp:104 toolbar/VolumePopupButton.cpp:115
-#: widgets/Osd.cpp:200
+#: widgets/Osd.cpp:199
 #, kde-format
 msgid "Volume: %1% (muted)"
 msgstr "Volume: %1% (silenziato)"
@@ -16281,17 +16281,17 @@ msgctxt "a numerical tag (like year or track number) is between two values"
 msgid "between"
 msgstr "tra"
 
-#: widgets/Osd.cpp:186
+#: widgets/Osd.cpp:185
 #, kde-format
 msgid "Rating changed"
 msgstr "Valutazione modificata"
 
-#: widgets/Osd.cpp:261
+#: widgets/Osd.cpp:260
 #, kde-format
 msgid "Volume: 100% (muted)"
 msgstr "Volume: 100% (silenziato)"
 
-#: widgets/Osd.cpp:504
+#: widgets/Osd.cpp:503
 #, kde-format
 msgid ""
 "On-Screen-Display preview\n"
@@ -16300,12 +16300,12 @@ msgstr ""
 "Anteprima della visualizzazione a schermo\n"
 "Trascina per riposizionare"
 
-#: widgets/Osd.cpp:756
+#: widgets/Osd.cpp:755
 #, kde-format
 msgid "Stopped"
 msgstr "Fermato"
 
-#: widgets/Osd.cpp:765
+#: widgets/Osd.cpp:764
 #, kde-format
 msgid "Paused"
 msgstr "In pausa"

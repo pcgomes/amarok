@@ -1823,22 +1823,22 @@ msgstr "URLak kargatu uneko zerrenda ordeztuz"
 msgid "Print verbose debugging information"
 msgstr "Inprimatu arazketaren informazioa xehetasunez"
 
-#: App.cpp:376
+#: App.cpp:374
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Inprimatu audio sistemaren arazteko informazio berritsua"
 
-#: App.cpp:377
+#: App.cpp:375
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Desgaitu koloreztatzea arazketaren irteerarentzako."
 
-#: App.cpp:378
+#: App.cpp:376
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Baimendu Amarok-en hainbat instantzia exekutatzea"
 
-#: App.cpp:379
+#: App.cpp:377
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Fitxategi-izen/URL erlatiboen oinarria"
@@ -1848,7 +1848,7 @@ msgstr "Fitxategi-izen/URL erlatiboen oinarria"
 msgid "Database Error"
 msgstr "Datu-basearen errorea"
 
-#: App.cpp:516
+#: App.cpp:514
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1861,7 +1861,7 @@ msgstr ""
 "Kasu gehienetan, errore horiek konpondu beharko dituzu Amarok ongi ibil "
 "dadin."
 
-#: App.cpp:583
+#: App.cpp:581
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Fitxategiak zakarrontzira botatzen"
@@ -2577,7 +2577,7 @@ msgstr "&Ezabatu..."
 msgid "&Export As..."
 msgstr "&Esportatu honela..."
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:374
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:370
 #, kde-format
 msgctxt "First part of 'Remove %1 From %2'"
 msgid "a Track"
@@ -2585,13 +2585,13 @@ msgid_plural "%1 Tracks"
 msgstr[0] "Pista bat"
 msgstr[1] "%1 pista"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:374
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:370
 #, kde-format
 msgctxt "%1: number of tracks. %2: number of playlists"
 msgid "Remove %1 From %2"
 msgstr "Kendu «%1» «%2»(e)tik"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:375
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:371
 #, kde-format
 msgctxt "Second part of 'Remove %1 From %2'"
 msgid "1 Playlist"
@@ -2599,7 +2599,7 @@ msgid_plural "%1 Playlists"
 msgstr[0] "Jotze-zerrenda 1"
 msgstr[1] "%1 jotze-zerrenda"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:379
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:375
 #, kde-format
 msgctxt "%2 is saved playlist name"
 msgid "Remove a Track From %2"
@@ -2607,7 +2607,7 @@ msgid_plural "Remove %1 Tracks From %2"
 msgstr[0] "Kendu pista bat %1(e)tik"
 msgstr[1] "Kendu %1 Pista %2(e)tik"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:470
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:466
 #, fuzzy, kde-format
 #| msgctxt "%1 is playlist provider pretty name"
 #| msgid "Delete playlist from %1."
@@ -2617,7 +2617,7 @@ msgctxt ""
 msgid "Delete playlist <i>%1</i> from %2?"
 msgstr "Ezabatu jotze-zerrenda %1(e)tik."
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:472
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:468
 #, fuzzy, kde-format
 #| msgctxt "%1 is playlist provider pretty name"
 #| msgid "Delete playlist from %1."
@@ -2627,7 +2627,7 @@ msgctxt ""
 msgid "Delete %1 playlists from %2?"
 msgstr "Ezabatu jotze-zerrenda %1(e)tik."
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:476
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:472
 #, kde-format
 msgid "Confirm Playlist Deletion"
 msgstr "Berretsi jotze-zerrenda ezabatzea"
@@ -3749,17 +3749,17 @@ msgstr "Gaituta badago, esekitzean, Amarok-ek jotzen ari den pista etengo du"
 msgid "&Pause playback on suspend"
 msgstr "E&ten atzera-jotzea esekitzean"
 
-#: configdialog/dialogs/PluginsConfig.cpp:44
+#: configdialog/dialogs/PluginsConfig.cpp:43
 #, kde-format
 msgid "Collections"
 msgstr "Bildumak"
 
-#: configdialog/dialogs/PluginsConfig.cpp:47
+#: configdialog/dialogs/PluginsConfig.cpp:46
 #, kde-format
 msgid "Internet Services"
 msgstr "Interneteko zerbitzuak"
 
-#: configdialog/dialogs/PluginsConfig.cpp:50
+#: configdialog/dialogs/PluginsConfig.cpp:49
 #, kde-format
 msgid "Statistics importers"
 msgstr "Estatistika inportatzaileak"
@@ -4493,16 +4493,16 @@ msgctxt "Right-click menu option for images in Wikipedia applet"
 msgid "Copy Image to Clipboard"
 msgstr "Kopiatu arbelera"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:78
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:142
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:270
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:77
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:141
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:269
 #, kde-format
 msgid "Unable to retrieve Wikipedia information: %1"
 msgstr "Ezin da Wikipedia-ko informazioa jaso: %1"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:93
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:249
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:307
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:92
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:248
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:306
 #, kde-format
 msgid "No information found..."
 msgstr "Ez da informaziorik aurkitu..."
@@ -4523,13 +4523,13 @@ msgctxt "Search pattern for a composer"
 msgid ".*\\(.*(composer|musician).*\\)"
 msgstr ".*\\(.*(konposatzailea|musikaria).*\\))"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:323
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:322
 #, kde-format
 msgctxt "Search pattern for an album"
 msgid ".*\\(.*(album|score|soundtrack).*\\)"
 msgstr ".*\\(.*(albuma|puntuazioa|soinu-banda).*\\)"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:327
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:326
 #, kde-format
 msgctxt "Search pattern for a song"
 msgid ".*\\(.*(song|track).*\\)"
@@ -7681,12 +7681,12 @@ msgstr "URLa"
 msgid "Cover Manager"
 msgstr "Azal kudeatzailea"
 
-#: covermanager/CoverManager.cpp:124
+#: covermanager/CoverManager.cpp:123
 #, kde-format
 msgid "Albums By"
 msgstr "Honen albumak"
 
-#: covermanager/CoverManager.cpp:134
+#: covermanager/CoverManager.cpp:133
 #, kde-format
 msgid "All Artists"
 msgstr "Artista guztiak"
@@ -7696,79 +7696,79 @@ msgstr "Artista guztiak"
 msgid "Enter search terms here"
 msgstr "Sartu bilaketako hitzak hemen"
 
-#: covermanager/CoverManager.cpp:193
+#: covermanager/CoverManager.cpp:192
 #, kde-format
 msgid "All Albums"
 msgstr "Album guztiak"
 
-#: covermanager/CoverManager.cpp:194
+#: covermanager/CoverManager.cpp:193
 #, kde-format
 msgid "Albums With Cover"
 msgstr "Albumak azalekin"
 
-#: covermanager/CoverManager.cpp:195
+#: covermanager/CoverManager.cpp:194
 #, kde-format
 msgid "Albums Without Cover"
 msgstr "Albumak azalik gabe"
 
-#: covermanager/CoverManager.cpp:208
+#: covermanager/CoverManager.cpp:207
 #, kde-format
 msgid "Fetch Missing Covers"
 msgstr "Eskuratu falta diren azalak"
 
-#: covermanager/CoverManager.cpp:314
+#: covermanager/CoverManager.cpp:313
 #, kde-format
 msgid "Fetching"
 msgstr "Eskuratzen"
 
-#: covermanager/CoverManager.cpp:409
+#: covermanager/CoverManager.cpp:408
 #, kde-format
 msgid "Loading"
 msgstr "Kargatzen"
 
-#: covermanager/CoverManager.cpp:620
+#: covermanager/CoverManager.cpp:619
 #, kde-format
 msgctxt "The fetching is done."
 msgid "Finished."
 msgstr "Amaituta."
 
-#: covermanager/CoverManager.cpp:622
+#: covermanager/CoverManager.cpp:621
 #, kde-format
 msgid " Cover not found"
 msgid_plural " <b>%1</b> covers not found"
 msgstr[0] "Ez da azala aurkitu"
 msgstr[1] "Ez dira <b>%1</b> azal aurkitu"
 
-#: covermanager/CoverManager.cpp:640
+#: covermanager/CoverManager.cpp:639
 #, kde-format
 msgid "Fetching cover for %1 - %2..."
 msgstr "Azala eskuratzen: %1 - %2..."
 
-#: covermanager/CoverManager.cpp:646
+#: covermanager/CoverManager.cpp:645
 #, kde-format
 msgid "Fetching cover for %1..."
 msgstr "Azala eskuratzen: %1..."
 
-#: covermanager/CoverManager.cpp:652
+#: covermanager/CoverManager.cpp:651
 #, kde-format
 msgid "Fetching 1 cover: "
 msgid_plural "Fetching <b>%1</b> covers... : "
 msgstr[0] "Azal bat eskuratzen: "
 msgstr[1] "<b>%1</b> azal eskuratzen... : "
 
-#: covermanager/CoverManager.cpp:654
+#: covermanager/CoverManager.cpp:653
 #, kde-format
 msgid "1 fetched"
 msgid_plural "%1 fetched"
 msgstr[0] "1 eskuratuta"
 msgstr[1] "%1 eskuratuta"
 
-#: covermanager/CoverManager.cpp:658
+#: covermanager/CoverManager.cpp:657
 #, kde-format
 msgid " - "
 msgstr " - "
 
-#: covermanager/CoverManager.cpp:659
+#: covermanager/CoverManager.cpp:658
 #, kde-format
 msgid "1 not found"
 msgid_plural "%1 not found"
@@ -7781,32 +7781,32 @@ msgstr[1] "%1 ez dira aurkitu"
 msgid "Connecting..."
 msgstr "Konektatzen..."
 
-#: covermanager/CoverManager.cpp:685
+#: covermanager/CoverManager.cpp:684
 #, kde-format
 msgid "1 result for \"%2\""
 msgid_plural "%1 results for \"%2\""
 msgstr[0] "\"%2\"(r)en emaitza"
 msgstr[1] "\"%2\"(r)en %1 emaitza"
 
-#: covermanager/CoverManager.cpp:689
+#: covermanager/CoverManager.cpp:688
 #, kde-format
 msgid "1 album"
 msgid_plural "%1 albums"
 msgstr[0] "Album 1"
 msgstr[1] "%1 album"
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:700
 #, kde-format
 msgctxt "Separator for artists"
 msgid ", "
 msgstr ", "
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:700
 #, kde-format
 msgid "%1 by %2"
 msgstr "%1 %2-(e)k egina"
 
-#: covermanager/CoverManager.cpp:706
+#: covermanager/CoverManager.cpp:705
 #, kde-format
 msgid "%2 - ( <b>1</b> without cover )"
 msgid_plural "%2 - ( <b>%1</b> without cover )"
@@ -9879,7 +9879,7 @@ msgstr "Eskuratutako hitzak hutsik daude"
 msgid "Lyrics data could not be parsed"
 msgstr "Ezin izan da hitzen datuak analizatu"
 
-#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:690
+#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:689
 #, kde-format
 msgid "No information available for this track"
 msgstr "Ez dago pistaren informaziorik erabilgarri"
@@ -11534,7 +11534,7 @@ msgstr "Erakutsi barneko erreprodukzio-kontrolak"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: playlist/layouts/PlaylistLayoutEditDialog.ui:267
-#: services/ServiceBase.cpp:163
+#: services/ServiceBase.cpp:162
 #, kde-format
 msgid "Group By"
 msgstr "Elkartu: "
@@ -11546,7 +11546,7 @@ msgid "Show tooltips"
 msgstr "Erakutsi argibideak"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewButton)
-#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:504
+#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:503
 #, kde-format
 msgid "Preview"
 msgstr "Aurrebista"
@@ -14126,12 +14126,12 @@ msgid ""
 "will not be scrobbled</html>"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:100
+#: services/lastfm/LastFmService.cpp:98
 #, kde-format
 msgid "Last.fm: The social music revolution"
 msgstr "Last.fm: musika sozialaren iraultza"
 
-#: services/lastfm/LastFmService.cpp:102
+#: services/lastfm/LastFmService.cpp:100
 #, fuzzy, kde-format
 #| msgid ""
 #| "Last.fm is a popular online service that provides personal radio stations "
@@ -14155,12 +14155,12 @@ msgstr ""
 "edo baita zuk lagun gisa gehituta dituzun edo Last.fm webgunean 'auzokotzat' "
 "hartzen den jendearen korronteak entzun ere."
 
-#: services/lastfm/LastFmService.cpp:129 services/lastfm/LoveTrackAction.cpp:24
+#: services/lastfm/LastFmService.cpp:127 services/lastfm/LoveTrackAction.cpp:24
 #, kde-format
 msgid "Last.fm: Love"
 msgstr "Last.fm: gogokoa"
 
-#: services/lastfm/LastFmService.cpp:131
+#: services/lastfm/LastFmService.cpp:129
 #, kde-format
 msgid "Ctrl+L"
 msgstr "Ktrl+L"
@@ -15483,12 +15483,12 @@ msgstr "Gehitu OPML fitxategia zerrendari."
 msgid "Loading info..."
 msgstr "Informazioa kargatzen..."
 
-#: services/ServiceBase.cpp:337
+#: services/ServiceBase.cpp:336
 #, kde-format
 msgid "This service does not accept any messages"
 msgstr "Zerbitzu honek ez du mezurik onartzen"
 
-#: services/ServiceBase.cpp:344
+#: services/ServiceBase.cpp:343
 #, kde-format
 msgid "ERROR: unknown message"
 msgstr "ERROREA: mezu ezezaguna"
@@ -15940,7 +15940,7 @@ msgid "Slim Toolbar"
 msgstr "Tresna-barra mehea"
 
 #: toolbar/VolumePopupButton.cpp:104 toolbar/VolumePopupButton.cpp:115
-#: widgets/Osd.cpp:200
+#: widgets/Osd.cpp:199
 #, kde-format
 msgid "Volume: %1% (muted)"
 msgstr "Bolumena: %%1 (isilarazita)"
@@ -16376,17 +16376,17 @@ msgctxt "a numerical tag (like year or track number) is between two values"
 msgid "between"
 msgstr "artean"
 
-#: widgets/Osd.cpp:186
+#: widgets/Osd.cpp:185
 #, kde-format
 msgid "Rating changed"
 msgstr "Balorazioa aldatuta"
 
-#: widgets/Osd.cpp:261
+#: widgets/Osd.cpp:260
 #, kde-format
 msgid "Volume: 100% (muted)"
 msgstr "Bolumena: % 100 (mutututa)"
 
-#: widgets/Osd.cpp:504
+#: widgets/Osd.cpp:503
 #, kde-format
 msgid ""
 "On-Screen-Display preview\n"
@@ -16395,12 +16395,12 @@ msgstr ""
 "OSD aurrebista\n"
 "Arrastatu kokalekua aldatzeko"
 
-#: widgets/Osd.cpp:756
+#: widgets/Osd.cpp:755
 #, kde-format
 msgid "Stopped"
 msgstr "Geldituta"
 
-#: widgets/Osd.cpp:765
+#: widgets/Osd.cpp:764
 #, kde-format
 msgid "Paused"
 msgstr "Pausatuta"

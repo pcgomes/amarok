@@ -1818,22 +1818,22 @@ msgstr "Tcherdjî des URL, e rplaeçant l' djivêye a djouwer do moumint"
 msgid "Print verbose debugging information"
 msgstr "Rexhe vierbeusmint des informåcions di disbugaedje"
 
-#: App.cpp:376
+#: App.cpp:374
 #, kde-format
 msgid "Print verbose debugging information from the audio system"
 msgstr "Rexhe vierbeusmint des informåcions di disbugaedje do sistinme odio"
 
-#: App.cpp:377
+#: App.cpp:375
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr "Essocter li metaedje e coleur des rexhowes di disbugaedje."
 
-#: App.cpp:378
+#: App.cpp:376
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr "Permet l' alaedje di sacwantès instances d' Amarok"
 
-#: App.cpp:379
+#: App.cpp:377
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr "Båze po nos d' fitchî/URL relatifs"
@@ -1843,7 +1843,7 @@ msgstr "Båze po nos d' fitchî/URL relatifs"
 msgid "Database Error"
 msgstr "Aroke del båze di dnêyes"
 
-#: App.cpp:516
+#: App.cpp:514
 #, fuzzy, kde-format
 #| msgid ""
 #| "The amarok database reported the following errors:\n"
@@ -1861,7 +1861,7 @@ msgstr ""
 "Les troes cwårts do tins vos dvroz rezoude ces arokes po k' Amarok overe "
 "comifåt."
 
-#: App.cpp:583
+#: App.cpp:581
 #, kde-format
 msgid "Moving files to trash"
 msgstr "Tapaedje di fitchîs å batch"
@@ -2588,7 +2588,7 @@ msgstr "&Disfacer"
 msgid "&Export As..."
 msgstr "&Ebaguer djivêye a djouwer eyet l' rilomer..."
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:374
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:370
 #, fuzzy, kde-format
 #| msgctxt "The amount of tracks being edited"
 #| msgid "1 Track"
@@ -2599,14 +2599,14 @@ msgid_plural "%1 Tracks"
 msgstr[0] "1 boket"
 msgstr[1] "Informåcions po %1 bokets"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:374
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:370
 #, fuzzy, kde-format
 #| msgid "Remove From Playlist"
 msgctxt "%1: number of tracks. %2: number of playlists"
 msgid "Remove %1 From %2"
 msgstr "Oister del djivêye a djouwer"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:375
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:371
 #, fuzzy, kde-format
 #| msgid "Playlist"
 msgctxt "Second part of 'Remove %1 From %2'"
@@ -2615,7 +2615,7 @@ msgid_plural "%1 Playlists"
 msgstr[0] "Djivêye a djouwer"
 msgstr[1] "Djivêye a djouwer"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:379
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:375
 #, fuzzy, kde-format
 #| msgid "Removing Track from Device"
 #| msgid_plural "Removing Tracks from Device"
@@ -2625,7 +2625,7 @@ msgid_plural "Remove %1 Tracks From %2"
 msgstr[0] "Dji disface li boket di l' éndjin"
 msgstr[1] "Dji disface li boket di l' éndjin"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:470
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:466
 #, fuzzy, kde-format
 #| msgid "&Delete playlist"
 msgctxt ""
@@ -2634,7 +2634,7 @@ msgctxt ""
 msgid "Delete playlist <i>%1</i> from %2?"
 msgstr "&Disfacer djivêye a djouwer"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:472
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:468
 #, fuzzy, kde-format
 #| msgid "&Delete playlist"
 msgctxt ""
@@ -2643,7 +2643,7 @@ msgctxt ""
 msgid "Delete %1 playlists from %2?"
 msgstr "&Disfacer djivêye a djouwer"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:476
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:472
 #, fuzzy, kde-format
 #| msgid "Configure Playlist Info Applet"
 msgid "Confirm Playlist Deletion"
@@ -3763,17 +3763,17 @@ msgstr "Si metou, Amarok djocrè l' boket djouwé sol moumint å metaedje doirmi
 msgid "&Pause playback on suspend"
 msgstr "&Djoker djouwaedje å metaedje doirmi"
 
-#: configdialog/dialogs/PluginsConfig.cpp:44
+#: configdialog/dialogs/PluginsConfig.cpp:43
 #, kde-format
 msgid "Collections"
 msgstr "Ramexhnêye"
 
-#: configdialog/dialogs/PluginsConfig.cpp:47
+#: configdialog/dialogs/PluginsConfig.cpp:46
 #, kde-format
 msgid "Internet Services"
 msgstr "Siervices daegntoele"
 
-#: configdialog/dialogs/PluginsConfig.cpp:50
+#: configdialog/dialogs/PluginsConfig.cpp:49
 #, kde-format
 msgid "Statistics importers"
 msgstr "Eberweteus di statistikes"
@@ -4536,16 +4536,16 @@ msgctxt "Right-click menu option for images in Wikipedia applet"
 msgid "Copy Image to Clipboard"
 msgstr "Copyî el ramexhnêye"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:78
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:142
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:270
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:77
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:141
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:269
 #, kde-format
 msgid "Unable to retrieve Wikipedia information: %1"
 msgstr "Dji n' a sepou tcherdjî les pondants et djondants di Wikipedia: %1"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:93
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:249
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:307
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:92
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:248
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:306
 #, kde-format
 msgid "No information found..."
 msgstr "Nole informåcion di trovêye..."
@@ -4566,13 +4566,13 @@ msgctxt "Search pattern for a composer"
 msgid ".*\\(.*(composer|musician).*\\)"
 msgstr ".*\\(.*(compôzeu|muzicyin).*\\))"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:323
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:322
 #, kde-format
 msgctxt "Search pattern for an album"
 msgid ".*\\(.*(album|score|soundtrack).*\\)"
 msgstr ".*\\(.*(albom|préjhaedje|boket).*\\)"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:327
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:326
 #, kde-format
 msgctxt "Search pattern for a song"
 msgid ".*\\(.*(song|track).*\\)"
@@ -7720,12 +7720,12 @@ msgstr "URL"
 msgid "Cover Manager"
 msgstr "Manaedjeu des potchetes"
 
-#: covermanager/CoverManager.cpp:124
+#: covermanager/CoverManager.cpp:123
 #, kde-format
 msgid "Albums By"
 msgstr "Alboms di"
 
-#: covermanager/CoverManager.cpp:134
+#: covermanager/CoverManager.cpp:133
 #, kde-format
 msgid "All Artists"
 msgstr "Tos ls årtisses"
@@ -7735,79 +7735,79 @@ msgstr "Tos ls årtisses"
 msgid "Enter search terms here"
 msgstr "Tapez chal li mot a trover"
 
-#: covermanager/CoverManager.cpp:193
+#: covermanager/CoverManager.cpp:192
 #, kde-format
 msgid "All Albums"
 msgstr "Tos ls alboms"
 
-#: covermanager/CoverManager.cpp:194
+#: covermanager/CoverManager.cpp:193
 #, kde-format
 msgid "Albums With Cover"
 msgstr "Alboms avou des potchetes"
 
-#: covermanager/CoverManager.cpp:195
+#: covermanager/CoverManager.cpp:194
 #, kde-format
 msgid "Albums Without Cover"
 msgstr "Alboms sins potchete"
 
-#: covermanager/CoverManager.cpp:208
+#: covermanager/CoverManager.cpp:207
 #, kde-format
 msgid "Fetch Missing Covers"
 msgstr "Cweri potchetes k' i mankèt"
 
-#: covermanager/CoverManager.cpp:314
+#: covermanager/CoverManager.cpp:313
 #, kde-format
 msgid "Fetching"
 msgstr "Dji cwîr"
 
-#: covermanager/CoverManager.cpp:409
+#: covermanager/CoverManager.cpp:408
 #, kde-format
 msgid "Loading"
 msgstr "Dji tchedjePréjhaedje"
 
-#: covermanager/CoverManager.cpp:620
+#: covermanager/CoverManager.cpp:619
 #, kde-format
 msgctxt "The fetching is done."
 msgid "Finished."
 msgstr "Fini."
 
-#: covermanager/CoverManager.cpp:622
+#: covermanager/CoverManager.cpp:621
 #, kde-format
 msgid " Cover not found"
 msgid_plural " <b>%1</b> covers not found"
 msgstr[0] " Potchete nén trovêye"
 msgstr[1] " <b>%1</b> potchetes nén trovêyes"
 
-#: covermanager/CoverManager.cpp:640
+#: covermanager/CoverManager.cpp:639
 #, kde-format
 msgid "Fetching cover for %1 - %2..."
 msgstr "Cweraedje di potchete po %1 - %2..."
 
-#: covermanager/CoverManager.cpp:646
+#: covermanager/CoverManager.cpp:645
 #, kde-format
 msgid "Fetching cover for %1..."
 msgstr "Cweraedje di potchete po %1..."
 
-#: covermanager/CoverManager.cpp:652
+#: covermanager/CoverManager.cpp:651
 #, kde-format
 msgid "Fetching 1 cover: "
 msgid_plural "Fetching <b>%1</b> covers... : "
 msgstr[0] "Cweraedje d' 1 potchete"
 msgstr[1] "Cweraedje di <b>%1</b> potchetes... :"
 
-#: covermanager/CoverManager.cpp:654
+#: covermanager/CoverManager.cpp:653
 #, kde-format
 msgid "1 fetched"
 msgid_plural "%1 fetched"
 msgstr[0] "1 trové"
 msgstr[1] "%1 trovés"
 
-#: covermanager/CoverManager.cpp:658
+#: covermanager/CoverManager.cpp:657
 #, kde-format
 msgid " - "
 msgstr " - "
 
-#: covermanager/CoverManager.cpp:659
+#: covermanager/CoverManager.cpp:658
 #, kde-format
 msgid "1 not found"
 msgid_plural "%1 not found"
@@ -7820,34 +7820,34 @@ msgstr[1] "%1 nén trovés"
 msgid "Connecting..."
 msgstr "Raloyaedje..."
 
-#: covermanager/CoverManager.cpp:685
+#: covermanager/CoverManager.cpp:684
 #, kde-format
 msgid "1 result for \"%2\""
 msgid_plural "%1 results for \"%2\""
 msgstr[0] "1 rizultat po «%2»"
 msgstr[1] "%1 rizultats po «%2»"
 
-#: covermanager/CoverManager.cpp:689
+#: covermanager/CoverManager.cpp:688
 #, kde-format
 msgid "1 album"
 msgid_plural "%1 albums"
 msgstr[0] "1 albom"
 msgstr[1] "%1 alboms"
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:700
 #, kde-format
 msgctxt "Separator for artists"
 msgid ", "
 msgstr ""
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:700
 #, fuzzy, kde-format
 #| msgctxt "%1 is track url, %2 artist name"
 #| msgid "%1 (by %2)"
 msgid "%1 by %2"
 msgstr "%1 (pa %2)"
 
-#: covermanager/CoverManager.cpp:706
+#: covermanager/CoverManager.cpp:705
 #, fuzzy, kde-format
 #| msgid " - ( <b>%1</b> without cover )"
 msgid "%2 - ( <b>1</b> without cover )"
@@ -9953,7 +9953,7 @@ msgstr "Les paroles di tcherdjeyes sont vudes"
 msgid "Lyrics data could not be parsed"
 msgstr "Dji n' a sepou analijhî les dnêyes"
 
-#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:690
+#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:689
 #, kde-format
 msgid "No information available for this track"
 msgstr "I gn a nou pondant et djondant po ç' boket ci"
@@ -11617,7 +11617,7 @@ msgstr "Mostrer ddins les controles do djouwaedje"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: playlist/layouts/PlaylistLayoutEditDialog.ui:267
-#: services/ServiceBase.cpp:163
+#: services/ServiceBase.cpp:162
 #, kde-format
 msgid "Group By"
 msgstr "Grouper pa"
@@ -11629,7 +11629,7 @@ msgid "Show tooltips"
 msgstr "Håyner racsegnes"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewButton)
-#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:504
+#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:503
 #, kde-format
 msgid "Preview"
 msgstr "Prévoeyaedje"
@@ -14220,12 +14220,12 @@ msgid ""
 "will not be scrobbled</html>"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:100
+#: services/lastfm/LastFmService.cpp:98
 #, kde-format
 msgid "Last.fm: The social music revolution"
 msgstr "Last.fm: li revolucion sociåle del muzike"
 
-#: services/lastfm/LastFmService.cpp:102
+#: services/lastfm/LastFmService.cpp:100
 #, kde-format
 msgid ""
 "Last.fm is a popular online service that provides personal radio stations "
@@ -14236,12 +14236,12 @@ msgid ""
 "friends"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:129 services/lastfm/LoveTrackAction.cpp:24
+#: services/lastfm/LastFmService.cpp:127 services/lastfm/LoveTrackAction.cpp:24
 #, kde-format
 msgid "Last.fm: Love"
 msgstr "Last.fm: schoûte voltî"
 
-#: services/lastfm/LastFmService.cpp:131
+#: services/lastfm/LastFmService.cpp:129
 #, kde-format
 msgid "Ctrl+L"
 msgstr "Ctrl+L"
@@ -15514,12 +15514,12 @@ msgstr "Li nombe di liveas po \"Disfé\" el djivêye a djouwer."
 msgid "Loading info..."
 msgstr "Dji tchedje les pondants eyet djondants..."
 
-#: services/ServiceBase.cpp:337
+#: services/ServiceBase.cpp:336
 #, kde-format
 msgid "This service does not accept any messages"
 msgstr "Ci siervice n' acceptêye nou messaedje"
 
-#: services/ServiceBase.cpp:344
+#: services/ServiceBase.cpp:343
 #, kde-format
 msgid "ERROR: unknown message"
 msgstr "AROKE: messaedje nén cnoxhou"
@@ -15982,7 +15982,7 @@ msgid "Slim Toolbar"
 msgstr "Tene båre ås usteyes"
 
 #: toolbar/VolumePopupButton.cpp:104 toolbar/VolumePopupButton.cpp:115
-#: widgets/Osd.cpp:200
+#: widgets/Osd.cpp:199
 #, kde-format
 msgid "Volume: %1% (muted)"
 msgstr "Volume : %1 % (moya)"
@@ -16419,17 +16419,17 @@ msgctxt "a numerical tag (like year or track number) is between two values"
 msgid "between"
 msgstr "etur"
 
-#: widgets/Osd.cpp:186
+#: widgets/Osd.cpp:185
 #, kde-format
 msgid "Rating changed"
 msgstr "Préjhaedje candjî"
 
-#: widgets/Osd.cpp:261
+#: widgets/Osd.cpp:260
 #, kde-format
 msgid "Volume: 100% (muted)"
 msgstr "Volume: 100% (moya)"
 
-#: widgets/Osd.cpp:504
+#: widgets/Osd.cpp:503
 #, kde-format
 msgid ""
 "On-Screen-Display preview\n"
@@ -16438,12 +16438,12 @@ msgstr ""
 "Prévoeyaedje di l' OSD\n"
 "Bodjî eyet saetchî pol candjî d' plaece"
 
-#: widgets/Osd.cpp:756
+#: widgets/Osd.cpp:755
 #, kde-format
 msgid "Stopped"
 msgstr "Aresté"
 
-#: widgets/Osd.cpp:765
+#: widgets/Osd.cpp:764
 #, kde-format
 msgid "Paused"
 msgstr "Djoké"

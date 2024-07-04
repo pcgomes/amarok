@@ -1742,23 +1742,23 @@ msgstr ""
 msgid "Print verbose debugging information"
 msgstr "Інфармацыя ўтулкі"
 
-#: App.cpp:376
+#: App.cpp:374
 #, fuzzy, kde-format
 #| msgid "Plugin Information"
 msgid "Print verbose debugging information from the audio system"
 msgstr "Інфармацыя ўтулкі"
 
-#: App.cpp:377
+#: App.cpp:375
 #, kde-format
 msgid "Disable colorization for debug output."
 msgstr ""
 
-#: App.cpp:378
+#: App.cpp:376
 #, kde-format
 msgid "Allow running multiple Amarok instances"
 msgstr ""
 
-#: App.cpp:379
+#: App.cpp:377
 #, kde-format
 msgid "Base for relative filenames/URLs"
 msgstr ""
@@ -1769,7 +1769,7 @@ msgstr ""
 msgid "Database Error"
 msgstr "База данняў:"
 
-#: App.cpp:516
+#: App.cpp:514
 #, kde-format
 msgid ""
 "The Amarok database reported the following errors:\n"
@@ -1778,7 +1778,7 @@ msgid ""
 "properly."
 msgstr ""
 
-#: App.cpp:583
+#: App.cpp:581
 #, kde-format
 msgid "Moving files to trash"
 msgstr ""
@@ -2543,7 +2543,7 @@ msgstr "В&ыдаліць"
 msgid "&Export As..."
 msgstr "Разумныя спісы прайгравання"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:374
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:370
 #, fuzzy, kde-format
 #| msgid "Track"
 msgctxt "First part of 'Remove %1 From %2'"
@@ -2553,14 +2553,14 @@ msgstr[0] "&Дарожка"
 msgstr[1] "Дарожка"
 msgstr[2] "Дарожка"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:374
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:370
 #, fuzzy, kde-format
 #| msgid "Remove"
 msgctxt "%1: number of tracks. %2: number of playlists"
 msgid "Remove %1 From %2"
 msgstr "&Выдаліць"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:375
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:371
 #, fuzzy, kde-format
 #| msgid "&Playlist"
 msgctxt "Second part of 'Remove %1 From %2'"
@@ -2570,7 +2570,7 @@ msgstr[0] "Спіс прайгравання"
 msgstr[1] "Спіс прайгравання"
 msgstr[2] "Спіс прайгравання"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:379
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:375
 #, fuzzy, kde-format
 #| msgid "Import Playlists"
 msgctxt "%2 is saved playlist name"
@@ -2580,7 +2580,7 @@ msgstr[0] "Імпартаваць спісы прайгравання"
 msgstr[1] "Імпартаваць спісы прайгравання"
 msgstr[2] "Імпартаваць спісы прайгравання"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:470
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:466
 #, fuzzy, kde-format
 #| msgid "&Playlist"
 msgctxt ""
@@ -2589,7 +2589,7 @@ msgctxt ""
 msgid "Delete playlist <i>%1</i> from %2?"
 msgstr "&Спіс прайгравання"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:472
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:468
 #, fuzzy, kde-format
 #| msgid "&Playlist"
 msgctxt ""
@@ -2598,7 +2598,7 @@ msgctxt ""
 msgid "Delete %1 playlists from %2?"
 msgstr "&Спіс прайгравання"
 
-#: browsers/playlistbrowser/PlaylistBrowserView.cpp:476
+#: browsers/playlistbrowser/PlaylistBrowserView.cpp:472
 #, fuzzy, kde-format
 #| msgid "Configure Playlist Info Applet"
 msgid "Confirm Playlist Deletion"
@@ -3722,19 +3722,19 @@ msgstr ""
 msgid "&Pause playback on suspend"
 msgstr ""
 
-#: configdialog/dialogs/PluginsConfig.cpp:44
+#: configdialog/dialogs/PluginsConfig.cpp:43
 #, fuzzy, kde-format
 #| msgid "Collection"
 msgid "Collections"
 msgstr "Калекцыя"
 
-#: configdialog/dialogs/PluginsConfig.cpp:47
+#: configdialog/dialogs/PluginsConfig.cpp:46
 #, fuzzy, kde-format
 #| msgid "Configure Services"
 msgid "Internet Services"
 msgstr "Наставіць сервісы"
 
-#: configdialog/dialogs/PluginsConfig.cpp:50
+#: configdialog/dialogs/PluginsConfig.cpp:49
 #, fuzzy, kde-format
 #| msgid "Statistics"
 msgid "Statistics importers"
@@ -4520,40 +4520,40 @@ msgctxt "Right-click menu option for images in Wikipedia applet"
 msgid "Copy Image to Clipboard"
 msgstr "Абнавіць калекцыю"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:78
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:142
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:270
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:77
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:141
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:269
 #, kde-format
 msgid "Unable to retrieve Wikipedia information: %1"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:93
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:249
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:307
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:92
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:248
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:306
 #, fuzzy, kde-format
 #| msgid "Plugin Information"
 msgid "No information found..."
 msgstr "Інфармацыя ўтулкі"
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:317
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:316
 #, kde-format
 msgctxt "Search pattern for an artist or band"
 msgid ".*\\(.*(artist|band).*\\)"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:320
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:319
 #, kde-format
 msgctxt "Search pattern for a composer"
 msgid ".*\\(.*(composer|musician).*\\)"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:323
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:322
 #, kde-format
 msgctxt "Search pattern for an album"
 msgid ".*\\(.*(album|score|soundtrack).*\\)"
 msgstr ""
 
-#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:327
+#: context/applets/wikipedia/plugin/WikipediaEngine.cpp:326
 #, kde-format
 msgctxt "Search pattern for a song"
 msgid ".*\\(.*(song|track).*\\)"
@@ -7731,13 +7731,13 @@ msgstr "URL"
 msgid "Cover Manager"
 msgstr ""
 
-#: covermanager/CoverManager.cpp:124
+#: covermanager/CoverManager.cpp:123
 #, fuzzy, kde-format
 #| msgid "Albums by %1"
 msgid "Albums By"
 msgstr "Альбомы %1"
 
-#: covermanager/CoverManager.cpp:134
+#: covermanager/CoverManager.cpp:133
 #, fuzzy, kde-format
 #| msgid "Artist"
 msgid "All Artists"
@@ -7748,46 +7748,46 @@ msgstr "Выканаўца"
 msgid "Enter search terms here"
 msgstr ""
 
-#: covermanager/CoverManager.cpp:193
+#: covermanager/CoverManager.cpp:192
 #, kde-format
 msgid "All Albums"
 msgstr ""
 
-#: covermanager/CoverManager.cpp:194
+#: covermanager/CoverManager.cpp:193
 #, kde-format
 msgid "Albums With Cover"
 msgstr "Альбомы з вокладкай"
 
-#: covermanager/CoverManager.cpp:195
+#: covermanager/CoverManager.cpp:194
 #, kde-format
 msgid "Albums Without Cover"
 msgstr "Альбомы без вокладкі"
 
-#: covermanager/CoverManager.cpp:208
+#: covermanager/CoverManager.cpp:207
 #, kde-format
 msgid "Fetch Missing Covers"
 msgstr "Сцягнуць нехапаючыя вокладкі"
 
-#: covermanager/CoverManager.cpp:314
+#: covermanager/CoverManager.cpp:313
 #, fuzzy, kde-format
 #| msgid "Searching..."
 msgid "Fetching"
 msgstr "Пошук..."
 
-#: covermanager/CoverManager.cpp:409
+#: covermanager/CoverManager.cpp:408
 #, fuzzy, kde-format
 #| msgid "Rating"
 msgid "Loading"
 msgstr "Адзнака"
 
-#: covermanager/CoverManager.cpp:620
+#: covermanager/CoverManager.cpp:619
 #, fuzzy, kde-format
 #| msgid "Finished."
 msgctxt "The fetching is done."
 msgid "Finished."
 msgstr "С&кончана"
 
-#: covermanager/CoverManager.cpp:622
+#: covermanager/CoverManager.cpp:621
 #, kde-format
 msgid " Cover not found"
 msgid_plural " <b>%1</b> covers not found"
@@ -7795,17 +7795,17 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: covermanager/CoverManager.cpp:640
+#: covermanager/CoverManager.cpp:639
 #, kde-format
 msgid "Fetching cover for %1 - %2..."
 msgstr ""
 
-#: covermanager/CoverManager.cpp:646
+#: covermanager/CoverManager.cpp:645
 #, kde-format
 msgid "Fetching cover for %1..."
 msgstr ""
 
-#: covermanager/CoverManager.cpp:652
+#: covermanager/CoverManager.cpp:651
 #, fuzzy, kde-format
 #| msgid "Fetch Missing Covers"
 msgid "Fetching 1 cover: "
@@ -7814,7 +7814,7 @@ msgstr[0] "Сцягнуць нехапаючыя вокладкі"
 msgstr[1] "Сцягнуць нехапаючыя вокладкі"
 msgstr[2] "Сцягнуць нехапаючыя вокладкі"
 
-#: covermanager/CoverManager.cpp:654
+#: covermanager/CoverManager.cpp:653
 #, kde-format
 msgid "1 fetched"
 msgid_plural "%1 fetched"
@@ -7822,12 +7822,12 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: covermanager/CoverManager.cpp:658
+#: covermanager/CoverManager.cpp:657
 #, kde-format
 msgid " - "
 msgstr " - "
 
-#: covermanager/CoverManager.cpp:659
+#: covermanager/CoverManager.cpp:658
 #, fuzzy, kde-format
 msgid "1 not found"
 msgid_plural "%1 not found"
@@ -7841,7 +7841,7 @@ msgstr[2] " (не знойдзена)"
 msgid "Connecting..."
 msgstr "Злучаюся..."
 
-#: covermanager/CoverManager.cpp:685
+#: covermanager/CoverManager.cpp:684
 #, fuzzy, kde-format
 #| msgid "No results found"
 msgid "1 result for \"%2\""
@@ -7850,7 +7850,7 @@ msgstr[0] "Нічога не знойдзена"
 msgstr[1] "Нічога не знойдзена"
 msgstr[2] "Нічога не знойдзена"
 
-#: covermanager/CoverManager.cpp:689
+#: covermanager/CoverManager.cpp:688
 #, fuzzy, kde-format
 #| msgid "Album"
 msgid "1 album"
@@ -7859,20 +7859,20 @@ msgstr[0] "Альбом:"
 msgstr[1] "Альбомы"
 msgstr[2] "Альбомы"
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:700
 #, fuzzy, kde-format
 #| msgid ", "
 msgctxt "Separator for artists"
 msgid ", "
 msgstr ", "
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:700
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgid "%1 by %2"
 msgstr "%1 (%2)"
 
-#: covermanager/CoverManager.cpp:706
+#: covermanager/CoverManager.cpp:705
 #, kde-format
 msgid "%2 - ( <b>1</b> without cover )"
 msgid_plural "%2 - ( <b>%1</b> without cover )"
@@ -9869,7 +9869,7 @@ msgstr ""
 msgid "Lyrics data could not be parsed"
 msgstr "Гэты аб'ект не можа быць створаны"
 
-#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:690
+#: mac/GrowlInterface.cpp:64 widgets/Osd.cpp:689
 #, kde-format
 msgid "No information available for this track"
 msgstr ""
@@ -11567,7 +11567,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: playlist/layouts/PlaylistLayoutEditDialog.ui:267
-#: services/ServiceBase.cpp:163
+#: services/ServiceBase.cpp:162
 #, kde-format
 msgid "Group By"
 msgstr "Групаваць па"
@@ -11580,7 +11580,7 @@ msgid "Show tooltips"
 msgstr "Паказаць панель начыння"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewButton)
-#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:504
+#: playlist/layouts/PlaylistLayoutEditDialog.ui:291 widgets/Osd.cpp:503
 #, fuzzy, kde-format
 #| msgid "Previous Track"
 msgid "Preview"
@@ -14186,12 +14186,12 @@ msgid ""
 "will not be scrobbled</html>"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:100
+#: services/lastfm/LastFmService.cpp:98
 #, kde-format
 msgid "Last.fm: The social music revolution"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:102
+#: services/lastfm/LastFmService.cpp:100
 #, kde-format
 msgid ""
 "Last.fm is a popular online service that provides personal radio stations "
@@ -14202,13 +14202,13 @@ msgid ""
 "friends"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:129 services/lastfm/LoveTrackAction.cpp:24
+#: services/lastfm/LastFmService.cpp:127 services/lastfm/LoveTrackAction.cpp:24
 #, fuzzy, kde-format
 #| msgid "Last.fm Radio"
 msgid "Last.fm: Love"
 msgstr "Радыё Last.fm"
 
-#: services/lastfm/LastFmService.cpp:131
+#: services/lastfm/LastFmService.cpp:129
 #, kde-format
 msgid "Ctrl+L"
 msgstr ""
@@ -15413,12 +15413,12 @@ msgstr ""
 msgid "Loading info..."
 msgstr "Загрузка %1"
 
-#: services/ServiceBase.cpp:337
+#: services/ServiceBase.cpp:336
 #, kde-format
 msgid "This service does not accept any messages"
 msgstr ""
 
-#: services/ServiceBase.cpp:344
+#: services/ServiceBase.cpp:343
 #, kde-format
 msgid "ERROR: unknown message"
 msgstr ""
@@ -15893,7 +15893,7 @@ msgid "Slim Toolbar"
 msgstr "Схаваць панель начыння"
 
 #: toolbar/VolumePopupButton.cpp:104 toolbar/VolumePopupButton.cpp:115
-#: widgets/Osd.cpp:200
+#: widgets/Osd.cpp:199
 #, fuzzy, kde-format
 msgid "Volume: %1% (muted)"
 msgstr "Гучнасць"
@@ -16353,30 +16353,30 @@ msgctxt "a numerical tag (like year or track number) is between two values"
 msgid "between"
 msgstr "між"
 
-#: widgets/Osd.cpp:186
+#: widgets/Osd.cpp:185
 #, kde-format
 msgid "Rating changed"
 msgstr ""
 
-#: widgets/Osd.cpp:261
+#: widgets/Osd.cpp:260
 #, fuzzy, kde-format
 msgid "Volume: 100% (muted)"
 msgstr "Гучнасць"
 
-#: widgets/Osd.cpp:504
+#: widgets/Osd.cpp:503
 #, kde-format
 msgid ""
 "On-Screen-Display preview\n"
 "Drag to reposition"
 msgstr ""
 
-#: widgets/Osd.cpp:756
+#: widgets/Osd.cpp:755
 #, fuzzy, kde-format
 #| msgid "Stop"
 msgid "Stopped"
 msgstr "Спыніць"
 
-#: widgets/Osd.cpp:765
+#: widgets/Osd.cpp:764
 #, kde-format
 msgid "Paused"
 msgstr "Прыпынена"
