@@ -1,3 +1,11 @@
+amarok (3:3.1.1-0ubuntu1ppa1~ubuntu24.04.1) noble; urgency=medium
+
+  * Release of 3.1.1
+  * Add support for oracular
+  * Deprecate bionic, focal, and mantic
+
+ -- Pedro de Carvalho Gomes <pedrogomes81@gmail.com>  Mon, 28 Oct 2024 22:34:49 +0100
+
 amarok (3:3.0.0-0ubuntu1ppa1~ubuntu24.04.1) noble; urgency=medium
 
   * Release of v3.0.0
